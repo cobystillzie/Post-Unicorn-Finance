@@ -349,7 +349,7 @@ def publish(args: argparse.Namespace) -> int:
             packet = generate_site(db_path, site_dir, publish_id, generated_at)
             warnings.extend(check_packet_sizes(site_dir))
             status = build_status(
-                status="prepared_for_publish",
+                status="published",
                 publish_id=publish_id,
                 generated_at=generated_at,
                 source_head_sha=source_head_sha,
