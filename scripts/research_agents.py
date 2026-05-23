@@ -112,6 +112,16 @@ CLASS_KEYWORDS = {
     "LMV": ["indie", "solo founder", "micro-saas", "tiny team", "ai-native"],
 }
 
+AUTO_PROMOTION_ASSET_CLASSES = {
+    "SMV",
+    "Patient Capital",
+    "LMV",
+    "Sovereign Capital",
+    "Search/ETA",
+    "Portfolio Capital",
+}
+PROMOTION_MIN_BUCKET_CLAIMS = 2
+
 COMMON_NAME_TOKENS = {
     "capital",
     "company",
@@ -508,6 +518,47 @@ def find_keyword_snippets(text: str) -> dict[str, str]:
     return found
 
 
+def keyword_window(text: str, keyword: str, limit: int = 260) -> str:
+    normalized = re.sub(r"\s+", " ", text).strip()
+    lower = normalized.lower()
+    index = lower.find(keyword.lower())
+    if index < 0:
+        return normalized[:limit]
+    start = max(0, index - limit // 2)
+    end = min(len(normalized), index + len(keyword) + limit // 2)
+    return normalized[start:end].strip()
+
+
+def bucket_claim_evidence(asset_class: str, text: str) -> list[dict[str, str]]:
+    """Return source-backed bucket signals that can become intake promotion claims."""
+    if asset_class not in AUTO_PROMOTION_ASSET_CLASSES:
+        return []
+    sentences = split_sentences(text)
+    lower_sentences = [(sentence, sentence.lower()) for sentence in sentences]
+    evidence: list[dict[str, str]] = []
+    seen_keywords: set[str] = set()
+    for keyword in CLASS_KEYWORDS.get(asset_class, []):
+        if keyword in seen_keywords or keyword.lower() not in text.lower():
+            continue
+        snippet = ""
+        for sentence, lower in lower_sentences:
+            if keyword.lower() in lower:
+                snippet = sentence
+                break
+        if not snippet:
+            snippet = keyword_window(text, keyword)
+        evidence.append(
+            {
+                "asset_class": asset_class,
+                "keyword": keyword,
+                "claim_type": f"intake_{slug(asset_class)}_bucket_signal",
+                "source_text_snippet": snippet,
+            }
+        )
+        seen_keywords.add(keyword)
+    return evidence
+
+
 def claim_extraction_agent(db_path: Path, limit: int) -> int:
     ensure_db(db_path)
     started = now_iso()
@@ -714,17 +765,19 @@ def infer_intake_asset_class(lead: dict[str, str], text: str) -> tuple[str, int,
     if target == "Instrument":
         return "", 0, "Instrument is a financing mechanism, not a primary entity asset class"
     scores = class_scores(text)
-    if target in CLASS_KEYWORDS and scores.get(target, 0) > 0:
-        return target, scores[target], f"target class {target} matched source text"
+    if target == "UVC":
+        return "", scores.get("UVC", 0), "UVC is the baseline comparison class and is not auto-promoted from intake"
+    if target in AUTO_PROMOTION_ASSET_CLASSES and scores.get(target, 0) >= PROMOTION_MIN_BUCKET_CLAIMS:
+        return target, scores[target], f"target class {target} matched at least {PROMOTION_MIN_BUCKET_CLAIMS} source-text bucket signals"
+    if target in AUTO_PROMOTION_ASSET_CLASSES and scores.get(target, 0) > 0:
+        return "", scores[target], f"target class {target} has only {scores[target]} source-text bucket signal(s); {PROMOTION_MIN_BUCKET_CLAIMS} required"
     if target not in {"", "All", "Unknown Candidate"} and target not in CLASS_KEYWORDS:
-        return target, 1, f"target class {target} retained from intake queue"
+        return "", 0, f"target class {target} has no configured auto-promotion bucket evidence rules"
     non_uvc_scores = {asset: score for asset, score in scores.items() if asset != "UVC"}
     best_class, best_score = max(non_uvc_scores.items(), key=lambda item: item[1])
-    if best_score >= 2:
-        return best_class, best_score, f"inferred {best_class} from {best_score} source-text keyword matches"
-    if target == "UVC" and scores.get("UVC", 0) > 0:
-        return "UVC", scores["UVC"], "target class UVC matched source text"
-    return "", 0, "no sufficiently specific non-unicorn asset-class fit found"
+    if best_class in AUTO_PROMOTION_ASSET_CLASSES and best_score >= PROMOTION_MIN_BUCKET_CLAIMS:
+        return best_class, best_score, f"inferred {best_class} from {best_score} source-text bucket signals"
+    return "", best_score, f"no sufficiently specific non-unicorn asset-class fit found; {PROMOTION_MIN_BUCKET_CLAIMS} bucket signals required"
 
 
 def source_supports_intake(lead: dict[str, str], page: sqlite3.Row) -> tuple[bool, dict[str, object], str, str]:
@@ -738,8 +791,20 @@ def source_supports_intake(lead: dict[str, str], page: sqlite3.Row) -> tuple[boo
     page_domain = domain(page["source_url"])
     website_supported = bool(website_domain and (website_domain == page_domain or website_domain in lower))
     asset_class, asset_score, asset_reason = infer_intake_asset_class(lead, text)
+    bucket_asset_class = asset_class
+    target = lead.get("target_asset_class", "").strip()
+    if not bucket_asset_class and target in AUTO_PROMOTION_ASSET_CLASSES:
+        bucket_asset_class = target
+    if not bucket_asset_class:
+        scores = class_scores(text)
+        non_uvc_scores = {asset: score for asset, score in scores.items() if asset in AUTO_PROMOTION_ASSET_CLASSES}
+        if non_uvc_scores:
+            candidate_class, candidate_score = max(non_uvc_scores.items(), key=lambda item: item[1])
+            if candidate_score > 0:
+                bucket_asset_class = candidate_class
+    bucket_claims = bucket_claim_evidence(bucket_asset_class, text) if bucket_asset_class else []
     snippets = find_keyword_snippets(text)
-    source_snippet = next(iter(snippets.values()), "")
+    source_snippet = bucket_claims[0]["source_text_snippet"] if bucket_claims else next(iter(snippets.values()), "")
     if not source_snippet:
         for sentence in split_sentences(text):
             sentence_lower = sentence.lower()
@@ -753,6 +818,9 @@ def source_supports_intake(lead: dict[str, str], page: sqlite3.Row) -> tuple[boo
         "asset_class": asset_class,
         "asset_score": asset_score,
         "asset_reason": asset_reason,
+        "promotion_min_bucket_claims": PROMOTION_MIN_BUCKET_CLAIMS,
+        "bucket_claim_count": len(bucket_claims),
+        "bucket_claims": bucket_claims,
         "source_url": page["source_url"],
     }
     if not name_supported:
@@ -763,6 +831,10 @@ def source_supports_intake(lead: dict[str, str], page: sqlite3.Row) -> tuple[boo
         return False, checks, "", "source text does not directly support the entity role"
     if not asset_class:
         return False, checks, "", asset_reason
+    if asset_class not in AUTO_PROMOTION_ASSET_CLASSES:
+        return False, checks, "", f"{asset_class} is not configured for automatic intake promotion"
+    if len(bucket_claims) < PROMOTION_MIN_BUCKET_CLAIMS:
+        return False, checks, "", f"only {len(bucket_claims)} source-backed bucket claim(s) found; {PROMOTION_MIN_BUCKET_CLAIMS} required"
     if not source_snippet:
         return False, checks, "", "no usable source snippet found"
     return True, checks, source_snippet, ""
@@ -818,7 +890,7 @@ def build_promoted_rows(
     source_snippet: str,
     asset_class: str,
     existing_ids: set[str],
-) -> tuple[dict[str, str], dict[str, str]]:
+) -> tuple[dict[str, str], list[dict[str, str]]]:
     if asset_class == "Instrument":
         raise ValueError("Instrument cannot be promoted as a primary entity asset class")
     entity_id = unique_entity_id(lead["name"], existing_ids)
@@ -844,21 +916,29 @@ def build_promoted_rows(
         "last_verified_at": now_iso()[:10],
         "notes": "Promoted from entity_intake_queue by intake verification agent; human review required before paper use.",
     }
-    claim_row = {
-        "claim_id": f"claim-{entity_id}-intake-001",
-        "entity_id": entity_id,
-        "entity_name": lead["name"],
-        "claim_type": "intake_promotion",
-        "claim": f"{lead['name']} is a candidate {asset_class} industry entity based on fetched source text describing its role as {lead['target_entity_type']}.",
-        "source_url": page["source_url"],
-        "source_type": "fetched_source_page",
-        "source_quality": source_quality_for_url(page["source_url"]),
-        "source_tier": lead["source_tier"],
-        "evidence_status": "candidate_evidence",
-        "last_verified_at": now_iso()[:10],
-        "notes": f"Source snippet retained in intake_promotion_reviews; not paper-ready. Snippet: {source_snippet[:180]}",
-    }
-    return entity_row, claim_row
+    text = f"{page['title']} {page['raw_text']}"
+    claim_evidence = bucket_claim_evidence(asset_class, text)
+    claim_rows = []
+    for index, evidence in enumerate(claim_evidence[: max(PROMOTION_MIN_BUCKET_CLAIMS, len(claim_evidence))], start=1):
+        keyword = evidence["keyword"]
+        snippet = evidence["source_text_snippet"] or source_snippet
+        claim_rows.append(
+            {
+                "claim_id": f"claim-{entity_id}-intake-{index:03d}",
+                "entity_id": entity_id,
+                "entity_name": lead["name"],
+                "claim_type": evidence["claim_type"],
+                "claim": f"{lead['name']} has source-backed {asset_class} bucket evidence: source text contains '{keyword}'.",
+                "source_url": page["source_url"],
+                "source_type": "fetched_source_page",
+                "source_quality": source_quality_for_url(page["source_url"]),
+                "source_tier": lead["source_tier"],
+                "evidence_status": "candidate_evidence",
+                "last_verified_at": now_iso()[:10],
+                "notes": f"Auto-promoted intake evidence; not paper-ready. Snippet: {snippet[:180]}",
+            }
+        )
+    return entity_row, claim_rows
 
 
 def write_promotion_review(
@@ -873,6 +953,7 @@ def write_promotion_review(
     rejection_reason: str = "",
     entity_row: dict[str, str] | None = None,
     claim_row: dict[str, str] | None = None,
+    claim_rows: list[dict[str, str]] | None = None,
 ) -> None:
     entity_id = entity_row["entity_id"] if entity_row else ""
     asset_class = entity_row["primary_asset_class"] if entity_row else ""
@@ -889,7 +970,7 @@ def write_promotion_review(
             "proposed_entity_id": entity_id,
             "proposed_primary_asset_class": asset_class,
             "proposed_entity_row": json.dumps(entity_row or {}, sort_keys=True),
-            "proposed_claim_row": json.dumps(claim_row or {}, sort_keys=True),
+            "proposed_claim_row": json.dumps(claim_rows if claim_rows is not None else claim_row or {}, sort_keys=True),
             "source_url": source_url,
             "source_page_id": source_page_id,
             "source_snippet": source_snippet,
@@ -986,7 +1067,7 @@ def intake_promotion_agent(db_path: Path, limit: int, promote: bool) -> int:
                 continue
 
             page, checks, source_snippet, asset_class = accepted
-            entity_row, claim_row = build_promoted_rows(lead, page, source_snippet, asset_class, existing_ids)
+            entity_row, claim_rows = build_promoted_rows(lead, page, source_snippet, asset_class, existing_ids)
             write_promotion_review(
                 conn,
                 lead,
@@ -997,30 +1078,39 @@ def intake_promotion_agent(db_path: Path, limit: int, promote: bool) -> int:
                 source_snippet=source_snippet,
                 checks=checks,
                 entity_row=entity_row,
-                claim_row=claim_row,
+                claim_rows=claim_rows,
             )
             if not promote:
                 continue
 
             csv_entity_rows.append(entity_row)
-            csv_claim_rows.append(claim_row)
+            csv_claim_rows.extend(claim_rows)
             existing_ids.add(entity_row["entity_id"])
             ensure_source_registry_rows([lead["website"], *split_tags(lead["source_urls"]), page["source_url"]], lead["name"])
             sqlite_entity = dict(entity_row)
             sqlite_entity["fit_score"] = int(sqlite_entity["fit_score"])
             insert_dict(conn, "industry_entities", sqlite_entity)
-            sqlite_claim = dict(claim_row)
-            sqlite_claim["claim_confidence"] = default_claim_confidence(sqlite_claim["evidence_status"])
-            sqlite_claim["source_page_id"] = page["page_id"]
-            sqlite_claim["source_text_snippet"] = source_snippet
-            sqlite_claim["paper_ready"] = 0
-            insert_dict(conn, "entity_claims", sqlite_claim)
+            for claim_row in claim_rows:
+                sqlite_claim = dict(claim_row)
+                sqlite_claim["claim_confidence"] = default_claim_confidence(sqlite_claim["evidence_status"])
+                sqlite_claim["source_page_id"] = page["page_id"]
+                sqlite_claim["source_text_snippet"] = next(
+                    (
+                        claim["source_text_snippet"]
+                        for claim in checks.get("bucket_claims", [])
+                        if claim.get("claim_type") == claim_row["claim_type"]
+                        and claim.get("keyword", "").lower() in claim_row["claim"].lower()
+                    ),
+                    source_snippet,
+                )
+                sqlite_claim["paper_ready"] = 0
+                insert_dict(conn, "entity_claims", sqlite_claim)
             for source_row in read_csv_rows(evidence_path("source_registry.csv")):
                 insert_dict(conn, "source_registry", source_row)
             intake_updates[lead["lead_id"]] = {
                 "review_status": "promoted",
                 "evidence_status": "candidate_evidence",
-                "notes": f"{lead['notes']} Promoted as {asset_class} candidate from {page['source_url']}. Human review required before paper use.",
+                "notes": f"{lead['notes']} Promoted as {asset_class} candidate from {page['source_url']} with {len(claim_rows)} source-backed bucket claims. Human review required before paper use.",
             }
             promoted += 1
 

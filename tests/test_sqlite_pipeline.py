@@ -324,7 +324,7 @@ def test_hourly_loop_does_not_mark_paper_ready(tmp_path, monkeypatch):
     assert paper_ready == 0
 
 
-def test_promote_intake_creates_candidate_entity_and_claim(tmp_path, monkeypatch):
+def test_promote_intake_creates_candidate_entity_and_two_claims(tmp_path, monkeypatch):
     evidence_dir = copy_evidence(tmp_path, monkeypatch)
     db_path = tmp_path / "atlas.sqlite"
     import_csvs(db_path)
@@ -341,21 +341,60 @@ def test_promote_intake_creates_candidate_entity_and_claim(tmp_path, monkeypatch
     claim_rows = list(csv.DictReader((evidence_dir / "entity_claims.csv").open("r", encoding="utf-8", newline="")))
     intake_rows = list(csv.DictReader((evidence_dir / "entity_intake_queue.csv").open("r", encoding="utf-8", newline="")))
     promoted_entity = next(row for row in entity_rows if row["name"] == "Promotable SMV Fund")
-    promoted_claim = next(row for row in claim_rows if row["entity_name"] == "Promotable SMV Fund")
+    promoted_claims = [row for row in claim_rows if row["entity_name"] == "Promotable SMV Fund"]
     promoted_intake = next(row for row in intake_rows if row["name"] == "Promotable SMV Fund")
 
     assert promoted_entity["primary_asset_class"] == "SMV"
     assert promoted_entity["evidence_status"] == "candidate_evidence"
-    assert promoted_claim["evidence_status"] == "candidate_evidence"
+    assert len(promoted_claims) >= research_agents.PROMOTION_MIN_BUCKET_CLAIMS
+    assert all(row["evidence_status"] == "candidate_evidence" for row in promoted_claims)
     assert promoted_intake["review_status"] == "promoted"
 
     conn = sqlite3.connect(db_path)
     conn.row_factory = sqlite3.Row
-    assert conn.execute("SELECT COUNT(*) FROM entity_claims WHERE entity_name = 'Promotable SMV Fund' AND paper_ready = 0").fetchone()[0] == 1
+    assert conn.execute("SELECT COUNT(*) FROM entity_claims WHERE entity_name = 'Promotable SMV Fund' AND paper_ready = 0").fetchone()[0] >= research_agents.PROMOTION_MIN_BUCKET_CLAIMS
     review = conn.execute("SELECT * FROM intake_promotion_reviews WHERE name = 'Promotable SMV Fund'").fetchone()
     conn.close()
+    checks = json.loads(review["checks"])
+    proposed_claims = json.loads(review["proposed_claim_row"])
     assert review["status"] == "promoted"
+    assert checks["bucket_claim_count"] >= research_agents.PROMOTION_MIN_BUCKET_CLAIMS
+    assert len(proposed_claims) >= research_agents.PROMOTION_MIN_BUCKET_CLAIMS
     assert "capital efficient" in review["source_snippet"].lower()
+
+
+def test_promote_intake_requires_two_bucket_claims(tmp_path, monkeypatch):
+    evidence_dir = copy_evidence(tmp_path, monkeypatch)
+    db_path = tmp_path / "atlas.sqlite"
+    import_csvs(db_path)
+    add_intake_row(
+        evidence_dir,
+        lead_id="intake-thin-smv",
+        name="Thin SMV Capital",
+        website="https://thinsmv.example/",
+        source_urls="https://thinsmv.example/",
+    )
+    add_source_page(
+        db_path,
+        "https://thinsmv.example/",
+        "Thin SMV Capital is a capital provider for capital efficient companies.",
+    )
+
+    assert research_agents.promote_intake_agent(db_path, limit=10) == 0
+
+    intake_rows = list(csv.DictReader((evidence_dir / "entity_intake_queue.csv").open("r", encoding="utf-8", newline="")))
+    thin = next(row for row in intake_rows if row["lead_id"] == "intake-thin-smv")
+    assert thin["review_status"] == "needs_more_source"
+    assert all(row["name"] != "Thin SMV Capital" for row in csv.DictReader((evidence_dir / "industry_entities.csv").open("r", encoding="utf-8", newline="")))
+
+    conn = sqlite3.connect(db_path)
+    conn.row_factory = sqlite3.Row
+    review = conn.execute("SELECT * FROM intake_promotion_reviews WHERE lead_id = 'intake-thin-smv'").fetchone()
+    conn.close()
+    checks = json.loads(review["checks"])
+    assert review["status"] == "needs_more_source"
+    assert checks["bucket_claim_count"] == 1
+    assert "2 required" in review["rejection_reason"]
 
 
 def test_promote_intake_marks_duplicate_without_new_entity(tmp_path, monkeypatch):
@@ -465,6 +504,7 @@ def test_verify_intake_writes_review_without_promoting(tmp_path, monkeypatch):
     entity_rows = list(csv.DictReader((evidence_dir / "industry_entities.csv").open("r", encoding="utf-8", newline="")))
     assert all(row["name"] != "Promotable SMV Fund" for row in entity_rows)
     conn = sqlite3.connect(db_path)
-    status = conn.execute("SELECT status FROM intake_promotion_reviews WHERE name = 'Promotable SMV Fund'").fetchone()[0]
+    review = conn.execute("SELECT status, proposed_claim_row FROM intake_promotion_reviews WHERE name = 'Promotable SMV Fund'").fetchone()
     conn.close()
-    assert status == "ready_for_promotion"
+    assert review[0] == "ready_for_promotion"
+    assert len(json.loads(review[1])) >= research_agents.PROMOTION_MIN_BUCKET_CLAIMS
