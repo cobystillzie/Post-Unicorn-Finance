@@ -244,6 +244,8 @@ def test_shareable_atlas_separates_instruments_from_asset_sections(tmp_path):
     assert mapping_count == 73
     assert 'id="asset-instrument"' not in html
     assert "Instrument Providers And Financing Mechanisms" in html
+    assert "research_dossier.html" in html
+    assert "Research Dossier v0.1" in html
     assert all(row["primary_asset_class"] != "Instrument" for row in csv_rows)
 
 

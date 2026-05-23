@@ -38,10 +38,12 @@ jobs:
           test -f site/post_unicorn_industry_atlas_packet.html
           test -f site/post_unicorn_industry_atlas_entities_claims.csv
           test -f site/post_unicorn_industry_atlas_cover_note.md
+          test -f site/research_dossier.html
           test -f site/publish_status.json
           test -f site/publish_status.md
           test -f site/.nojekyll
           grep -q "post-unicorn-publish-id" site/index.html
+          grep -q "Post-Unicorn Finance Research Dossier" site/research_dossier.html
           python -m json.tool site/publish_status.json >/dev/null
 
       - name: Upload Pages artifact

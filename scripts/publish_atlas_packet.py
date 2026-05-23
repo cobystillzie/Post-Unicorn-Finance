@@ -31,6 +31,7 @@ from automation_safety import (
 )
 from atlas_sqlite import DEFAULT_DB
 from export_shareable_atlas import build_report
+from export_research_dossier import DEFAULT_DOSSIER, build_dossier_html
 
 
 DEFAULT_SITE_DIR = ROOT / "site"
@@ -40,6 +41,7 @@ REQUIRED_SITE_FILES = [
     "post_unicorn_industry_atlas_packet.html",
     "post_unicorn_industry_atlas_entities_claims.csv",
     "post_unicorn_industry_atlas_cover_note.md",
+    "research_dossier.html",
     "publish_status.json",
     "publish_status.md",
     ".nojekyll",
@@ -166,11 +168,13 @@ def generate_site(db_path: Path, site_dir: Path, publish_id: str, generated_at: 
     inject_publish_metadata(html_path, publish_id, generated_at)
     index_path = site_dir / "index.html"
     shutil.copyfile(html_path, index_path)
+    dossier_path = build_dossier_html(DEFAULT_DOSSIER, site_dir, db_path)
     (site_dir / ".nojekyll").write_text("", encoding="utf-8")
     return {
         "html_path": str(html_path),
         "csv_path": str(csv_path),
         "cover_note_path": str(cover_path),
+        "research_dossier_path": str(dossier_path),
         "index_path": str(index_path),
         "packet_sha256": file_sha256(index_path),
     }

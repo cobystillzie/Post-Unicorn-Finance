@@ -14,6 +14,7 @@ SCRIPTS = ROOT / "scripts"
 sys.path.insert(0, str(SCRIPTS))
 
 import export_shareable_atlas  # noqa: E402
+import export_research_dossier  # noqa: E402
 import publish_atlas_packet  # noqa: E402
 from atlas_sqlite import import_csvs  # noqa: E402
 from automation_safety import (  # noqa: E402
@@ -106,6 +107,7 @@ def test_packet_parity_validation_against_sqlite(tmp_path):
     html_path, csv_path, _cover = export_shareable_atlas.build_report(db_path, site)
     publish_atlas_packet.inject_publish_metadata(html_path, "atlas-test", "2026-05-23T00:00:00+00:00")
     shutil.copyfile(html_path, site / "index.html")
+    export_research_dossier.build_dossier_html(export_research_dossier.DEFAULT_DOSSIER, site, db_path)
     (site / ".nojekyll").write_text("", encoding="utf-8")
     publish_atlas_packet.write_publish_status(
         site,
@@ -128,6 +130,19 @@ def test_packet_parity_validation_against_sqlite(tmp_path):
     claim_count = conn.execute("SELECT COUNT(*) FROM entity_claims").fetchone()[0]
     conn.close()
     assert len(rows) == claim_count
+
+
+def test_research_dossier_exports_with_live_counts(tmp_path):
+    db_path = tmp_path / "atlas.sqlite"
+    import_csvs(db_path)
+
+    html_path = export_research_dossier.build_dossier_html(export_research_dossier.DEFAULT_DOSSIER, tmp_path / "site", db_path)
+    html = html_path.read_text(encoding="utf-8")
+
+    assert "Post-Unicorn Finance Research Dossier" in html
+    assert "Industry-establishment dossier" in html
+    assert "Industry Atlas" in html
+    assert "Paper-ready claims" in html
 
 
 def test_publish_returns_failure_before_generation_when_validation_fails(tmp_path, monkeypatch):

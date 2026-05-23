@@ -313,6 +313,20 @@ def render_html(
       text-decoration: none;
     }}
     .nav-pill strong {{ color: var(--accent); }}
+    .companion-links {{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }}
+    .companion-link {{
+      border: 1px solid var(--line);
+      background: var(--panel);
+      color: var(--ink);
+      padding: 8px 11px;
+      text-decoration: none;
+      font-size: 14px;
+    }}
     section {{ margin: 42px 0; }}
     h2 {{
       font-family: Georgia, "Times New Roman", serif;
@@ -439,6 +453,11 @@ def render_html(
       <h1>Post-Unicorn Finance Industry Atlas</h1>
       <p class="deck">A source-backed map of firms, funds, platforms, studios, acquirers, and capital providers operating outside or adjacent to classic unicorn venture capital, plus the financing mechanisms they use.</p>
       <div class="status-note"><strong>Evidence boundary:</strong> this packet is a working research export. Candidate evidence is useful for mapping and follow-up, but it is not paper-ready. Instruments are financing mechanisms, not entity asset classes.</div>
+      <div class="companion-links">
+        <a class="companion-link" href="research_dossier.html">Research Dossier v0.1</a>
+        <a class="companion-link" href="post_unicorn_industry_atlas_entities_claims.csv">Claims CSV</a>
+        <a class="companion-link" href="publish_status.json">Publish Status</a>
+      </div>
     </header>
 
     <section class="metrics" aria-label="Atlas metrics">
