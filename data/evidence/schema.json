@@ -1,0 +1,213 @@
+{
+  "common": {
+    "allowed_asset_classes": [
+      "UVC",
+      "SMV",
+      "Patient Capital",
+      "LMV",
+      "Sovereign Capital",
+      "Search/ETA",
+      "Camel Modifier",
+      "Portfolio Capital",
+      "Instrument",
+      "All",
+      "Unknown Candidate"
+    ],
+    "non_primary_entity_classes": [
+      "Instrument",
+      "All",
+      "Unknown Candidate"
+    ],
+    "allowed_evidence_statuses": [
+      "verified_fact",
+      "candidate_evidence",
+      "inference",
+      "user_thesis",
+      "needs_verification"
+    ],
+    "allowed_source_qualities": [
+      "primary",
+      "credible_press",
+      "research",
+      "database_seed",
+      "discourse",
+      "social",
+      "unknown"
+    ],
+    "allowed_source_tiers": [
+      "public_web",
+      "open_dataset",
+      "paid_optional"
+    ],
+    "allowed_active_statuses": [
+      "active",
+      "inactive",
+      "historical",
+      "unknown"
+    ]
+  },
+  "asset_classes": {
+    "required_columns": [
+      "asset_class",
+      "classification_status",
+      "definition",
+      "return_model",
+      "capital_source",
+      "risk_type",
+      "liquidity_path",
+      "company_stage",
+      "founder_profile",
+      "industry_standard_signals",
+      "notes"
+    ],
+    "allowed_classification_statuses": [
+      "asset_class",
+      "emerging_asset_class_candidate",
+      "asset_class_or_capital_strategy",
+      "source_of_capital_class",
+      "adjacent_asset_class",
+      "modifier",
+      "operating_model",
+      "instrument_family"
+    ]
+  },
+  "industry_entities": {
+    "required_columns": [
+      "entity_id",
+      "name",
+      "primary_asset_class",
+      "secondary_asset_classes",
+      "entity_type",
+      "website",
+      "active_status",
+      "source_tier",
+      "geography",
+      "sector_focus",
+      "capital_model",
+      "instrument_types",
+      "target_company_profile",
+      "non_unicorn_thesis",
+      "ecosystem_role",
+      "fit_score",
+      "evidence_status",
+      "last_verified_at",
+      "notes"
+    ]
+  },
+  "entity_claims": {
+    "required_columns": [
+      "claim_id",
+      "entity_id",
+      "entity_name",
+      "claim_type",
+      "claim",
+      "source_url",
+      "source_type",
+      "source_quality",
+      "source_tier",
+      "evidence_status",
+      "last_verified_at",
+      "notes"
+    ]
+  },
+  "instrument_provider_map": {
+    "required_columns": [
+      "instrument_id",
+      "instrument_name",
+      "provider_entity_id",
+      "provider_name",
+      "asset_class",
+      "description",
+      "source_url",
+      "evidence_status",
+      "notes"
+    ]
+  },
+  "scrape_targets": {
+    "required_columns": [
+      "lane",
+      "target_asset_class",
+      "source_family",
+      "query",
+      "seed_entities_or_sources",
+      "source_tier",
+      "priority",
+      "expected_fields",
+      "notes"
+    ],
+    "allowed_priorities": [
+      "high",
+      "medium",
+      "low"
+    ]
+  },
+  "entity_intake_queue": {
+    "required_columns": [
+      "lead_id",
+      "name",
+      "lead_type",
+      "website",
+      "source_urls",
+      "discovered_from",
+      "target_asset_class",
+      "target_entity_type",
+      "active_status",
+      "source_tier",
+      "priority",
+      "evidence_status",
+      "review_status",
+      "created_at",
+      "notes"
+    ],
+    "allowed_priorities": [
+      "high",
+      "medium",
+      "low"
+    ],
+    "allowed_review_statuses": [
+      "queued",
+      "researched",
+      "promoted",
+      "rejected",
+      "duplicate",
+      "needs_more_source"
+    ]
+  },
+  "company_events": {
+    "required_columns": [
+      "company_name",
+      "event_type",
+      "asset_bucket",
+      "pathway",
+      "claim",
+      "why_prioritized",
+      "source_url",
+      "source_type",
+      "source_quality",
+      "evidence_status",
+      "confidence_score",
+      "geography",
+      "sector",
+      "outcome_type",
+      "outcome_value",
+      "acquirer_or_investor",
+      "funding_path",
+      "founder_story_signal",
+      "notes",
+      "last_verified_at"
+    ],
+    "allowed_pathways": [
+      "bootstrapped",
+      "delayed_vc",
+      "strategic_acquisition",
+      "profitable_independent",
+      "revenue_financed",
+      "patient_capital",
+      "search_eta",
+      "lmv",
+      "sovereign_backed",
+      "portfolio_studio",
+      "unknown_candidate"
+    ]
+  }
+}

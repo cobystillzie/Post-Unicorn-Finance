@@ -1,0 +1,13 @@
+priority,workstream,task,definition_of_done,status
+1,SMV Evidence Engine,Expand Wingify-adjacent India SaaS exit search,"Add at least 20 India software company-event candidates with source URLs and evidence statuses.",pending
+1,SMV Evidence Engine,Expand bootstrapped SaaS acquisition search,"Add at least 30 global bootstrapped SaaS acquisition candidates and classify confidence.",pending
+1,SMV Evidence Engine,Find non-SaaS tech-enabled SMV cases,"Add at least 15 fintech, insurtech, data, commerce, developer-tool, and vertical software examples.",pending
+1,Outcome + Company Proof,Verify ProfitWell funding path,"Add a separate sourced row for whether ProfitWell was bootstrapped or otherwise capital-efficient.",pending
+1,Outcome + Company Proof,Verify SocialPilot transaction from primary/acquirer source,"Upgrade SocialPilot from candidate evidence if a primary source is found.",pending
+1,Outcome + Company Proof,Verify FusionCharts bootstrapping history,"Find primary or credible press source for funding path.",pending
+2,Funds + Instruments Map,Map acquisition-first venture funds,"Add 15 funds/studios explicitly using M&A, acquisition, profitable growth, or non-unicorn language.",pending
+2,Funds + Instruments Map,Map revenue-linked instruments,"Add source-backed descriptions for revenue share, royalty financing, capped returns, shared earnings, and milestone tranches.",pending
+2,Founder / Investor Discourse,Collect anti-power-law/default-VC discourse,"Add 25 founder/investor discourse sources with quotes or paraphrased claims.",pending
+2,Hugging Face Assets,Inspect Crunchbase mirror schema,"Record fields, row counts, and whether acquisition/funding columns can seed leads.",pending
+3,Paper Architecture,Draft SMV chapter v0.1,"Create a sourced narrative using the top 15 ranked SMV candidates.",pending
+3,Paper Architecture,Draft market map table,"Create a paper-ready table of funds, instruments, acquirers, and platforms.",pending

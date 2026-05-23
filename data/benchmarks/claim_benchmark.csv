@@ -1,0 +1,4 @@
+benchmark_id,target_type,target_id,claim_text,source_url,expected_label,notes
+claim-good-tinyseed,entity,TinySeed,TinySeed is relevant to bootstrapped B2B SaaS and revenue-linked startup capital.,https://tinyseed.com/,accepted,Positive benchmark for direct non-unicorn SaaS capital infrastructure.
+claim-bad-khazanah-smv,entity,Khazanah Nasional,Khazanah is an acquisition-first SMV fund.,https://www.khazanah.com.my/,wrong_bucket,Negative benchmark: broad sovereign allocator should not be forced into SMV without direct source evidence.
+claim-needs-source-vague,entity,Unknown Fund,This fund is post-unicorn capital.,,needs_more_source,Negative benchmark for unsourced broad category claims.

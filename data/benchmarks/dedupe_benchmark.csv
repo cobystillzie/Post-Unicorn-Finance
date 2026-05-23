@@ -1,0 +1,4 @@
+benchmark_id,left_name,left_website,right_name,right_website,expected_label,notes
+dedupe-saas-group,saas.group,https://saas.group/,SaaS Group,https://saas.group/,duplicate,Same domain and near-identical name.
+dedupe-acquire-marketplace,Acquire.com,https://acquire.com/,Acquire Marketplace,https://acquire.com/,duplicate,Same acquisition marketplace domain.
+dedupe-clearco-clearbank,Clearco,https://clear.co/,ClearBank,https://clear.bank/,not_duplicate,Similar names but different domains and businesses.

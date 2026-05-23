@@ -1,0 +1,5 @@
+benchmark_id,entity_name,primary_asset_class,expected_review_label,notes
+boundary-tinyseed,TinySeed,SMV,accepted,Strong SMV infrastructure candidate with instrument overlap.
+boundary-calm-fund,Calm Company Fund,Patient Capital,accepted,Patient capital / shared-earnings boundary case.
+boundary-khazanah,Khazanah Nasional,Sovereign Capital,needs_more_source,Broad sovereign allocator; needs direct innovation-capital source support before paper use.
+boundary-indie-vc,Indie.vc,Patient Capital,historical,Historical experiment, not active current infrastructure.
