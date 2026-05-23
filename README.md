@@ -53,6 +53,8 @@ python scripts/rank_candidates.py --limit 25
 
 The atlas export is written to `data/exports/ranked_industry_entities.csv`, with per-asset-class exports in `data/exports/asset_class_rankings/`. The default ranked export includes all entities sorted by review priority. Top-150 triage exports are also generated for focused review.
 
+The public atlas packet is published from `site/` through GitHub Pages. The local daily publisher regenerates `site/` from the live SQLite atlas, commits changes only when the packet changes, and pushes to `main` so GitHub Pages redeploys.
+
 The seed atlas is not a publication-ready claim set. It is a structured candidate base: every row must stay tied to a source URL, and source text should be reviewed before any claim enters the paper as verified fact.
 
 Queued intake leads become atlas rows only through the intake promotion path. Promotion requires fetched source text and creates `candidate_evidence` rows, never `paper_ready` rows.
