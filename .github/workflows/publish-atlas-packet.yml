@@ -6,7 +6,6 @@ on:
       - main
     paths:
       - site/**
-      - .github/workflows/publish-atlas-packet.yml
   workflow_dispatch:
 
 permissions:
