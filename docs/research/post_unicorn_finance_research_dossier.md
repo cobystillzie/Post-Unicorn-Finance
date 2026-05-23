@@ -24,9 +24,9 @@ That fragmentation is a business problem. Founders cannot easily compare capital
 
 The industry-establishment task is therefore not branding first. It is classification first. The name should earn legitimacy by organizing evidence that already exists.
 
-## Coby's Working Thesis
+### Core Market Problem
 
-**Working thesis:** VC is powerful but over-applied. The market needs a clearer category for companies and capital providers whose economics are built around fit, durability, control, cash flow, strategic acquisition, permanent ownership, or smaller but meaningful exits.
+VC is powerful but over-applied. The market needs a clearer category for companies and capital providers whose economics are built around fit, durability, control, cash flow, strategic acquisition, permanent ownership, or smaller but meaningful exits.
 
 The founder-side mismatch is practical. A founder may need capital, credibility, liquidity, or acquisition infrastructure without wanting a venture path that requires extreme growth, board pressure, repeated dilution, and a narrow exit window. Bootstrapping alone does not solve every problem. Bank debt often requires collateral or operating history. Private equity usually enters later and often changes control. Strategic buyers are hard to access. Revenue-based finance, patient capital, search/ETA, software acquirers, studios, and sovereign/strategic capital each solve pieces of the problem, but the market lacks one category that explains the whole system.
 
