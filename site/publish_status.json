@@ -1,9 +1,9 @@
 {
-  "claim_count": 258,
+  "claim_count": 262,
   "dry_run": false,
   "entity_count": 157,
   "error": "",
-  "generated_at": "2026-05-23T02:28:35-04:00",
+  "generated_at": "2026-05-23T02:59:49-04:00",
   "instrument_mapping_count": 73,
   "live_url": "https://cobystillzie.github.io/Post-Unicorn-Finance/",
   "live_visible": null,
@@ -12,13 +12,14 @@
     "csv_path": "C:\\Users\\cobys\\projects\\post-unicorn-finance\\site\\post_unicorn_industry_atlas_entities_claims.csv",
     "html_path": "C:\\Users\\cobys\\projects\\post-unicorn-finance\\site\\post_unicorn_industry_atlas_packet.html",
     "index_path": "C:\\Users\\cobys\\projects\\post-unicorn-finance\\site\\index.html",
-    "packet_sha256": "40eac338c618e121914b6759e77fd172d591c3b9a46ebdeba589a078acb65e93",
+    "packet_sha256": "c90ec1488dcc2734a0afa4f061fbb4cc7a118efb1a1a9ea1c61b58f28d25701a",
+    "pdf_path": "C:\\Users\\cobys\\projects\\post-unicorn-finance\\site\\post_unicorn_industry_atlas_packet.pdf",
     "research_dossier_path": "C:\\Users\\cobys\\projects\\post-unicorn-finance\\site\\research_dossier.html"
   },
   "paper_ready_count": 0,
-  "publish_id": "atlas-20260523T062835Z",
+  "publish_id": "atlas-20260523T065949Z",
   "site_commit_sha": "",
-  "source_head_sha": "394a39d3d88faf284b7b2cb23f7a3b64a9f98c46",
+  "source_head_sha": "bffab1a343d7b0a96a5e4c7c07764c5edd77373b",
   "status": "published",
   "validation_results": [
     {
@@ -31,7 +32,7 @@
       "command": "C:\\Users\\cobys\\AppData\\Local\\Programs\\Python\\Python313\\python.exe C:\\Users\\cobys\\projects\\post-unicorn-finance\\scripts\\atlas_sqlite.py validate --strict-verified-sources",
       "returncode": 0,
       "stderr_tail": "",
-      "stdout_tail": "SQLite validation passed\nSQLite atlas: C:\\Users\\cobys\\projects\\post-unicorn-finance\\data\\atlas.sqlite\n- asset_classes: 9\n- industry_entities: 157\n- entity_claims: 258\n- instrument_provider_map: 73\n- source_pages: 57\n- entity_intake_queue: 1\n- intake_promotion_reviews: 2\n- review_feedback: 0\n- claim_reviews: 0\n- query_performance: 13\n- evolution_proposals: 23\n- summary_hash: e995fe64913b\n"
+      "stdout_tail": "SQLite validation passed\nSQLite atlas: C:\\Users\\cobys\\projects\\post-unicorn-finance\\data\\atlas.sqlite\n- asset_classes: 9\n- industry_entities: 157\n- entity_claims: 262\n- instrument_provider_map: 73\n- source_pages: 60\n- entity_intake_queue: 1\n- intake_promotion_reviews: 2\n- review_feedback: 0\n- claim_reviews: 0\n- query_performance: 13\n- evolution_proposals: 24\n- summary_hash: 5330c4fe2179\n"
     }
   ],
   "warnings": []
