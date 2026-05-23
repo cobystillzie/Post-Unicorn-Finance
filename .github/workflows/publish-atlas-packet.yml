@@ -7,8 +7,6 @@ on:
     paths:
       - site/**
       - .github/workflows/publish-atlas-packet.yml
-  schedule:
-    - cron: "23 11 * * *"
   workflow_dispatch:
 
 permissions:
@@ -41,6 +39,11 @@ jobs:
           test -f site/post_unicorn_industry_atlas_packet.html
           test -f site/post_unicorn_industry_atlas_entities_claims.csv
           test -f site/post_unicorn_industry_atlas_cover_note.md
+          test -f site/publish_status.json
+          test -f site/publish_status.md
+          test -f site/.nojekyll
+          grep -q "post-unicorn-publish-id" site/index.html
+          python -m json.tool site/publish_status.json >/dev/null
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

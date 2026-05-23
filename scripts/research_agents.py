@@ -17,6 +17,7 @@ from urllib.error import HTTPError, URLError
 from urllib.parse import urlparse
 from urllib.request import Request, urlopen
 
+from automation_safety import AutomationLock
 from atlas_sqlite import DEFAULT_DB, exec_script, export_rankings, import_csvs, insert_dict, now_iso, open_db, slug, validate_database
 from atlas_scoring import default_claim_confidence
 
@@ -1329,7 +1330,8 @@ def main() -> int:
     if args.command == "promote-intake":
         return promote_intake_agent(db_path, limit=args.limit)
     if args.command == "promotion-loop":
-        return promotion_loop(db_path, limit=args.limit)
+        with AutomationLock("intake-promotion-loop"):
+            return promotion_loop(db_path, limit=args.limit)
     if args.command == "feedback":
         return add_feedback(db_path, args.target_type, args.target_id, args.label, args.rationale, args.reviewer, args.direct_evidence)
     if args.command == "validate":
@@ -1337,7 +1339,8 @@ def main() -> int:
     if args.command == "run-loop":
         return run_loop(db_path, fetch_limit=args.fetch_limit, verified_only=args.verified_only, reset_from_csv=args.reset_from_csv)
     if args.command == "hourly-loop":
-        return run_loop(db_path, fetch_limit=args.fetch_limit, verified_only=args.verified_only, reset_from_csv=False, mode="hourly-loop")
+        with AutomationLock("hourly-research-loop"):
+            return run_loop(db_path, fetch_limit=args.fetch_limit, verified_only=args.verified_only, reset_from_csv=False, mode="hourly-loop")
     return 1
 
 
