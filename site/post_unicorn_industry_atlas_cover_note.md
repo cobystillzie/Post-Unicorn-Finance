@@ -32,7 +32,7 @@ Important evidence boundary: this is a working research atlas, not a final paper
 
 The main thing this demonstrates is that the project now has a durable structure for establishing the industry: a taxonomy, a source-backed entity atlas, claims tied to URLs, instrument mappings, intake and promotion logic for new leads, and validation tests to keep the data from drifting.
 
-Generated: 2026-05-23T02:12:25-04:00
+Generated: 2026-05-23T02:28:36-04:00
 
 Best,
 Coby

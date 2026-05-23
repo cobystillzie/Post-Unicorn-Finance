@@ -3,7 +3,7 @@
   "dry_run": false,
   "entity_count": 157,
   "error": "",
-  "generated_at": "2026-05-23T02:12:24-04:00",
+  "generated_at": "2026-05-23T02:28:35-04:00",
   "instrument_mapping_count": 73,
   "live_url": "https://cobystillzie.github.io/Post-Unicorn-Finance/",
   "live_visible": null,
@@ -12,13 +12,13 @@
     "csv_path": "C:\\Users\\cobys\\projects\\post-unicorn-finance\\site\\post_unicorn_industry_atlas_entities_claims.csv",
     "html_path": "C:\\Users\\cobys\\projects\\post-unicorn-finance\\site\\post_unicorn_industry_atlas_packet.html",
     "index_path": "C:\\Users\\cobys\\projects\\post-unicorn-finance\\site\\index.html",
-    "packet_sha256": "97f2557cac793cbc919b96ad930a23d89849865ebe2c1026cd7d845141d45b12",
+    "packet_sha256": "40eac338c618e121914b6759e77fd172d591c3b9a46ebdeba589a078acb65e93",
     "research_dossier_path": "C:\\Users\\cobys\\projects\\post-unicorn-finance\\site\\research_dossier.html"
   },
   "paper_ready_count": 0,
-  "publish_id": "atlas-20260523T061224Z",
+  "publish_id": "atlas-20260523T062835Z",
   "site_commit_sha": "",
-  "source_head_sha": "3c887e535faf4a8f26689c9e443d1783fdc83c02",
+  "source_head_sha": "394a39d3d88faf284b7b2cb23f7a3b64a9f98c46",
   "status": "published",
   "validation_results": [
     {
