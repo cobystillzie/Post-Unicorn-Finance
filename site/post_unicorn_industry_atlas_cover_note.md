@@ -9,7 +9,7 @@ The attached HTML packet is designed as an accessible review artifact rather tha
 Current validated atlas snapshot:
 
 - Industry entities: 157
-- Claim rows: 252
+- Claim rows: 258
 - Registered source URLs: 186
 - Instrument-provider mappings: 73
 - Paper-ready claims: 0
@@ -26,13 +26,13 @@ Entity coverage by current primary asset class:
 Claim evidence mix:
 
 - candidate_evidence: 156
-- verified_fact: 96
+- verified_fact: 102
 
 Important evidence boundary: this is a working research atlas, not a final paper-ready proof set. Candidate evidence is useful for mapping the industry and deciding where to research next. Paper-ready status remains gated by human review. Instruments are now presented as financing mechanisms used by entities, not as a primary asset class.
 
 The main thing this demonstrates is that the project now has a durable structure for establishing the industry: a taxonomy, a source-backed entity atlas, claims tied to URLs, instrument mappings, intake and promotion logic for new leads, and validation tests to keep the data from drifting.
 
-Generated: 2026-05-23T00:59:48-04:00
+Generated: 2026-05-23T02:12:25-04:00
 
 Best,
 Coby
