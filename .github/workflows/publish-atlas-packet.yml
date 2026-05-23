@@ -36,6 +36,7 @@ jobs:
         run: |
           test -f site/index.html
           test -f site/post_unicorn_industry_atlas_packet.html
+          test -f site/post_unicorn_industry_atlas_packet.pdf
           test -f site/post_unicorn_industry_atlas_entities_claims.csv
           test -f site/post_unicorn_industry_atlas_cover_note.md
           test -f site/research_dossier.html
@@ -44,6 +45,12 @@ jobs:
           test -f site/.nojekyll
           grep -q "post-unicorn-publish-id" site/index.html
           grep -q "Post-Unicorn Finance Research Dossier" site/research_dossier.html
+          python - <<'PY'
+          from pathlib import Path
+          pdf = Path("site/post_unicorn_industry_atlas_packet.pdf")
+          assert pdf.read_bytes().startswith(b"%PDF-")
+          assert pdf.stat().st_size > 10_000
+          PY
           python -m json.tool site/publish_status.json >/dev/null
 
       - name: Upload Pages artifact

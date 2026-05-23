@@ -439,9 +439,18 @@ def render_html(
       .score {{ display: block; margin-top: 8px; }}
     }}
     @media print {{
+      @page {{ size: letter; margin: .45in; }}
+      * {{ -webkit-print-color-adjust: exact; print-color-adjust: exact; }}
       body {{ background: white; }}
       .page {{ max-width: none; padding: 24px; }}
-      .entity-card {{ break-inside: avoid; }}
+      .nav, .companion-links {{ display: none; }}
+      .metrics {{ grid-template-columns: repeat(5, 1fr); gap: 8px; }}
+      .metric {{ min-height: 72px; padding: 10px; }}
+      .metric strong {{ font-size: 22px; }}
+      .entity-card, .instrument-card, .definitions tr {{ break-inside: avoid; page-break-inside: avoid; }}
+      .claim {{ break-inside: avoid; page-break-inside: avoid; }}
+      h1 {{ font-size: 42px; }}
+      h2 {{ break-after: avoid; page-break-after: avoid; }}
       a {{ color: black; text-decoration: none; }}
     }}
   </style>
@@ -455,6 +464,7 @@ def render_html(
       <div class="status-note"><strong>Evidence boundary:</strong> this packet is a working research export. Candidate evidence is useful for mapping and follow-up, but it is not paper-ready. Instruments are financing mechanisms, not entity asset classes.</div>
       <div class="companion-links">
         <a class="companion-link" href="research_dossier.html">Research Dossier v0.1</a>
+        <a class="companion-link" href="post_unicorn_industry_atlas_packet.pdf">PDF Packet</a>
         <a class="companion-link" href="post_unicorn_industry_atlas_entities_claims.csv">Claims CSV</a>
         <a class="companion-link" href="publish_status.json">Publish Status</a>
       </div>
@@ -525,7 +535,7 @@ Hi [Name],
 
 I wanted to share the current working export from the Post-Unicorn Finance research atlas.
 
-The attached HTML packet is designed as an accessible review artifact rather than just a raw data dump. It includes every current atlas entity, grouped by asset class, with the attached source-backed claims, source URLs, evidence status, fit score, entity type, website, and thesis notes. I also included a companion CSV for filtering or deeper review.
+The attached PDF packet is designed as an accessible review artifact rather than raw HTML code or a data dump. It includes every current atlas entity, grouped by asset class, with the attached source-backed claims, source URLs, evidence status, fit score, entity type, website, and thesis notes. I also included a companion CSV for filtering or deeper review, and the HTML version remains available through the live GitHub Pages site.
 
 Current validated atlas snapshot:
 

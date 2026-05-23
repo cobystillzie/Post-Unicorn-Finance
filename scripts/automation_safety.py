@@ -259,20 +259,30 @@ def check_packet_sizes(
     warn_html_bytes: int = 2_000_000,
     max_html_bytes: int = 5_000_000,
     max_csv_bytes: int = 20_000_000,
+    warn_pdf_bytes: int = 15_000_000,
+    max_pdf_bytes: int = 50_000_000,
 ) -> list[str]:
     warnings: list[str] = []
     html_path = site_dir / "index.html"
     csv_path = site_dir / "post_unicorn_industry_atlas_entities_claims.csv"
+    pdf_path = site_dir / "post_unicorn_industry_atlas_packet.pdf"
     if not html_path.exists():
         raise PacketValidationError(f"missing packet HTML: {html_path}")
     if not csv_path.exists():
         raise PacketValidationError(f"missing packet CSV: {csv_path}")
+    if not pdf_path.exists():
+        raise PacketValidationError(f"missing packet PDF: {pdf_path}")
     html_size = html_path.stat().st_size
     csv_size = csv_path.stat().st_size
+    pdf_size = pdf_path.stat().st_size
     if html_size > max_html_bytes:
         raise PacketValidationError(f"packet HTML too large: {html_size} bytes > {max_html_bytes}")
     if csv_size > max_csv_bytes:
         raise PacketValidationError(f"packet CSV too large: {csv_size} bytes > {max_csv_bytes}")
+    if pdf_size > max_pdf_bytes:
+        raise PacketValidationError(f"packet PDF too large: {pdf_size} bytes > {max_pdf_bytes}")
     if html_size > warn_html_bytes:
         warnings.append(f"packet HTML is large: {html_size} bytes > warning threshold {warn_html_bytes}")
+    if pdf_size > warn_pdf_bytes:
+        warnings.append(f"packet PDF is large: {pdf_size} bytes > warning threshold {warn_pdf_bytes}")
     return warnings

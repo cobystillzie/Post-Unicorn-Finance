@@ -30,6 +30,7 @@ from automation_safety import (
     write_json_and_markdown_status,
 )
 from atlas_sqlite import DEFAULT_DB
+from export_atlas_pdf import render_pdf, validate_pdf
 from export_shareable_atlas import build_report
 from export_research_dossier import DEFAULT_DOSSIER, build_dossier_html
 
@@ -39,6 +40,7 @@ DEFAULT_PAGES_URL = "https://cobystillzie.github.io/Post-Unicorn-Finance/"
 REQUIRED_SITE_FILES = [
     "index.html",
     "post_unicorn_industry_atlas_packet.html",
+    "post_unicorn_industry_atlas_packet.pdf",
     "post_unicorn_industry_atlas_entities_claims.csv",
     "post_unicorn_industry_atlas_cover_note.md",
     "research_dossier.html",
@@ -166,12 +168,14 @@ def inject_publish_metadata(html_path: Path, publish_id: str, generated_at: str)
 def generate_site(db_path: Path, site_dir: Path, publish_id: str, generated_at: str) -> dict[str, str]:
     html_path, csv_path, cover_path = build_report(db_path, site_dir)
     inject_publish_metadata(html_path, publish_id, generated_at)
+    pdf_path = render_pdf(html_path, site_dir / "post_unicorn_industry_atlas_packet.pdf")
     index_path = site_dir / "index.html"
     shutil.copyfile(html_path, index_path)
     dossier_path = build_dossier_html(DEFAULT_DOSSIER, site_dir, db_path)
     (site_dir / ".nojekyll").write_text("", encoding="utf-8")
     return {
         "html_path": str(html_path),
+        "pdf_path": str(pdf_path),
         "csv_path": str(csv_path),
         "cover_note_path": str(cover_path),
         "research_dossier_path": str(dossier_path),
@@ -191,6 +195,12 @@ def validate_packet_contents(site_dir: Path, db_path: Path, *, require_status: b
     csv_path = site_dir / "post_unicorn_industry_atlas_entities_claims.csv"
     if not index_path.exists() or not csv_path.exists():
         return errors
+    pdf_path = site_dir / "post_unicorn_industry_atlas_packet.pdf"
+    if pdf_path.exists():
+        try:
+            validate_pdf(pdf_path)
+        except Exception as exc:
+            errors.append(str(exc))
 
     counts = sqlite_counts(db_path)
     html = index_path.read_text(encoding="utf-8")
