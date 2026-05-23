@@ -1,0 +1,37 @@
+{
+  "claim_count": 252,
+  "dry_run": false,
+  "entity_count": 157,
+  "error": "",
+  "generated_at": "2026-05-23T00:56:10-04:00",
+  "instrument_mapping_count": 73,
+  "live_url": "https://cobystillzie.github.io/Post-Unicorn-Finance/",
+  "live_visible": null,
+  "packet": {
+    "cover_note_path": "C:\\Users\\cobys\\projects\\post-unicorn-finance\\site\\post_unicorn_industry_atlas_cover_note.md",
+    "csv_path": "C:\\Users\\cobys\\projects\\post-unicorn-finance\\site\\post_unicorn_industry_atlas_entities_claims.csv",
+    "html_path": "C:\\Users\\cobys\\projects\\post-unicorn-finance\\site\\post_unicorn_industry_atlas_packet.html",
+    "index_path": "C:\\Users\\cobys\\projects\\post-unicorn-finance\\site\\index.html",
+    "packet_sha256": "87ff1c56cb9fa51af71c70b2886d008558cebdc413bfff4127b85242cf7073af"
+  },
+  "paper_ready_count": 0,
+  "publish_id": "atlas-20260523T045610Z",
+  "site_commit_sha": "",
+  "source_head_sha": "4d8418d9c24d056881c8dc768b9b882a630e93ae",
+  "status": "prepared_for_publish",
+  "validation_results": [
+    {
+      "command": "C:\\Users\\cobys\\AppData\\Local\\Programs\\Python\\Python313\\python.exe C:\\Users\\cobys\\projects\\post-unicorn-finance\\scripts\\validate_evidence.py",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "Validation passed\n- asset_classes: 9\n- industry_entities: 157\n- entity_claims: 157\n- instrument_provider_map: 73\n- scrape_targets: 13\n- entity_intake_queue: 1\n- company_events_supporting: 19\n- source_registry: 186\n"
+    },
+    {
+      "command": "C:\\Users\\cobys\\AppData\\Local\\Programs\\Python\\Python313\\python.exe C:\\Users\\cobys\\projects\\post-unicorn-finance\\scripts\\atlas_sqlite.py validate --strict-verified-sources",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "SQLite validation passed\nSQLite atlas: C:\\Users\\cobys\\projects\\post-unicorn-finance\\data\\atlas.sqlite\n- asset_classes: 9\n- industry_entities: 157\n- entity_claims: 252\n- instrument_provider_map: 73\n- source_pages: 54\n- entity_intake_queue: 1\n- intake_promotion_reviews: 2\n- review_feedback: 0\n- claim_reviews: 0\n- query_performance: 13\n- evolution_proposals: 22\n- summary_hash: 33cadbbd2160\n"
+    }
+  ],
+  "warnings": []
+}
