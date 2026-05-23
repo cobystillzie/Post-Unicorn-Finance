@@ -298,7 +298,39 @@ def test_search_queue_uses_scrape_targets():
     assert queue_rows[0]["intake_table"] == "industry_entities.csv + entity_claims.csv"
     assert queue_rows[-1]["queue_id"].startswith("entity-intake-")
     assert queue_rows[-1]["intake_table"] == "entity_intake_queue.csv"
-    assert queue_rows[-1]["query"].startswith("OneSixOne Ventures")
+    assert any(row["query"].startswith("OneSixOne Ventures") for row in queue_rows)
+
+
+def test_web_discovery_adds_intake_leads_without_promoting(tmp_path, monkeypatch):
+    evidence_dir = copy_evidence(tmp_path, monkeypatch)
+    db_path = tmp_path / "atlas.sqlite"
+    import_csvs(db_path)
+
+    def fake_web_search_results(_query: str, _limit: int) -> list[dict[str, str]]:
+        return [
+            {
+                "name": "Discovery SMV Capital",
+                "url": "https://discoverysmv.example/",
+                "title": "Discovery SMV Capital",
+            }
+        ]
+
+    monkeypatch.setattr(research_agents, "web_search_results", fake_web_search_results)
+
+    assert research_agents.discovery_agent(db_path, web_discovery=True, web_results_per_target=1, web_max_new_leads=5) == 0
+
+    intake_rows = list(csv.DictReader((evidence_dir / "entity_intake_queue.csv").open("r", encoding="utf-8", newline="")))
+    source_rows = list(csv.DictReader((evidence_dir / "source_registry.csv").open("r", encoding="utf-8", newline="")))
+    entity_rows = list(csv.DictReader((evidence_dir / "industry_entities.csv").open("r", encoding="utf-8", newline="")))
+    claim_rows = list(csv.DictReader((evidence_dir / "entity_claims.csv").open("r", encoding="utf-8", newline="")))
+    discovery = next(row for row in intake_rows if row["name"] == "Discovery SMV Capital")
+
+    assert discovery["lead_type"] == "web_search_result"
+    assert discovery["target_asset_class"] == "SMV"
+    assert discovery["review_status"] == "queued"
+    assert any(row["source_url"] == "https://discoverysmv.example/" for row in source_rows)
+    assert all(row["name"] != "Discovery SMV Capital" for row in entity_rows)
+    assert all(row["entity_name"] != "Discovery SMV Capital" for row in claim_rows)
 
 
 def test_hourly_loop_does_not_mark_paper_ready(tmp_path, monkeypatch):

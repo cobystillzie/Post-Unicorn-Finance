@@ -14,7 +14,7 @@ from datetime import datetime, timezone
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.error import HTTPError, URLError
-from urllib.parse import urlparse
+from urllib.parse import parse_qs, quote_plus, unquote, urlparse
 from urllib.request import Request, urlopen
 
 from automation_safety import AutomationLock
@@ -104,6 +104,12 @@ CLASS_KEYWORDS = {
         "revenue-based",
         "non-dilutive",
         "growth debt",
+        "growth equity",
+        "venture growth",
+        "micro private equity",
+        "saas acquisition",
+        "software acquisitions",
+        "acquiring",
     ],
     "Patient Capital": ["patient capital", "permanent capital", "long-term", "no forced exit"],
     "Search/ETA": ["search fund", "entrepreneurship through acquisition", "business acquisition"],
@@ -121,6 +127,49 @@ AUTO_PROMOTION_ASSET_CLASSES = {
     "Portfolio Capital",
 }
 PROMOTION_MIN_BUCKET_CLAIMS = 2
+WEB_DISCOVERY_RESULTS_PER_TARGET = 3
+WEB_DISCOVERY_MAX_NEW_LEADS = 15
+
+SEARCH_EXCLUDED_DOMAINS = {
+    "bing.com",
+    "duckduckgo.com",
+    "google.com",
+    "linkedin.com",
+    "crunchbase.com",
+    "pitchbook.com",
+    "cbinsights.com",
+    "dealroom.co",
+    "tracxn.com",
+    "facebook.com",
+    "instagram.com",
+    "x.com",
+    "twitter.com",
+    "youtube.com",
+    "medium.com",
+    "substack.com",
+    "eventbrite.com",
+    "sciencedirect.com",
+    "springer.com",
+    "ssrn.com",
+    "wikipedia.org",
+    "businesswire.com",
+    "prnewswire.com",
+    "globenewswire.com",
+    "prweb.com",
+    "newswire.com",
+    "einnews.com",
+    "apnews.com",
+    "reuters.com",
+    "bloomberg.com",
+    "forbes.com",
+    "techcrunch.com",
+    "fortune.com",
+    "inc.com",
+    "refreshmiami.com",
+    "vcwire.tech",
+    "pehub.com",
+    "techfundingnews.com",
+}
 
 COMMON_NAME_TOKENS = {
     "capital",
@@ -174,6 +223,38 @@ class TextExtractor(HTMLParser):
         return re.sub(r"\s+", " ", " ".join(self.title_parts)).strip()
 
 
+class SearchResultParser(HTMLParser):
+    def __init__(self) -> None:
+        super().__init__()
+        self.results: list[dict[str, str]] = []
+        self._href = ""
+        self._text_parts: list[str] = []
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if tag != "a":
+            return
+        attr_map = {name: value or "" for name, value in attrs}
+        href = attr_map.get("href", "").strip()
+        if href:
+            self._href = href
+            self._text_parts = []
+
+    def handle_data(self, data: str) -> None:
+        if self._href:
+            text = html.unescape(data).strip()
+            if text:
+                self._text_parts.append(text)
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag != "a" or not self._href:
+            return
+        title = re.sub(r"\s+", " ", " ".join(self._text_parts)).strip()
+        if title:
+            self.results.append({"url": self._href, "title": title})
+        self._href = ""
+        self._text_parts = []
+
+
 def make_id(prefix: str, *parts: str) -> str:
     digest = hashlib.sha256("||".join(parts).encode("utf-8")).hexdigest()[:12]
     return f"{prefix}-{digest}"
@@ -186,6 +267,113 @@ def split_tags(value: str) -> list[str]:
 def is_url(value: str) -> bool:
     parsed = urlparse(value)
     return parsed.scheme in {"http", "https"} and bool(parsed.netloc)
+
+
+def root_domain(value: str) -> str:
+    host = domain(value)
+    parts = host.split(".")
+    if len(parts) >= 2:
+        return ".".join(parts[-2:])
+    return host
+
+
+def excluded_search_domain(value: str) -> bool:
+    host = domain(value)
+    root = root_domain(value)
+    if host.endswith(".edu"):
+        return True
+    return any(host == blocked or host.endswith(f".{blocked}") or root == blocked for blocked in SEARCH_EXCLUDED_DOMAINS)
+
+
+def normalize_search_result_url(href: str) -> str:
+    href = html.unescape(href).strip()
+    parsed = urlparse(href)
+    if parsed.netloc.endswith("duckduckgo.com") and parsed.path.startswith("/l/"):
+        target = parse_qs(parsed.query).get("uddg", [""])[0]
+        href = unquote(target)
+    parsed = urlparse(href)
+    if parsed.scheme not in {"http", "https"} or not parsed.netloc:
+        return ""
+    clean = parsed._replace(fragment="", query="").geturl()
+    if excluded_search_domain(clean):
+        return ""
+    if re.search(r"\.(pdf|jpg|jpeg|png|gif|webp|zip)$", parsed.path, re.IGNORECASE):
+        return ""
+    return clean.rstrip("/")
+
+
+def search_result_looks_like_article(url: str, title: str) -> bool:
+    path = urlparse(url).path.lower()
+    path_segments = [part for part in path.strip("/").split("/") if part]
+    if len(path_segments) >= 2:
+        return True
+    if len(path_segments) == 1 and len(path_segments[0]) > 35:
+        return True
+    if "/" in title and "." in title:
+        return True
+    if re.search(r"\b(the role of|study|journal|working paper|paper|examples?|top \d+|best|landscape|to watch|list)\b", title, re.IGNORECASE):
+        return True
+    if re.search(r"/(news|article|articles|press|releases?|blog|blogs|insights?|post|posts)/", path):
+        return True
+    if len(path) > 10 and re.search(r"(announces|named|raises|closes|funding|fund-|fund_|list)", path):
+        return True
+    if path not in {"", "/"} and re.search(r"\b(announces|named to|raises|closes|reported|meet the|how )\b", title, re.IGNORECASE):
+        return True
+    return False
+
+
+def clean_search_result_name(title: str, url: str) -> str:
+    title = html.unescape(title)
+    title = re.sub(r"\s+", " ", title).strip()
+    raw_title = title
+    for separator in [" | ", " - ", " – ", " — ", ":", " / "]:
+        if separator in title:
+            title = title.split(separator, 1)[0].strip()
+    parts = [part.strip() for part in re.split(r"\s+(?:\||-|:|/)\s+", raw_title) if part.strip()]
+    if parts:
+        generic_first = re.search(
+            r"\b(growth equity|venture capital|private equity|funding|companies|announces|named to|list|article|report|study)\b",
+            parts[0],
+            re.IGNORECASE,
+        )
+        title = parts[-1] if len(parts) > 1 and generic_first else title
+    action_match = re.match(r"^(.{2,70}?)\s+(announces|named|raises|closes|launches|secures)\b", raw_title, re.IGNORECASE)
+    if action_match:
+        title = action_match.group(1).strip()
+    title = re.sub(r"\b(home|about|official site|homepage)\b", "", title, flags=re.IGNORECASE).strip(" -|")
+    if not title or len(title) < 2 or len(title) > 90:
+        host = domain(url).split(".")[0]
+        title = host.replace("-", " ").title()
+    return title
+
+
+def target_entity_type_for_asset_class(asset_class: str) -> str:
+    mapping = {
+        "SMV": "capital provider / fund / acquirer / platform",
+        "Patient Capital": "patient capital provider / evergreen fund / holding company",
+        "LMV": "LMV capital provider / indie fund / AI-native micro venture platform",
+        "Sovereign Capital": "sovereign or public strategic capital provider",
+        "Search/ETA": "search fund investor / ETA platform / acquisition community",
+        "Portfolio Capital": "venture studio / startup studio / software holding company",
+    }
+    return mapping.get(asset_class, "industry entity candidate")
+
+
+def target_entity_type_for_search_result(asset_class: str, title: str) -> str:
+    lower = title.lower()
+    if "micro private equity" in lower:
+        return "micro private equity firm"
+    if "growth equity" in lower:
+        return "growth equity firm"
+    if "venture growth" in lower:
+        return "venture growth firm"
+    if "holding company" in lower or "holdings" in lower:
+        return "holding company"
+    if "acquisition" in lower or "acquiring" in lower:
+        return "software acquisition firm"
+    if "venture studio" in lower or "startup studio" in lower:
+        return "venture studio"
+    return target_entity_type_for_asset_class(asset_class)
 
 
 def read_csv_rows(path: Path) -> list[dict[str, str]]:
@@ -213,6 +401,14 @@ def write_csv_rows(path: Path, rows: list[dict[str, str]], fieldnames: list[str]
         writer = csv.DictWriter(handle, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(rows)
+
+
+def append_note_once(existing: str, addition: str) -> str:
+    existing = (existing or "").strip()
+    addition = re.sub(r"\s+", " ", (addition or "").strip())
+    if not addition or addition in existing:
+        return existing
+    return f"{existing} {addition}".strip()
 
 
 def evidence_path(name: str) -> Path:
@@ -274,7 +470,131 @@ def ensure_db(db_path: Path) -> None:
         conn.commit()
 
 
-def discovery_agent(db_path: Path) -> int:
+def web_search_results(query: str, limit: int) -> list[dict[str, str]]:
+    if limit <= 0:
+        return []
+    request = Request(
+        f"https://duckduckgo.com/html/?q={quote_plus(query)}",
+        headers={
+            "User-Agent": "Mozilla/5.0 (compatible; post-unicorn-finance-research/1.0)",
+            "Accept": "text/html,application/xhtml+xml",
+        },
+    )
+    try:
+        with urlopen(request, timeout=15) as response:
+            body = response.read(1_000_000).decode("utf-8", errors="replace")
+    except (HTTPError, URLError, TimeoutError, OSError):
+        return []
+    parser = SearchResultParser()
+    parser.feed(body)
+    results: list[dict[str, str]] = []
+    seen_urls: set[str] = set()
+    for result in parser.results:
+        result_url = normalize_search_result_url(result["url"])
+        if not result_url or result_url in seen_urls:
+            continue
+        if search_result_looks_like_article(result_url, result["title"]):
+            continue
+        name = clean_search_result_name(result["title"], result_url)
+        if not name or normalize_name(name) in {"login", "sign", "search"}:
+            continue
+        results.append({"name": name, "url": result_url, "title": result["title"]})
+        seen_urls.add(result_url)
+        if len(results) >= limit:
+            break
+    return results
+
+
+def intake_duplicate_key(row: dict[str, str]) -> tuple[str, str]:
+    return normalize_name(row.get("name", "")), domain(row.get("website", ""))
+
+
+def append_web_discovery_intake(
+    targets: list[sqlite3.Row],
+    run_id: str,
+    per_target_limit: int,
+    max_new_leads: int,
+) -> tuple[int, dict[str, tuple[int, int]]]:
+    intake_path = evidence_path("entity_intake_queue.csv")
+    source_path = evidence_path("source_registry.csv")
+    entity_rows = read_csv_rows(evidence_path("industry_entities.csv"))
+    intake_rows = read_csv_rows(intake_path)
+    source_rows = read_csv_rows(source_path)
+    intake_fieldnames = csv_fieldnames(intake_path, intake_rows)
+    source_fieldnames = csv_fieldnames(source_path, source_rows)
+    existing_lead_ids = {row.get("lead_id", "") for row in intake_rows}
+    existing_names = {normalize_name(row.get("name", "")) for row in intake_rows}
+    existing_names.update(normalize_name(row.get("name", "")) for row in entity_rows)
+    existing_keys = {intake_duplicate_key(row) for row in intake_rows}
+    existing_keys.update((normalize_name(row.get("name", "")), domain(row.get("website", ""))) for row in entity_rows)
+    existing_source_urls = {row["source_url"] for row in source_rows}
+    new_count = 0
+    performance: dict[str, tuple[int, int]] = {}
+
+    for target in targets:
+        if new_count >= max_new_leads:
+            break
+        if target["source_family"] != "public_web" or target["target_asset_class"] not in AUTO_PROMOTION_ASSET_CLASSES:
+            continue
+        results = web_search_results(target["query"], per_target_limit)
+        added_for_target = 0
+        for result in results:
+            if new_count >= max_new_leads:
+                break
+            row = {
+                "lead_id": make_id("intake-web", target["target_id"], result["url"]),
+                "name": result["name"],
+                "lead_type": "web_search_result",
+                "website": result["url"],
+                "source_urls": result["url"],
+                "discovered_from": f"duckduckgo:{target['target_id']}",
+                "target_asset_class": target["target_asset_class"],
+                "target_entity_type": target_entity_type_for_search_result(target["target_asset_class"], result["title"]),
+                "active_status": "unknown",
+                "source_tier": target["source_tier"],
+                "priority": target["priority"],
+                "evidence_status": "needs_verification",
+                "review_status": "queued",
+                "created_at": now_iso()[:10],
+                "notes": f"Public-web discovery result from query: {target['query']}. Confirm source text before promotion.",
+            }
+            key = intake_duplicate_key(row)
+            name_key = normalize_name(row["name"])
+            if row["lead_id"] in existing_lead_ids or key in existing_keys or name_key in existing_names:
+                continue
+            intake_rows.append(row)
+            existing_lead_ids.add(row["lead_id"])
+            existing_names.add(name_key)
+            existing_keys.add(key)
+            if result["url"] not in existing_source_urls:
+                source_rows.append(
+                    {
+                        "source_url": result["url"],
+                        "source_name": f"{row['name']} web discovery source",
+                        "source_type": "web_search_result",
+                        "source_quality": "unknown",
+                        "license_or_access": "public web",
+                        "notes": f"Discovered by research-agent web search run {run_id}; requires verification.",
+                        "last_checked": now_iso()[:10],
+                    }
+                )
+                existing_source_urls.add(result["url"])
+            new_count += 1
+            added_for_target += 1
+        performance[target["target_id"]] = (len(results), added_for_target)
+
+    if new_count:
+        write_csv_rows(intake_path, intake_rows, intake_fieldnames)
+        write_csv_rows(source_path, source_rows, source_fieldnames)
+    return new_count, performance
+
+
+def discovery_agent(
+    db_path: Path,
+    web_discovery: bool = False,
+    web_results_per_target: int = WEB_DISCOVERY_RESULTS_PER_TARGET,
+    web_max_new_leads: int = WEB_DISCOVERY_MAX_NEW_LEADS,
+) -> int:
     ensure_db(db_path)
     started = now_iso()
     with open_db(db_path) as conn:
@@ -348,6 +668,50 @@ def discovery_agent(db_path: Path) -> int:
             "Generated seed candidates from scrape targets and queued entity-intake leads.",
         )
         conn.execute("UPDATE discovery_candidates SET run_id = ? WHERE run_id = 'pending'", (run_id,))
+        web_created = 0
+        if web_discovery:
+            web_created, performance = append_web_discovery_intake(
+                targets,
+                run_id,
+                per_target_limit=web_results_per_target,
+                max_new_leads=web_max_new_leads,
+            )
+            if web_created:
+                for row in read_csv_rows(evidence_path("entity_intake_queue.csv")):
+                    insert_dict(conn, "entity_intake_queue", row)
+                for row in read_csv_rows(evidence_path("source_registry.csv")):
+                    insert_dict(conn, "source_registry", row)
+            for target_id, (results_found, candidates_added) in performance.items():
+                conn.execute(
+                    """
+                    UPDATE query_performance
+                    SET results_found = ?,
+                        candidates_added = candidates_added + ?,
+                        last_run_at = ?,
+                        notes = ?
+                    WHERE target_id = ?
+                    """,
+                    (
+                        results_found,
+                        candidates_added,
+                        now_iso(),
+                        "Public-web search discovery ran; queued official-looking non-directory results for review.",
+                        target_id,
+                    ),
+                )
+            conn.execute(
+                """
+                UPDATE agent_runs
+                SET output_count = output_count + ?,
+                    notes = ?
+                WHERE run_id = ?
+                """,
+                (
+                    web_created,
+                    f"Generated seed candidates and queued {web_created} public-web intake leads.",
+                    run_id,
+                ),
+            )
         conn.commit()
     print(f"Discovery agent created/updated {created} candidate leads")
     return 0
@@ -1019,7 +1383,7 @@ def intake_promotion_agent(db_path: Path, limit: int, promote: bool) -> int:
                 if promote:
                     intake_updates[lead["lead_id"]] = {
                         "review_status": "duplicate",
-                        "notes": f"{lead['notes']} Intake promotion agent marked duplicate: {duplicate_reason}",
+                        "notes": append_note_once(lead["notes"], f"Intake promotion agent marked duplicate: {duplicate_reason}"),
                     }
                 continue
 
@@ -1031,7 +1395,7 @@ def intake_promotion_agent(db_path: Path, limit: int, promote: bool) -> int:
                     intake_updates[lead["lead_id"]] = {
                         "review_status": "needs_more_source",
                         "evidence_status": "needs_verification",
-                        "notes": f"{lead['notes']} Intake promotion agent needs more source text: {reason}",
+                        "notes": append_note_once(lead["notes"], f"Intake promotion agent needs more source text: {reason}"),
                     }
                 continue
 
@@ -1062,7 +1426,7 @@ def intake_promotion_agent(db_path: Path, limit: int, promote: bool) -> int:
                     intake_updates[lead["lead_id"]] = {
                         "review_status": "needs_more_source",
                         "evidence_status": "needs_verification",
-                        "notes": f"{lead['notes']} Intake promotion agent needs more source support: {last_reason}",
+                        "notes": append_note_once(lead["notes"], f"Intake promotion agent needs more source support: {last_reason}"),
                     }
                 continue
 
@@ -1110,7 +1474,10 @@ def intake_promotion_agent(db_path: Path, limit: int, promote: bool) -> int:
             intake_updates[lead["lead_id"]] = {
                 "review_status": "promoted",
                 "evidence_status": "candidate_evidence",
-                "notes": f"{lead['notes']} Promoted as {asset_class} candidate from {page['source_url']} with {len(claim_rows)} source-backed bucket claims. Human review required before paper use.",
+                "notes": append_note_once(
+                    lead["notes"],
+                    f"Promoted as {asset_class} candidate from {page['source_url']} with {len(claim_rows)} source-backed bucket claims. Human review required before paper use.",
+                ),
             }
             promoted += 1
 
@@ -1336,12 +1703,26 @@ def write_run_report(db_path: Path, mode: str, fetch_limit: int, verified_only: 
     (EXPORTS / "research_agent_run_report.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
-def run_loop(db_path: Path, fetch_limit: int, verified_only: bool, reset_from_csv: bool = False, mode: str = "run-loop") -> int:
+def run_loop(
+    db_path: Path,
+    fetch_limit: int,
+    verified_only: bool,
+    reset_from_csv: bool = False,
+    mode: str = "run-loop",
+    web_discovery: bool = False,
+    web_results_per_target: int = WEB_DISCOVERY_RESULTS_PER_TARGET,
+    web_max_new_leads: int = WEB_DISCOVERY_MAX_NEW_LEADS,
+) -> int:
     if reset_from_csv:
         import_csvs(db_path)
     else:
         ensure_db(db_path)
-    discovery_agent(db_path)
+    discovery_agent(
+        db_path,
+        web_discovery=web_discovery,
+        web_results_per_target=web_results_per_target,
+        web_max_new_leads=web_max_new_leads,
+    )
     source_fetch_agent(db_path, verified_only=verified_only, limit=fetch_limit)
     claim_extraction_agent(db_path, limit=fetch_limit)
     classification_agent(db_path)
@@ -1358,7 +1739,10 @@ def main() -> int:
     parser.add_argument("--db", default=str(DEFAULT_DB))
     sub = parser.add_subparsers(dest="command", required=True)
 
-    sub.add_parser("discover")
+    discover = sub.add_parser("discover")
+    discover.add_argument("--web-discovery", action="store_true")
+    discover.add_argument("--web-results-per-target", type=int, default=WEB_DISCOVERY_RESULTS_PER_TARGET)
+    discover.add_argument("--web-max-new-leads", type=int, default=WEB_DISCOVERY_MAX_NEW_LEADS)
 
     fetch = sub.add_parser("fetch-sources")
     fetch.add_argument("--verified-only", action="store_true")
@@ -1395,16 +1779,27 @@ def main() -> int:
     loop.add_argument("--fetch-limit", type=int, default=10)
     loop.add_argument("--verified-only", action="store_true")
     loop.add_argument("--reset-from-csv", action="store_true")
+    loop.add_argument("--web-discovery", action="store_true")
+    loop.add_argument("--web-results-per-target", type=int, default=WEB_DISCOVERY_RESULTS_PER_TARGET)
+    loop.add_argument("--web-max-new-leads", type=int, default=WEB_DISCOVERY_MAX_NEW_LEADS)
 
     hourly = sub.add_parser("hourly-loop")
     hourly.add_argument("--fetch-limit", type=int, default=5)
     hourly.add_argument("--verified-only", action="store_true")
+    hourly.add_argument("--web-discovery", action="store_true")
+    hourly.add_argument("--web-results-per-target", type=int, default=WEB_DISCOVERY_RESULTS_PER_TARGET)
+    hourly.add_argument("--web-max-new-leads", type=int, default=WEB_DISCOVERY_MAX_NEW_LEADS)
 
     args = parser.parse_args()
     db_path = Path(args.db)
 
     if args.command == "discover":
-        return discovery_agent(db_path)
+        return discovery_agent(
+            db_path,
+            web_discovery=args.web_discovery,
+            web_results_per_target=args.web_results_per_target,
+            web_max_new_leads=args.web_max_new_leads,
+        )
     if args.command == "fetch-sources":
         return source_fetch_agent(db_path, verified_only=args.verified_only, limit=args.limit)
     if args.command == "extract-claims":
@@ -1427,10 +1822,27 @@ def main() -> int:
     if args.command == "validate":
         return validate(db_path, strict=args.strict)
     if args.command == "run-loop":
-        return run_loop(db_path, fetch_limit=args.fetch_limit, verified_only=args.verified_only, reset_from_csv=args.reset_from_csv)
+        return run_loop(
+            db_path,
+            fetch_limit=args.fetch_limit,
+            verified_only=args.verified_only,
+            reset_from_csv=args.reset_from_csv,
+            web_discovery=args.web_discovery,
+            web_results_per_target=args.web_results_per_target,
+            web_max_new_leads=args.web_max_new_leads,
+        )
     if args.command == "hourly-loop":
         with AutomationLock("hourly-research-loop"):
-            return run_loop(db_path, fetch_limit=args.fetch_limit, verified_only=args.verified_only, reset_from_csv=False, mode="hourly-loop")
+            return run_loop(
+                db_path,
+                fetch_limit=args.fetch_limit,
+                verified_only=args.verified_only,
+                reset_from_csv=False,
+                mode="hourly-loop",
+                web_discovery=args.web_discovery,
+                web_results_per_target=args.web_results_per_target,
+                web_max_new_leads=args.web_max_new_leads,
+            )
     return 1
 
 
