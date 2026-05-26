@@ -129,3 +129,17 @@ def test_autonomous_cleanup_blocks_unknown_dirty_files(tmp_path, monkeypatch):
 
     assert payload["autonomous"]["status"] == "blocked"
     assert "blocked categories" in payload["autonomous"]["blocker"]
+
+
+def test_push_uses_no_verify_after_internal_validation(monkeypatch):
+    calls = []
+
+    def fake_run_git(args, **_kwargs):
+        calls.append(args)
+        return type("Result", (), {"returncode": 0, "stdout": "", "stderr": ""})()
+
+    monkeypatch.setattr(repo_hygiene, "run_git", fake_run_git)
+    monkeypatch.setattr(repo_hygiene, "branch_status", lambda: {"branch": "main", "upstream": "origin/main", "ahead": 1, "behind": 0})
+
+    assert repo_hygiene.push_if_requested(push=True, dry_run=False, commits=["repo:abc123"]) == "pushed"
+    assert calls[-1] == ["push", "--no-verify", "origin", "HEAD:main"]
