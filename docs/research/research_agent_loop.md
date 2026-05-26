@@ -25,6 +25,12 @@ Run the hourly-safe loop manually:
 python scripts/research_agents.py hourly-loop --fetch-limit 5
 ```
 
+Run the local learning-ops loop:
+
+```powershell
+python scripts/learning_ops.py learning-loop --review-limit 250
+```
+
 Run stages separately:
 
 ```powershell
@@ -75,6 +81,7 @@ Allowed feedback labels:
 9. Ranking Agent regenerates all-row ranked exports and top-150 triage exports from SQLite.
 10. Human Feedback Loop stores accepted/rejected/paper-ready decisions.
 11. Evolution Agent proposes scrape, scoring, and coverage improvements.
+12. Learning Ops converts reviewed claims into training/eval JSONL, baseline metrics, and a fine-tune readiness manifest.
 
 ## Intake Promotion
 
@@ -95,4 +102,4 @@ The promotion path is deliberately stricter than discovery:
 - Intake-promoted claims are candidate atlas evidence, not publication claims.
 - `paper_ready` requires human review.
 - Evolution proposals do not mutate schema or scoring automatically.
-- Fine-tuning waits until there is a large reviewed corpus.
+- Fine-tuning waits until there is a large reviewed corpus. The default gate is 1,000 reviewed examples and 100 eval examples.

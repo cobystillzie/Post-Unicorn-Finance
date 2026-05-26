@@ -10,5 +10,7 @@ data/exports/*
 !data/exports/.gitkeep
 data/runtime/*
 !data/runtime/.gitkeep
+data/learning/*
+!data/learning/.gitkeep
 data/*.sqlite
 data/*.sqlite-*

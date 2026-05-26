@@ -806,23 +806,33 @@ def source_urls_to_fetch(conn: sqlite3.Connection, verified_only: bool, limit: i
             add(0, row["source_url"])
         for row in conn.execute(
             """
-            SELECT website, source_urls
+            SELECT website, source_urls, lead_type
             FROM entity_intake_queue
             WHERE review_status IN ('queued', 'needs_more_source')
             ORDER BY priority, name
             """
         ):
-            add(1, row["website"])
+            intake_priority = 2 if row["lead_type"] == "web_search_result" else 1
+            add(intake_priority, row["website"])
             for url in split_tags(row["source_urls"]):
-                add(1, url)
+                add(intake_priority, url)
         for row in conn.execute("SELECT DISTINCT source_url FROM entity_claims ORDER BY source_url"):
             add(2, row["source_url"])
         for row in conn.execute("SELECT DISTINCT website FROM industry_entities ORDER BY website"):
             add(3, row["website"])
 
+    ordered_candidates = sorted(candidates, key=lambda item: (item[0], item[1]))
+    if not verified_only and limit:
+        priority_zero = [item for item in ordered_candidates if item[0] == 0]
+        priority_one = [item for item in ordered_candidates if item[0] == 1]
+        later = [item for item in ordered_candidates if item[0] not in {0, 1}]
+        # Keep one verified anchor first, then pull intake leads forward so
+        # source fetching does not starve candidate promotion work.
+        ordered_candidates = priority_zero[:1] + priority_one + priority_zero[1:] + later
+
     urls = []
     seen: set[str] = set()
-    for _priority, url in sorted(candidates, key=lambda item: (item[0], item[1])):
+    for _priority, url in ordered_candidates:
         if url in seen:
             continue
         seen.add(url)
@@ -1357,11 +1367,23 @@ def intake_promotion_agent(db_path: Path, limit: int, promote: bool) -> int:
     claim_fieldnames = csv_fieldnames(evidence_path("entity_claims.csv"), csv_claim_rows)
     existing_ids = {row["entity_id"] for row in csv_entity_rows}
     eligible = [row for row in intake_rows if row["review_status"] in {"queued", "needs_more_source"}]
-    if limit:
-        eligible = eligible[:limit]
 
     with open_db(db_path) as conn:
         exec_script(conn)
+        for row in intake_rows:
+            insert_dict(conn, "entity_intake_queue", row)
+
+        def eligible_sort_key(row: dict[str, str]) -> tuple[int, str]:
+            if duplicate_intake_reason(row, csv_entity_rows):
+                return (0, row["name"])
+            if candidate_source_pages(conn, row):
+                return (1, row["name"])
+            return (2, row["name"])
+
+        eligible.sort(key=eligible_sort_key)
+        if limit:
+            eligible = eligible[:limit]
+
         run_id = record_run(
             conn,
             "intake_promotion_agent",
@@ -1372,8 +1394,6 @@ def intake_promotion_agent(db_path: Path, limit: int, promote: bool) -> int:
             0,
             "Started intake verification.",
         )
-        for row in intake_rows:
-            insert_dict(conn, "entity_intake_queue", row)
         intake_updates: dict[str, dict[str, str]] = {}
         for lead in eligible:
             reviewed += 1
