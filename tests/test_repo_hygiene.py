@@ -80,6 +80,13 @@ def test_group_allowed_staged_paths_rejects_cross_group_paths():
     assert not repo_hygiene.group_allowed_staged_paths("evidence", ["scripts/repo_hygiene.py"])
 
 
+def test_git_environment_disables_interactive_prompts():
+    env = repo_hygiene.git_environment(no_prompt=True)
+
+    assert env["GIT_TERMINAL_PROMPT"] == "0"
+    assert env["GCM_INTERACTIVE"] == "Never"
+
+
 def test_autonomous_cleanup_dry_run_reports_plan_without_commits(tmp_path, monkeypatch):
     rows = [
         {"code": " M", "path": "data/evidence/entity_claims.csv", "raw": " M data/evidence/entity_claims.csv", "category": "evidence_csv_churn"},

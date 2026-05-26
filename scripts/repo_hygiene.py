@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import subprocess
 import sys
 from dataclasses import dataclass
@@ -23,6 +24,7 @@ EXPORTS = ROOT / "data" / "exports"
 
 REPORT_JSON = "repo_hygiene_status.json"
 REPORT_MD = "repo_hygiene_status.md"
+GIT_NETWORK_TIMEOUT_SECONDS = 60
 
 SAFE_COMMIT_CATEGORIES = {
     "evidence_csv_churn",
@@ -66,14 +68,38 @@ def now_iso() -> str:
     return datetime.now(timezone.utc).astimezone().isoformat(timespec="seconds")
 
 
-def run_git(args: list[str]) -> subprocess.CompletedProcess[str]:
-    return subprocess.run(
-        ["git", *args],
-        cwd=ROOT,
-        text=True,
-        capture_output=True,
-        check=False,
-    )
+def git_environment(no_prompt: bool = False) -> dict[str, str]:
+    env = os.environ.copy()
+    if no_prompt:
+        env.update(
+            {
+                "GIT_TERMINAL_PROMPT": "0",
+                "GCM_INTERACTIVE": "Never",
+                "GIT_ASKPASS": "echo",
+                "SSH_ASKPASS": "echo",
+            }
+        )
+    return env
+
+
+def run_git(args: list[str], *, timeout: int | None = None, no_prompt: bool = False) -> subprocess.CompletedProcess[str]:
+    try:
+        return subprocess.run(
+            ["git", *args],
+            cwd=ROOT,
+            text=True,
+            capture_output=True,
+            check=False,
+            timeout=timeout,
+            env=git_environment(no_prompt=no_prompt),
+        )
+    except subprocess.TimeoutExpired as exc:
+        return subprocess.CompletedProcess(
+            ["git", *args],
+            124,
+            stdout=exc.stdout or "",
+            stderr=f"git command timed out after {timeout}s",
+        )
 
 
 def run_command(args: list[str], *, check: bool = True, timeout: int | None = None) -> CommandResult:
@@ -399,7 +425,7 @@ def fetch_and_fast_forward(dry_run: bool) -> list[str]:
     if dry_run:
         commands.append("dry-run: skip git fetch and fast-forward")
         return commands
-    result = run_git(["fetch", "origin"])
+    result = run_git(["fetch", "origin"], timeout=GIT_NETWORK_TIMEOUT_SECONDS, no_prompt=True)
     commands.append("git fetch origin")
     if result.returncode != 0:
         raise HygieneBlocker("git fetch origin failed", {"stdout": result.stdout, "stderr": result.stderr})
@@ -410,7 +436,7 @@ def fetch_and_fast_forward(dry_run: bool) -> list[str]:
             {"branch": branch},
         )
     if branch["behind"]:
-        merge = run_git(["merge", "--ff-only", "@{u}"])
+        merge = run_git(["merge", "--ff-only", "@{u}"], timeout=GIT_NETWORK_TIMEOUT_SECONDS, no_prompt=True)
         commands.append("git merge --ff-only @{u}")
         if merge.returncode != 0:
             raise HygieneBlocker("fast-forward failed", {"stdout": merge.stdout, "stderr": merge.stderr, "branch": branch})
@@ -462,7 +488,7 @@ def push_if_requested(push: bool, dry_run: bool, commits: list[str]) -> str:
     status = branch_status()
     if status["behind"]:
         raise HygieneBlocker("branch is behind before push", {"branch": status})
-    push_result = run_git(["push", "origin", "HEAD:main"])
+    push_result = run_git(["push", "origin", "HEAD:main"], timeout=GIT_NETWORK_TIMEOUT_SECONDS, no_prompt=True)
     if push_result.returncode != 0:
         raise HygieneBlocker("git push failed", {"stdout": push_result.stdout, "stderr": push_result.stderr})
     return "pushed"
