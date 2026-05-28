@@ -348,6 +348,11 @@ def exec_script(conn: sqlite3.Connection) -> None:
 
 
 def clear_imported_tables(conn: sqlite3.Connection) -> None:
+    # Temporarily defer foreign-key enforcement so we can clear in reverse-FK
+    # order without breaking cache tables (source_pages, intake_promotion_reviews,
+    # etc.) that reference rows we're about to delete. The new rows reinserted by
+    # the import will restore the references.
+    conn.execute("PRAGMA defer_foreign_keys = ON")
     for table in reversed(
         [
             "asset_classes",
@@ -657,9 +662,11 @@ def main() -> int:
     parser.add_argument("--db", default=str(DEFAULT_DB), help="SQLite database path")
     sub = parser.add_subparsers(dest="command", required=True)
 
-    sub.add_parser("import-csv")
+    import_csv = sub.add_parser("import-csv")
+    import_csv.add_argument("--preserve-cache", action="store_true", help="Skip the destructive db file unlink; preserves source_pages and other cache tables")
     build = sub.add_parser("build")
     build.add_argument("--rank-limit", type=int, default=0, help="Rows for the main ranked export; 0 means all entities")
+    build.add_argument("--preserve-cache", action="store_true", help="Skip the destructive db file unlink; preserves source_pages and other cache tables")
 
     validate = sub.add_parser("validate")
     validate.add_argument("--strict-verified-sources", action="store_true")
@@ -676,13 +683,13 @@ def main() -> int:
     db_path = Path(args.db)
 
     if args.command == "import-csv":
-        counts = import_csvs(db_path)
+        counts = import_csvs(db_path, reset=not args.preserve_cache)
         for table, count in counts.items():
             print(f"{table}: {count}")
         return 0
 
     if args.command == "build":
-        counts = import_csvs(db_path)
+        counts = import_csvs(db_path, reset=not args.preserve_cache)
         export_rankings(db_path, args.rank_limit)
         errors = validate_database(db_path, exact_csv_counts=True)
         if errors:
