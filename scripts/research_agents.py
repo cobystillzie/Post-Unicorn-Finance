@@ -156,6 +156,7 @@ CLASS_KEYWORDS = {
         "embedded finance",
         "growth debt",
         "growth equity",
+        "growth buyout",
         "venture growth",
         "micro private equity",
         "saas acquisition",
@@ -168,6 +169,35 @@ CLASS_KEYWORDS = {
         "alternative funding",
         "no equity dilution",
         "non dilutive capital",
+        # Mid-market PE specific (B2B software focus)
+        "lower middle-market",
+        "lower middle market",
+        "lower mid-market",
+        "lower mid market",
+        "middle-market private equity",
+        "middle market private equity",
+        "middle-market",
+        "middle market",
+        "mission-critical",
+        "mission critical",
+        "software businesses",
+        "software business",
+        "tech-enabled",
+        "tech enabled",
+        "smaller businesses",
+        "smb financing",
+        "smb capital",
+        # Working capital / RBF variants
+        "working capital",
+        "working capital financing",
+        "flexible financing",
+        "flexible capital",
+        "transparent financing",
+        "approved in days",
+        "purchase finance",
+        "purchase finance pay",
+        "merchant financing",
+        "merchant capital",
     ],
     "Patient Capital": [
         "patient capital",
@@ -249,6 +279,28 @@ CLASS_KEYWORDS = {
         "b-corp",
         "benefit corporation",
         "public benefit",
+        # Founder-first / preserve-legacy / next-chapter language from atlas survey
+        "founder-first",
+        "founder first",
+        "founder partner",
+        "founder-aligned",
+        "founder aligned",
+        "preserve your legacy",
+        "preserve legacy",
+        "preserve the company",
+        "preserve the business",
+        "next chapter",
+        "the next chapter",
+        "long-term success",
+        "long-term partner",
+        "long term partner",
+        "deeply invested",
+        "as invested in",
+        "ideal capital partner",
+        "lifelong partner",
+        "supportive capital",
+        "patient owners",
+        "patient partner",
     ],
     "Search/ETA": [
         "search fund",
@@ -304,6 +356,28 @@ CLASS_KEYWORDS = {
         "social good",
         "social enterprise",
         "social return",
+        # Climate / clean energy / decarbonization language
+        "clean energy",
+        "clean energy transition",
+        "climate transition",
+        "energy transition",
+        "decarbonization",
+        "decarbonisation",
+        "carbon emissions",
+        "co2 emissions",
+        "carbon capture",
+        "carbon removal",
+        "climate tech",
+        "climate technology",
+        "clean tech",
+        "cleantech",
+        "renewable energy",
+        "sustainable energy",
+        "climate impact",
+        "climate-positive",
+        "climate positive",
+        "net zero",
+        "net-zero",
     ],
     "Portfolio Capital": [
         "holding company",
@@ -1430,6 +1504,24 @@ def infer_intake_asset_class(lead: dict[str, str], text: str) -> tuple[str, int,
     scores = class_scores(text)
     if target == "UVC":
         return "", scores.get("UVC", 0), "UVC is the baseline comparison class and is not auto-promoted from intake"
+    # UVC-dominance guard: if the page reads OVERWHELMINGLY as a unicorn-VC firm
+    # (4+ UVC keyword matches AND UVC score strictly larger than any non-UVC
+    # auto-promotion class score), treat it as UVC and block auto-promotion. This
+    # prevents UVC firms (which use words like "community", "long-term", "founder"
+    # that overlap with Patient Capital vocabulary) from being falsely categorized
+    # outside the unicorn lane.
+    uvc_score = scores.get("UVC", 0)
+    if uvc_score >= 4:
+        non_uvc_max = max(
+            (score for cls, score in scores.items() if cls in AUTO_PROMOTION_ASSET_CLASSES),
+            default=0,
+        )
+        if uvc_score > non_uvc_max:
+            return (
+                "",
+                uvc_score,
+                f"UVC-dominant page ({uvc_score} UVC vs {non_uvc_max} non-UVC keyword matches); not promotable outside UVC",
+            )
     if target in AUTO_PROMOTION_ASSET_CLASSES and scores.get(target, 0) >= PROMOTION_MIN_BUCKET_CLAIMS:
         return target, scores[target], f"target class {target} matched at least {PROMOTION_MIN_BUCKET_CLAIMS} source-text bucket signals"
     if target in AUTO_PROMOTION_ASSET_CLASSES and scores.get(target, 0) > 0:
@@ -1490,7 +1582,13 @@ def source_supports_intake(lead: dict[str, str], page: sqlite3.Row) -> tuple[boo
         return False, checks, "", "source text does not directly support the entity name"
     if not website_supported:
         return False, checks, "", "source text or URL does not support the entity website/domain"
-    if not role_supported:
+    # role_supported is a fallback check; if the asset_class has 2+ bucket claims
+    # the role is sufficiently evidenced by the asset-class matches themselves.
+    # Without this softening, leads whose target_entity_type uses specific
+    # vocabulary (e.g. "micro PE acquirer", "steward-owned holdco") that the
+    # firm doesn't say verbatim on its homepage get stuck even when 6 Patient
+    # Capital keywords match. The bucket evidence is the load-bearing check.
+    if not role_supported and len(bucket_claims) < PROMOTION_MIN_BUCKET_CLAIMS:
         return False, checks, "", "source text does not directly support the entity role"
     if not asset_class:
         return False, checks, "", asset_reason
