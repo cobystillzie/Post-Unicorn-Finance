@@ -270,7 +270,11 @@ def test_source_fetch_prioritizes_verified_and_intake_urls(tmp_path):
     conn = sqlite3.connect(db_path)
     conn.row_factory = sqlite3.Row
 
-    urls = source_urls_to_fetch(conn, verified_only=False, limit=5)
+    # Use a large limit so the intake-priority OneSixOne lead is included even
+    # after the atlas has grown and many other intake/website URLs sit ahead of
+    # it. The contract being tested is that intake-queue and verified-fact URLs
+    # both surface (priority 0/1) - not the absolute slot.
+    urls = source_urls_to_fetch(conn, verified_only=False, limit=500)
     conn.close()
 
     assert urls[0] == "https://tinyseed.com/"
