@@ -12,5 +12,6 @@ data/runtime/*
 !data/runtime/.gitkeep
 data/learning/*
 !data/learning/.gitkeep
+data/analysis/
 data/*.sqlite
 data/*.sqlite-*
