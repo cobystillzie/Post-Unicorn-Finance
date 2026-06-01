@@ -301,3 +301,7 @@
   queued: 760
 [2026-06-01] PURGE | Bain Capital | Patient Capital | gate false-positive: mega-PE/VC not patient capital
 [2026-06-01] RECLASS | Blue Owl Capital | Patient Capital -> SMV | Blue Owl = permanent credit platform, not patient capital
+[2026-06-01] RECLASS | Anamcara Capital | Portfolio Capital -> LMV | round10 gate false-positive: pre-seed fund = LMV not Portfolio Capital
+[2026-06-01] RECLASS | Landscape Workshop | Patient Capital -> Portfolio Capital | round10 gate false-positive: roll-up/aggregator = Portfolio Capital not Patient Capital
+[2026-06-01] RECLASS | Mission Pet Health | Patient Capital -> Portfolio Capital | round10 gate false-positive: roll-up/aggregator = Portfolio Capital not Patient Capital
+[2026-06-01] RECLASS | SellerX | Patient Capital -> Portfolio Capital | round10 gate false-positive: roll-up/aggregator = Portfolio Capital not Patient Capital
