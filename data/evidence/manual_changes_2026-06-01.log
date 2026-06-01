@@ -292,3 +292,12 @@
 [2026-06-01] ECOSYSTEM | Vanderbilt University Office of Investments | Patient Capital -> ECOSYSTEM | endowment LP / grantmaker 4c
 [2026-06-01] ECOSYSTEM | Washington University Investment Management Company | Patient Capital -> ECOSYSTEM | endowment LP / grantmaker 4c
 [2026-06-01] ECOSYSTEM | Simplicity NZ | Patient Capital -> ECOSYSTEM | endowment LP / grantmaker 4c
+
+[2026-06-01] QUEUE AUDIT RUN
+  unchanged_promoted: 939
+  promoted_duplicate: 1
+  rejected_uvc: 11
+  rejected_ecosystem: 17
+  queued: 760
+[2026-06-01] PURGE | Bain Capital | Patient Capital | gate false-positive: mega-PE/VC not patient capital
+[2026-06-01] RECLASS | Blue Owl Capital | Patient Capital -> SMV | Blue Owl = permanent credit platform, not patient capital
