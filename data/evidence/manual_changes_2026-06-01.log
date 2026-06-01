@@ -1,0 +1,294 @@
+
+============================================================
+[2026-06-01] PHASE 4 HYGIENE RUN START
+============================================================
+[2026-06-01] SNAPSHOT: 23 CSVs -> data\runtime\snapshot_pre_phase4_2026-06-01
+[2026-06-01] PURGE | Quiet Light | class=SMV | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | BizBuySell | class=Search/ETA | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | BizQuest | class=Search/ETA | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Purpose Ventures | class=Patient Capital | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Candide Group | class=Patient Capital | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | MicroConf | class=LMV | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Bigthinkcapital | class=SMV | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Argentumgroup | class=SMV | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | ClearlyAcquired | class=Search/ETA | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | CapShift | class=Sovereign Capital | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Alliance Venture | class=SMV | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Kaszek Ventures | class=Patient Capital | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Michigan Founders Fund | class=Patient Capital | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Hoxton Ventures | class=Portfolio Capital | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Freed Fellowship | class=LMV | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Sky9 Capital | class=Patient Capital | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | TIFF Investment Management | class=Patient Capital | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Lowercarbon Capital | class=Sovereign Capital | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Earth Foundry | class=Patient Capital | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Soma Fellows | class=Patient Capital | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Bessemer Trust | class=Patient Capital | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Bullpen Capital | class=Patient Capital | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | DBL Partners | class=Sovereign Capital | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Foundation Capital | class=Patient Capital | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Industry Ventures | class=SMV | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | What Is a Venture Studio? The Venture Studio Model Explained | class=Portfolio Capital | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Building the World's Most Powerful Network for Founders | class=Patient Capital | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Maven Ventures | class=Patient Capital | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | ZF Friedrichshafen | class=Patient Capital | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Climate Bonds Initiative | class=Sovereign Capital | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Stage 2 Capital | class=SMV | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Cleo Capital | class=Patient Capital | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Common Trust | class=Patient Capital | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Creative Dock | class=Portfolio Capital | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Four Acres Capital | class=Patient Capital | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Founder Programs | class=Patient Capital | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | ALPS Capital | class=Patient Capital | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Emergent Ventures | class=LMV | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Evergreen Funds | class=Patient Capital | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Exit4Smb | class=Patient Capital | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Funded! | class=LMV | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Investments | class=Sovereign Capital | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Learn AI for Entrepreneurs | class=LMV | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Purpose | class=Patient Capital | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | SEARCHFUNDER | class=Search/ETA | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | SaaS Valuation Multiples 2026 | class=SMV | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | The Fundless Sponsor Explained | class=Search/ETA | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Confluent Health | class=Patient Capital | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Sustainable Forestry Investments B.V. | class=Portfolio Capital | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Alta Growth Capital | class=SMV | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | BMW i Ventures | class=Sovereign Capital | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Clean Energy Ventures | class=Sovereign Capital | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Cresset Capital | class=Patient Capital | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Equinor Ventures | class=Sovereign Capital | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Future Energy Ventures | class=Sovereign Capital | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | ME Innovation Fund | class=Sovereign Capital | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Maersk Growth | class=Sovereign Capital | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Siemens Energy Ventures | class=Sovereign Capital | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Toyota Ventures | class=Sovereign Capital | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Voyager Ventures | class=LMV | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | NGP Energy Capital Management | class=Sovereign Capital | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | 100Unicorns | class=LMV | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Mekong Capital | class=Portfolio Capital | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Next Coast Ventures | class=SMV | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Recur Club | class=SMV | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Ascension Investment Management | class=Patient Capital | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | FIMI Opportunity Funds | class=Portfolio Capital | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Fortissimo Capital | class=Portfolio Capital | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Scout Ventures | class=Sovereign Capital | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Slow Money Institute | class=Patient Capital | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | VentureSouq | class=LMV | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | AP Ventures | class=Sovereign Capital | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Cottonwood Technology Fund | class=LMV | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | TruStage Ventures | class=Portfolio Capital | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Boathouse Capital | class=Portfolio Capital | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Kickstart Ventures | class=Portfolio Capital | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Marathon Ventures | class=SMV | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Glilot Capital Partners | class=SMV | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Serpentine Ventures | class=Sovereign Capital | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | OpenOcean | class=LMV | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Prime Movers Lab | class=Sovereign Capital | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Quantonation | class=LMV | reason=UVC_or_non_allocator
+[2026-06-01] PURGE | Seraphim Space | class=LMV | reason=UVC_or_non_allocator
+[2026-06-01] ECOSYSTEM | GTM Venture Studio | class=Portfolio Capital | moved to ecosystem_entities.csv
+[2026-06-01] ECOSYSTEM | Startupbootcamp | class=Sovereign Capital | moved to ecosystem_entities.csv
+[2026-06-01] ECOSYSTEM | Brex Capital | class=Sovereign Capital | moved to ecosystem_entities.csv
+[2026-06-01] ECOSYSTEM | Pritzker Innovation Fund | class=Patient Capital | moved to ecosystem_entities.csv
+[2026-06-01] ECOSYSTEM | WK Kellogg Foundation | class=Patient Capital | moved to ecosystem_entities.csv
+[2026-06-01] ECOSYSTEM | Halcyon | class=Patient Capital | moved to ecosystem_entities.csv
+[2026-06-01] ECOSYSTEM | Enterprise Angels | class=LMV | moved to ecosystem_entities.csv
+[2026-06-01] ECOSYSTEM | Gitcoin | class=LMV | moved to ecosystem_entities.csv
+[2026-06-01] ECOSYSTEM | RCN Capital | class=Patient Capital | moved to ecosystem_entities.csv
+[2026-06-01] RECLASS | TinySeed | SMV -> LMV | Self-describes as B2B SaaS accelerator with equity investment + mentorship — classic LMV accelerator, not RBF/non-diluti
+[2026-06-01] RECLASS | Braavo Capital | LMV -> SMV | Self-describes as non-dilutive RBF and App Store payout accelerator — revenue-based own-capital lender; textbook SMV.
+[2026-06-01] RECLASS | SV8 | SMV -> LMV | M&A-exit-oriented seed syndicate VC fund — LMV micro-fund, not non-dilutive SMV.
+[2026-06-01] RECLASS | Tangle Ventures | SMV -> Portfolio Capital | Thin page suggesting 'overlooked companies' — cluster hint implies Portfolio Capital style.
+[2026-06-01] RECLASS | Founders First Capital Partners | Patient Capital -> SMV | Explicit revenue-based and non-dilutive term loans up to $2M for $500K-$10M+ revenue businesses — textbook Strategic Mid
+[2026-06-01] RECLASS | Venture10X | SMV -> LMV | Single-principal private investment office — solo-GP LMV, not SMV.
+[2026-06-01] RECLASS | Curious | SMV -> Patient Capital | Permanent-capital software holdco buying to hold for decades — Patient Capital steward.
+[2026-06-01] RECLASS | Apex Point Equity | SMV -> Portfolio Capital | Micro-PE acquiring and flipping B2B SaaS — Portfolio Capital roll-up acquirer.
+[2026-06-01] RECLASS | Alley & Street | SMV -> Search/ETA | Micro-PE / search-fund acquirer of micro-SaaS — Search/ETA individual searcher.
+[2026-06-01] RECLASS | Soft Equities | SMV -> Portfolio Capital | Micro-PE acquirer of early-stage SaaS, full acquisition preferred — Portfolio Capital.
+[2026-06-01] RECLASS | SaaS Growth Ventures | SMV -> LMV | Small-check ($500K-$1M) B2B SaaS seed/Series A fund — LMV micro-fund.
+[2026-06-01] RECLASS | NovaSpark Holdings | SMV -> Patient Capital | Permanent-capital buy-and-hold software + essential services holdco — Patient Capital.
+[2026-06-01] RECLASS | Everhold | Patient Capital -> Portfolio Capital | Self-describes as a private holding company that acquires businesses to operate them; this is a classic holdco/serial-ac
+[2026-06-01] RECLASS | HOLD.co | Patient Capital -> Portfolio Capital | Self-describes as a 'Diversified Holding Company' with platform/bolt-on/tuck-in acquisition strategy across multiple sub
+[2026-06-01] RECLASS | Springwater | SMV -> Patient Capital | Permanent-home SaaS acquirer, majority exit for founders, long-term hold — Patient Capital.
+[2026-06-01] RECLASS | Mosaic | SMV -> Patient Capital | Permanent-equity software holding firm, no exit timeline, forever-hold model — Patient Capital.
+[2026-06-01] RECLASS | itrinity | SMV -> Portfolio Capital | European SaaS portfolio acquirer, Build-Acquire-Repeat — Portfolio Capital VMS.
+[2026-06-01] RECLASS | Asseco Group | Patient Capital -> Portfolio Capital | Publicly listed software federation with 160+ acquisitions operating a serial-acquirer roll-up federation - classic Port
+[2026-06-01] RECLASS | Better Ventures | Sovereign Capital -> LMV | Private early-stage impact VC (pre-seed/seed) — no sovereign mandate; correctly sized as LMV.
+[2026-06-01] RECLASS | Aligned Climate Capital | Sovereign Capital -> LMV | Private climate infra + venture fund — thin page but appears to be private, not state-affiliated.
+[2026-06-01] RECLASS | Andromeda | Patient Capital -> Portfolio Capital | Constellation Software operating-group / VMS serial acquirer — textbook Portfolio Capital (holdco / VMS roll-up), not Pa
+[2026-06-01] RECLASS | Atlasview Equity | Patient Capital -> Portfolio Capital | Lower-market PE acquirer rolling up software & tech-enabled businesses with majority equity and operating playbook. Uses
+[2026-06-01] RECLASS | Broadtree Partners | Patient Capital -> Search/ETA | Self-describes as lower middle-market PE with an operator-centric, legacy-preservation pitch; the entity_type from intak
+[2026-06-01] RECLASS | Brydon Group | Patient Capital -> Search/ETA | Brydon explicitly funds CEOs-in-Residence to acquire small businesses (46 acquisitions, 21 CEOs operating) — this is the
+[2026-06-01] RECLASS | DVG Partners | SMV -> Search/ETA | Veteran-owned investment platform in LMM operating businesses — Search/ETA style.
+[2026-06-01] RECLASS | Founder Institute | Patient Capital -> LMV | Global accelerator that runs an attached VC fund ('Founder Capital') and venture network — best fits LMV (micro/accelera
+[2026-06-01] RECLASS | OneSixOne Ventures | Patient Capital -> LMV | Page text is essentially just the firm name ('OneSixOne Ventures') — thin page, cannot verify allocator status. Metadata
+[2026-06-01] RECLASS | Beacon Oral Specialists | Patient Capital -> Portfolio Capital | Explicit PE-backed healthcare roll-up acquiring oral surgery practices — Portfolio Capital (serial acquirer / roll-up), 
+[2026-06-01] RECLASS | Heartland Dental | Patient Capital -> Portfolio Capital | Classic DSO roll-up acquiring/affiliating dental practices nationwide — Portfolio Capital (serial acquirer of practices)
+[2026-06-01] RECLASS | Bridges Fund Management | Sovereign Capital -> Patient Capital | Private impact PE/property firm — no sovereign mandate; 'global leader in sustainable impact investing.'
+[2026-06-01] RECLASS | Founder Collective | Patient Capital -> LMV | Self-described 'vc fund for founders at the seed stage' — fits LMV (micro/seed-focused) rather than Patient Capital. Cap
+[2026-06-01] RECLASS | Generation Investment Management | Sovereign Capital -> Patient Capital | Pure-play private sustainable investment manager — no state affiliation.
+[2026-06-01] RECLASS | Koch Industries | Patient Capital -> Portfolio Capital | Koch is a privately held family conglomerate that 'acquires, creates, develops and invests' in operating companies — fit
+[2026-06-01] RECLASS | LeapFrog Investments | Sovereign Capital -> Patient Capital | Private emerging-markets impact growth equity — no state mandate.
+[2026-06-01] RECLASS | Long Journey Ventures | Patient Capital -> LMV | Branded, small, personality-driven early-stage seed fund (solo-GP/indie aesthetic) rather than evergreen/permanent patie
+[2026-06-01] RECLASS | Marlin Equity Partners | Patient Capital -> Portfolio Capital | Software-focused PE buyout firm that takes companies private and stitches platforms via add-on acquisitions; not evergre
+[2026-06-01] RECLASS | Prime Coalition | Sovereign Capital -> Patient Capital | Catalytic capital nonprofit but privately governed philanthropic intermediary, not state capital.
+[2026-06-01] RECLASS | Solen Software Group | SMV -> Portfolio Capital | Vertical-software permanent holdco, serial acquirer, no exit timeline — Portfolio Capital.
+[2026-06-01] RECLASS | Astia | Patient Capital -> LMV | Boutique $65M AUM venture firm with mission lens (women-led) — fits LMV (small indie VC). Patient Capital framing weaker
+[2026-06-01] RECLASS | Caisse de dépôt et placement du Québec | Patient Capital -> Sovereign Capital | CDPQ is a Quebec state pension/insurance fund manager (province-owned institutional investor) — fits Sovereign Capital (
+[2026-06-01] RECLASS | Diploma plc | Patient Capital -> Portfolio Capital | FTSE 100 publicly listed compounder/serial acquirer of founder-led businesses with permanent ownership intent — classic 
+[2026-06-01] RECLASS | Markel Ventures | Patient Capital -> Portfolio Capital | Berkshire-style permanent-capital diversified holdco with insurance float compounding across decades — fits Portfolio Ca
+[2026-06-01] RECLASS | Berkshire Partners Acquisitions | Patient Capital -> Portfolio Capital | Self-described as a private equity firm (with both PE and public equity Stockbridge arm); no permanent/evergreen languag
+[2026-06-01] RECLASS | Caltius Equity Partners | Patient Capital -> Portfolio Capital | LP-funded middle-market PE/private credit with control equity and standard buyout instruments; not permanent/evergreen —
+[2026-06-01] RECLASS | Trilogy Software | Patient Capital -> Portfolio Capital | Acquires-and-operates hundreds of SaaS brands on a single operating platform — VMS-style serial acquirer holdco, fits Po
+[2026-06-01] RECLASS | StoicLane | Patient Capital -> Portfolio Capital | Self-named 'patient capital' but operationally a buy-and-build control-equity platform in FIRE — Portfolio Capital fits 
+[2026-06-01] RECLASS | Impro Ventures | Patient Capital -> LMV | Self-described as Pre-Seed to Series A GP-led investor in emerging-markets startups — fits micro-VC/LMV better than Pati
+[2026-06-01] RECLASS | Align Capital Partners | SMV -> Portfolio Capital | Traditional LMM PE with $2.1B fund and control buyout strategy.
+[2026-06-01] RECLASS | Bow River Capital | SMV -> Portfolio Capital | Multi-strategy alternatives manager — growth equity arm is not pure SMV.
+[2026-06-01] RECLASS | Tet Ventures | Patient Capital -> LMV | Self-describes as 'Foodtech VC' writing $50K-$250K solo-GP checks — structurally a micro-VC/LMV, not patient capital; th
+[2026-06-01] RECLASS | Vesta Software Group | Patient Capital -> Portfolio Capital | Constellation-style VMS serial acquirer with 60+ holdings — textbook Portfolio Capital (holdco/serial acquirer), not Pat
+[2026-06-01] RECLASS | Alleyway Capital | SMV -> Portfolio Capital | Micro-SaaS buy-and-hold acquirer, controlling stakes — Portfolio Capital.
+[2026-06-01] RECLASS | Apex Service Partners | Patient Capital -> Portfolio Capital | HVAC/plumbing/electrical consolidation platform aggregating local brands — fits Portfolio Capital (roll-up / serial acqu
+[2026-06-01] RECLASS | Beacon Software | SMV -> Portfolio Capital | Buy-and-hold VMS software holdco, Main Street software, decades-long — Portfolio Capital.
+[2026-06-01] RECLASS | Big Band Software | SMV -> Portfolio Capital | Buy-and-hold B2B SaaS acquirer, long-term run — Portfolio Capital.
+[2026-06-01] RECLASS | Bluejay Capital | Patient Capital -> Portfolio Capital | Sector-specialist T&L roll-up with 6 platforms doing bolt-on acquisitions — fits Portfolio Capital (sector roll-up / ser
+[2026-06-01] RECLASS | British Columbia Investment Management Corporation (BCI) | Patient Capital -> Sovereign Capital | Public-sector institutional pension manager ($295B AUM for 32 public sector clients) — closer to Sovereign Capital (publ
+[2026-06-01] RECLASS | CPC | Patient Capital -> Portfolio Capital | Page describes a buy/build/hold holding company that acquires and operates businesses with permanent capital — closer to
+[2026-06-01] RECLASS | Cake Ventures | Patient Capital -> LMV | Self-describes as a seed/pre-seed venture fund with a focused thematic thesis and small portfolio — fits LMV (small/indi
+[2026-06-01] RECLASS | Define Capital | SMV -> Portfolio Capital | Permanent-hold software acquirer, 'we never sell' — Portfolio Capital holdco.
+[2026-06-01] RECLASS | Exa Capital | Patient Capital -> Portfolio Capital | Vertical-software permanent acquirer with decentralized portfolio — Portfolio Capital (VMS/holdco) fits better than Pati
+[2026-06-01] RECLASS | Faith Driven VC | Patient Capital -> LMV | Pre-launch faith-based VC fund building its own marketplace portfolio. Looks more like LMV (small/thesis-driven micro-VC
+[2026-06-01] RECLASS | Fullsteam | SMV -> Portfolio Capital | Vertical SaaS roll-up acquirer with integrated payments — Portfolio Capital VMS.
+[2026-06-01] RECLASS | Incofin Investment Management | Sovereign Capital -> Patient Capital | Private impact fund manager (inclusive finance, sustainable food, water) — no sovereign mandate.
+[2026-06-01] RECLASS | Invictus Growth Partners | SMV -> Portfolio Capital | Growth equity + buyout for capital-efficient B2B SaaS — Portfolio Capital.
+[2026-06-01] RECLASS | LLR Partners | SMV -> Portfolio Capital | LMM PE with buyout and growth equity in software/healthcare — standard PE.
+[2026-06-01] RECLASS | Lakefield Veterinary Group | Patient Capital -> Portfolio Capital | Vet-practice roll-up/holdco — explicit acquirer of operating practices, fits Portfolio Capital (roll-up consolidator) mo
+[2026-06-01] RECLASS | OPTrust | Patient Capital -> Sovereign Capital | Public-sector pension plan with state mandate — fits Sovereign Capital (state-affiliated long-term allocator) better tha
+[2026-06-01] RECLASS | PennTech Holdings | SMV -> Portfolio Capital | Permanent-capital B2B software holdco — Portfolio Capital.
+[2026-06-01] RECLASS | Proparco | Patient Capital -> Sovereign Capital | Proparco is the private-sector arm of AFD — French government DFI. CLAUDE.md explicitly lists DFIs under Sovereign Capit
+[2026-06-01] RECLASS | Recur Software | SMV -> Portfolio Capital | Vertical SaaS buy-and-hold acquirer, AI-first — Portfolio Capital.
+[2026-06-01] RECLASS | Redwood Services | Patient Capital -> Portfolio Capital | Home-services roll-up / acquirer model with tuck-ins under a single platform — that is Portfolio Capital, not Patient Ca
+[2026-06-01] RECLASS | Riverbound Partners | Patient Capital -> Search/ETA | Single-business acquisition by a CEO/searcher with backers (search-fund style ETA), but explicit permanent-hold framing 
+[2026-06-01] RECLASS | Swedfund | LMV -> Sovereign Capital | Swedish state-owned development finance institution (DFI) deploying public capital into developing-market companies.
+[2026-06-01] RECLASS | Symbiotics | Sovereign Capital -> Patient Capital | Private impact private debt asset manager — no state mandate.
+[2026-06-01] RECLASS | WaterEquity | Sovereign Capital -> Patient Capital | Private thematic impact asset manager (water/sanitation) — no sovereign mandate.
+[2026-06-01] RECLASS | XO Capital | SMV -> Portfolio Capital | Micro-PE B2B SaaS acquirer, buy-and-operate — Portfolio Capital.
+[2026-06-01] RECLASS | responsAbility Investments | Sovereign Capital -> Patient Capital | Private impact asset manager for emerging markets — no state affiliation.
+[2026-06-01] RECLASS | New Harbor Capital | SMV -> Portfolio Capital | LMM PE in healthcare, education, tech-enabled services — standard PE.
+[2026-06-01] RECLASS | APG Asset Management | Sovereign Capital -> Patient Capital | One of the world's largest pension investors — private pension asset manager, not a state-mandated sovereign vehicle.
+[2026-06-01] RECLASS | Blue-Collar Trades Group | Portfolio Capital -> Search/ETA | Self-described operator-investor doing indie search-style blue-collar acquisitions with no platform scale; closer to ETA
+[2026-06-01] RECLASS | Bluefront Equity | Portfolio Capital -> Patient Capital | Impact-focused Nordic growth equity fund in seafood sector sustainability; mission-driven long-hold philosophy closer to
+[2026-06-01] RECLASS | Generate Capital | Sovereign Capital -> Patient Capital | Sustainable infrastructure platform and project-finance allocator — private, no state mandate.
+[2026-06-01] RECLASS | Spring Lane Capital | Sovereign Capital -> Patient Capital | Private missing-middle project-finance allocator for sustainable real assets — no sovereign mandate.
+[2026-06-01] RECLASS | i2i Ventures | SMV -> LMV | Pakistan pre-seed/seed VC — LMV emerging-market micro-fund.
+[2026-06-01] RECLASS | Charlesbank Capital Partners | SMV -> Portfolio Capital | Harvard-endowment-spinout middle-market buyout PE.
+[2026-06-01] RECLASS | Counteract | Sovereign Capital -> LMV | Small private pre-seed/seed carbon-removal VC fund — no state affiliation.
+[2026-06-01] RECLASS | FFL Partners | SMV -> Portfolio Capital | Single-strategy middle-market PE in healthcare/tech-enabled services.
+[2026-06-01] RECLASS | Lockheed Martin Ventures | Sovereign Capital -> Portfolio Capital | $1B evergreen strategic investment arm of Lockheed Martin — corporate holdco-style perpetual fund, not sovereign.
+[2026-06-01] RECLASS | Norwest Equity Partners | SMV -> Portfolio Capital | First-institutional-capital buyout PE — classic LMM PE model.
+[2026-06-01] RECLASS | Oval Partners | Portfolio Capital -> Patient Capital | Multifamily office with private-holding-company mentality and long time frame; structurally a family office Patient Capi
+[2026-06-01] RECLASS | Pamlico Capital | SMV -> Portfolio Capital | LMM PE growth equity in tech-enabled services — standard PE mechanics.
+[2026-06-01] RECLASS | Riverwood Capital | SMV -> Portfolio Capital | Global tech growth equity $25-$250M, minority/control — standard PE.
+[2026-06-01] RECLASS | Tower Arch Capital | SMV -> Portfolio Capital | LMM control PE, family/founder-owned recaps — standard buyout PE.
+[2026-06-01] RECLASS | CDIB Capital Group | Portfolio Capital -> Sovereign Capital | Investment arm of China Development Financial, a government development bank; sovereign-linked development capital.
+[2026-06-01] RECLASS | Greenbacker Capital | Sovereign Capital -> Patient Capital | Private renewable-energy IPP and investment manager — no state mandate.
+[2026-06-01] RECLASS | African Capital Alliance | Portfolio Capital -> Patient Capital | Pan-African PE with long-duration growth equity and mission-driven capital; closer to Patient Capital.
+[2026-06-01] RECLASS | Beacon Fund | Portfolio Capital -> SMV | Private debt fund deploying non-dilutive flexible mid-term loans to Vietnamese SMEs; revenue-based/non-dilutive capital 
+[2026-06-01] RECLASS | Cantos | SMV -> LMV | Deep-tech pre-seed/seed venture equity — LMV early-stage VC.
+[2026-06-01] RECLASS | Mairs & Power Venture Capital | SMV -> LMV | Regional seed/Series A VC, Upper Midwest — LMV geographic micro-fund.
+[2026-06-01] RECLASS | Tilia Impact Ventures | LMV -> Patient Capital | CEE impact fund with permanent/long-hold equity posture and social mission mandate fitting Patient Capital.
+[2026-06-01] RECLASS | Concrete Ventures | Portfolio Capital -> LMV | Atlantic Canadian pre-seed VC fund; solo/micro/indie fund model should be LMV.
+[2026-06-01] RECLASS | OSS Capital | SMV -> LMV | Early-stage VC exclusively for COSS startups — LMV thesis-driven micro-fund.
+[2026-06-01] RECLASS | Penta Capital | SMV -> Portfolio Capital | UK mid-market PE buyouts — standard PE.
+[2026-06-01] RECLASS | ARM-Harith Infrastructure Investment | Sovereign Capital -> Patient Capital | Pan-African infrastructure PE fund manager — private JV, no direct sovereign mandate.
+[2026-06-01] RECLASS | Hidden Valley Capital | Portfolio Capital -> Search/ETA | Self-funded owner-operator group seeking lower and middle market acquisitions; definition of an independent search vehic
+[2026-06-01] RECLASS | Verod-Kepple Africa Ventures | Sovereign Capital -> LMV | $60M pan-African VC fund at Series A scale — independent private manager, not sovereign.
+[2026-06-01] RECLASS | Argosy Private Equity | SMV -> Portfolio Capital | LMM buyout PE, 30 years, 7 closed-end funds — standard PE.
+[2026-06-01] RECLASS | Atlantic Street Capital | SMV -> Portfolio Capital | Operationally focused LMM buyout PE — standard PE.
+[2026-06-01] RECLASS | Boyne Capital | SMV -> Portfolio Capital | LMM platform builder PE for family/founder businesses — standard PE.
+[2026-06-01] RECLASS | Copley Equity Partners | Portfolio Capital -> Patient Capital | Evergreen single-family-office with patient flexible long-term approach; classic Patient Capital allocator.
+[2026-06-01] RECLASS | Methuselah Fund | LMV -> Patient Capital | Longevity fund with mission-driven permanent-equity framing ('we will never force a premature exit') — fits Patient Capi
+[2026-06-01] RECLASS | Spell Capital Partners | SMV -> Patient Capital | Family-office-funded LMM PE/mezzanine with permanent capital elements post-Fund V.
+[2026-06-01] RECLASS | White Wolf Capital | SMV -> Portfolio Capital | LMM multi-strategy equity + credit + fund-of-funds — Portfolio Capital.
+[2026-06-01] RECLASS | Sandbridge Capital | SMV -> Patient Capital | Consumer growth equity with long-term approach for branded consumer companies — Patient Capital orientation.
+[2026-06-01] RECLASS | Pitchdrive | SMV -> LMV | Entrepreneur-led pre-seed/seed VC, European — LMV micro-fund.
+[2026-06-01] RECLASS | Senovo | SMV -> LMV | B2B SaaS seed/Series A VC, European — LMV early-stage fund.
+[2026-06-01] RECLASS | JAB Holding Company | Portfolio Capital -> Patient Capital | Reimann family generational-capital firm with permanent majority ownership and explicit long-hold philosophy.
+[2026-06-01] VENTURE_STUDIO | High Alpha | Portfolio Capital -> Venture Studio
+[2026-06-01] VENTURE_STUDIO | Atomic | Portfolio Capital -> Venture Studio
+[2026-06-01] VENTURE_STUDIO | Expa | Portfolio Capital -> Venture Studio
+[2026-06-01] VENTURE_STUDIO | Betaworks | Portfolio Capital -> Venture Studio
+[2026-06-01] VENTURE_STUDIO | Hexa | Portfolio Capital -> Venture Studio
+[2026-06-01] VENTURE_STUDIO | Rocket Internet | Portfolio Capital -> Venture Studio
+[2026-06-01] VENTURE_STUDIO | Idealab | Portfolio Capital -> Venture Studio
+[2026-06-01] VENTURE_STUDIO | Pioneer Square Labs | Portfolio Capital -> Venture Studio
+[2026-06-01] VENTURE_STUDIO | Human Ventures | Portfolio Capital -> Venture Studio
+[2026-06-01] VENTURE_STUDIO | Science Inc. | Portfolio Capital -> Venture Studio
+[2026-06-01] VENTURE_STUDIO | Wilbur Labs | Portfolio Capital -> Venture Studio
+[2026-06-01] VENTURE_STUDIO | Juxtapose | Portfolio Capital -> Venture Studio
+[2026-06-01] VENTURE_STUDIO | Founders Factory | Portfolio Capital -> Venture Studio
+[2026-06-01] VENTURE_STUDIO | Entrepreneur First | Portfolio Capital -> Venture Studio
+[2026-06-01] VENTURE_STUDIO | Antler | Portfolio Capital -> Venture Studio
+[2026-06-01] VENTURE_STUDIO | Enhance Ventures | Portfolio Capital -> Venture Studio
+[2026-06-01] VENTURE_STUDIO | Team8 | Portfolio Capital -> Venture Studio
+[2026-06-01] VENTURE_STUDIO | Fractal Software | Portfolio Capital -> Venture Studio
+[2026-06-01] VENTURE_STUDIO | Nobody Studios | Portfolio Capital -> Venture Studio
+[2026-06-01] VENTURE_STUDIO | Aegis Ventures | Portfolio Capital -> Venture Studio
+[2026-06-01] VENTURE_STUDIO | Zero 1 | Portfolio Capital -> Venture Studio
+[2026-06-01] VENTURE_STUDIO | Blenheim Chalcot | Portfolio Capital -> Venture Studio
+[2026-06-01] VENTURE_STUDIO | Diagram | Portfolio Capital -> Venture Studio
+[2026-06-01] VENTURE_STUDIO | Hashed Health | Portfolio Capital -> Venture Studio
+[2026-06-01] VENTURE_STUDIO | Redesign Health | Portfolio Capital -> Venture Studio
+[2026-06-01] VENTURE_STUDIO | Workshop Ventures | Portfolio Capital -> Venture Studio
+[2026-06-01] VENTURE_STUDIO | Bridgewest Ventures NZ | LMV -> Venture Studio
+[2026-06-01] ORPHAN_SWEEP | 316 orphan claims removed -> data\evidence\orphan_claims_purged_2026-06-01.csv
+[2026-06-01] ECOSYSTEM_EXTEND | +9 entries -> ecosystem_entities.csv
+[2026-06-01] PHASE 4 HYGIENE RUN COMPLETE | purged=83 eco=9 reclass=118 studio=27
+[2026-06-01] RECLASS | Curious | Patient Capital -> Portfolio Capital | Patient Capital sub-cluster (PERM_EQUITY_SOFTWARE/ROLLUP/SMB)
+[2026-06-01] RECLASS | NovaSpark Holdings | Patient Capital -> Portfolio Capital | Patient Capital sub-cluster (PERM_EQUITY_SOFTWARE/ROLLUP/SMB)
+[2026-06-01] RECLASS | Evergreen (evergreensg.com) | Patient Capital -> Portfolio Capital | Patient Capital sub-cluster (PERM_EQUITY_SOFTWARE/ROLLUP/SMB)
+[2026-06-01] RECLASS | Springwater | Patient Capital -> Portfolio Capital | Patient Capital sub-cluster (PERM_EQUITY_SOFTWARE/ROLLUP/SMB)
+[2026-06-01] RECLASS | Upliift | Patient Capital -> Portfolio Capital | Patient Capital sub-cluster (PERM_EQUITY_SOFTWARE/ROLLUP/SMB)
+[2026-06-01] RECLASS | Mosaic | Patient Capital -> Portfolio Capital | Patient Capital sub-cluster (PERM_EQUITY_SOFTWARE/ROLLUP/SMB)
+[2026-06-01] RECLASS | 83K Capital | Patient Capital -> Portfolio Capital | Patient Capital sub-cluster (PERM_EQUITY_SOFTWARE/ROLLUP/SMB)
+[2026-06-01] RECLASS | Long Holding Company | Patient Capital -> Portfolio Capital | Patient Capital sub-cluster (PERM_EQUITY_SOFTWARE/ROLLUP/SMB)
+[2026-06-01] RECLASS | Sagamore Mountain | Patient Capital -> Portfolio Capital | Patient Capital sub-cluster (PERM_EQUITY_SOFTWARE/ROLLUP/SMB)
+[2026-06-01] RECLASS | Union Software Group | Patient Capital -> Portfolio Capital | Patient Capital sub-cluster (PERM_EQUITY_SOFTWARE/ROLLUP/SMB)
+[2026-06-01] RECLASS | Wrench Group | Patient Capital -> Portfolio Capital | Patient Capital sub-cluster (PERM_EQUITY_SOFTWARE/ROLLUP/SMB)
+[2026-06-01] RECLASS | Teoh Capital | Patient Capital -> Portfolio Capital | Patient Capital sub-cluster (PERM_EQUITY_SOFTWARE/ROLLUP/SMB)
+[2026-06-01] RECLASS | MB2 Dental | Patient Capital -> Portfolio Capital | Patient Capital sub-cluster (PERM_EQUITY_SOFTWARE/ROLLUP/SMB)
+[2026-06-01] RECLASS | Beacon Behavioral Health Partners | Patient Capital -> Portfolio Capital | Patient Capital sub-cluster (PERM_EQUITY_SOFTWARE/ROLLUP/SMB)
+[2026-06-01] RECLASS | DermCare Management | Patient Capital -> Portfolio Capital | Patient Capital sub-cluster (PERM_EQUITY_SOFTWARE/ROLLUP/SMB)
+[2026-06-01] RECLASS | Founders Home Service Group | Patient Capital -> Portfolio Capital | Patient Capital sub-cluster (PERM_EQUITY_SOFTWARE/ROLLUP/SMB)
+[2026-06-01] RECLASS | Sila Services | Patient Capital -> Portfolio Capital | Patient Capital sub-cluster (PERM_EQUITY_SOFTWARE/ROLLUP/SMB)
+[2026-06-01] RECLASS | Southern Home Services | Patient Capital -> Portfolio Capital | Patient Capital sub-cluster (PERM_EQUITY_SOFTWARE/ROLLUP/SMB)
+[2026-06-01] RECLASS | Specialty1 Partners | Patient Capital -> Portfolio Capital | Patient Capital sub-cluster (PERM_EQUITY_SOFTWARE/ROLLUP/SMB)
+[2026-06-01] RECLASS | The SEER Group | Patient Capital -> Portfolio Capital | Patient Capital sub-cluster (PERM_EQUITY_SOFTWARE/ROLLUP/SMB)
+[2026-06-01] RECLASS | Vetcor | Patient Capital -> Portfolio Capital | Patient Capital sub-cluster (PERM_EQUITY_SOFTWARE/ROLLUP/SMB)
+[2026-06-01] RECLASS | Veterinary Practice Partners | Patient Capital -> Portfolio Capital | Patient Capital sub-cluster (PERM_EQUITY_SOFTWARE/ROLLUP/SMB)
+[2026-06-01] RECLASS | Deutsche Beteiligungs AG | Patient Capital -> Portfolio Capital | Patient Capital sub-cluster (PERM_EQUITY_SOFTWARE/ROLLUP/SMB)
+[2026-06-01] RECLASS | Software Combined | Patient Capital -> Portfolio Capital | Patient Capital sub-cluster (PERM_EQUITY_SOFTWARE/ROLLUP/SMB)
+[2026-06-01] RECLASS | Oceania Capital Partners | Patient Capital -> Portfolio Capital | Patient Capital sub-cluster (PERM_EQUITY_SOFTWARE/ROLLUP/SMB)
+[2026-06-01] RECLASS | LVO Industries | Patient Capital -> Portfolio Capital | LISTED_HOLDCO/INSTITUTIONAL_ENDOWMENT adversarial review 4c
+[2026-06-01] RECLASS | State of Wisconsin Investment Board (SWIB) | Patient Capital -> Sovereign Capital | LISTED_HOLDCO/INSTITUTIONAL_ENDOWMENT adversarial review 4c
+[2026-06-01] RECLASS | HAL Investments | Patient Capital -> Portfolio Capital | LISTED_HOLDCO/INSTITUTIONAL_ENDOWMENT adversarial review 4c
+[2026-06-01] RECLASS | Sofina | Patient Capital -> Portfolio Capital | LISTED_HOLDCO/INSTITUTIONAL_ENDOWMENT adversarial review 4c
+[2026-06-01] RECLASS | Gimv | Patient Capital -> Portfolio Capital | LISTED_HOLDCO/INSTITUTIONAL_ENDOWMENT adversarial review 4c
+[2026-06-01] RECLASS | Burford Capital | Patient Capital -> SMV | LISTED_HOLDCO/INSTITUTIONAL_ENDOWMENT adversarial review 4c
+[2026-06-01] RECLASS | Crayhill Capital Management | Patient Capital -> SMV | LISTED_HOLDCO/INSTITUTIONAL_ENDOWMENT adversarial review 4c
+[2026-06-01] RECLASS | Bergman & Beving | Patient Capital -> Portfolio Capital | LISTED_HOLDCO/INSTITUTIONAL_ENDOWMENT adversarial review 4c
+[2026-06-01] RECLASS | Luxempart | Patient Capital -> Portfolio Capital | LISTED_HOLDCO/INSTITUTIONAL_ENDOWMENT adversarial review 4c
+[2026-06-01] RECLASS | Metrics Credit Partners | Patient Capital -> SMV | LISTED_HOLDCO/INSTITUTIONAL_ENDOWMENT adversarial review 4c
+[2026-06-01] ECOSYSTEM | Surdna Foundation | Patient Capital -> ECOSYSTEM | endowment LP / grantmaker 4c
+[2026-06-01] ECOSYSTEM | McKnight Foundation | Patient Capital -> ECOSYSTEM | endowment LP / grantmaker 4c
+[2026-06-01] ECOSYSTEM | Duke University Management Company (DUMAC) | Patient Capital -> ECOSYSTEM | endowment LP / grantmaker 4c
+[2026-06-01] ECOSYSTEM | MIT Investment Management Company (MITIMCo) | Patient Capital -> ECOSYSTEM | endowment LP / grantmaker 4c
+[2026-06-01] ECOSYSTEM | Stanford Management Company | Patient Capital -> ECOSYSTEM | endowment LP / grantmaker 4c
+[2026-06-01] ECOSYSTEM | The University of Texas/Texas A&M Investment Management Company (UTIMCO) | Patient Capital -> ECOSYSTEM | endowment LP / grantmaker 4c
+[2026-06-01] ECOSYSTEM | Cornell University Office of University Investments | Patient Capital -> ECOSYSTEM | endowment LP / grantmaker 4c
+[2026-06-01] ECOSYSTEM | Notre Dame Investment Office | Patient Capital -> ECOSYSTEM | endowment LP / grantmaker 4c
+[2026-06-01] ECOSYSTEM | Princeton University Investment Company (PRINCO) | Patient Capital -> ECOSYSTEM | endowment LP / grantmaker 4c
+[2026-06-01] ECOSYSTEM | Yale Investments Office | Patient Capital -> ECOSYSTEM | endowment LP / grantmaker 4c
+[2026-06-01] ECOSYSTEM | Northwestern University Investment Office | Patient Capital -> ECOSYSTEM | endowment LP / grantmaker 4c
+[2026-06-01] ECOSYSTEM | Vanderbilt University Office of Investments | Patient Capital -> ECOSYSTEM | endowment LP / grantmaker 4c
+[2026-06-01] ECOSYSTEM | Washington University Investment Management Company | Patient Capital -> ECOSYSTEM | endowment LP / grantmaker 4c
+[2026-06-01] ECOSYSTEM | Simplicity NZ | Patient Capital -> ECOSYSTEM | endowment LP / grantmaker 4c
