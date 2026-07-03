@@ -1,0 +1,16 @@
+# Owner rulings walk-through 2026-07-03 (11 proposals + studios consistency fix)
+2026-07-03 owner-ruling kickstart: keep Nimble; Excluded-Traditional proposal rejected
+2026-07-03 owner-ruling delta-fund: keep Impact Capital (Ethan-vouched); FoF allocator question flagged for Ethan
+2026-07-03 owner-ruling orbit-ventures: keep Reserved; Excluded-Traditional proposal rejected
+2026-07-03 owner-ruling hasan-vc: keep Nimble; Impact proposal rejected
+2026-07-03 owner-ruling capacity-capital: class Nimble -> Under Review (RBF structure (repayment vs exit) + impact signals; parked)
+2026-07-03 owner-ruling zebras-and-company: class Reserved -> Impact Capital (zebra profit-plus-social allocator)
+2026-07-03 owner-ruling buentrip-ventures: class Nimble -> SMV, band Nimble -> SMV (sub-unicorn outcomes on slower LatAm timelines; blog-source evidence, conf med)
+2026-07-03 owner-ruling apex-point-equity: class SMV -> Under Review (micro-PE acquire-improve-sell may be its own mechanism)
+2026-07-03 owner-ruling ascendant-ventures: class Excluded-Traditional -> Under Review (owner said keep under review; Operator/ETA candidate for Reserved when class activates)
+2026-07-03 owner-ruling wasala-venture-studio: class Nimble -> Studio (class=Studio, band stays Nimble per owner consistency ruling)
+2026-07-03 owner-ruling highline-beta: class Nimble -> Studio (class=Studio, band stays Nimble per owner consistency ruling)
+2026-07-03 owner-ruling nobody-studios: class Nimble -> Studio (class=Studio, band stays Nimble per owner consistency ruling)
+2026-07-03 owner-ruling junagal: REMOVED from atlas (pure advisory, states no capital deployment - fails allocator test) [src: https://junagal.com/]
+2026-07-03 owner-ruling collab-holdings: REMOVED from atlas (non-tech consumer-brands holdco - out of atlas scope) [src: https://collabfund.com/blog/collab-holdings/]
+2026-07-03 orphan-sweep data/evidence/entity_claims.csv: removed 3 claims for ['junagal', 'collab-holdings']
