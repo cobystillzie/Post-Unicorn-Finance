@@ -1,0 +1,867 @@
+entity_id,name,atlas_layer,reason
+tinyseed,TinySeed,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+calm-company-fund,Calm Company Fund,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+earnest-capital,Earnest Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+indie-vc,Indie.vc,background,not in 258 tech base / non-tech
+lighter-capital,Lighter Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+capchase,Capchase,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+founderpath,Founderpath,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+pipe,Pipe,background,not in 258 tech base / non-tech
+clearco,Clearco,background,not in 258 tech base / non-tech
+wayflyer,Wayflyer,background,not in 258 tech base / non-tech
+uncapped,Uncapped,background,not in 258 tech base / non-tech
+outfund,Outfund,background,not in 258 tech base / non-tech
+decathlon-capital-partners,Decathlon Capital Partners,background,not in 258 tech base / non-tech
+saas-capital,SaaS Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+novel-capital,Novel Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+bigfoot-capital,Bigfoot Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+espresso-capital,Espresso Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+timia-capital,TIMIA Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+flow-capital,Flow Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+braavo-capital,Braavo Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+stripe-capital,Stripe Capital,background,not in 258 tech base / non-tech
+shopify-capital,Shopify Capital,background,not in 258 tech base / non-tech
+paypal-working-capital,PayPal Working Capital,background,not in 258 tech base / non-tech
+youlend,YouLend,background,not in 258 tech base / non-tech
+liberis,Liberis,background,not in 258 tech base / non-tech
+parafin,Parafin,background,not in 258 tech base / non-tech
+getvantage,GetVantage,background,not in 258 tech base / non-tech
+velocity,Velocity,background,not in 258 tech base / non-tech
+klub,Klub,background,not in 258 tech base / non-tech
+sv8,SV8,background,not in 258 tech base / non-tech
+tangle-ventures,Tangle Ventures,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+dwp-capital,DWP Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+union-group-fund,Union Group Fund,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+tvc-capital,TVC Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+d2-fund,D2 Fund,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+seedtwo-capital,SeedTwo Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+sequel-capital,Sequel Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+mainsail-partners,Mainsail Partners,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+serent-capital,Serent Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+mamba-growth,Mamba Growth,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+five-elms-capital,Five Elms Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+elsewhere-partners,Elsewhere Partners,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+sunstone-partners,Sunstone Partners,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+expedition-growth-capital,Expedition Growth Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+silversmith-capital-partners,Silversmith Capital Partners,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+level-equity,Level Equity,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+sureswift-capital,SureSwift Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+tiny,Tiny,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+constellation-software,Constellation Software,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+volaris-group,Volaris Group,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+valsoft,Valsoft,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+banyan-software,Banyan Software,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+saas-group,saas.group,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+everfield,Everfield,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+lumine-group,Lumine Group,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+topicus,Topicus,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+aspire-software,Aspire Software,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+jonas-software,Jonas Software,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+harris-computer,Harris Computer,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+perseus-group,Perseus Group,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+esw-capital,ESW Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+alpine-software-group,Alpine Software Group,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+scaleworks,Scaleworks,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+greater-sum-ventures,Greater Sum Ventures,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+arcadea-group,Arcadea Group,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+tag-software-group,TAG Software Group,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+vertus-group,Vertus Group,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+software-circle,Software Circle,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+chapters-group,Chapters Group,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+visma,Visma,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+main-capital-partners,Main Capital Partners,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+pacific-lake-partners,Pacific Lake Partners,background,not in 258 tech base / non-tech
+relay-investments,Relay Investments,background,not in 258 tech base / non-tech
+anacapa-partners,Anacapa Partners,background,not in 258 tech base / non-tech
+search-fund-partners,Search Fund Partners,background,not in 258 tech base / non-tech
+next-coast-eta,Next Coast ETA,background,not in 258 tech base / non-tech
+wsc-company,WSC & Company,background,not in 258 tech base / non-tech
+ambit-partners,Ambit Partners,background,not in 258 tech base / non-tech
+miramar-equity-partners,Miramar Equity Partners,background,not in 258 tech base / non-tech
+hunter-search-capital,Hunter Search Capital,background,not in 258 tech base / non-tech
+alza-capital-partners,Alza Capital Partners,background,not in 258 tech base / non-tech
+acquira,Acquira,background,not in 258 tech base / non-tech
+mainshares,Mainshares,background,not in 258 tech base / non-tech
+teamshares,Teamshares,background,not in 258 tech base / non-tech
+permanent-equity,Permanent Equity,background,not in 258 tech base / non-tech
+capitalpad,CapitalPad,background,not in 258 tech base / non-tech
+acumen,Acumen,background,not in 258 tech base / non-tech
+founders-first-capital-partners,Founders First Capital Partners,background,not in 258 tech base / non-tech
+rsf-social-finance,RSF Social Finance,background,not in 258 tech base / non-tech
+common-future,Common Future,background,not in 258 tech base / non-tech
+village-capital,Village Capital,background,not in 258 tech base / non-tech
+collab-capital,Collab Capital,background,not in 258 tech base / non-tech
+boston-impact-initiative,Boston Impact Initiative,background,not in 258 tech base / non-tech
+temasek,Temasek,background,not in 258 tech base / non-tech
+gic,GIC,background,not in 258 tech base / non-tech
+mubadala,Mubadala,background,not in 258 tech base / non-tech
+sanabil-investments,Sanabil Investments,background,not in 258 tech base / non-tech
+public-investment-fund,Public Investment Fund,background,not in 258 tech base / non-tech
+qatar-investment-authority,Qatar Investment Authority,background,not in 258 tech base / non-tech
+bpifrance,Bpifrance,background,not in 258 tech base / non-tech
+british-business-bank,British Business Bank,background,not in 258 tech base / non-tech
+eic-fund,EIC Fund,background,not in 258 tech base / non-tech
+european-investment-fund,European Investment Fund,background,not in 258 tech base / non-tech
+nato-innovation-fund,NATO Innovation Fund,background,not in 258 tech base / non-tech
+kfw-capital,KfW Capital,background,not in 258 tech base / non-tech
+edbi,EDBI,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+sginnovate,SGInnovate,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+khazanah-nasional,Khazanah Nasional,background,not in 258 tech base / non-tech
+israel-innovation-authority,Israel Innovation Authority,background,not in 258 tech base / non-tech
+innovate-uk,Innovate UK,background,not in 258 tech base / non-tech
+in-q-tel,In-Q-Tel,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+high-alpha,High Alpha,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+atomic,Atomic,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+expa,Expa,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+betaworks,Betaworks,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+hexa,Hexa,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+rocket-internet,Rocket Internet,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+idealab,Idealab,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+pioneer-square-labs,Pioneer Square Labs,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+human-ventures,Human Ventures,background,not in 258 tech base / non-tech
+science-inc,Science Inc.,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+wilbur-labs,Wilbur Labs,background,not in 258 tech base / non-tech
+juxtapose,Juxtapose,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+founders-factory,Founders Factory,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+entrepreneur-first,Entrepreneur First,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+antler,Antler,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+enhance-ventures,Enhance Ventures,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+team8,Team8,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+fractal-software,Fractal Software,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+weekend-fund,Weekend Fund,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+pioneer,Pioneer,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+hf0,HF0,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+venture10x,Venture10X,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+curious,Curious,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+apex-point-equity,Apex Point Equity,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+alley-street,Alley & Street,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+soft-equities,Soft Equities,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+river-saas-capital,River Saas Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+saas-growth-ventures,SaaS Growth Ventures,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+golden-section,Golden Section,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+novaspark-holdings,NovaSpark Holdings,background,not in 258 tech base / non-tech
+entrepreneurship-through-acquisition-and-search-fund-resource-library,Entrepreneurship Through Acquisition and Search Fund Resource Library,background,not in 258 tech base / non-tech
+evergreen-evergreensg-com,Evergreen (evergreensg.com),core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+everhold,Everhold,background,not in 258 tech base / non-tech
+fund-for-employee-ownership,Fund for Employee Ownership,background,not in 258 tech base / non-tech
+gt-entrepreneurs,GT Entrepreneurs,background,not in 258 tech base / non-tech
+hold-co,HOLD.co,background,not in 258 tech base / non-tech
+perpetual,Perpetual,background,not in 258 tech base / non-tech
+perpetual-capital,Perpetual Capital,background,not in 258 tech base / non-tech
+purpose-evergreen-capital,Purpose Evergreen Capital,background,not in 258 tech base / non-tech
+search-fund-accelerator,Search Fund Accelerator,background,not in 258 tech base / non-tech
+search-funds,Search Funds,background,not in 258 tech base / non-tech
+springwater,Springwater,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+sundance-growth,Sundance Growth,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+uk-sovereign-ai-fund,UK Sovereign AI Fund,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+upliift,Upliift,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+meritholdings,Meritholdings,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+mosaic,Mosaic,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+office-of-strategic-capital-osc,Office of Strategic Capital (OSC),core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+float-finance,Float Finance,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+re-cap,Re:cap,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+red-forest-capital,Red Forest Capital,background,not in 258 tech base / non-tech
+eta-equity,ETA Equity,background,not in 258 tech base / non-tech
+nobody-studios,Nobody Studios,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+wildfront,Wildfront,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+itrinity,itrinity,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+asseco-group,Asseco Group,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+carlson-private-capital-partners,Carlson Private Capital Partners,background,not in 258 tech base / non-tech
+funds-for-good,Funds For Good,background,not in 258 tech base / non-tech
+macarthur-foundation,MacArthur Foundation,background,not in 258 tech base / non-tech
+mission-driven-finance,Mission Driven Finance,background,not in 258 tech base / non-tech
+mozilla-foundation,Mozilla Foundation,background,not in 258 tech base / non-tech
+novo-nordisk-foundation,Novo Nordisk Foundation,background,not in 258 tech base / non-tech
+pohlad-companies,Pohlad Companies,background,not in 258 tech base / non-tech
+pritzker-group,Pritzker Group,background,not in 258 tech base / non-tech
+bending-spoons,Bending Spoons,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+better-ventures,Better Ventures,background,not in 258 tech base / non-tech
+forum-ventures,Forum Ventures,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+south-park-commons,South Park Commons,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+smb-investor-network,SMB Investor Network,background,not in 258 tech base / non-tech
+sovereign-tech-fund,Sovereign Tech Fund,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+the-builders-fund,The Builders Fund,background,not in 258 tech base / non-tech
+aligned-climate-capital,Aligned Climate Capital,background,not in 258 tech base / non-tech
+risefi,RiseFi,background,not in 258 tech base / non-tech
+settle,Settle,background,not in 258 tech base / non-tech
+83k-capital,83K Capital,background,not in 258 tech base / non-tech
+andromeda,Andromeda,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+atlasview-equity,Atlasview Equity,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+broadtree-partners,Broadtree Partners,background,not in 258 tech base / non-tech
+brydon-group,Brydon Group,background,not in 258 tech base / non-tech
+dvg-partners,DVG Partners,background,not in 258 tech base / non-tech
+patagonia-works,Patagonia Works,background,not in 258 tech base / non-tech
+perpetua-capital,Perpetua Capital,background,not in 258 tech base / non-tech
+founder-institute,Founder Institute,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+onesixone-ventures,OneSixOne Ventures,background,not in 258 tech base / non-tech
+beacon-oral-specialists,Beacon Oral Specialists,background,not in 258 tech base / non-tech
+heartland-dental,Heartland Dental,background,not in 258 tech base / non-tech
+hummock-capital,Hummock Capital,background,not in 258 tech base / non-tech
+snell-ventures,Snell Ventures,background,not in 258 tech base / non-tech
+impact,Impact,background,not in 258 tech base / non-tech
+vela-software-group,Vela Software Group,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+bridges-fund-management,Bridges Fund Management,background,not in 258 tech base / non-tech
+fika-ventures,Fika Ventures,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+ford-foundation,Ford Foundation,background,not in 258 tech base / non-tech
+founder-collective,Founder Collective,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+generation-investment-management,Generation Investment Management,background,not in 258 tech base / non-tech
+heron-foundation,Heron Foundation,background,not in 258 tech base / non-tech
+homebrew,Homebrew,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+iconiq-capital,Iconiq Capital,background,not in 258 tech base / non-tech
+koch-industries,Koch Industries,background,not in 258 tech base / non-tech
+kresge-foundation,Kresge Foundation,background,not in 258 tech base / non-tech
+leapfrog-investments,LeapFrog Investments,background,not in 258 tech base / non-tech
+long-journey-ventures,Long Journey Ventures,background,not in 258 tech base / non-tech
+marlin-equity-partners,Marlin Equity Partners,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+wefunder,"Wefunder,  ...",core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+prime-coalition,Prime Coalition,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+solen-software-group,Solen Software Group,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+hyperplane-venture-capital,Hyperplane Venture Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+apex-capital-group,Apex Capital Group,background,not in 258 tech base / non-tech
+astia,Astia,background,not in 258 tech base / non-tech
+caisse-de-d-p-t-et-placement-du-qu-bec,Caisse de dépôt et placement du Québec,background,not in 258 tech base / non-tech
+calpers,CalPERS,background,not in 258 tech base / non-tech
+calm-storm-ventures,Calm/Storm Ventures,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+capricorn-investment-group,Capricorn Investment Group,background,not in 258 tech base / non-tech
+climate-investment-fund,Climate Investment Fund,background,not in 258 tech base / non-tech
+diploma-plc,Diploma plc,background,not in 258 tech base / non-tech
+green-climate-fund,Green Climate Fund,background,not in 258 tech base / non-tech
+liberty-media,Liberty Media,background,not in 258 tech base / non-tech
+loews-corporation,Loews Corporation,background,not in 258 tech base / non-tech
+markel-ventures,Markel Ventures,background,not in 258 tech base / non-tech
+norges-bank-investment-management,Norges Bank Investment Management,background,not in 258 tech base / non-tech
+skoll-foundation,Skoll Foundation,background,not in 258 tech base / non-tech
+sovereign-s-capital,Sovereign's Capital,background,not in 258 tech base / non-tech
+aspect-investors,Aspect Investors,background,not in 258 tech base / non-tech
+berkshire-partners-acquisitions,Berkshire Partners Acquisitions,background,not in 258 tech base / non-tech
+caltius-equity-partners,Caltius Equity Partners,background,not in 258 tech base / non-tech
+emerson-collective,Emerson Collective,background,not in 258 tech base / non-tech
+national-investment-infrastructure-fund-india,National Investment & Infrastructure Fund (India),background,not in 258 tech base / non-tech
+north-park-group,North Park Group,background,not in 258 tech base / non-tech
+revtek-capital,RevTek Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+trilogy-software,Trilogy Software,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+enduring-ventures,Enduring Ventures,background,not in 258 tech base / non-tech
+evermore-industries,Evermore Industries,background,not in 258 tech base / non-tech
+lab-one-capital,Lab One Capital,background,not in 258 tech base / non-tech
+long-holding-company,Long Holding Company,background,not in 258 tech base / non-tech
+opalkadia,OpalKadia,background,not in 258 tech base / non-tech
+sig-partners,SIG Partners,background,not in 258 tech base / non-tech
+sagamore-mountain,Sagamore Mountain,background,not in 258 tech base / non-tech
+saturn-five,Saturn Five,background,not in 258 tech base / non-tech
+stoiclane,StoicLane,background,not in 258 tech base / non-tech
+stonehelm-group,StoneHelm Group,background,not in 258 tech base / non-tech
+traction,Traction,background,not in 258 tech base / non-tech
+impro-ventures,Impro Ventures,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+startup-ignition,Startup Ignition,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+aij-global-holdings,AIJ Global Holdings,background,not in 258 tech base / non-tech
+aegis-ventures,Aegis Ventures,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+align-capital-partners,Align Capital Partners,background,not in 258 tech base / non-tech
+apis-heritage-capital-partners,Apis & Heritage Capital Partners,background,not in 258 tech base / non-tech
+appalachian-capital,Appalachian Capital,background,not in 258 tech base / non-tech
+arada-capital-partners,Arada Capital Partners,background,not in 258 tech base / non-tech
+bow-river-capital,Bow River Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+cofides,COFIDES,background,not in 258 tech base / non-tech
+cranemere,Cranemere,background,not in 258 tech base / non-tech
+crestmont-capital,Crestmont Capital,background,not in 258 tech base / non-tech
+development-bank-of-southern-africa-dbsa,Development Bank of Southern Africa (DBSA),background,not in 258 tech base / non-tech
+efficient-capital-labs,Efficient Capital Labs,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+fonsis-fonds-souverain-d-investissements-strat-giques,FONSIS (Fonds Souverain d'Investissements Stratégiques),background,not in 258 tech base / non-tech
+garden-city-equity,Garden City Equity,background,not in 258 tech base / non-tech
+grupo-santa-marta,Grupo Santa Marta,background,not in 258 tech base / non-tech
+hoban-family-office,Hoban Family Office,background,not in 258 tech base / non-tech
+impact-fund-denmark-ifu,Impact Fund Denmark (IFU),background,not in 258 tech base / non-tech
+innesto-partners,Innesto Partners,background,not in 258 tech base / non-tech
+ireland-strategic-investment-fund-isif,Ireland Strategic Investment Fund (ISIF),background,not in 258 tech base / non-tech
+legacy-holdings,Legacy Holdings,background,not in 258 tech base / non-tech
+legacy-search-partners,Legacy Search Partners,background,not in 258 tech base / non-tech
+maharlika-investment-corporation-mic,Maharlika Investment Corporation (MIC),background,not in 258 tech base / non-tech
+milk-street-ventures,Milk Street Ventures,background,not in 258 tech base / non-tech
+moonbase-capital,Moonbase Capital,background,not in 258 tech base / non-tech
+newton-equity-partners,Newton Equity Partners,background,not in 258 tech base / non-tech
+nigeria-sovereign-investment-authority-nsia,Nigeria Sovereign Investment Authority (NSIA),background,not in 258 tech base / non-tech
+norfund-norwegian-investment-fund-for-developing-countries,Norfund (Norwegian Investment Fund for Developing Countries),background,not in 258 tech base / non-tech
+obran-cooperative,Obran Cooperative,background,not in 258 tech base / non-tech
+patona-partners,Patona Partners,background,not in 258 tech base / non-tech
+project-equity,Project Equity,background,not in 258 tech base / non-tech
+pula-fund-bank-of-botswana,Pula Fund (Bank of Botswana),background,not in 258 tech base / non-tech
+recurring-capital-partners,Recurring Capital Partners,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+remote-first-capital,Remote First Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+smeventures,SMEVentures,background,not in 258 tech base / non-tech
+spectra-investments,Spectra Investments,background,not in 258 tech base / non-tech
+spectrum-equity,Spectrum Equity,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+superangel-fund,SuperAngel.Fund,background,not in 258 tech base / non-tech
+ttcer-partners,TTCER Partners,background,not in 258 tech base / non-tech
+tembo-search-partners,Tembo Search Partners,background,not in 258 tech base / non-tech
+tet-ventures,Tet Ventures,background,not in 258 tech base / non-tech
+vesta-software-group,Vesta Software Group,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+vibe-capital,Vibe Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+visible-hands-vhnyc-fellowship,Visible Hands (VHNYC Fellowship),core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+vistara-growth,Vistara Growth,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+volition-capital,Volition Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+wad-capital,WAD Capital,background,not in 258 tech base / non-tech
+zero-1,Zero 1,background,not in 258 tech base / non-tech
+base-case-capital,base case capital,background,not in 258 tech base / non-tech
+alaska-permanent-fund-corporation,Alaska Permanent Fund Corporation,background,not in 258 tech base / non-tech
+align-collaborate,Align Collaborate,background,not in 258 tech base / non-tech
+alleyway-capital,Alleyway Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+american-operator,American Operator,background,not in 258 tech base / non-tech
+apex-service-partners,Apex Service Partners,background,not in 258 tech base / non-tech
+avon-river-ventures,Avon River Ventures,background,not in 258 tech base / non-tech
+bahrain-mumtalakat-holding-company,Bahrain Mumtalakat Holding Company,background,not in 258 tech base / non-tech
+bay-grove,Bay Grove,background,not in 258 tech base / non-tech
+beacon-software,Beacon Software,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+big-band-software,Big Band Software,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+blenheim-chalcot,Blenheim Chalcot,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+blue-like-an-orange-sustainable-capital,Blue like an Orange Sustainable Capital,background,not in 258 tech base / non-tech
+bluejay-capital,Bluejay Capital,background,not in 258 tech base / non-tech
+british-columbia-investment-management-corporation-bci,British Columbia Investment Management Corporation (BCI),background,not in 258 tech base / non-tech
+cpc,CPC,background,not in 258 tech base / non-tech
+cake-ventures,Cake Ventures,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+cephas-partners,Cephas Partners,background,not in 258 tech base / non-tech
+cicero-capital,Cicero Capital,background,not in 258 tech base / non-tech
+climate-fund-managers,Climate Fund Managers,background,not in 258 tech base / non-tech
+coho-growth-capital,Coho Growth Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+continua,Continua,background,not in 258 tech base / non-tech
+cornisa-capital,Cornisa Capital,background,not in 258 tech base / non-tech
+cottonwood-acquisitions,Cottonwood Acquisitions,background,not in 258 tech base / non-tech
+define-capital,Define Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+diagram,Diagram,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+empowered-ventures,Empowered Ventures,background,not in 258 tech base / non-tech
+encore-one,Encore One,background,not in 258 tech base / non-tech
+exa-capital,Exa Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+forum-family-office,FORUM Family Office,background,not in 258 tech base / non-tech
+faith-driven-vc,Faith Driven VC,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+fenix-holdco,Fenix Holdco,background,not in 258 tech base / non-tech
+foundation-investment-partners,Foundation Investment Partners,background,not in 258 tech base / non-tech
+fullsteam,Fullsteam,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+fundsquire,Fundsquire,background,not in 258 tech base / non-tech
+greybull-stewardship,Greybull Stewardship,background,not in 258 tech base / non-tech
+guardians-of-new-zealand-superannuation-nz-super-fund,Guardians of New Zealand Superannuation (NZ Super Fund),background,not in 258 tech base / non-tech
+hanover-partners,Hanover Partners,background,not in 258 tech base / non-tech
+hashed-health,Hashed Health,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+hassan-equity,Hassan Equity,background,not in 258 tech base / non-tech
+hawk-infinity-software,Hawk Infinity Software,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+healthcare-of-ontario-pension-plan-hoopp,Healthcare of Ontario Pension Plan (HOOPP),background,not in 258 tech base / non-tech
+hum-capital,Hum Capital,background,not in 258 tech base / non-tech
+indus-holding-ag,INDUS Holding AG,background,not in 258 tech base / non-tech
+incofin-investment-management,Incofin Investment Management,background,not in 258 tech base / non-tech
+invictus-growth-partners,Invictus Growth Partners,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+iroquois-valley-farmland-reit,Iroquois Valley Farmland REIT,background,not in 258 tech base / non-tech
+ithmar-capital,Ithmar Capital,background,not in 258 tech base / non-tech
+llr-partners,LLR Partners,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+lvo-industries,LVO Industries,background,not in 258 tech base / non-tech
+lakefield-veterinary-group,Lakefield Veterinary Group,background,not in 258 tech base / non-tech
+leo-software-group,Leo Software Group,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+local-enterprise-assistance-fund-leaf,Local Enterprise Assistance Fund (LEAF),background,not in 258 tech base / non-tech
+m2o,M2O,background,not in 258 tech base / non-tech
+maple-vc,Maple VC,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+multiplier-capital,Multiplier Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+nordstjernan,Nordstjernan,background,not in 258 tech base / non-tech
+northspring-partners,Northspring Partners,background,not in 258 tech base / non-tech
+novastone-capital-advisors,Novastone Capital Advisors,background,not in 258 tech base / non-tech
+optrust,OPTrust,background,not in 258 tech base / non-tech
+psp-investments,PSP Investments,background,not in 258 tech base / non-tech
+pyxis-software-group,PYXiS Software Group,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+partners-for-growth,Partners for Growth,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+pearl-street-holdings,Pearl Street Holdings,background,not in 258 tech base / non-tech
+penntech-holdings,PennTech Holdings,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+pentagreen-capital,Pentagreen Capital,background,not in 258 tech base / non-tech
+proparco,Proparco,background,not in 258 tech base / non-tech
+quadshift,Quadshift,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+raven-indigenous-capital-partners,Raven Indigenous Capital Partners,background,not in 258 tech base / non-tech
+recur-software,Recur Software,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+redemptive-capital,Redemptive Capital,background,not in 258 tech base / non-tech
+redesign-health,Redesign Health,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+redwood-services,Redwood Services,background,not in 258 tech base / non-tech
+riverbound-partners,Riverbound Partners,background,not in 258 tech base / non-tech
+sage-capital-partners,Sage Capital Partners,background,not in 258 tech base / non-tech
+sartor-capital,Sartor Capital,background,not in 258 tech base / non-tech
+satori-capital,Satori Capital,background,not in 258 tech base / non-tech
+search-fund-ventures,Search Fund Ventures,background,not in 258 tech base / non-tech
+searchright,SearchRight,background,not in 258 tech base / non-tech
+seed-commons,Seed Commons,background,not in 258 tech base / non-tech
+serafin-unternehmensgruppe,Serafin Unternehmensgruppe,background,not in 258 tech base / non-tech
+state-of-wisconsin-investment-board-swib,State of Wisconsin Investment Board (SWIB),background,not in 258 tech base / non-tech
+steward,Steward,background,not in 258 tech base / non-tech
+stewardship-partners,Stewardship Partners,background,not in 258 tech base / non-tech
+swedfund,Swedfund,background,not in 258 tech base / non-tech
+symbiotics,Symbiotics,background,not in 258 tech base / non-tech
+the-cambria-group,The Cambria Group,background,not in 258 tech base / non-tech
+the-lightsmith-group,The Lightsmith Group,background,not in 258 tech base / non-tech
+thesis-capital,Thesis Capital,background,not in 258 tech base / non-tech
+torana-group,Torana Group,background,not in 258 tech base / non-tech
+union-software-group,Union Software Group,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+verlinvest,Verlinvest,background,not in 258 tech base / non-tech
+viceversa,Viceversa,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+waterequity,WaterEquity,background,not in 258 tech base / non-tech
+wayfinder-capital,WayFinder Capital,background,not in 258 tech base / non-tech
+workhorse-capital,Workhorse Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+workshop-ventures,Workshop Ventures,background,not in 258 tech base / non-tech
+wrench-group,Wrench Group,background,not in 258 tech base / non-tech
+xo-capital,XO Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+responsability-investments,responsAbility Investments,background,not in 258 tech base / non-tech
+braccia-capital,Braccia Capital,background,not in 258 tech base / non-tech
+deep-science-ventures,Deep Science Ventures,background,not in 258 tech base / non-tech
+elemental-impact,Elemental Impact,background,not in 258 tech base / non-tech
+enduring-planet,Enduring Planet,background,not in 258 tech base / non-tech
+neta-foundation,NETA Foundation,background,not in 258 tech base / non-tech
+refactor-capital,Refactor Capital,background,not in 258 tech base / non-tech
+9t-capital,9T Capital,background,not in 258 tech base / non-tech
+alza-capital,ALZA Capital,background,not in 258 tech base / non-tech
+infinitas-partners,Infinitas Partners,background,not in 258 tech base / non-tech
+mirablau,Mirablau,background,not in 258 tech base / non-tech
+onetoone-asset-management,ONEtoONE Asset Management,background,not in 258 tech base / non-tech
+search-fund-oz,Search Fund Oz,background,not in 258 tech base / non-tech
+search-fund-pioneers-eu,Search Fund Pioneers (EU),background,not in 258 tech base / non-tech
+vonzeo-capital,Vonzeo Capital,background,not in 258 tech base / non-tech
+hal-investments,HAL Investments,background,not in 258 tech base / non-tech
+industriv-rden,Industrivärden,background,not in 258 tech base / non-tech
+investor-ab,Investor AB,background,not in 258 tech base / non-tech
+korys,Korys,background,not in 258 tech base / non-tech
+sofina,Sofina,background,not in 258 tech base / non-tech
+teoh-capital,Teoh Capital,background,not in 258 tech base / non-tech
+venture-growth-partners-australia,Venture Growth Partners (Australia),background,not in 258 tech base / non-tech
+wendel,Wendel,background,not in 258 tech base / non-tech
+8fig,8fig,background,not in 258 tech base / non-tech
+choco-up,Choco Up,background,not in 258 tech base / non-tech
+indifi,Indifi,background,not in 258 tech base / non-tech
+multipli,Multipli,background,not in 258 tech base / non-tech
+ratio,Ratio,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+tractor-ventures,Tractor Ventures,background,not in 258 tech base / non-tech
+abu-dhabi-investment-authority-adia,Abu Dhabi Investment Authority (ADIA),background,not in 258 tech base / non-tech
+adaptation-fund,Adaptation Fund,background,not in 258 tech base / non-tech
+asian-infrastructure-investment-bank-aiib,Asian Infrastructure Investment Bank (AIIB),background,not in 258 tech base / non-tech
+european-bank-for-reconstruction-and-development-ebrd,European Bank for Reconstruction and Development (EBRD),background,not in 258 tech base / non-tech
+finance-in-motion,Finance in Motion,background,not in 258 tech base / non-tech
+idb-invest,IDB Invest,background,not in 258 tech base / non-tech
+international-finance-corporation-ifc,International Finance Corporation (IFC),background,not in 258 tech base / non-tech
+multilateral-investment-guarantee-agency-miga,Multilateral Investment Guarantee Agency (MIGA),background,not in 258 tech base / non-tech
+sifem-swiss-investment-fund-for-emerging-markets,SIFEM Swiss Investment Fund for Emerging Markets,background,not in 258 tech base / non-tech
+u-s-international-development-finance-corporation-dfc,U.S. International Development Finance Corporation (DFC),background,not in 258 tech base / non-tech
+mb2-dental,MB2 Dental,background,not in 258 tech base / non-tech
+new-harbor-capital,New Harbor Capital,background,not in 258 tech base / non-tech
+agri3-fund,AGRI3 Fund,background,not in 258 tech base / non-tech
+ajvc,AJVC,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+apg-asset-management,APG Asset Management,background,not in 258 tech base / non-tech
+agriculture-capital,Agriculture Capital,background,not in 258 tech base / non-tech
+ajim-capital,Ajim Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+ambassador-development-group,Ambassador Development Group,background,not in 258 tech base / non-tech
+beacon-behavioral-health-partners,Beacon Behavioral Health Partners,background,not in 258 tech base / non-tech
+blue-collar-trades-group,Blue-Collar Trades Group,background,not in 258 tech base / non-tech
+bluefront-equity,Bluefront Equity,background,not in 258 tech base / non-tech
+canadian-co-operative-investment-fund,Canadian Co-operative Investment Fund,background,not in 258 tech base / non-tech
+capifly,Capifly,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+capital-impact-partners,Capital Impact Partners,background,not in 258 tech base / non-tech
+catalytic-futures-fund,Catalytic Futures Fund,background,not in 258 tech base / non-tech
+cedo-capital,Cedo Capital,background,not in 258 tech base / non-tech
+chisos,Chisos,background,not in 258 tech base / non-tech
+climate-asset-management,Climate Asset Management,background,not in 258 tech base / non-tech
+compagnie-du-bois-sauvage,Compagnie du Bois Sauvage,background,not in 258 tech base / non-tech
+creation-investments-capital-management,Creation Investments Capital Management,background,not in 258 tech base / non-tech
+crediblex,CredibleX,background,not in 258 tech base / non-tech
+de-agostini,De Agostini,background,not in 258 tech base / non-tech
+dermcare-management,DermCare Management,background,not in 258 tech base / non-tech
+dirt-capital-partners,Dirt Capital Partners,background,not in 258 tech base / non-tech
+epitome-capital,Epitome Capital,background,not in 258 tech base / non-tech
+firstpick,FIRSTPICK,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+farmland-lp,Farmland LP,background,not in 258 tech base / non-tech
+ferd-as,Ferd AS,background,not in 258 tech base / non-tech
+firstcheck-africa,FirstCheck Africa,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+flapkap,FlapKap,background,not in 258 tech base / non-tech
+flow48,Flow48,background,not in 258 tech base / non-tech
+forest-investment-associates,Forest Investment Associates,background,not in 258 tech base / non-tech
+founders-home-service-group,Founders Home Service Group,background,not in 258 tech base / non-tech
+garlic-equity-capital,Garlic Equity Capital,background,not in 258 tech base / non-tech
+generate-capital,Generate Capital,background,not in 258 tech base / non-tech
+groupe-bruxelles-lambert,Groupe Bruxelles Lambert,background,not in 258 tech base / non-tech
+gulf-islamic-investments-gii,Gulf Islamic Investments (GII),background,not in 258 tech base / non-tech
+gulf-succession-partners,Gulf Succession Partners,background,not in 258 tech base / non-tech
+hasan-vc,HASAN.VC,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+ingka-investments,Ingka Investments,background,not in 258 tech base / non-tech
+invest-appalachia,Invest Appalachia,background,not in 258 tech base / non-tech
+italmobiliare,Italmobiliare,background,not in 258 tech base / non-tech
+kingdom-capital,Kingdom Capital,background,not in 258 tech base / non-tech
+linea-capital,Linea Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+lioncrest-industries,Lioncrest Industries,background,not in 258 tech base / non-tech
+liquidus-partners,Liquidus Partners,background,not in 258 tech base / non-tech
+lynx-equity,Lynx Equity,background,not in 258 tech base / non-tech
+milestone-search-capital,Milestone Search Capital,background,not in 258 tech base / non-tech
+monarch-investment-partners,Monarch Investment Partners,background,not in 258 tech base / non-tech
+n-1-capital,N+1 Capital,background,dropped: non-tech target
+new-forests,New Forests,background,not in 258 tech base / non-tech
+okintek-capital,Okintek Capital,background,not in 258 tech base / non-tech
+outlast-fund,Outlast Fund,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+peugeot-invest,Peugeot Invest,background,not in 258 tech base / non-tech
+root-capital,Root Capital,background,not in 258 tech base / non-tech
+rouge-river-capital,Rouge River Capital,background,not in 258 tech base / non-tech
+shawbrook-eot-finance,Shawbrook EOT Finance,background,not in 258 tech base / non-tech
+sila-services,Sila Services,background,not in 258 tech base / non-tech
+southern-home-services,Southern Home Services,background,not in 258 tech base / non-tech
+specialty1-partners,Specialty1 Partners,background,not in 258 tech base / non-tech
+spring-lane-capital,Spring Lane Capital,background,not in 258 tech base / non-tech
+succession-capital-partners-india,Succession Capital Partners India,background,not in 258 tech base / non-tech
+talanton,Talanton,background,not in 258 tech base / non-tech
+tenacity-works-fund,Tenacity Works Fund,background,not in 258 tech base / non-tech
+the-seer-group,The SEER Group,background,not in 258 tech base / non-tech
+trailhead-capital,Trailhead Capital,background,not in 258 tech base / non-tech
+transition-capital-partners,Transition Capital Partners,background,not in 258 tech base / non-tech
+untapped-global,Untapped Global,background,not in 258 tech base / non-tech
+vetcor,Vetcor,background,not in 258 tech base / non-tech
+veterinary-practice-partners,Veterinary Practice Partners,background,not in 258 tech base / non-tech
+wing-vasiksiri,Wing Vasiksiri,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+i2i-ventures,i2i Ventures,background,not in 258 tech base / non-tech
+acon-investments,ACON Investments,background,not in 258 tech base / non-tech
+adenia-partners,Adenia Partners,background,not in 258 tech base / non-tech
+africinvest,AfricInvest,background,not in 258 tech base / non-tech
+alpine-investors,Alpine Investors,background,not in 258 tech base / non-tech
+amethis,Amethis,background,not in 258 tech base / non-tech
+apheon,Apheon,background,not in 258 tech base / non-tech
+aqua-capital,Aqua Capital,background,not in 258 tech base / non-tech
+ata-capital,Ata Capital,background,not in 258 tech base / non-tech
+aterian-investment-partners,Aterian Investment Partners,background,not in 258 tech base / non-tech
+aurora-capital-partners,Aurora Capital Partners,background,not in 258 tech base / non-tech
+bgf,BGF,background,not in 258 tech base / non-tech
+bangladesh-infrastructure-finance-fund,Bangladesh Infrastructure Finance Fund,background,not in 258 tech base / non-tech
+builders-vision,Builders Vision,background,not in 258 tech base / non-tech
+buoyant-ventures,Buoyant Ventures,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+capitalworks,Capitalworks,background,not in 258 tech base / non-tech
+charlesbank-capital-partners,Charlesbank Capital Partners,background,not in 258 tech base / non-tech
+chryscapital,ChrysCapital,background,not in 258 tech base / non-tech
+churchill-asset-management,Churchill Asset Management,background,not in 258 tech base / non-tech
+comvest-credit-partners,Comvest Credit Partners,background,not in 258 tech base / non-tech
+congruent-ventures,Congruent Ventures,background,not in 258 tech base / non-tech
+counteract,Counteract,background,not in 258 tech base / non-tech
+court-square-capital-partners,Court Square Capital Partners,background,not in 258 tech base / non-tech
+deutsche-beteiligungs-ag,Deutsche Beteiligungs AG,background,not in 258 tech base / non-tech
+development-partners-international,Development Partners International,background,not in 258 tech base / non-tech
+eb-capital,EB Capital,background,not in 258 tech base / non-tech
+eci-partners,ECI Partners,background,not in 258 tech base / non-tech
+energy-transition-ventures,Energy Transition Ventures,background,not in 258 tech base / non-tech
+equistone-partners-europe,Equistone Partners Europe,background,not in 258 tech base / non-tech
+everstone-capital,Everstone Capital,background,not in 258 tech base / non-tech
+ffl-partners,FFL Partners,background,not in 258 tech base / non-tech
+fors-capital,FORS Capital,background,not in 258 tech base / non-tech
+gimv,Gimv,background,not in 258 tech base / non-tech
+hall-capital,Hall Capital,background,not in 258 tech base / non-tech
+helios-investment-partners,Helios Investment Partners,background,not in 258 tech base / non-tech
+iconiq,ICONIQ,background,not in 258 tech base / non-tech
+ig4-capital,IG4 Capital,background,not in 258 tech base / non-tech
+injaro-investments,Injaro Investments,background,not in 258 tech base / non-tech
+inside-capital-partners,Inside Capital Partners,background,not in 258 tech base / non-tech
+kv-asia-capital,KV Asia Capital,background,not in 258 tech base / non-tech
+kawisafi-ventures,KawiSafi Ventures,background,not in 258 tech base / non-tech
+lockheed-martin-ventures,Lockheed Martin Ventures,background,not in 258 tech base / non-tech
+mid-europa-partners,Mid Europa Partners,background,not in 258 tech base / non-tech
+monroe-capital,Monroe Capital,background,not in 258 tech base / non-tech
+muzinich-co,Muzinich & Co,background,not in 258 tech base / non-tech
+neom-investment-fund,NEOM Investment Fund,background,not in 258 tech base / non-tech
+newspring-mezzanine,NewSpring Mezzanine,background,not in 258 tech base / non-tech
+nexxus-capital,Nexxus Capital,background,not in 258 tech base / non-tech
+norsad-capital,Norsad Capital,background,not in 258 tech base / non-tech
+norwest-equity-partners,Norwest Equity Partners,background,not in 258 tech base / non-tech
+olympus-partners,Olympus Partners,background,not in 258 tech base / non-tech
+oman-investment-authority,Oman Investment Authority,background,not in 258 tech base / non-tech
+oval-partners,Oval Partners,background,not in 258 tech base / non-tech
+pamlico-capital,Pamlico Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+patria-investments,Patria Investments,background,not in 258 tech base / non-tech
+peakline-partners,Peakline Partners,background,not in 258 tech base / non-tech
+pearl-capital-partners,Pearl Capital Partners,background,not in 258 tech base / non-tech
+phatisa,Phatisa,background,not in 258 tech base / non-tech
+premji-invest,Premji Invest,background,not in 258 tech base / non-tech
+renew-capital,Renew Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+riverwood-capital,Riverwood Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+s2g-investments,S2G Investments,background,not in 258 tech base / non-tech
+sahel-capital,Sahel Capital,background,not in 258 tech base / non-tech
+saudi-industrial-development-fund,Saudi Industrial Development Fund,background,not in 258 tech base / non-tech
+the-sovereign-fund-of-egypt,The Sovereign Fund of Egypt,background,not in 258 tech base / non-tech
+tower-arch-capital,Tower Arch Capital,background,not in 258 tech base / non-tech
+trinity-capital,Trinity Capital,background,not in 258 tech base / non-tech
+trivest-partners,Trivest Partners,background,not in 258 tech base / non-tech
+verod-capital,Verod Capital,background,not in 258 tech base / non-tech
+victory-park-capital,Victory Park Capital,background,not in 258 tech base / non-tech
+vista-credit-partners,Vista Credit Partners,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+wind-point-partners,Wind Point Partners,background,not in 258 tech base / non-tech
+i80-group,i80 Group,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+blue-frame-capital,Blue Frame Capital,background,not in 258 tech base / non-tech
+eta-funding-partners,ETA Funding Partners,background,not in 258 tech base / non-tech
+kingsway-search-xcelerator,Kingsway Search Xcelerator,background,not in 258 tech base / non-tech
+nakani-capital-partners,Nakani Capital Partners,background,not in 258 tech base / non-tech
+pinestone-capital,Pinestone Capital,background,not in 258 tech base / non-tech
+search-capital-partners,Search Capital Partners,background,not in 258 tech base / non-tech
+software-combined,Software Combined,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+trilogy-search-partners,Trilogy Search Partners,background,not in 258 tech base / non-tech
+65-equity-partners,65 Equity Partners,background,not in 258 tech base / non-tech
+asi-biz-exchange-eta-search-fund,ASI Biz-Exchange ETA Search Fund,background,not in 258 tech base / non-tech
+altas-partners,Altas Partners,background,not in 258 tech base / non-tech
+arpa-capital,Arpa Capital,background,not in 258 tech base / non-tech
+btg-pactual-timberland-investment-group,BTG Pactual Timberland Investment Group,background,not in 258 tech base / non-tech
+banner-ridge-partners,Banner Ridge Partners,background,not in 258 tech base / non-tech
+bridge-capital,Bridge Capital,background,not in 258 tech base / non-tech
+burford-capital,Burford Capital,background,not in 258 tech base / non-tech
+cdib-capital-group,CDIB Capital Group,background,not in 258 tech base / non-tech
+castlelake,Castlelake,background,not in 258 tech base / non-tech
+crayhill-capital-management,Crayhill Capital Management,background,not in 258 tech base / non-tech
+galena-asset-management,Galena Asset Management,background,not in 258 tech base / non-tech
+greenbacker-capital,Greenbacker Capital,background,not in 258 tech base / non-tech
+hollyport-capital,Hollyport Capital,background,not in 258 tech base / non-tech
+icg-strategic-equity,ICG Strategic Equity,background,not in 258 tech base / non-tech
+marathon-asset-management,Marathon Asset Management,background,not in 258 tech base / non-tech
+nova-infrastructure,NOVA Infrastructure,background,not in 258 tech base / non-tech
+newview-capital,NewView Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+northleaf-capital-partners,Northleaf Capital Partners,background,not in 258 tech base / non-tech
+primary-wave-music,Primary Wave Music,background,not in 258 tech base / non-tech
+promised-land-opportunity-zone-fund,Promised Land Opportunity Zone Fund,background,not in 258 tech base / non-tech
+slm-partners,SLM Partners,background,not in 258 tech base / non-tech
+spuri-capital,Spuri Capital,background,not in 258 tech base / non-tech
+tree-line-capital-partners,Tree Line Capital Partners,background,not in 258 tech base / non-tech
+v-rde-partners,Värde Partners,background,not in 258 tech base / non-tech
+water-infrastructure-partners,Water Infrastructure Partners,background,not in 258 tech base / non-tech
+xpv-water-partners,XPV Water Partners,background,not in 258 tech base / non-tech
+african-capital-alliance,African Capital Alliance,background,not in 258 tech base / non-tech
+all-in-capital,All In Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+anorak-ventures,Anorak Ventures,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+arizona-founders-fund,Arizona Founders Fund,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+artha-venture-partners,Artha Venture Partners,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+atento-capital,Atento Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+booom,BOOOM,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+beacon-fund,Beacon Fund,background,not in 258 tech base / non-tech
+behind-genius-ventures,Behind Genius Ventures,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+cantos,Cantos,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+cortado-ventures,Cortado Ventures,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+emblem,Emblem,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+eximius-ventures,Eximius Ventures,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+flyover-capital,Flyover Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+inflexor-ventures,Inflexor Ventures,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+innova-memphis,Innova Memphis,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+investisseurs-partenaires-i-p,Investisseurs & Partenaires (I&P),background,not in 258 tech base / non-tech
+kcrise-fund,KCRise Fund,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+leonis-capital,Leonis Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+lumis-partners,Lumis Partners,background,not in 258 tech base / non-tech
+magarac-venture-partners,Magarac Venture Partners,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+mairs-power-venture-capital,Mairs & Power Venture Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+nabventures,NABVENTURES,background,not in 258 tech base / non-tech
+nucleus-capital,Nucleus Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+redbud-vc,Redbud VC,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+robin-capital,Robin Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+sarah-smith-fund,Sarah Smith Fund,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+sauce-vc,Sauce VC,background,not in 258 tech base / non-tech
+silverton-partners,Silverton Partners,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+tilia-impact-ventures,Tilia Impact Ventures,background,not in 258 tech base / non-tech
+wayfinder-ventures,Wayfinder Ventures,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+irrvrntvc,irrvrntVC,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+212,212,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+black-farmer-fund,Black Farmer Fund,background,not in 258 tech base / non-tech
+black-sheep-capital,Black Sheep Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+bridgewest-ventures-nz,Bridgewest Ventures NZ,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+cambridge-innovation-capital,Cambridge Innovation Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+climate-vc-fund-2040-ventures,Climate VC Fund (2040 Ventures),core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+concrete-ventures,Concrete Ventures,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+eastend-ventures,Eastend Ventures,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+first-australians-capital,First Australians Capital,background,not in 258 tech base / non-tech
+island-capital-partners,Island Capital Partners,background,not in 258 tech base / non-tech
+lendistry-capital-partners,Lendistry Capital Partners,background,not in 258 tech base / non-tech
+maui-toa,Maui Toa,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+maycomb-capital,Maycomb Capital,background,not in 258 tech base / non-tech
+native-american-venture-fund-navf,Native American Venture Fund (NAVF),background,not in 258 tech base / non-tech
+oxford-science-enterprises,Oxford Science Enterprises,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+psv-preseed-ventures,PSV (PreSeed Ventures),core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+pangaea-ventures,Pangaea Ventures,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+runway-rooted-fund,RUNWAY (Rooted Fund),background,not in 258 tech base / non-tech
+restorative-economies-fund-kataly-foundation,Restorative Economies Fund (Kataly Foundation),background,not in 258 tech base / non-tech
+sunwealth,Sunwealth,background,not in 258 tech base / non-tech
+tricor-pacific-capital,Tricor Pacific Capital,background,not in 258 tech base / non-tech
+triptyq-capital,Triptyq Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+virescent-ventures,Virescent Ventures,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+bergman-beving,Bergman & Beving,background,not in 258 tech base / non-tech
+better-society-capital,Better Society Capital,background,not in 258 tech base / non-tech
+boston-omaha,Boston Omaha,background,not in 258 tech base / non-tech
+bronze-valley,Bronze Valley,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+cherokee-investment-management,Cherokee Investment Management,background,not in 258 tech base / non-tech
+compass-diversified,Compass Diversified,background,not in 258 tech base / non-tech
+development-bank-of-wales,Development Bank of Wales,background,not in 258 tech base / non-tech
+eos-advisory,Eos Advisory,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+fintech-ventures-fund,Fintech Ventures Fund,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+g-o-a-t-brand-labs,G.O.A.T Brand Labs,background,not in 258 tech base / non-tech
+hggc,HGGC,background,not in 258 tech base / non-tech
+halcyon-futures,Halcyon Futures,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+idun-industrier,Idun Industrier,background,not in 258 tech base / non-tech
+judges-scientific,Judges Scientific,background,not in 258 tech base / non-tech
+lifco,Lifco,background,not in 258 tech base / non-tech
+metaplanet,Metaplanet,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+nexphase-capital,NexPhase Capital,background,not in 258 tech base / non-tech
+northern-gritstone,Northern Gritstone,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+nucleation-capital,Nucleation Capital,background,not in 258 tech base / non-tech
+oss-capital,OSS Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+outset-capital,Outset Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+overline,Overline,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+penta-capital,Penta Capital,background,not in 258 tech base / non-tech
+razor-group,Razor Group,background,not in 258 tech base / non-tech
+soundcore-capital-partners,Soundcore Capital Partners,background,not in 258 tech base / non-tech
+teqnion,Teqnion,background,not in 258 tech base / non-tech
+wealth-partners-capital-group,Wealth Partners Capital Group,background,not in 258 tech base / non-tech
+1337-ventures,1337 Ventures,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+ahl-venture-partners,AHL Venture Partners,background,not in 258 tech base / non-tech
+arm-harith-infrastructure-investment,ARM-Harith Infrastructure Investment,background,not in 258 tech base / non-tech
+activat-vc,Activat VC,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+anchorless-bangladesh,Anchorless Bangladesh,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+bank-of-north-dakota,Bank of North Dakota,background,not in 258 tech base / non-tech
+catalyst-fund,Catalyst Fund,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+cehta-capital,Cehta Capital,background,not in 258 tech base / non-tech
+dob-equity,DOB Equity,background,not in 258 tech base / non-tech
+franchise-equity-partners,Franchise Equity Partners,background,not in 258 tech base / non-tech
+goodwell-investments,Goodwell Investments,background,not in 258 tech base / non-tech
+hadley-capital,Hadley Capital,background,not in 258 tech base / non-tech
+hadley-family-capital,Hadley Family Capital,background,not in 258 tech base / non-tech
+healthcap-africa,HealthCap Africa,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+hidden-valley-capital,Hidden Valley Capital,background,not in 258 tech base / non-tech
+impacta-vc,Impacta VC,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+japan-bank-for-international-cooperation-jbic,Japan Bank for International Cooperation (JBIC),background,not in 258 tech base / non-tech
+lereko-investments,Lereko Investments,background,not in 258 tech base / non-tech
+most-ventures,MOST Ventures,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+mass-general-brigham-ventures,Mass General Brigham Ventures,background,not in 258 tech base / non-tech
+mille-lacs-corporate-ventures,Mille Lacs Corporate Ventures,background,not in 258 tech base / non-tech
+new-mexico-state-investment-council,New Mexico State Investment Council,background,not in 258 tech base / non-tech
+old-mutual-private-equity,Old Mutual Private Equity,background,not in 258 tech base / non-tech
+patamar-capital,Patamar Capital,background,not in 258 tech base / non-tech
+persistent-energy,Persistent Energy,background,not in 258 tech base / non-tech
+pomona-impact,Pomona Impact,background,not in 258 tech base / non-tech
+roche-venture-fund,Roche Venture Fund,background,not in 258 tech base / non-tech
+sp-ventures,SP Ventures,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+salkantay-ventures,Salkantay Ventures,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+sango-capital,Sango Capital,background,not in 258 tech base / non-tech
+seedstars-africa-ventures,Seedstars Africa Ventures,background,not in 258 tech base / non-tech
+smash-vc,Smash.vc,background,not in 258 tech base / non-tech
+tana-africa-capital,Tana Africa Capital,background,not in 258 tech base / non-tech
+verod-kepple-africa-ventures,Verod-Kepple Africa Ventures,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+argosy-private-equity,Argosy Private Equity,background,not in 258 tech base / non-tech
+atlantic-street-capital,Atlantic Street Capital,background,not in 258 tech base / non-tech
+boyne-capital,Boyne Capital,background,not in 258 tech base / non-tech
+copley-equity-partners,Copley Equity Partners,background,not in 258 tech base / non-tech
+huron-capital,Huron Capital,background,not in 258 tech base / non-tech
+methuselah-fund,Methuselah Fund,background,not in 258 tech base / non-tech
+northstar-capital,Northstar Capital,background,not in 258 tech base / non-tech
+southfield-capital,Southfield Capital,background,not in 258 tech base / non-tech
+spell-capital-partners,Spell Capital Partners,background,not in 258 tech base / non-tech
+what-if-ventures,What If Ventures,background,not in 258 tech base / non-tech
+white-wolf-capital,White Wolf Capital,background,not in 258 tech base / non-tech
+1st-commercial-credit,1st Commercial Credit,background,not in 258 tech base / non-tech
+acumen-resilient-agriculture-fund,Acumen Resilient Agriculture Fund,background,not in 258 tech base / non-tech
+agri-frontier,Agri Frontier,background,not in 258 tech base / non-tech
+astanor-ventures,Astanor Ventures,background,not in 258 tech base / non-tech
+bansk-group,Bansk Group,background,not in 258 tech base / non-tech
+clear-frontier-ag-management,Clear Frontier Ag Management,background,not in 258 tech base / non-tech
+commercial-credit-group,Commercial Credit Group,background,not in 258 tech base / non-tech
+commercial-finance-partners,Commercial Finance Partners,background,not in 258 tech base / non-tech
+expansion-capital-group,Expansion Capital Group,background,not in 258 tech base / non-tech
+gibraltar-business-capital,Gibraltar Business Capital,background,not in 258 tech base / non-tech
+hatch-blue,Hatch Blue,background,not in 258 tech base / non-tech
+hilton-foundation-program-related-investments,Hilton Foundation Program-Related Investments,background,not in 258 tech base / non-tech
+mce-social-capital,MCE Social Capital,background,not in 258 tech base / non-tech
+mars-investment-accelerator-fund-iaf,MaRS Investment Accelerator Fund (IAF),core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+maine-venture-fund,Maine Venture Fund,background,not in 258 tech base / non-tech
+massachusetts-capital-resource-company,Massachusetts Capital Resource Company,background,not in 258 tech base / non-tech
+massachusetts-clean-energy-center-masscec,Massachusetts Clean Energy Center (MassCEC),background,not in 258 tech base / non-tech
+ny-green-bank,NY Green Bank,background,not in 258 tech base / non-tech
+northpoint-commercial-finance,Northpoint Commercial Finance,background,not in 258 tech base / non-tech
+ocean-14-capital,Ocean 14 Capital,background,not in 258 tech base / non-tech
+peakbridge,PeakBridge,background,not in 258 tech base / non-tech
+penny-jar-capital,Penny Jar Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+piedmont-business-capital,Piedmont Business Capital,background,not in 258 tech base / non-tech
+reinvestment-fund,Reinvestment Fund,background,not in 258 tech base / non-tech
+revere-capital,Revere Capital,background,not in 258 tech base / non-tech
+slr-capital-partners,SLR Capital Partners,background,not in 258 tech base / non-tech
+sallyport-commercial-finance,Sallyport Commercial Finance,background,not in 258 tech base / non-tech
+sandbridge-capital,Sandbridge Capital,background,not in 258 tech base / non-tech
+social-finance,Social Finance,background,not in 258 tech base / non-tech
+tedco-maryland-technology-development-corporation,TEDCO (Maryland Technology Development Corporation),core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+the-veteran-fund,The Veteran Fund,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+the-yield-lab,The Yield Lab,background,not in 258 tech base / non-tech
+thirty-five-ventures-35v,Thirty Five Ventures (35V),background,not in 258 tech base / non-tech
+total-impact-capital,Total Impact Capital,background,not in 258 tech base / non-tech
+unovis-asset-management,Unovis Asset Management,background,not in 258 tech base / non-tech
+veg-capital,Veg Capital,background,not in 258 tech base / non-tech
+white-oak-global-advisors,White Oak Global Advisors,background,not in 258 tech base / non-tech
+whitehorse-finance,WhiteHorse Finance,background,not in 258 tech base / non-tech
+wisconsin-investment-fund,Wisconsin Investment Fund,background,not in 258 tech base / non-tech
+ecapital,eCapital,background,not in 258 tech base / non-tech
+a-p-moller-holding,A.P. Moller Holding,background,not in 258 tech base / non-tech
+ananda-impact-ventures,Ananda Impact Ventures,background,not in 258 tech base / non-tech
+axon-partners-group,Axon Partners Group,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+borski-fund,Borski Fund,background,not in 258 tech base / non-tech
+camber-creek,Camber Creek,background,not in 258 tech base / non-tech
+change-ventures,Change Ventures,background,not in 258 tech base / non-tech
+coparion,Coparion,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+educapital,Educapital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+first-momentum-ventures,First Momentum Ventures,background,not in 258 tech base / non-tech
+foreground-capital,Foreground Capital,background,not in 258 tech base / non-tech
+indico-capital-partners,Indico Capital Partners,background,not in 258 tech base / non-tech
+innogest-capital,Innogest Capital,background,not in 258 tech base / non-tech
+inveready,Inveready,background,not in 258 tech base / non-tech
+iron-wolf-capital,Iron Wolf Capital,background,not in 258 tech base / non-tech
+kirkbi,KIRKBI,background,not in 258 tech base / non-tech
+learn-capital,Learn Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+luxempart,Luxempart,background,not in 258 tech base / non-tech
+mustard-seed-maze,Mustard Seed MAZE,background,not in 258 tech base / non-tech
+oneragtime,OneRagtime,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+p101-ventures,P101 Ventures,background,not in 258 tech base / non-tech
+pitchdrive,Pitchdrive,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+plexo-capital,Plexo Capital,background,not in 258 tech base / non-tech
+practica-capital,Practica Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+reach-capital,Reach Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+ring-capital,Ring Capital,background,not in 258 tech base / non-tech
+senovo,Senovo,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+shorooq-partners,Shorooq Partners,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+spicehaus-partners,Spicehaus Partners,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+wamda-capital,Wamda Capital,background,not in 258 tech base / non-tech
+advent-partners,Advent Partners,background,not in 258 tech base / non-tech
+cox-family-holdings,Cox Family Holdings,background,not in 258 tech base / non-tech
+creadev,Creadev,background,not in 258 tech base / non-tech
+gresham-capital-partners,Gresham Capital Partners,background,not in 258 tech base / non-tech
+jab-holding-company,JAB Holding Company,background,not in 258 tech base / non-tech
+metrics-credit-partners,Metrics Credit Partners,background,not in 258 tech base / non-tech
+ngai-tahu-holdings,Ngai Tahu Holdings,background,not in 258 tech base / non-tech
+oceania-capital-partners,Oceania Capital Partners,background,not in 258 tech base / non-tech
+psp-partners,PSP Partners,background,not in 258 tech base / non-tech
+patricia-industries,Patricia Industries,background,not in 258 tech base / non-tech
+pritzker-private-capital,Pritzker Private Capital,background,not in 258 tech base / non-tech
+reuben-brothers,Reuben Brothers,background,not in 258 tech base / non-tech
+skion,SKion,background,not in 258 tech base / non-tech
+tanarra-capital,Tanarra Capital,background,not in 258 tech base / non-tech
+tattarang,Tattarang,background,not in 258 tech base / non-tech
+the-olayan-group,The Olayan Group,background,not in 258 tech base / non-tech
+third-sphere,Third Sphere,background,not in 258 tech base / non-tech
+tsao-family-office,Tsao Family Office,background,not in 258 tech base / non-tech
+wireframe-ventures,Wireframe Ventures,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+catalyst-romania,Catalyst Romania,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+cintrifuse-capital,Cintrifuse Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+fidelis-ventures,Fidelis Ventures,background,not in 258 tech base / non-tech
+lbbw-venture-capital,LBBW Venture Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+numus-financial,Numus Financial,background,not in 258 tech base / non-tech
+one-way-ventures,One Way Ventures,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+presto-ventures,Presto Ventures,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+tecpier,TecPier,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+blue-owl-capital,Blue Owl Capital,background,not in 258 tech base / non-tech
+keensight-capital,Keensight Capital,background,not in 258 tech base / non-tech
+anamcara-capital,Anamcara Capital,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+cambrian-ventures,Cambrian Ventures,core,"tech-verified (Ethan Gate, re-verify+tiebreak 2026-06-01)"
+capitala-group,Capitala Group,background,not in 258 tech base / non-tech
+enza-capital,Enza Capital,background,not in 258 tech base / non-tech
+landscape-workshop,Landscape Workshop,background,not in 258 tech base / non-tech
+mission-pet-health,Mission Pet Health,background,not in 258 tech base / non-tech
+sellerx,SellerX,background,not in 258 tech base / non-tech
+ai-fund,AI Fund,background,not in 258 tech base / non-tech
+deerpath-capital,Deerpath Capital,background,not in 258 tech base / non-tech
+driven-brands,Driven Brands,background,not in 258 tech base / non-tech
+element-finance-element-saas-finance,Element Finance (Element SaaS Finance),background,not in 258 tech base / non-tech
+essence-vc-essence-venture-capital,Essence VC (Essence Venture Capital),background,not in 258 tech base / non-tech
+eye-health-america,Eye Health America,background,not in 258 tech base / non-tech
+eyecare-partners,EyeCare Partners,background,not in 258 tech base / non-tech
+eyesouth-partners,EyeSouth Partners,background,not in 258 tech base / non-tech
+fifth-wall,Fifth Wall,background,not in 258 tech base / non-tech
+firstprinciples,FirstPrinciples,background,not in 258 tech base / non-tech
+gcv-labs,GCV Labs,background,not in 258 tech base / non-tech
+horizen-capital,HoriZen Capital,background,not in 258 tech base / non-tech
+martell-ventures,Martell Ventures,background,not in 258 tech base / non-tech
+modern-technical-fund-mtf,Modern Technical Fund (MTF),background,not in 258 tech base / non-tech
+national-veterinary-associates,National Veterinary Associates,background,not in 258 tech base / non-tech
+retina-consultants-of-america,Retina Consultants of America,background,not in 258 tech base / non-tech

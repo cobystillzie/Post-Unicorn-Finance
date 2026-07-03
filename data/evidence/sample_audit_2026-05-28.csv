@@ -1,0 +1,31 @@
+name,assigned_class,verdict,page_type,self_described_class,class_match,note
+Boston Impact Initiative,Patient Capital,genuine_correct,allocator,Patient Capital,True,"nonprofit impact fund/CDFI, patient capital"
+Shopify Capital,SMV,genuine_correct,allocator,SMV,True,first-party revenue-based financing
+Private Equity Roll Up Strategy Explained- Allegrow,Portfolio Capital,junk_not_allocator,article_or_blog,none,False,blog post by an M&A comms firm
+Founder Institute,Patient Capital,genuine_misclassified,accelerator_or_program,LMV,False,pre-seed accelerator -> LMV not Patient
+SMB Investor Network,Search/ETA,junk_not_allocator,marketplace_or_broker,none,False,co-investment deal-distribution platform
+Science Inc.,Portfolio Capital,genuine_correct,allocator,Portfolio Capital,True,venture studio builds+invests
+Microns,LMV,junk_not_allocator,marketplace_or_broker,none,False,marketplace of micro startups (broker)
+Alza Capital Partners,Search/ETA,unverifiable,other,Search/ETA,True,assigned URL dead (TLS); real firm at alzacp.com
+Cicero Capital,Search/ETA,genuine_correct,allocator,Search/ETA,True,search fund acquiring one business in India
+Klub,SMV,unverifiable,other,none,False,"klubworks->klub.ai JS-only, RaiseOS pivot"
+GetVantage,SMV,genuine_correct,allocator,SMV,True,non-dilutive growth/embedded financing
+Acquire.com,SMV,junk_not_allocator,marketplace_or_broker,none,False,marketplace to buy/sell online businesses
+The GIIN,Sovereign Capital,junk_not_allocator,network_or_membership,none,False,"impact-investing industry body, not an allocator"
+Andromeda,Patient Capital,genuine_misclassified,allocator,Portfolio Capital,False,Constellation VMS serial acquirer -> Portfolio
+Thesis Capital,Patient Capital,genuine_misclassified,allocator,Portfolio Capital,False,acquire-and-hold SMB holdco -> Portfolio
+YouLend,SMV,genuine_correct,allocator,SMV,True,"CORRECTED after user+page recheck: homepage says 'Our capital' + revenue-based/embedded financing -> deploys capital, genuine SMV allocator"
+CodeLaunch,Patient Capital,junk_not_allocator,accelerator_or_program,none,False,"accelerator taking no cash/equity, no capital"
+Camelback Ventures,LMV,genuine_correct,accelerator_or_program,LMV,True,"fellowship that invests, $10M into 220+"
+South Park Commons,LMV,genuine_correct,allocator,LMV,True,"community fund, first checks $1-10M"
+Hawk Infinity Software,Portfolio Capital,genuine_correct,allocator,Portfolio Capital,True,long-term home/serial acquirer holdco
+The Quiet Rise of Profitable Indie Hackers in 2026,LMV,junk_not_allocator,article_or_blog,none,False,editorial blog article
+Founderpath,SMV,genuine_correct,allocator,SMV,True,"non-dilutive RBF for SaaS, $271M"
+Bigthinkcapital,SMV,junk_not_allocator,marketplace_or_broker,none,False,listicle + financial marketplace/broker
+Align Capital Partners,SMV,genuine_misclassified,allocator,Portfolio Capital,False,$2.1B control-buyout LMM PE -> Portfolio
+Apex Point Equity,SMV,genuine_misclassified,allocator,Portfolio Capital,False,micro-PE SaaS acquirer -> Portfolio not SMV
+Bending Spoons,Portfolio Capital,genuine_correct,allocator,Portfolio Capital,True,acquires+operates digital products long-term
+Impro Ventures,Patient Capital,genuine_misclassified,allocator,none,False,"scattered early-stage/M&A generalist, no patient language"
+CapitalPad,Search/ETA,genuine_correct,allocator,Search/ETA,True,co-invests own capital+carry in search/ETA
+Purpose (Purpose Foundation / Purpose US),Patient Capital,junk_not_allocator,consultancy_or_advisor,none,False,steward-ownership advisory nonprofit; capital spun to Common Trust
+Quiet Light,SMV,unverifiable,other,none,False,Cloudflare bot-challenge blocked (not bypassed)

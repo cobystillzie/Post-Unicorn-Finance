@@ -1,0 +1,20 @@
+name,current_class,review_note,status
+AIJ Global Holdings,Search/ETA,"possible class mismatch: name implies holding company, not search/ETA",needs_human_review
+Legacy Holdings,Patient Capital,"generic name; verify it is a real permanent-capital holdco, not a placeholder",needs_human_review
+Legacy Search Partners,Search/ETA,generic name; verify real search fund,needs_human_review
+Purpose (Purpose Foundation / Purpose US),Patient Capital,real steward-ownership org but name generic; confirm entity identity vs the various 'Purpose' entities,needs_human_review
+Purpose Owned,Patient Capital,generic name; possible duplicate of Purpose Foundation family,needs_human_review
+Recurring Capital Partners,SMV,generic name (vocab words); real RBF firm — low concern,needs_human_review
+Efficient Capital Labs,SMV,generic name (vocab words); real RBF firm — low concern,needs_human_review
+Zero 1,Portfolio Capital,generic/ambiguous name; verify it is a real studio/holdco,needs_human_review
+Entrepreneurship Through Acquisition and Search Fund Resources,(various),non-firm junk: article title/topic scraped as entity; RECOMMEND REMOVE from atlas,needs_human_review
+The Independent Sponsor Model or Fundless Sponsor Model,(various),non-firm junk: article title/topic scraped as entity; RECOMMEND REMOVE from atlas,needs_human_review
+7 Actionable Bootstrapped SaaS Success Stories & Playbooks for 2025,(various),non-firm junk: article title/topic scraped as entity; RECOMMEND REMOVE from atlas,needs_human_review
+Private Equity Roll Up Strategy Explained- Allegrow,(various),non-firm junk: article title/topic scraped as entity; RECOMMEND REMOVE from atlas,needs_human_review
+Roll-Up Strategy 2026,(various),non-firm junk: article title/topic scraped as entity; RECOMMEND REMOVE from atlas,needs_human_review
+The Quiet Rise of Profitable Indie Hackers in 2026,(various),non-firm junk: article title/topic scraped as entity; RECOMMEND REMOVE from atlas,needs_human_review
+What Is a Venture Studio? The Venture Studio Model Explained,(various),non-firm junk: article title/topic scraped as entity; RECOMMEND REMOVE from atlas,needs_human_review
+Indie Hacker Success Stories Database,(various),non-firm junk: article title/topic scraped as entity; RECOMMEND REMOVE from atlas,needs_human_review
+The Rise of Evergreen Fund Structures for Private Credit,(various),non-firm junk: article title/topic scraped as entity; RECOMMEND REMOVE from atlas,needs_human_review
+Building the World's Most Powerful Network for Founders,(various),non-firm junk: article title/topic scraped as entity; RECOMMEND REMOVE from atlas,needs_human_review
+Caisse de dépôt et placement du Québec,Patient Capital,pension fund -> should be Sovereign Capital,needs_human_review

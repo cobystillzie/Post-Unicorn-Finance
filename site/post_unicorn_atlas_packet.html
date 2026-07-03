@@ -1,0 +1,871 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Post-Unicorn Finance Atlas (snapshot 2026-06-08)</title>
+<style>
+    @page { size: Letter; margin: 16mm 15mm 18mm; }
+    * { box-sizing: border-box; }
+    body { font: 11pt/1.5 -apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; color:#1f2328; margin:0; }
+    .cover { padding: 4mm 0 6mm; border-bottom: 3px solid #312e81; margin-bottom: 8mm; }
+    .kicker { letter-spacing:.16em; text-transform:uppercase; font-size:9pt; color:#312e81; font-weight:700; margin:0; }
+    h1 { font-size:30pt; line-height:1.08; margin:.15em 0 .1em; letter-spacing:-.01em; }
+    .sub { font-size:12pt; color:#57606a; margin:.2em 0 0; }
+    .caveats { background:#fff8e6; border:1px solid #f0d264; border-left:5px solid #d4a72c; padding:10px 14px; margin:7mm 0; font-size:9.5pt; }
+    .caveats b { color:#7a5c00; }
+    table.summary { border-collapse:collapse; width:100%; font-size:10pt; margin:5mm 0 2mm; }
+    table.summary th, table.summary td { border-bottom:1px solid #d0d7de; padding:5px 8px; text-align:left; }
+    table.summary th { background:#f6f8fa; font-size:8.5pt; letter-spacing:.05em; text-transform:uppercase; color:#57606a; }
+    table.summary td.num { text-align:right; font-variant-numeric:tabular-nums; font-weight:600; }
+    table.summary tr.total td { border-top:2px solid #312e81; font-weight:700; }
+    .tiers { font-size:9pt; color:#57606a; margin:2mm 0 0; }
+    h2.section { font-size:16pt; margin:11mm 0 1mm; padding-top:3mm; border-top:2px solid #312e81; color:#312e81; letter-spacing:.01em; }
+    h3.cls { font-size:13.5pt; margin:6mm 0 .5mm; }
+    h3.cls .cnt { display:inline-block; background:#312e81; color:#fff; border-radius:10px; font-size:9pt; padding:1px 9px; vertical-align:middle; margin-left:6px; }
+    p.clsdef { font-size:9.5pt; color:#57606a; margin:.2em 0 3mm; max-width:62em; }
+    .entities { display:block; }
+    article.entity { break-inside:avoid; page-break-inside:avoid; border-left:3px solid #d0d7de; padding:2px 0 6px 11px; margin:0 0 5mm; }
+    .ehead { display:flex; flex-wrap:wrap; align-items:center; gap:6px; }
+    article.entity h4 { font-size:11.5pt; margin:0 4px 0 0; }
+    .badge { color:#fff; font-size:7.5pt; font-weight:700; letter-spacing:.03em; text-transform:uppercase; border-radius:4px; padding:2px 6px; }
+    p.desc { margin:3px 0 0; font-size:10pt; }
+    blockquote { margin:5px 0 0; padding:4px 0 4px 10px; border-left:2px solid #c9c2f0; color:#3a3a3a; font-style:italic; font-size:9.5pt; }
+    p.src { margin:3px 0 0; font-size:8pt; }
+    p.src a { color:#0969da; word-break:break-all; text-decoration:none; }
+    .foot { margin-top:9mm; padding-top:3mm; border-top:1px solid #d0d7de; font-size:8.5pt; color:#8c959f; }
+    </style></head><body>
+<header class="cover">
+  <p class="kicker">Post-Unicorn Finance &middot; Capital-Allocator Atlas</p>
+  <h1>The Post-Unicorn Finance Atlas</h1>
+  <p class="sub">New-taxonomy classification snapshot &middot; 2026-06-08 &middot; 139 asset-classified + 0 under review &middot; 125 with verbatim self-ID quotes</p>
+</header>
+
+<div class="caveats">
+  <b>Read me first - this is a current-state snapshot, not the final report.</b> It reflects the data exactly
+  as classified today. The <b>SMV / Nimble</b> split is still by <i>instrument</i> and is <b>pending
+  reconciliation with Ethan</b> (who defines them by market size + liquidity speed); some rows here may move.
+  <b>Permanent Capital is 50%</b> of the set - an archetype concentration we are deliberately working to
+  broaden (this snapshot adds a new <b>Impact Capital</b> class). Structure follows Ethan's
+  <b>"Active Experiments vs Trends / Watch"</b> directive.
+</div>
+
+<table class="summary"><thead><tr><th>Asset class</th><th>Section</th><th>Count</th></tr></thead><tbody><tr><td>SMV</td><td>Active Experiments</td><td class="num">19</td></tr><tr><td>Nimble</td><td>Active Experiments</td><td class="num">25</td></tr><tr><td>Permanent</td><td>Active Experiments</td><td class="num">65</td></tr><tr><td>Studio</td><td>Active Experiments</td><td class="num">13</td></tr><tr><td>Impact Capital</td><td>Active Experiments</td><td class="num">11</td></tr><tr><td>Reserved</td><td>Trends / Watch</td><td class="num">3</td></tr><tr><td>Excluded-Traditional</td><td>Appendix</td><td class="num">3</td></tr><tr class="total"><td>TOTAL (asset-classified)</td><td></td><td class="num">139</td></tr></tbody></table>
+<p class="tiers"><b>By evidence tier:</b> verified: 80 &middot; in_disguise: 45 &middot; provenance: 6 &middot; anchor: 5 &middot; self_id: 3</p>
+
+<h2 class="section">Active Experiments</h2><h3 class="cls">SMV - Small-to-Medium Venture <span class="cnt">19</span></h3><p class="clsdef">Equity targeting venture-scale, non-unicorn $50M-500M outcomes. NOTE: the SMV/Nimble split is currently by instrument and is PENDING reconciliation with Ethan (market-size + exit-speed).</p><div class="entities"><article class="entity">
+<div class="ehead"><h4>Startup Ignition Ventures</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">revenue-first pre-seed fund (US / Utah) [IN-DISGUISE]</p>
+<blockquote>Elephants, Not Unicorns. [Other VCs] Chase unicorns. Celebrate fundraises. Subtly market the old trophy-hunting, growth-at-all-costs model. [SIV] Capital-efficient businesses. Validated models. Sustainable profitability. We back companies built to last - not just to raise the next round.</blockquote>
+<p class="src"><a href="https://www.startupignition.com/ventures/">https://www.startupignition.com/ventures/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Upright Capital</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: med</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">smv</p>
+<blockquote>We invest in companies that grow too steadily for venture capital and are too small for traditional private equity yet.</blockquote>
+<p class="src"><a href="https://upright.capital/">https://upright.capital/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Acadian Software</h4><span class="badge" style="background:#9a6700">in_disguise</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">long-term capital partner for capital-efficient/bootstrapped SaaS (holds for many years)</p>
+<blockquote>We prefer to invest in businesses that have achieved market traction and momentum, without consuming large amounts of equity capital... we are building a small portfolio of exceptional software businesses, and we are prepared to hold an investment for many years. ... the best companies don&#x27;t need tens of millions to prosper... bootstrapp…</blockquote>
+<p class="src"><a href="https://www.acadiansoftware.com/">https://www.acadiansoftware.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Apex Point Equity</h4><span class="badge" style="background:#9a6700">in_disguise</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">equity for bootstrapped SMB/PLG SaaS</p>
+<blockquote>bootstrapped, in the $500k+ ARR [range] ... Need to scale sales (SMB focus) and/or marketing (PLG focus)</blockquote>
+<p class="src"><a href="https://apexpointequity.com">https://apexpointequity.com</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Argentum Group</h4><span class="badge" style="background:#9a6700">in_disguise</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">growth equity, bootstrap/capital-efficient B2B software</p>
+<blockquote>Bootstrap, Capital-Efficient Entrepreneurs - We support bootstrap companies that have [built] industry-leading B2B software, technology-enabled services</blockquote>
+<p class="src"><a href="https://argentumgroup.com/about">https://argentumgroup.com/about</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Edited Capital</h4><span class="badge" style="background:#9a6700">in_disguise</span><span class="badge" style="background:#6e7781">conf: med</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">small-tech buyout fund for profitable B2B software that does not fit the unicorn-or-bust model</p>
+<blockquote>For every unicorn success story, there are countless startups that don&#x27;t go to plan, despite being fundamentally good businesses. ... what if a startup&#x27;s potential wasn&#x27;t measured by how fast it could grow, but by how much value it created? ... to rewrite the narrative of venture by changing the definition of success.</blockquote>
+<p class="src"><a href="https://editedcapital.com/">https://editedcapital.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Expedition Growth Capital</h4><span class="badge" style="background:#9a6700">in_disguise</span><span class="badge" style="background:#6e7781">conf: med</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">bootstrapped software &amp; AI growth</p>
+<blockquote>specialist partners for rapidly growing software &amp; AI companies ... bootstrapped software &amp; AI founders</blockquote>
+<p class="src"><a href="https://expedition.capital/">https://expedition.capital/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Gearbox Capital</h4><span class="badge" style="background:#9a6700">in_disguise</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">growth capital exclusively for bootstrapped software/data/tech-enabled businesses (rejects growth-at-any-cost)</p>
+<blockquote>Growth Capital for Bootstrapped Businesses. ... Responsible Growth - We reject the notion of growth at any cost. We&#x27;ve found that hockey stick graphs often lead to missed expectations, systemic stress and unintended collateral damage. Instead, we prioritize setting the foundation for 15-30% growth sustained over a decade. ... Investment…</blockquote>
+<p class="src"><a href="https://www.gearboxcap.com/">https://www.gearboxcap.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Invictus Growth Partners</h4><span class="badge" style="background:#9a6700">in_disguise</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">growth equity, bootstrapped/capital-efficient B2B SaaS</p>
+<blockquote>Bootstrapped or Capital-Efficient - $20 Million+ Equity Investments [in B2B technology companies with SaaS models, $10M+ ARR]</blockquote>
+<p class="src"><a href="https://www.invictusgrowth.com/">https://www.invictusgrowth.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Mainsail Partners</h4><span class="badge" style="background:#9a6700">in_disguise</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">growth equity for bootstrapped software</p>
+<blockquote>Mainsail invests in founder-led, bootstrapped companies because we love what makes you so unique</blockquote>
+<p class="src"><a href="https://mainsailpartners.com/">https://mainsailpartners.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Movens Capital</h4><span class="badge" style="background:#9a6700">in_disguise</span><span class="badge" style="background:#6e7781">conf: med</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">smv-in-disguise</p>
+<blockquote>investing EUR0.25-3M in CEE ... tech companies ... building towards EUR50M+ ARR</blockquote>
+<p class="src"><a href="https://movenscapital.com/">https://movenscapital.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>NYO Capital</h4><span class="badge" style="background:#9a6700">in_disguise</span><span class="badge" style="background:#6e7781">conf: med</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">growth equity exclusively for bootstrapped, founder-led software companies</p>
+<blockquote>NYO Capital is a growth equity firm with a specialized focus on nurturing and investing in bootstrapped, founder-led software companies. ... our mission is to empower growth-oriented, bootstrapped software companies ... ensuring our portfolio companies can realize their full potential while retaining their founding spirit.</blockquote>
+<p class="src"><a href="https://nyocapital.com/">https://nyocapital.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>PeakSpan Capital</h4><span class="badge" style="background:#9a6700">in_disguise</span><span class="badge" style="background:#6e7781">conf: med</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">growth equity for capital-efficient Applied-AI B2B software ($3-50M ARR, &lt;$20M raised); explicit anti-unicorn / not growth-at-all-costs</p>
+<blockquote>Scale with discipline and precision, not dogma or the growth-at-all-costs narrative... Don&#x27;t Go Chasing Unicorns... For entrepreneurs motivated by durability over headlines.</blockquote>
+<p class="src"><a href="https://www.peakspancapital.com/why-peakspan">https://www.peakspancapital.com/why-peakspan</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Pemba Capital Partners</h4><span class="badge" style="background:#9a6700">in_disguise</span><span class="badge" style="background:#6e7781">conf: low</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">camel-thesis PE buyout (Australia) [IN-DISGUISE]</p>
+<blockquote>Instead of the unicorn, the camel is the more fitting mascot for what we look for.</blockquote>
+<p class="src"><a href="https://pemba.com.au/hunt-camels-rather-than-unicorns/">https://pemba.com.au/hunt-camels-rather-than-unicorns/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Serent Capital</h4><span class="badge" style="background:#9a6700">in_disguise</span><span class="badge" style="background:#6e7781">conf: low</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">growth equity for bootstrapped founders</p>
+<blockquote>We invest in bootstrapped founders, pairing capital with hands-on operating expertise</blockquote>
+<p class="src"><a href="https://serentcapital.com/why-serent/">https://serentcapital.com/why-serent/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Silversmith Capital Partners</h4><span class="badge" style="background:#9a6700">in_disguise</span><span class="badge" style="background:#6e7781">conf: low</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">growth equity, capital-efficient software/healthcare</p>
+<blockquote>Capital Efficiency - Demonstrated capability of growing business with constrained resources</blockquote>
+<p class="src"><a href="https://www.silversmith.com/approach">https://www.silversmith.com/approach</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>TVC Capital</h4><span class="badge" style="background:#9a6700">in_disguise</span><span class="badge" style="background:#6e7781">conf: low</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">capital-efficient B2B software growth equity</p>
+<blockquote>capital-efficient companies generating $3 million-plus in annual recurring revenue from a solution their customers cannot live without</blockquote>
+<p class="src"><a href="https://tvccapital.com/fund-focus/">https://tvccapital.com/fund-focus/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Updata Partners</h4><span class="badge" style="background:#9a6700">in_disguise</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">growth equity, bootstrapped/lightly-capitalized software</p>
+<blockquote>Bootstrapped or Lightly Capitalized ... Capital Efficiency ... $20M-$200M Equity</blockquote>
+<p class="src"><a href="https://updata.com/approach/">https://updata.com/approach/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Workhorse Capital</h4><span class="badge" style="background:#9a6700">in_disguise</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">growth capital for bootstrapped software (anti-unicorn)</p>
+<blockquote>The unicorn is mythical; the magic isn’t real and the horn serves no purpose ... A Pedestal for Bootstrappers</blockquote>
+<p class="src"><a href="https://workhorsegrowth.com/">https://workhorsegrowth.com/</a></p>
+</article></div><h3 class="cls">Nimble Capital <span class="cnt">25</span></h3><p class="clsdef">Capital-efficient / non-dilutive / revenue-based / micro, fast realization. NOTE: under Ethan&#x27;s market-size definition these may not be &#x27;Nimble&#x27; and Nimble may have no true funds yet - PENDING reconciliation.</p><div class="entities"><article class="entity">
+<div class="ehead"><h4>4D Ventures</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">anti-blitzscale patient SaaS VC (Europe) [IN-DISGUISE]</p>
+<blockquote>We are investing our own money; hence, we have no exit pressure ... we want to stay on board as long as possible so founders can build up their companies ... We are here for the very long run (if needed by a generation) without any exit pressure.</blockquote>
+<p class="src"><a href="https://www.4d.ventures/investment-thesis">https://www.4d.ventures/investment-thesis</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Bigfoot Capital</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">non-dilutive SaaS lender</p>
+<blockquote>We started Bigfoot in 2017 to push back against what we viewed to be an overly pervasive and often reckless format for building and capitalizing software businesses, that of growth at all costs and the associated hyperfunding to pursue it.</blockquote>
+<p class="src"><a href="https://bigfootcap.com/">https://bigfootcap.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>BuyBack Ventures</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: med</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">reverse-venture / redeemable-equity (US)</p>
+<blockquote>In traditional venture capital, you have to give up ownership as you grow. With Buyback Ventures, use your profits to buy back your equity and own more of your company as you grow.</blockquote>
+<p class="src"><a href="https://buyback.vc/">https://buyback.vc/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Cypress Growth Capital</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: med</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">nimble</p>
+<blockquote>Our capital approach does not require a liquidity event for success. Each investment is tailored as flexible, long-term debt with entrepreneur-friendly features specifically designed for emerging companies</blockquote>
+<p class="src"><a href="https://cypressgrowthcapital.com/">https://cypressgrowthcapital.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>D2 Fund</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: med</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">capital-efficient B2B software VC (UK/Europe)</p>
+<blockquote>We prioritise sustainable compounding growth and will never push portfolio founders to raise capital to mark up our own books.</blockquote>
+<p class="src"><a href="https://d2.fund/">https://d2.fund/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Golden Section</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: med</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">capital-efficient vertical-SaaS growth equity + RBF (Houston)</p>
+<blockquote>Founders who are building toward a meaningful strategic exit at $5-15M An. Rev., not an IPO at $500M An. Rev. - and understand why that&#x27;s actually the better outcome.</blockquote>
+<p class="src"><a href="https://www.goldensection.com/">https://www.goldensection.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>HASAN.VC</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: med</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">camel VC (Southeast Asia / Islamic VC)</p>
+<blockquote>HASAN.VC prioritizes the cultivation of Camel startups over the pursuit of speculative Unicorns.</blockquote>
+<p class="src"><a href="https://hasan.vc/shariah-compliant-investing-in-start-ups-with-the-camel-framework/">https://hasan.vc/shariah-compliant-investing-in-start-ups-with-the-camel-framework/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Iolar Ventures</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: med</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">capital-efficient &#x27;camel&#x27; VC (Silicon Valley; B2B cloud/mobile software)</p>
+<blockquote>the approach of mainstream venture, with an emphasis on outlier outcomes, rapid growth at all costs, high burn rates, and a large portfolio to mitigate high risk, may not always be the best choice for founders... we don&#x27;t need to force companies to take excess capital in order to &#x27;move the needle&#x27; on returns to our funds.</blockquote>
+<p class="src"><a href="https://iolar.vc/">https://iolar.vc/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Malpani Ventures</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: med</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">patient-capital VC (India)</p>
+<blockquote>It means we don&#x27;t have a forced exit clause in our term sheets. It means when we talk to a founder about the next five years, we&#x27;re actually thinking about the next fifteen.</blockquote>
+<p class="src"><a href="https://www.malpaniventures.com/blog/a-quiet-reorientation">https://www.malpaniventures.com/blog/a-quiet-reorientation</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Round2 Capital Partners</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: med</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">nimble</p>
+<blockquote>Focus on achieving steady, long-term growth rather than short-term, unsustainable growth</blockquote>
+<p class="src"><a href="https://round2cap.com/">https://round2cap.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Calm Company Fund</h4><span class="badge" style="background:#0969da">anchor</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">SEAL non-dilutive (anchor)</p>
+<p class="src"><a href="https://calmfund.com/">https://calmfund.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Gorilla Capital</h4><span class="badge" style="background:#0969da">anchor</span><span class="badge" style="background:#6e7781">conf: med</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">Capital-efficient equity -&gt; Nimble (2026-06-03 ruling; SMV reserved for non-capital-efficient venture-scale)</p>
+<p class="src"><a href="https://gorillacapital.fi/">https://gorillacapital.fi/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Indie.vc</h4><span class="badge" style="background:#0969da">anchor</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">Revenue-based seed terms (anchor)</p>
+<p class="src"><a href="https://www.indie.vc/facts">https://www.indie.vc/facts</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Lighter Capital</h4><span class="badge" style="background:#0969da">anchor</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">Revenue-based lender (anchor)</p>
+<p class="src"><a href="https://lightercapital.com/">https://lightercapital.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>TinySeed</h4><span class="badge" style="background:#0969da">anchor</span><span class="badge" style="background:#6e7781">conf: med</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">Micro/capital-efficient accelerator-fund (equity); could be SMV</p>
+<p class="src"><a href="https://tinyseed.com/">https://tinyseed.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>BuenTrip Ventures</h4><span class="badge" style="background:#9a6700">in_disguise</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">camel-thesis / capital-efficiency VC (LatAm) [IN-DISGUISE]</p>
+<blockquote>We seek founders who can achieve outsized results with limited capital by focusing on profitability and efficient scaling.</blockquote>
+<p class="src"><a href="https://www.buentrip.vc/blog/navigatingventurecapital">https://www.buentrip.vc/blog/navigatingventurecapital</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Camel Ventures</h4><span class="badge" style="background:#9a6700">in_disguise</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">camel-VC / venture debt (Egypt fintech) [IN-DISGUISE]</p>
+<blockquote>We believe in Camels (not only potential Unicorns) – the embodiment of the characteristics we look for, and nurture, in our partners - the startups.</blockquote>
+<p class="src"><a href="https://www.camel.ventures/">https://www.camel.ventures/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Capacity Capital</h4><span class="badge" style="background:#9a6700">in_disguise</span><span class="badge" style="background:#6e7781">conf: low</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">revenue-based fund, capital-efficient founders (US Southeast) [IN-DISGUISE?]</p>
+<blockquote>invests in revenues instead of valuations</blockquote>
+<p class="src"><a href="https://capacitycapital.co/">https://capacitycapital.co/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>henQ</h4><span class="badge" style="background:#9a6700">in_disguise</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">capital-efficiency B2B VC (Europe) [IN-DISGUISE]</p>
+<blockquote>We are fine if you want to build a sustainable business without ever raising VC funding again.</blockquote>
+<p class="src"><a href="https://www.henq.vc/">https://www.henq.vc/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>SaaSholic</h4><span class="badge" style="background:#9a6700">in_disguise</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">capital-efficiency LatAm SaaS VC [IN-DISGUISE]</p>
+<blockquote>Capital efficiency beats hyper-growth. Because in Latam, every dollar matters and competition is thinner. Lower CACs let distribution be won with limited burn; ROI beats growth at all costs.</blockquote>
+<p class="src"><a href="https://blog.saasholic.com/p/doing-it-wrong-again-saasholics-next">https://blog.saasholic.com/p/doing-it-wrong-again-saasholics-next</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>STS Ventures</h4><span class="badge" style="background:#9a6700">in_disguise</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">camel-branded capital-efficiency VC (DACH) [IN-DISGUISE]</p>
+<blockquote>Sure, like most VCs, we welcome unicorn start-ups with hockey stick growth. But, we really love start-ups that achieve capital-efficient, sustainable growth.</blockquote>
+<p class="src"><a href="https://sts-ventures.de/portfolio/">https://sts-ventures.de/portfolio/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>TIMIA Capital</h4><span class="badge" style="background:#9a6700">in_disguise</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">non-dilutive debt, alternative to VC</p>
+<blockquote>Alternative to Venture Capital. TIMIA Capital provides debt capital to growing B2B technology companies ... bootstrapped or lightly capitalized companies looking to grow their business without dilution</blockquote>
+<p class="src"><a href="https://timiacapital.com/">https://timiacapital.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Union Group Fund</h4><span class="badge" style="background:#9a6700">in_disguise</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">bootstrapped vertical SaaS, livable growth</p>
+<blockquote>We invest in bootstrapped vertical SaaS software companies ... companies that ... share the same philosophy of livable and viable growth</blockquote>
+<p class="src"><a href="https://www.uniongroupfund.com/">https://www.uniongroupfund.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>UpsideDown VC</h4><span class="badge" style="background:#9a6700">in_disguise</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">income-based F&amp;F-seed fund (UK) [IN-DISGUISE]</p>
+<blockquote>Freedom to pursue either venture-scale growth or build a profitable smaller business, without pressure to fit a single mould.</blockquote>
+<p class="src"><a href="https://www.upsidedown.vc/">https://www.upsidedown.vc/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Kickstart</h4><span class="badge" style="background:#57606a">provenance</span><span class="badge" style="background:#6e7781">conf: med</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">Capital-efficient equity -&gt; Nimble (2026-06-03 ruling; SMV reserved for non-capital-efficient venture-scale)</p>
+<p class="src"><a href="https://kickstart.com/">https://kickstart.com/</a></p>
+</article></div><h3 class="cls">Permanent Capital <span class="cnt">65</span></h3><p class="clsdef">No exit required: buy-and-hold holdcos, evergreen, permanent equity, steward-ownership. (50% of the atlas - the dominant archetype.)</p><div class="entities"><article class="entity">
+<div class="ehead"><h4>Alexandria Capital</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">permanent-capital software holdco</p>
+<blockquote>We do not sell our companies after acquisition, as we hold businesses permanently.</blockquote>
+<p class="src"><a href="https://alexcapital.co/">https://alexcapital.co/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Arising Ventures</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">Long-term software holding company (revenue $3M-$30M)</p>
+<blockquote>We are structured as a long-term holding company, meaning we don&#x27;t have the broken incentives of a fund.</blockquote>
+<p class="src"><a href="https://arisingventures.com">https://arisingventures.com</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Banyan Software</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">buy-and-hold software</p>
+<blockquote>We don&#x27;t resell your business down the road.</blockquote>
+<p class="src"><a href="https://www.banyansoftware.com/about">https://www.banyansoftware.com/about</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Based</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">long-term holding company for owner-led internet businesses (SaaS/FinTech/InsurTech)</p>
+<blockquote>A long-term holding company partnering with entrepreneurial leaders to build, acquire, and grow enduring companies.</blockquote>
+<p class="src"><a href="https://www.basedinc.com/">https://www.basedinc.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Big Band Software</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">buy-and-hold software</p>
+<blockquote>we buy and run companies without pressure to quickly extract or flip. In an industry addicted to quick wins, we chase enduring value.</blockquote>
+<p class="src"><a href="https://www.bigbandsoftware.com/">https://www.bigbandsoftware.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Blue Footed Investments</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: med</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">permanent</p>
+<blockquote>&quot;We look for humble, kind people — the kind of operators we&#x27;d want to work with for a decade — and we measure ourselves in decades rather than quarters.&quot; / &quot;We gravitate toward founders who build the same way: disciplined about capital, focused on customers, and resistant to the pressure to grow faster than their business can bear.&quot;</blockquote>
+<p class="src"><a href="https://bluefootedinvestments.com/">https://bluefootedinvestments.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Brooks &amp; Keitt</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: med</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">self-funded software holding company that builds and operates long-lived products (flagship ProntoID), reinvests cash flow, never sells (no-exit)</p>
+<blockquote>We build products to operate them - not to sell them. Every product in the house is still run by the company that launched it. ... There&#x27;s no exit strategy, no pitch deck, and no five-year plan beyond continuing to ship software we&#x27;re proud of.</blockquote>
+<p class="src"><a href="https://brookskeitt.com/">https://brookskeitt.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Calm Capital</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">holdco (founder-led &amp; family businesses)</p>
+<blockquote>Not in the &quot;hair on fire,&quot; &quot;growth at all costs,&quot; or &quot;buy and flip&quot; way, but the principled, patient, and persistent way... The Calm Capital way.</blockquote>
+<p class="src"><a href="https://www.calmcapital.com/">https://www.calmcapital.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Concepts.io</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">permanent-capital holdco (US software/services/infra)</p>
+<blockquote>We acquire with the intent to hold indefinitely. We are not building a portfolio to flip.</blockquote>
+<p class="src"><a href="https://concepts.io/">https://concepts.io/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Croissant</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">permanent-hold European B2B SaaS acquirer (Benelux/France/DACH)</p>
+<blockquote>We buy, optimize, and hold. Forever... We&#x27;re not here to flip.</blockquote>
+<p class="src"><a href="https://croissant.today/">https://croissant.today/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Curious (Curious Holdings)</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">permanent-capital software holdco</p>
+<blockquote>We&#x27;re focused on legacy, resilience, and continuous reinvention, not raising additional funds or future exits.</blockquote>
+<p class="src"><a href="https://www.curiousholdings.com/">https://www.curiousholdings.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Define Capital</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">permanent-capital B2B software holdco</p>
+<blockquote>We buy and hold forever.</blockquote>
+<p class="src"><a href="https://definecapital.ca/">https://definecapital.ca/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Enduring Ventures</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">permanent-capital</p>
+<blockquote>We&#x27;re different from most VC and PE firms in that we operate the businesses we own for sustainability, and not growth at all-costs.</blockquote>
+<p class="src"><a href="https://www.enduring.ventures/about">https://www.enduring.ventures/about</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Everfield</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">permanent-capital VMS holdco (Europe)</p>
+<blockquote>We don&#x27;t want to disrupt your progress by selling your business at any point in the future.</blockquote>
+<p class="src"><a href="https://everfield.com/">https://everfield.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Evergreen Financial Technology Group</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">evergreen fintech-software holdco (US/Canada)</p>
+<blockquote>A Long-term home for great software businesses that serve financial institutions... Owner&#x27;s Mindset: We acquire and build businesses with a long-term horizon.</blockquote>
+<p class="src"><a href="https://evergreenftg.com/">https://evergreenftg.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Evergreen Services Group</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">buy-and-hold-forever holdco (tech services/MSP)</p>
+<blockquote>As a permanent owner, we are a true home for the companies we partner with, preserving what has made each business great while accelerating long-term growth.</blockquote>
+<p class="src"><a href="https://www.evergreensg.com/">https://www.evergreensg.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Everhold</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: partial</span></div>
+<p class="desc">permanent-capital holdco (small B2B)</p>
+<blockquote>to acquire exceptional small businesses and hold them forever. We&#x27;re not a private equity firm.</blockquote>
+<p class="src"><a href="https://www.everhold.com/">https://www.everhold.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Evermore</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">buy-and-hold software acquirer (forever)</p>
+<blockquote>We buy founder-led software companies and grow them forever.</blockquote>
+<p class="src"><a href="https://evermore-ventures.com/">https://evermore-ventures.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Everroost</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">long-term software acquirer (AI-native)</p>
+<blockquote>We don&#x27;t strip and flip - we invest, improve, and operate for the long term.</blockquote>
+<p class="src"><a href="https://everroost.com/">https://everroost.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>EviGrow Software</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">lifetime European vertical-market software (VMS) acquirer</p>
+<blockquote>We never intend to sell a company once it has joined our group.</blockquote>
+<p class="src"><a href="https://www.evigrowsoftware.com/about">https://www.evigrowsoftware.com/about</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Exa Capital</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">permanent-capital enterprise-software holdco</p>
+<blockquote>Without pressure to sell portfolio companies, we make decisions that build value over decades, not just quarters.</blockquote>
+<p class="src"><a href="https://exacapital.co/our-private-equity-acquisition-approach/">https://exacapital.co/our-private-equity-acquisition-approach/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Flying Founders</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">buy-and-hold SaaS holdco (EU / Slovakia)</p>
+<blockquote>Hold long-term, focus on profitable growth and dividends, no pressure to raise or exit.</blockquote>
+<p class="src"><a href="https://www.flyingfounders.com/">https://www.flyingfounders.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>GovSoft Holdings</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">patient-capital permanent holdco for government &amp; public-safety software (GovTech)</p>
+<blockquote>Unlike traditional private equity and venture capital funds with mandated investment timelines and fundraising cycles, GovSoft Holdings&#x27; capital is truly patient... we don&#x27;t have to worry about raising capital or prepping for a sale. ... We do not have traditional private equity or venture capital investors that need a quick win - we bui…</blockquote>
+<p class="src"><a href="https://govsoftholdings.com/">https://govsoftholdings.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>GSG GENII</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">permanent-home software holdco (Europe/DACH)</p>
+<blockquote>Unlike traditional private equity investors, we think long-term. We do not buy to sell on - and we do not build for the exit. Instead, we provide a permanent home for companies that want to grow sustainably.</blockquote>
+<p class="src"><a href="https://gsg-genii.com/en/">https://gsg-genii.com/en/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>HEQS Investments</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">permanent-capital holdco (Australia)</p>
+<blockquote>We invest from our own balance sheet, not a fund with a five-year clock. There is no exit window and no pressure to flip.</blockquote>
+<p class="src"><a href="https://www.heqs.com.au/investments">https://www.heqs.com.au/investments</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Inversion Capital</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">permanent-capital holdco (fintech-modernized)</p>
+<blockquote>We raised permanent capital. No fund. No timeline. No mandate to sell. The only way we make money is if the business does well for a very long time.</blockquote>
+<p class="src"><a href="https://www.inversioncap.com/">https://www.inversioncap.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Jonas Software</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">buy-and-hold software acquirer (Constellation/CSI group)</p>
+<blockquote>At Jonas, we buy and hold forever. This is our &quot;Software for Life&quot; promise that we never sell the businesses we acquire.</blockquote>
+<p class="src"><a href="https://jonassoftware.com/being-acquired">https://jonassoftware.com/being-acquired</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Kastellet Holdings</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: flagged-pending</span></div>
+<p class="desc">permanent-capital middle-market holdco (US/Denmark)</p>
+<blockquote>Private equity buys companies to sell them again in three to seven years... Kastellet is different. Our capital is permanent.</blockquote>
+<p class="src"><a href="https://www.kastholdings.com/">https://www.kastholdings.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Kiko Ventures</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: med</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">permanent</p>
+<blockquote>the evergreen cleantech venture investor for science based businesses ... permanent capital that provides the flexibility and freedom to invest ... have enduring technological advantage, that can outlast market cycles ... Patient capital for science-based startups</blockquote>
+<p class="src"><a href="https://kiko.vc/">https://kiko.vc/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Lasting Ventures Capital</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: med</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">distribution-based / anti-VC-path (Brazil)</p>
+<blockquote>Não buscamos venda futura. Nossa remuneração vem da distribuição de resultados da operação, junto aos fundadores e time, alinhando nossos interesses com o crescimento sustentável do seu negócio.</blockquote>
+<p class="src"><a href="https://lastingventures.capital/">https://lastingventures.capital/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Leo Software Group</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">permanent-capital software holdco</p>
+<blockquote>Our mission is simple: to buy and operate software businesses that we want to own forever.</blockquote>
+<p class="src"><a href="https://www.leosoftwaregroup.com/">https://www.leosoftwaregroup.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Long Tail Ventures</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">permanent-hold online-business acquirer (US)</p>
+<blockquote>We acquire businesses to operate them, not to flip them. If an exceptional exit opportunity arises, we may pursue it — but exits are optional, not required.</blockquote>
+<p class="src"><a href="https://ltv.so/">https://ltv.so/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Micro SaaS Capital</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">permanent-hold micro-SaaS acquirer (Toronto)</p>
+<blockquote>We build for the long-term with permanent capital - our holding period is forever (we do not &quot;flip&quot;).</blockquote>
+<p class="src"><a href="https://microsaascapital.com/">https://microsaascapital.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Mosaic Software Group</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">permanent-capital software acquirer (US/Canada)</p>
+<blockquote>Our buy-and-hold philosophy, underpinned by our permanent capital base, ensures that we act in the long-term best interests for the team, customers, and company itself.</blockquote>
+<p class="src"><a href="https://www.mosaicsoftwaregroup.com/">https://www.mosaicsoftwaregroup.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Noosa Labs</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">Small profitable SaaS acquirer ($200k-$800k ARR; Miami/Paris)</p>
+<blockquote>We don&#x27;t flip Companies. We improve the product, support your customers and build on top of it.</blockquote>
+<p class="src"><a href="https://noosalabs.com">https://noosalabs.com</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Pender Software Holdings</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: med</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">permanent-capital holdco for niche/vertical software, backed by Pender Growth Fund</p>
+<blockquote>A permanent home for software companies. We&#x27;re not here to flip your company for a quick profit. Backed by Pender Growth Fund, we have permanent capital, which means a stable home for your team and that we&#x27;re invested for the long haul. Our focus is on building great companies and growing value over time - not finding a way out.</blockquote>
+<p class="src"><a href="https://pendersoftwareholdings.com/">https://pendersoftwareholdings.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Permanent Corp</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">permanent-capital B2B holdco (US)</p>
+<blockquote>Permanent Corporation acquire profitable, niche B2B businesses and never sells.</blockquote>
+<p class="src"><a href="https://permanentcorp.com/">https://permanentcorp.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Permanent Equity</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">permanent-capital</p>
+<blockquote>We invest with no intention of selling (and have never sold a portfolio company).</blockquote>
+<p class="src"><a href="https://www.permanentequity.com/">https://www.permanentequity.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Quadra Group</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">permanent-capital VMS holdco</p>
+<blockquote>Quadra Group is a permanent capital holding company, primarily focused on the acquisition and scaling of specialized vertical market software (VMS), and digital service companies in continental Europe.</blockquote>
+<p class="src"><a href="https://www.quadragroup.co.uk/">https://www.quadragroup.co.uk/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Rainmatter (by Zerodha)</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">perennial / evergreen own-capital investor (India)</p>
+<blockquote>Patient capital with no exit mandates that founders can benefit from when building an enterprise.</blockquote>
+<p class="src"><a href="https://zerodha.com/z-connect/rainmatter/rainmatter-perennial-investments">https://zerodha.com/z-connect/rainmatter/rainmatter-perennial-investments</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Shop Circle</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">permanent-home software acquirer (AI-native, EU/NA)</p>
+<blockquote>Our role is to provide a permanent home where your company can continue to thrive... No pressure to exit, just durable growth.</blockquote>
+<p class="src"><a href="https://shopcircle.co/">https://shopcircle.co/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Sidenote</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">micro-SaaS buy-and-hold holdco (bootstrapped)</p>
+<blockquote>We buy, build, and grow, micro SaaS businesses to hold and love forever.</blockquote>
+<p class="src"><a href="https://sidenotehq.com/">https://sidenotehq.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Software Combined</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">B2B-tech &#x27;forever home&#x27; acquirer (Europe &amp; Oceania)</p>
+<blockquote>Whether you think of us as an invested strategic advisor, or a &#x27;forever home&#x27; for your business, we will make long-term commitment to your vision and your people.</blockquote>
+<p class="src"><a href="https://softwarecombined.com/">https://softwarecombined.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Software Holdings</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: med</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">family office / long-term holder of bootstrapped profitable software companies (Australia)</p>
+<blockquote>We focus on independent software companies that desire to raise once, get to profitability, and grow sustainably over time. We aim to be long-term holders of these businesses, reinvesting dividends back into growth.</blockquote>
+<p class="src"><a href="https://www.softwareholdings.com.au/">https://www.softwareholdings.com.au/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Solen Software Group</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">permanent-capital software holdco</p>
+<blockquote>As a holding company with an indefinite time horizon, we have no intention of selling your business. When we invest in a company, we go &#x27;all in&#x27; for the long haul.</blockquote>
+<p class="src"><a href="https://www.solensoftwaregroup.com/why-solen">https://www.solensoftwaregroup.com/why-solen</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>SureSwift Capital</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">permanent-hold B2B SaaS acquirer (no-flip)</p>
+<blockquote>we&#x27;re not looking to flip businesses or maximize profits at the cost of long-term viability... we never assume an expiration date... we buy businesses with the expectation that we&#x27;ll be operating them in the long run.</blockquote>
+<p class="src"><a href="https://www.sureswiftcapital.com/blog/the-sureswift-model">https://www.sureswiftcapital.com/blog/the-sureswift-model</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>TAG Software Group</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">permanent-capital VMS holdco</p>
+<blockquote>TAG provides a permanent home for software companies — we don&#x27;t buy to sell.</blockquote>
+<p class="src"><a href="https://www.tagsoftwaregroup.com/">https://www.tagsoftwaregroup.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Tatonic Ventures</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">permanent holding company for founder-led businesses (buy &amp; hold forever)</p>
+<blockquote>Tatonic Ventures is a permanent holding company. We invest in founder-led businesses for the long term, not the exit. We buy and hold forever. No forced exits, no artificial timelines... We invest in profitability and compounding, not blitzscaling toward an exit.</blockquote>
+<p class="src"><a href="https://www.tatonic.net/">https://www.tatonic.net/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Teoh Capital</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">permanent-capital investor (software + enduring businesses), Australia</p>
+<blockquote>But unlike most private equity firms, we invest without a fixed time horizon.</blockquote>
+<p class="src"><a href="https://teohcapital.com/">https://teohcapital.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Tiny</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">permanent buy-and-hold acquirer of internet/software businesses (Tiny Ltd)</p>
+<blockquote>[on-page comparison table] Venture Capital: &#x27;Pressure to provide 10-100X returns&#x27;; Private Equity: &#x27;Typically flip your company in 3-5 years&#x27;; Tiny: &#x27;Holds companies for the long term.&#x27;</blockquote>
+<p class="src"><a href="https://www.tiny.com/">https://www.tiny.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Upliift</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">permanent-equity acquirer of European B2B vertical software (healthcare/finserv/workforce/mfg)</p>
+<blockquote>We&#x27;re here to help your business thrive, not flip it.</blockquote>
+<p class="src"><a href="https://upliift.com/">https://upliift.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Waverock Software</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">vertical software permanent holdco (US/Canada)</p>
+<blockquote>A long-term home for niche software businesses — not a fund waiting to flip them.</blockquote>
+<p class="src"><a href="https://waverocksoftware.com/">https://waverocksoftware.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Raptor Collective</h4><span class="badge" style="background:#0969da">self_id</span><span class="badge" style="background:#6e7781">conf: low</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">founder-first buy-and-hold acquirer of VMS (no named portfolio yet)</p>
+<blockquote>Unlike traditional private equity firms that chase quick returns... we don&#x27;t sell businesses. Our focus is on building lasting value, always prioritizing the needs of our partners over the need for an exit. ... founder-first, buy-and-hold approach.</blockquote>
+<p class="src"><a href="https://www.raptorcollective.com/">https://www.raptorcollective.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Soch Holdings</h4><span class="badge" style="background:#0969da">self_id</span><span class="badge" style="background:#6e7781">conf: low</span><span class="badge" style="background:#1f2328">tech: partial</span></div>
+<p class="desc">permanent</p>
+<blockquote>We are not a fund. We do not raise capital. We have no exit timelines. The freedom to be patient is our most valuable position.</blockquote>
+<p class="src"><a href="https://sochholdings.com/">https://sochholdings.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Beacon Software</h4><span class="badge" style="background:#9a6700">in_disguise</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">permanent-hold acquirer of Main Street software</p>
+<blockquote>The permanent home to build &amp; grow Main Street software. Beacon acquires essential software businesses ... Unlike traditional private equity, our plan is not to resell or chase short-term results ... a permanent home where it can thrive for decades to come</blockquote>
+<p class="src"><a href="https://beaconsoftware.com/">https://beaconsoftware.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Long Holding Company</h4><span class="badge" style="background:#9a6700">in_disguise</span><span class="badge" style="background:#6e7781">conf: med</span><span class="badge" style="background:#1f2328">tech: partial</span></div>
+<p class="desc">permanent-hold acquirer of B2B software/information brands</p>
+<blockquote>Permanent Home For The Business You Built ... we acquire forever ... software businesses to grow their legacy</blockquote>
+<p class="src"><a href="https://www.longholdco.com/">https://www.longholdco.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>PennTech Holdings</h4><span class="badge" style="background:#9a6700">in_disguise</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">permanent-hold acquirer of B2B technology companies</p>
+<blockquote>Permanent Home to Preserve Your Business Legacy ... we acquire and grow profitable B2B technology and services companies ... Unlike traditional private equity, we don’t buy to sell</blockquote>
+<p class="src"><a href="https://www.penn-tech.com/">https://www.penn-tech.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Recur Software</h4><span class="badge" style="background:#9a6700">in_disguise</span><span class="badge" style="background:#6e7781">conf: med</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">patient/enduring-home acquirer of profitable vertical software (not growth at all costs)</p>
+<blockquote>An enduring home for Wonderful Software Companies. ... Patient capital. Careful stewardship. Lasting growth. ... We drive organic, durable growth. Not growth at all costs - growth that lasts. ... Your product. Your legacy. Our stewardship. We protect what founders built.</blockquote>
+<p class="src"><a href="https://recurgrowth.com/">https://recurgrowth.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>saas.group</h4><span class="badge" style="background:#9a6700">in_disguise</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">permanent-hold acquirer of bootstrapped SaaS</p>
+<blockquote>We acquire inspiring bootstrapped SaaS companies ... bootstrapper mindset</blockquote>
+<p class="src"><a href="https://saas.group/">https://saas.group/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Skoyen Software</h4><span class="badge" style="background:#9a6700">in_disguise</span><span class="badge" style="background:#6e7781">conf: low</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">permanent-capital buy-and-hold B2B SaaS acquirer (UK/Norway)</p>
+<blockquote>We&#x27;re building an active buy-and-hold strategy, with permanent investment that works better for SaaS businesses, their leaders and investors alike. ... Skoyen Software acquires and invests permanent capital in founder-led B2B SaaS Businesses.</blockquote>
+<p class="src"><a href="https://skoyensoftware.com/">https://skoyensoftware.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Software Circle</h4><span class="badge" style="background:#9a6700">in_disguise</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">permanent-home VMS serial acquirer (UK, AIM:SFT)</p>
+<blockquote>Providing a permanent home for their teams, management talent and culture.</blockquote>
+<p class="src"><a href="https://softwarecircle.com/">https://softwarecircle.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Tangle Ventures</h4><span class="badge" style="background:#9a6700">in_disguise</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">permanent-hold acquirer of digital/software companies</p>
+<blockquote>We acquire overlooked digital companies, install operators, optimize systems, and compound [over decades] ... Capital-efficient structure ... Software &amp; service portfolio</blockquote>
+<p class="src"><a href="https://tangleventures.io/">https://tangleventures.io/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>The Perpetuity Project</h4><span class="badge" style="background:#9a6700">in_disguise</span><span class="badge" style="background:#6e7781">conf: low</span><span class="badge" style="background:#1f2328">tech: flagged-pending</span></div>
+<p class="desc">perpetual-hold SMB holdco (Europe)</p>
+<blockquote>We are a holding company dedicated to acquiring and growing solid small and medium-sized businesses across Europe, with a long-term, perpetual investment horizon.</blockquote>
+<p class="src"><a href="https://www.theperpetuityproject.com/">https://www.theperpetuityproject.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>XO Capital</h4><span class="badge" style="background:#9a6700">in_disguise</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">buy-and-operate holdco for bootstrapped indie SaaS</p>
+<blockquote>We buy &amp; operate SaaS companies ... bootstrapped, indie hacker companies</blockquote>
+<p class="src"><a href="https://www.xo.capital/">https://www.xo.capital/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>5X Capital</h4><span class="badge" style="background:#57606a">provenance</span><span class="badge" style="background:#6e7781">conf: low</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">Patient no-forced-exit; provenance (no verbatim quote)</p>
+<p class="src"><a href="https://fivexcapital.com/">https://fivexcapital.com/</a></p>
+</article></div><h3 class="cls">Studio Capital <span class="cnt">13</span></h3><p class="clsdef">Systematic company creation as the investment activity (venture studios).</p><div class="entities"><article class="entity">
+<div class="ehead"><h4>Junagal</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: med</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">AI venture studio, principal-owned, permanent capital / no exit timeline (build-to-keep)</p>
+<blockquote>Junagal originates, funds, and operates AI-native products - with a single owner, permanent capital, and no exit timeline. ... No LP pressure, no fund lifecycle, no deadline to sell. ... Optimised for enduring value. Not optics, not exits, not the next fund cycle.</blockquote>
+<p class="src"><a href="https://junagal.com/">https://junagal.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>MicroSaaS.io</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">micro-SaaS studio/acquirer/micro-seed (Copenhagen/Finland)</p>
+<blockquote>We build products meant to last - not to flip... No outside pressure, no growth-at-all-costs mentality.</blockquote>
+<p class="src"><a href="https://microsaas.io/">https://microsaas.io/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Next Wave Partners</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">venture studio + Safer (revenue-repurchase) (US)</p>
+<blockquote>The power law logic of venture capital has reached its breaking point.</blockquote>
+<p class="src"><a href="https://nextwave.partners/building-forever-businesses/">https://nextwave.partners/building-forever-businesses/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Perpetun</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: med</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">studio</p>
+<blockquote>We think in decades, not quarters. 10+ Year horizon. Perpetun is a holding company and venture studio.</blockquote>
+<p class="src"><a href="https://perpetun.com/">https://perpetun.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Sacramento Labs</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">evergreen software studio that builds, owns and operates durable niche-SaaS products for decades (build-to-keep)</p>
+<blockquote>We&#x27;re not optimizing for exits. We&#x27;re not chasing unicorn status. We&#x27;re building to own and operate for decades.</blockquote>
+<p class="src"><a href="https://sacramentolabs.com/our-philosophy/">https://sacramentolabs.com/our-philosophy/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Sandbox.Ventures</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: med</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">studio</p>
+<blockquote>100 horses instead of one unicorn. We build a portfolio of practical SaaS products — multiple sustainable successes rather than a single high-risk moonshot.</blockquote>
+<p class="src"><a href="https://www.sandbox.ventures/">https://www.sandbox.ventures/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Sprinter Studio</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: med</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">ai-venture-studio</p>
+<blockquote>Traditional startups bet everything on one idea with a big team and a long runway. We run dozens of experiments simultaneously at near-zero cost - and only scale what works. The goal: 1,000+ small, profitable businesses - owned and operated forever.</blockquote>
+<p class="src"><a href="https://sprinter.studio/">https://sprinter.studio/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Tolomato</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: med</span><span class="badge" style="background:#1f2328">tech: partial</span></div>
+<p class="desc">permanent-capital-studio</p>
+<blockquote>Tolomato is a permanent capital holding company. Operator-led. No fund timeline. No exit clock. We compound value through disciplined operations and reinvestment.</blockquote>
+<p class="src"><a href="https://tolomato.com/">https://tolomato.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Waythor</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: med</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">technology holding group that builds AND holds software companies permanently; no exit timelines, no external investors (build-to-keep)</p>
+<blockquote>We build and hold software companies with the intention of holding them permanently. Unlike venture capital or private equity, we have no exit timelines and no external investors to satisfy. ... We don&#x27;t flip companies. We run them. We buy to hold.</blockquote>
+<p class="src"><a href="https://waythor.com/">https://waythor.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Finis Ventures</h4><span class="badge" style="background:#9a6700">in_disguise</span><span class="badge" style="background:#6e7781">conf: med</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">applied-AI build-and-hold software studio</p>
+<blockquote>We build, hold, and operate... we build from zero, and we hold long.</blockquote>
+<p class="src"><a href="https://finis.ventures/">https://finis.ventures/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Inverse Collective</h4><span class="badge" style="background:#9a6700">in_disguise</span><span class="badge" style="background:#6e7781">conf: low</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">studio</p>
+<blockquote>&quot;We build AI evergreen companies that outlast the cycle.&quot; / &quot;companies that pay for themselves and keep paying.&quot; (home); &quot;durable software businesses designed to compound for decades, not quarters&quot; / &quot;Permanence over momentum&quot; / &quot;We invest in things that don&#x27;t expire.&quot; (about)</blockquote>
+<p class="src"><a href="https://www.inversecollective.com/">https://www.inversecollective.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Lojik Labs</h4><span class="badge" style="background:#9a6700">in_disguise</span><span class="badge" style="background:#6e7781">conf: med</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">AI-native build-and-own vertical software studio; small-market &#x27;own it&#x27; thesis, founder-owned, self-funded</p>
+<blockquote>Vertical software in niches too small for big tech... One engineer runs each product end-to-end... Lojik owns the IP. ... Target TAM per product: $5M-$50M ARR. Big enough to own, small enough to be ignored. ... Self-funded. Founder-owned. No outside capital.</blockquote>
+<p class="src"><a href="https://wearelojik.com/">https://wearelojik.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Noygear (Aware Partners)</h4><span class="badge" style="background:#9a6700">in_disguise</span><span class="badge" style="background:#6e7781">conf: low</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">permanent-capital venture studio building real-economy software companies (no fund clock)</p>
+<blockquote>Permanent capital means no liquidation pressure. Winners run on their own timeline. ... Permanent capital. Family-controlled. Actively deploying. No fund clock. ... Operating with long-term ownership as the default.</blockquote>
+<p class="src"><a href="https://noygear.ai/">https://noygear.ai/</a></p>
+</article></div><h3 class="cls">Impact Capital <span class="cnt">11</span></h3><p class="clsdef">Tech-enabled, mission/impact-driven allocators that explicitly reject the unicorn / power-law model (frontier-market &amp; catalytic VC, impact funds). Tech-enabled is required going forward; Delta Fund is a documented operator-vouched non-tech exception. Distinct from the reserved Sovereign Capital (sovereign wealth / DFI / blended-finance) class.</p><div class="entities"><article class="entity">
+<div class="ehead"><h4>Bridges Evergreen Holdings</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: med</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">evergreen permanent-capital holdco (UK impact)</p>
+<blockquote>It is structured as a holding company rather than a fund so it can provide ongoing support over the long term, with no exit requirement.</blockquote>
+<p class="src"><a href="https://www.bridgesfundmanagement.com/2016/12/07/bridges-launches-new-evergreen-permanent-capital-vehicle-mission-led-businesses/">https://www.bridgesfundmanagement.com/2016/12/07/bridges-launches-new-evergreen-permanent-capital-vehicle-mission-led-businesses/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Long Term Impact</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: med</span><span class="badge" style="background:#1f2328">tech: partial</span></div>
+<p class="desc">impact-capital</p>
+<blockquote>We believe that high impact doesn&#x27;t necessarily mean fast growth. ... We are under no outside pressure to gain a financial return on investment, as we have no Limited Partners.</blockquote>
+<p class="src"><a href="https://longtermimpact.com/">https://longtermimpact.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Purpose Evergreen Capital</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: med</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">steward-ownership evergreen fund (SME)</p>
+<blockquote>Purpose Evergreen Capital is an evergreen investment fund without pressure to force an exit.</blockquote>
+<p class="src"><a href="https://purpose-economy.org/en/pec/">https://purpose-economy.org/en/pec/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Purpose Ventures</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: med</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">steward-ownership</p>
+<blockquote>Our terms allow companies to stay independent, provide investors liquidity without a sale or exit, and build impactful companies.</blockquote>
+<p class="src"><a href="https://purpose-economy.org/en/investment/">https://purpose-economy.org/en/investment/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Rhino Impact Fund</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: med</span><span class="badge" style="background:#1f2328">tech: partial</span></div>
+<p class="desc">impact-vc</p>
+<blockquote>At Rhino Fund, we don&#x27;t chase unicorns we build Rhinos: startups that create lasting economic impact in Africa, and beyond. Built to last, not just to exit.</blockquote>
+<p class="src"><a href="https://rhino.investments/">https://rhino.investments/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Enough Ventures</h4><span class="badge" style="background:#0969da">self_id</span><span class="badge" style="background:#6e7781">conf: low</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">impact-capital</p>
+<blockquote>Our north star isn&#x27;t building unicorns, it&#x27;s proving that when you invest in solutions for the many rather than the few, you create both lasting impact and superior returns.</blockquote>
+<p class="src"><a href="https://www.enoughvc.com/">https://www.enoughvc.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Savana Fund</h4><span class="badge" style="background:#9a6700">in_disguise</span><span class="badge" style="background:#6e7781">conf: low</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">impact-capital</p>
+<blockquote>We manage capital with a generational horizon, not quarterly noise. Patience is a structural advantage. ... We seek founders building enduring infrastructure — not short-cycle consumer hype.</blockquote>
+<p class="src"><a href="https://savana.fund/">https://savana.fund/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Social Tech Ventures</h4><span class="badge" style="background:#9a6700">in_disguise</span><span class="badge" style="background:#6e7781">conf: low</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">impact-capital</p>
+<blockquote>We&#x27;re pioneering an investment approach that unlocks overlooked potential, prioritises ventures addressing inequality, and embraces different paths to venture growth — helping build a fairer, more inclusive economy where growth creates lasting value.</blockquote>
+<p class="src"><a href="https://www.socialtechventures.vc/">https://www.socialtechventures.vc/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Zebra Impact Ventures</h4><span class="badge" style="background:#9a6700">in_disguise</span><span class="badge" style="background:#6e7781">conf: low</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">zebra / impact VC (Switzerland) [IN-DISGUISE]</p>
+<blockquote>This business model is framed as an alternative to the disrupting and profit-focused unicorn model.</blockquote>
+<p class="src"><a href="https://zebraventures.ch/">https://zebraventures.ch/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Delta Fund</h4><span class="badge" style="background:#57606a">provenance</span><span class="badge" style="background:#6e7781">conf: low</span><span class="badge" style="background:#1f2328">tech: no</span></div>
+<p class="desc">2026-06-06 ADDED operator-directed. Ethan: &#x27;impact fund, related to our work but not the focus; deserves a mention&#x27;. Own page = economic-justice / community-wealth / 100% employee-ownership; rejects &#x27;market rate returns…</p>
+<p class="src"><a href="https://www.delta-fund.org/">https://www.delta-fund.org/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Village Capital</h4><span class="badge" style="background:#57606a">provenance</span><span class="badge" style="background:#6e7781">conf: med</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">Sovereign-candidate (impact accelerator); provenance — not searched yet | 2026-06-17 reclass -&gt; Impact Capital (impact accelerator; web-verify pending).</p>
+<p class="src"><a href="https://www.vilcap.com/">https://www.vilcap.com/</a></p>
+</article></div><h2 class="section">Trends / Watch</h2><h3 class="cls">Reserved - Operator / Sovereign candidates <span class="cnt">3</span></h3><p class="clsdef">Parked pending a finalized definition (search/ETA &#x27;Operator&#x27;; sovereign / DFI / impact &#x27;Sovereign&#x27;). Per Ethan, empty/forming classes are watched, never dropped.</p><div class="entities"><article class="entity">
+<div class="ehead"><h4>Zebras and Company</h4><span class="badge" style="background:#9a6700">in_disguise</span><span class="badge" style="background:#6e7781">conf: low</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">zebra-company investor (Japan) [IN-DISGUISE]</p>
+<blockquote>we not only invest in and participate in the management of zebra companies but also collaborate with governments, financial institutions, and academic institutions both in Japan and overseas to create a movement and community that support zebras.</blockquote>
+<p class="src"><a href="https://www.zebrasand.co.jp/en/">https://www.zebrasand.co.jp/en/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Impro Ventures</h4><span class="badge" style="background:#57606a">provenance</span><span class="badge" style="background:#6e7781">conf: low</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">2026-06-06 ADDED operator-directed (Ethan-vouched, in-disguise group w/ Startup Ignition). BUT own page shows NO anti-unicorn signal: Africa/LATAM/SEA pre-seed-Series A sustainability venture; seeks &#x27;category definer or…</p>
+<p class="src"><a href="https://impro.ventures/">https://impro.ventures/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Orbit Ventures</h4><span class="badge" style="background:#57606a">provenance</span><span class="badge" style="background:#6e7781">conf: low</span><span class="badge" style="background:#1f2328">tech: yes</span></div>
+<p class="desc">2026-06-06 ADDED operator-directed. Ethan: &#x27;impact fund, related but not the focus; mention&#x27;. Own page = emerging/frontier-market tech accelerator-VC ($75M invested) but GROWTH+EXIT oriented (&#x27;sustained, profitable high…</p>
+<p class="src"><a href="https://orbitventures.com/">https://orbitventures.com/</a></p>
+</article></div><h2 class="section">Appendix</h2><h3 class="cls">Excluded - Traditional / Real-Economy <span class="cnt">3</span></h3><p class="clsdef">Shown for transparency: real-economy or power-law firms that do NOT meet the tech-enabled non-unicorn thesis.</p><div class="entities"><article class="entity">
+<div class="ehead"><h4>Collab Holdings</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: review</span></div>
+<p class="desc">Traditional/real-economy: focuses on consumer brands (CPG/luxury), not software/tech-enabled. Own page 2026-06-03: &#x27;A Di</p>
+<p class="src"><a href="https://collabfund.com/blog/collab-holdings/">https://collabfund.com/blog/collab-holdings/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Emikoly</h4><span class="badge" style="background:#1a7f37">verified</span><span class="badge" style="background:#6e7781">conf: high</span><span class="badge" style="background:#1f2328">tech: review</span></div>
+<p class="desc">Traditional/real-economy: acquires operating businesses and real assets / infrastructure services. Own page 2026-06-03:</p>
+<p class="src"><a href="https://emikoly.com/">https://emikoly.com/</a></p>
+</article>
+<article class="entity">
+<div class="ehead"><h4>Ascendant Ventures</h4><span class="badge" style="background:#9a6700">in_disguise</span><span class="badge" style="background:#6e7781">conf: low</span><span class="badge" style="background:#1f2328">tech: review</span></div>
+<p class="desc">Traditional/Operator-candidate: generalist small-business ETA buyer; own-page priority sectors &#x27;business services, energ</p>
+<p class="src"><a href="https://ascendantventures.com/">https://ascendantventures.com/</a></p>
+</article></div>
+
+<p class="foot">Source: data/evidence/atlas_asset_class_audit.csv (139 classified + 0 under review) joined to funds_verified.csv (127) on fund_id.
+Generated by scripts/render_asset_class_packet.py. Snapshot 2026-06-08. Pre-reconciliation; do not treat class
+assignments as final.</p>
+</body></html>

@@ -1,0 +1,67 @@
+2026-06-06 funds_verified startup-ignition-ventures: admitted_via in_disguise->self_id; self_id_quote=on-page Elephants-not-Unicorns; status=verified. Operator-directed (Ethan).
+2026-06-06 audit startup-ignition-ventures: ('in_disguise', 'Nimble', 'med') -> (verified, SMV, high). Operator-directed (Ethan).
+2026-06-06 audit ADD impro-ventures: tier=provenance class=Reserved (operator-directed, Ethan).
+2026-06-06 audit ADD delta-fund: tier=provenance class=Reserved (operator-directed, Ethan).
+2026-06-06 audit ADD orbit-ventures: tier=provenance class=Reserved (operator-directed, Ethan).
+2026-06-06 anchors ADD impro-ventures: provenance, not_outright_anti_unicorn=TRUE, needs_review (operator-directed, Ethan).
+2026-06-06 anchors ADD delta-fund: provenance, not_outright_anti_unicorn=TRUE, needs_review (operator-directed, Ethan).
+2026-06-06 anchors ADD orbit-ventures: provenance, not_outright_anti_unicorn=TRUE, needs_review (operator-directed, Ethan).
+2026-06-06 audit cornerstone-ventures: confidence=low, flag=<flag> (re-ground, inline-verified).
+2026-06-06 audit pemba-capital: confidence=med, evidence_url=https://pemba.com.au/hunt-camels-rather-than-unicorns/, flag=<flag> (re-ground, inline-verified).
+2026-06-06 audit 4d-ventures: tier=verified, confidence=high, evidence_url=https://www.4d.ventures/investment-thesis, flag=<flag> (re-ground, inline-verified).
+2026-06-06 audit buentrip-ventures: confidence=high, evidence_url=https://www.buentrip.vc/blog/navigatingventurecapital, flag=<flag> (re-ground, inline-verified).
+2026-06-06 audit camel-ventures-egypt: confidence=high, flag=<flag> (re-ground, inline-verified).
+2026-06-06 audit henq: confidence=high, flag=<flag> (re-ground, inline-verified).
+2026-06-06 audit saasholic: confidence=high, evidence_url=https://blog.saasholic.com/p/doing-it-wrong-again-saasholics-next, flag=<flag> (re-ground, inline-verified).
+2026-06-06 audit sts-ventures: confidence=high, evidence_url=https://sts-ventures.de/about, flag=<flag> (re-ground, inline-verified).
+2026-06-06 audit upsidedown-vc: confidence=high, flag=<flag> (re-ground, inline-verified).
+2026-06-06 audit capacity-capital: confidence=low, flag=<flag> (re-ground, inline-verified).
+2026-06-06 audit software-circle: confidence=high, flag=<flag> (re-ground, inline-verified).
+2026-06-06 audit zebra-impact-ventures: confidence=low, flag=<flag> (re-ground, inline-verified).
+2026-06-06 audit zebras-and-company: confidence=low, flag=<flag> (re-ground, inline-verified).
+2026-06-06 funds_verified 4d-ventures: admitted_via in_disguise->self_id; quote=on-page no-exit-pressure/generation; status=verified.
+2026-06-06 ADMIT sequel-capital [SMV/in_disguise] via=in_disguise round=reservoir-r1 (reservoir mining, inline-verified).
+2026-06-06 ADMIT mainsail-partners [SMV/in_disguise] via=in_disguise round=reservoir-r1 (reservoir mining, inline-verified).
+2026-06-06 ADMIT union-group-fund [Nimble/in_disguise] via=in_disguise round=reservoir-r1 (reservoir mining, inline-verified).
+2026-06-06 ADMIT serent-capital [SMV/in_disguise] via=in_disguise round=reservoir-r1 (reservoir mining, inline-verified).
+2026-06-06 ADMIT tvc-capital [SMV/in_disguise] via=in_disguise round=reservoir-r1 (reservoir mining, inline-verified).
+2026-06-06 ADMIT expedition-growth-capital [SMV/in_disguise] via=in_disguise round=reservoir-r1 (reservoir mining, inline-verified).
+2026-06-06 ADMIT timia-capital [Nimble/in_disguise] via=in_disguise round=reservoir-r2 (reservoir mining, inline-verified).
+2026-06-06 ADMIT saas-group [Permanent/in_disguise] via=in_disguise round=reservoir-r4 (reservoir mining, inline-verified).
+2026-06-06 ADMIT silversmith-capital [SMV/in_disguise] via=in_disguise round=reservoir-r5 (reservoir mining, inline-verified).
+2026-06-06 ADMIT invictus-growth [SMV/in_disguise] via=in_disguise round=discovery-r6 (reservoir mining, inline-verified).
+2026-06-06 ADMIT updata-partners [SMV/in_disguise] via=in_disguise round=discovery-r6 (reservoir mining, inline-verified).
+2026-06-06 ADMIT apex-point-equity [SMV/in_disguise] via=in_disguise round=intake-r8 (reservoir mining, inline-verified).
+2026-06-06 ADMIT argentum-group [SMV/in_disguise] via=in_disguise round=intake-r8 (reservoir mining, inline-verified).
+2026-06-06 ADMIT long-holding-company [Permanent/in_disguise] via=in_disguise round=reservoir-r13 (reservoir mining, inline-verified).
+2026-06-06 ADMIT beacon-software [Permanent/in_disguise] via=in_disguise round=reservoir-r14 (reservoir mining, inline-verified).
+2026-06-06 ADMIT penntech-holdings [Permanent/in_disguise] via=in_disguise round=reservoir-r15 (reservoir mining, inline-verified).
+2026-06-06 ADMIT workhorse-capital [SMV/in_disguise] via=in_disguise round=reservoir-r15 (reservoir mining, inline-verified).
+2026-06-06 ADMIT xo-capital [Permanent/in_disguise] via=in_disguise round=reservoir-r15 (reservoir mining, inline-verified).
+2026-06-06 ADMIT tangle-ventures [Permanent/in_disguise] via=in_disguise round=proxy-r19 (reservoir mining, inline-verified).
+2026-06-06 ADMIT tatonic-ventures [Permanent/verified] via=self_id round=exa1 (reservoir mining, inline-verified).
+2026-06-06 ADMIT junagal [Studio/verified] via=self_id round=exa1 (reservoir mining, inline-verified).
+2026-06-06 ADMIT acadian-software [SMV/in_disguise] via=in_disguise round=exa2 (reservoir mining, inline-verified).
+2026-06-06 ADMIT nyo-capital [SMV/in_disguise] via=in_disguise round=exa2 (reservoir mining, inline-verified).
+2026-06-06 ADMIT noygear [Studio/in_disguise] via=in_disguise round=exa2 (reservoir mining, inline-verified).
+2026-06-06 ADMIT technology-nusantara [Permanent/verified] via=self_id round=exa3 (reservoir mining, inline-verified).
+2026-06-06 ADMIT edited-capital [SMV/in_disguise] via=in_disguise round=exa3 (reservoir mining, inline-verified).
+2026-06-07 FLAG (no edit): jonas-software is a Constellation/CSI operating group (its own row notes admit it as 'CONSTELLATION-FAMILY REPRESENTATIVE'). Violates the user's standing Constellation exclusion. Recommend REMOVAL (sweep funds_verified + atlas_asset_class_audit + any entity_claims) pending explicit user OK. Also surfaced: thevertusgroup/caudex/andromeda/volaris = same family, correctly NOT admitted this session.
+2026-06-07 REVERT-ADMIT: removed technology-nusantara (admitted earlier same session at HIGH). Adversarial 3rd-party check (web_search_exa: name/CEO 'Arya Sutowo'/subsidiaries Khatulistiwa/Nusa Cloud/Pelita Labs) found ZERO external corroboration - only its own stylized concept-aesthetic site. Claimed 2,400-engineer / 12-company / 180k-merchant-fintech / 2014-founded SE Asia holding would have heavy footprint; has none. Fails genuineness/allocator test (gate != genuine). Verbatim self-ID quote was real on-page but entity unverifiable as a real allocator. Credibility-correct removal.
+2026-06-07 FLAG-FOR-REVIEW (user-directed): added skoyen-software to atlas as status=held_for_review (NOT counted verified). Permanent buy-and-hold on letter; sitting HgCapital chairman = credibility risk.
+2026-06-06 ADMIT gearbox-capital [SMV/in_disguise] via=in_disguise round=exa4 (reservoir mining, inline-verified).
+2026-06-06 ADMIT recur-software [Permanent/in_disguise] via=in_disguise round=exa4 (reservoir mining, inline-verified).
+2026-06-07 FLAG-FOR-REVIEW (genuineness re-audit): sequel-capital appears MIS-ADMITTED. Admitted as SMV on 'we invest exclusively in bootstrapped, capital-efficient' sourcing, BUT its own current homepage (sequel-capital.com) is explicitly EXIT-DRIVEN: 'maximise value at exit - in 2-3 years, not ten'; 'Every investment is made with a clear exit thesis'; 'We're not a 10-year fund. Our 2-3 year model is built for founders ready to scale and exit.' Fast-flip thesis contradicts the anti-forced-exit bar -> false-positive (bootstrapped SOURCING, but exit MODEL). Recommend RECLASSIFY->reject or remove, pending user OK. Also re-check serent-capital (now $6B AUM PE, 'celebrated our first exit') as a softer borderline.
+2026-06-06 ADMIT govsoft-holdings [Permanent/verified] via=self_id round=exa5 (reservoir mining, inline-verified).
+2026-06-07 HOLD (genuineness-pending): raptor-collective added status=held_for_review. Strong self-ID + real team but no named portfolio (allocator unconfirmed).
+2026-06-07 RE-AUDIT REMOVALS: removed cornerstone-ventures (power-law India VC: 'outsized/non-linear returns', lorem-ipsum site, blog-URL evidence -> reject_power_law) and sequel-capital (explicit '2-3 year path to exit / clear exit thesis' -> exit-driven false-positive). Backups: data/runtime/*.backup_pre_reaudit.csv.
+2026-06-07 RE-AUDIT DOWNGRADES (kept, confidence->low, flagged for user review): pemba-capital (standard PE + camel blog), serent-capital ($6B PE, exits), silversmith-capital (large growth-equity PE), tvc-capital (growth-equity PE + roll-ups/take-privates). All admitted on capital-efficiency/bootstrapped sourcing but are exit-driven funds; re-review for movement-rejection.
+2026-06-06 ADMIT pender-software-holdings [Permanent/verified] via=self_id round=exa6 (reservoir mining, inline-verified).
+2026-06-06 ADMIT software-holdings-au [Permanent/verified] via=self_id round=exa6 (reservoir mining, inline-verified).
+
+
+2026-06-06 ADMIT sacramento-labs [Studio/verified] via=self_id round=exa-studio-2026-06-08 (reservoir mining, inline-verified).
+2026-06-06 ADMIT waythor [Studio/verified] via=self_id round=exa-studio-2026-06-08 (reservoir mining, inline-verified).
+2026-06-06 ADMIT brooks-keitt [Permanent/verified] via=self_id round=exa-studio-2026-06-08 (reservoir mining, inline-verified).
+2026-06-06 ADMIT peakspan-capital [SMV/in_disguise] via=in_disguise round=exa-smv-2026-06-08 (reservoir mining, inline-verified).
+2026-06-06 ADMIT lojik-labs [Studio/in_disguise] via=in_disguise round=exa-studio2-2026-06-08 (reservoir mining, inline-verified).

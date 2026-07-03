@@ -210,10 +210,12 @@ def validate_packet_contents(site_dir: Path, db_path: Path, *, require_status: b
         errors.append("missing paper-ready disclaimer")
     if 'id="asset-instrument"' in html:
         errors.append("HTML still contains a top-level Instrument asset section")
-    if html.count('class="entity-card"') != counts["entity_count"]:
-        errors.append(f"entity card count mismatch: html={html.count('class=\"entity-card\"')} sqlite={counts['entity_count']}")
-    if html.count('class="claim"') != counts["claim_count"]:
-        errors.append(f"claim count mismatch: html={html.count('class=\"claim\"')} sqlite={counts['claim_count']}")
+    entity_card_count = html.count('class="entity-card"')
+    if entity_card_count != counts["entity_count"]:
+        errors.append(f"entity card count mismatch: html={entity_card_count} sqlite={counts['entity_count']}")
+    claim_count = html.count('class="claim"')
+    if claim_count != counts["claim_count"]:
+        errors.append(f"claim count mismatch: html={claim_count} sqlite={counts['claim_count']}")
 
     with csv_path.open("r", encoding="utf-8", newline="") as handle:
         csv_rows = list(csv.DictReader(handle))

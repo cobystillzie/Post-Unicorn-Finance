@@ -1,0 +1,5 @@
+2026-06-03 | MOVE verified->traditional_excluded | collab-holdings | Traditional/real-economy: focuses on consumer brands (CPG/luxury), not software/tech-enabled. Own page 2026-06-03: 'A Different Approach to Private Equity for the Best Consumer Brands'.
+2026-06-03 | MOVE verified->traditional_excluded | emikoly | Traditional/real-economy: acquires operating businesses and real assets / infrastructure services. Own page 2026-06-03: 'acquires and holds operating businesses and real assets for the long term'.
+2026-06-03 | MOVE verified->traditional_excluded | ascendant-ventures | Traditional/Operator-candidate: generalist small-business ETA buyer; own-page priority sectors 'business services, energy environment, healthcare, manufacturing, distribution logistics and professional services' (real-economy); not tech-focused. User-directed 2026-06-03.
+2026-06-03 | FLAG sector-pending (kept) | everhold,kastellet-holdings,perpetuity-project,teixo | no on-page sector description; user cannot approve, flagged at bottom
+2026-06-03 | CONFIRM tech-enabled (kept) | heqs-investments,permanent-corp | HEQS=group incl. IT; Permanent Corp=asset-light B2B

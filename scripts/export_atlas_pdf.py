@@ -7,6 +7,7 @@ import os
 import shutil
 import subprocess
 import sys
+import tempfile
 from pathlib import Path
 
 
@@ -91,27 +92,34 @@ def render_pdf(html_path: Path, pdf_path: Path, *, browser_path: Path | None = N
         pdf_path.unlink()
 
     browser = find_browser(browser_path)
+    # Use an isolated, throwaway profile. Without it, an already-running Chrome/Edge
+    # makes headless --print-to-pdf a silent no-op on Windows (exit 0, no file written).
+    profile_dir = tempfile.mkdtemp(prefix="post_unicorn_pdf_")
     command = [
         str(browser),
         "--headless=new",
         "--disable-gpu",
         "--no-sandbox",
         "--disable-dev-shm-usage",
+        f"--user-data-dir={profile_dir}",
         "--run-all-compositor-stages-before-draw",
-        "--virtual-time-budget=3000",
+        "--virtual-time-budget=4000",
         "--print-to-pdf-no-header",
         f"--print-to-pdf={pdf_path}",
         html_path.as_uri(),
     ]
-    result = subprocess.run(command, capture_output=True, text=True, timeout=180)
-    if result.returncode != 0:
-        raise PdfExportError(
-            "browser PDF export failed\n"
-            f"command: {' '.join(command)}\n"
-            f"stdout: {result.stdout[-1200:]}\n"
-            f"stderr: {result.stderr[-1200:]}"
-        )
-    validate_pdf(pdf_path)
+    try:
+        result = subprocess.run(command, capture_output=True, text=True, timeout=180)
+        if result.returncode != 0:
+            raise PdfExportError(
+                "browser PDF export failed\n"
+                f"command: {' '.join(command)}\n"
+                f"stdout: {result.stdout[-1200:]}\n"
+                f"stderr: {result.stderr[-1200:]}"
+            )
+        validate_pdf(pdf_path)
+    finally:
+        shutil.rmtree(profile_dir, ignore_errors=True)
     return pdf_path
 
 

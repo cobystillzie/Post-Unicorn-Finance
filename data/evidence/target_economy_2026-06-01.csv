@@ -1,0 +1,851 @@
+entity_id,name,primary_asset_class,target_economy,is_tech_for_vertical,reason
+tinyseed,TinySeed,LMV,tech,False,Accelerator funding B2B SaaS / independent software businesses below and above $1M ARR; explicitly 'scale your software business'.
+calm-company-fund,Calm Company Fund,Patient Capital,tech,False,"Funds 'profitable, sustainable, bootstrapper software businesses' (calm SaaS companies) via Shared Earnings Agreement."
+earnest-capital,Earnest Capital,Patient Capital,tech,False,Targets 'bootstrapped software' founders seeking aligned capital; software is the core product.
+indie-vc,Indie.vc,Patient Capital,mixed,False,Text says 'independent startups' pursuing profitability/optionality with no explicit software/tech signal; too thin to confirm tech.
+lighter-capital,Lighter Capital,SMV,tech,False,Revenue-based financing for SaaS/recurring-revenue tech startups; 'the trusted leader in SaaS financing'.
+capchase,Capchase,SMV,tech,False,Funds B2B SaaS with recurring revenue and enterprise software/hardware tech vendors; 'financing platform for the enterprise tech ecosystem'.
+founderpath,Founderpath,SMV,tech,False,Non-dilutive capital to bootstrapped SaaS founders ($1-3M+ ARR software companies); revenue financing and term loans for SaaS.
+pipe,Pipe,SMV,mixed,False,"Embedded capital funds the SMB end-customers of vertical SaaS/marketplaces/payment facilitators (any-sector small businesses), not the platforms themselves."
+clearco,Clearco,SMV,mixed,False,"Funds DTC ecommerce brands AND SaaS businesses; ecommerce brands are physical-goods sellers, so genuinely both."
+wayflyer,Wayflyer,SMV,traditional,False,Revenue-based financing for ecommerce/Amazon/wholesale consumer-brand businesses selling physical goods; no software/platform target.
+uncapped,Uncapped,SMV,traditional,False,"Funds online businesses, Amazon sellers, and DTC physical-goods brands via cash advances and loans; no software-company target."
+outfund,Outfund,SMV,traditional,False,Funds 'online businesses' / ecommerce companies (physical-goods sellers); no software/platform signal in text.
+decathlon-capital-partners,Decathlon Capital Partners,SMV,mixed,False,Text only says 'growth companies / revenue-stage companies' with no sector or tech signal; too thin to call tech.
+saas-capital,SaaS Capital,SMV,tech,False,Credit facility for scale-up B2B SaaS and subscription AI application companies with $3M+ ARR; pioneered SaaS lending.
+novel-capital,Novel Capital,SMV,tech,False,Funds B2B software and recurring-revenue companies; software is the core product.
+bigfoot-capital,Bigfoot Capital,SMV,tech,False,Funds SaaS and recurring-revenue software companies ('the solution to your dilution').
+espresso-capital,Espresso Capital,SMV,tech,False,Funds technology and SaaS companies; tech is the explicit target sector.
+timia-capital,TIMIA Capital,SMV,tech,False,Loans to growing B2B technology/software companies with $2M-$20M ARR and recurring revenue.
+flow-capital,Flow Capital,SMV,tech,False,"Growth venture debt to capital-efficient growth-stage companies, 'primarily B2B SaaS and tech'."
+braavo-capital,Braavo Capital,SMV,tech,False,"Funds mobile-first apps and games (subscription apps, games, utilities) — software products via app-store payouts and RBF."
+stripe-capital,Stripe Capital,SMV,mixed,False,"Funds Stripe merchants — any small business processing payments through Stripe (all sectors), not specifically tech companies."
+shopify-capital,Shopify Capital,SMV,traditional,False,"Funds Shopify merchants — ecommerce stores selling physical goods, repaid from store sales; not software companies."
+paypal-working-capital,PayPal Working Capital,SMV,mixed,False,Merchant cash advances to any small business using PayPal across all sectors; no tech-company targeting.
+youlend,YouLend,SMV,mixed,False,"Embedded RBF to SMEs across ecommerce/PSP/bank/broker partner platforms — generic small businesses of all kinds, not tech firms."
+liberis,Liberis,SMV,mixed,False,"Embedded finance to SMBs via 40+ partner platforms across 15 markets — generic small businesses of all sectors, not tech companies."
+parafin,Parafin,SMV,mixed,False,"Funds the small-business customers of vertical SaaS/marketplaces (DoorDash, Mindbody, Xplor) — restaurants/gyms/SMBs, not tech firms."
+getvantage,GetVantage,SMV,mixed,False,'Growth capital & embedded financing for digital brands' but also embedded SMB financing; digital-brands scope is broad and partly physical-goods.
+velocity,Velocity,SMV,mixed,False,"Funds D2C/ecommerce brands, SaaS, Edtech AND restaurants — explicitly mixes physical-goods/restaurant businesses with software."
+klub,Klub,SMV,mixed,False,"Funds Indian consumer/digital brands ('RaiseOS for Founders'); consumer-brand focus is largely physical goods, text thin on software targeting."
+sv8,SV8,LMV,mixed,False,Syndicate VC investing in early-stage startups with M&A-exit thesis; no sector/tech signal beyond generic 'startups'.
+tangle-ventures,Tangle Ventures,Portfolio Capital,tech,False,Venture studio investing in 'profitable overlooked digital businesses' — digital-business focus indicates software/online products.
+dwp-capital,DWP Capital,SMV,tech,False,Funds capital-efficient vertical software and tech-enabled services companies; software is the core target.
+union-group-fund,Union Group Fund,SMV,tech,False,"'We develop and invest in small, bootstrapped vertical SaaS software companies' and solopreneurs."
+tvc-capital,TVC Capital,SMV,tech,False,Growth equity for capital-efficient B2B software companies with $3M+ ARR ('Software Growth Equity').
+d2-fund,D2 Fund,SMV,tech,False,Funds capital-efficient B2B software companies in UK & Europe ('funding capital-efficient software businesses').
+seedtwo-capital,SeedTwo Capital,SMV,tech,False,Growth equity for founder-led vertical SaaS + AI companies with $2M+ ARR.
+sequel-capital,Sequel Capital,SMV,tech,False,"Invests in bootstrapped, capital-efficient vertical Agentic B2B SaaS companies ($2-10M ARR)."
+mainsail-partners,Mainsail Partners,SMV,tech,False,Growth equity for founder-led bootstrapped B2B software and AI-enabled companies.
+serent-capital,Serent Capital,SMV,tech,False,Growth/private equity partnering with 70+ founder-led B2B software companies.
+mamba-growth,Mamba Growth,SMV,tech,False,Funds bootstrapped/lightly-capitalized B2B technology companies; software/tech is the explicit target.
+five-elms-capital,Five Elms Capital,SMV,tech,False,Invests in 'founder-owned B2B software companies'; growth equity into software — software is the core product.
+elsewhere-partners,Elsewhere Partners,SMV,tech,False,'Lower Middle Market Software Private Equity'; funds bootstrapped software companies by ARR.
+sunstone-partners,Sunstone Partners,SMV,tech,False,'AI- and technology-enabled services and software companies'; growth equity into software/tech-enabled services.
+expedition-growth-capital,Expedition Growth Capital,SMV,tech,False,'Empowering bootstrapped software & AI founders'; growth capital into software & AI companies.
+silversmith-capital-partners,Silversmith Capital Partners,SMV,tech,True,'profitable founder-led technology and healthcare companies' — funds tech and healthtech growth companies.
+level-equity,Level Equity,SMV,tech,False,Invests in/acquires 'rapidly growing software and technology-enabled businesses'; software is core.
+sureswift-capital,SureSwift Capital,Portfolio Capital,tech,False,'buy-and-hold acquisitions of SaaS businesses'; bootstrapped SaaS — software product.
+tiny,Tiny,Portfolio Capital,tech,False,"Acquires 'internet/SaaS/digital businesses, founder-led' — digital/software companies."
+constellation-software,Constellation Software,Portfolio Capital,tech,False,Acquires 'vertical market software companies (mission-critical)' — software product.
+volaris-group,Volaris Group,Portfolio Capital,tech,False,Buy-and-hold acquisitions of 'vertical market software companies'.
+valsoft,Valsoft,Portfolio Capital,tech,False,'We acquire mission-critical software companies' in vertical markets — software product.
+banyan-software,Banyan Software,Portfolio Capital,tech,False,Permanent home for 'vertical software businesses'; buy-and-hold software acquisitions.
+saas-group,saas.group,Portfolio Capital,tech,False,Buy-and-hold acquisitions of 'bootstrapped SaaS companies' — software product.
+everfield,Everfield,Portfolio Capital,tech,False,Long-term acquisitions of 'mission-critical European software companies (vertical markets)'.
+lumine-group,Lumine Group,Portfolio Capital,tech,True,Acquires/builds 'communications and media software companies' — vertical software.
+topicus,Topicus,Portfolio Capital,tech,False,Buy-and-hold of 'vertical market software companies in public & private sectors' — software.
+aspire-software,Aspire Software,Portfolio Capital,tech,False,Buy-and-hold acquisitions of 'vertical market software companies'.
+jonas-software,Jonas Software,Portfolio Capital,tech,False,Acquires 'mission-critical vertical market software companies' — software product.
+harris-computer,Harris Computer,Portfolio Capital,tech,False,"'Acquirer of Vertical Market Software Businesses' (public sector, healthcare, utilities) — software."
+perseus-group,Perseus Group,Portfolio Capital,tech,False,Buy-and-hold acquisitions of 'vertical market software businesses'.
+esw-capital,ESW Capital,Portfolio Capital,tech,False,Acquires 'enterprise software' / software companies — software product.
+alpine-software-group,Alpine Software Group,Portfolio Capital,tech,False,'We acquire market-leading vertical SaaS companies' — software product.
+scaleworks,Scaleworks,Portfolio Capital,tech,False,"'We Invest In & Operate B2B SaaS Companies' (Mailgun, Chargify, etc.) — software."
+greater-sum-ventures,Greater Sum Ventures,Portfolio Capital,tech,False,Partners with 'vertical software and tech-enabled service companies' in lower-middle market with ARR.
+arcadea-group,Arcadea Group,Portfolio Capital,tech,False,'Long-duration Vertical Software Growth Partners' — funds vertical software.
+tag-software-group,TAG Software Group,Portfolio Capital,tech,False,Acquires 'B2B and B2G software companies' with ARR — software product.
+vertus-group,Vertus Group,Portfolio Capital,tech,False,"Targets 'software companies' — explicit software, though text is thin."
+software-circle,Software Circle,Portfolio Capital,tech,False,Serial acquirer of 'vertical market software businesses' with recurring revenue.
+chapters-group,Chapters Group,Portfolio Capital,tech,False,Targets 'small and medium software/digital businesses' — software/digital product.
+visma,Visma,Portfolio Capital,tech,False,Permanent ownership of 'mission-critical business software companies' — software product.
+main-capital-partners,Main Capital Partners,Portfolio Capital,tech,False,"Sector-specialist PE for 'Enterprise Software companies' across healthcare, banking, gov — software."
+pacific-lake-partners,Pacific Lake Partners,Search/ETA,traditional,False,Funds search-fund CEOs 'acquiring mid-sized businesses'; no tech signal — generic operating businesses.
+relay-investments,Relay Investments,Search/ETA,traditional,False,Lead investor in search funds acquiring 'privately held companies' for 6-10yr holds; no tech signal.
+anacapa-partners,Anacapa Partners,Search/ETA,traditional,False,Search-fund equity into companies management runs with 'few radical changes'; no tech signal.
+search-fund-partners,Search Fund Partners,Search/ETA,traditional,False,Search-fund equity into 'mission-critical businesses often overlooked'; no tech signal — operating businesses.
+next-coast-eta,Next Coast ETA,Search/ETA,traditional,False,ETA/search equity for CEOs 'acquiring and growing businesses' in lower/middle market; no tech signal.
+wsc-company,WSC & Company,Search/ETA,traditional,False,"ETA co-invest in 'lower-middle-market companies ($2-10m EBITDA), recurring/repeat revenue'; no tech signal."
+ambit-partners,Ambit Partners,Search/ETA,traditional,False,Search-fund allocator; text thin with no tech signal — generic searcher-acquired SMBs.
+miramar-equity-partners,Miramar Equity Partners,Patient Capital,traditional,False,Family-office PE + search acquiring 'industry-leading mid-sized businesses'; no tech signal.
+hunter-search-capital,Hunter Search Capital,Search/ETA,mixed,False,"Searcher-acquired targets span 'medspa, HVAC distribution, healthcare software' — mix of physical SMBs and software."
+alza-capital-partners,Alza Capital Partners,Search/ETA,mixed,False,Text is thin: 'search funds | search fund entrepreneurs' with no description of target companies or sector. No tech signal; cannot determine economy.
+acquira,Acquira,Search/ETA,traditional,False,"Funds 'SMB acquisition' of 'cash-flowing small businesses (retiring owners)' via an acquisition accelerator. Main-street SMBs, no tech signal."
+mainshares,Mainshares,Search/ETA,traditional,False,"Acquires 'Main Street SMBs from retiring owners (painting, plumbing, digital agency)'. Physical main-street businesses, traditional real economy."
+teamshares,Teamshares,Patient Capital,traditional,False,"'tech-enabled acquiror' describes the firm, not targets; it buys 'small businesses with $0.5-5M EBITDA from retiring owners'. Targets are traditional SMBs."
+permanent-equity,Permanent Equity,Patient Capital,traditional,False,Invests 30-year committed funds in 'small and medium businesses | durable private businesses' with $2-25M net profits. No tech signal; traditional SMBs.
+capitalpad,CapitalPad,Search/ETA,traditional,False,"Co-invests in 'lower middle market acquisitions...established, profitable, non-cyclical businesses' by search funds. Lower-middle-market, no tech signal."
+acumen,Acumen,Patient Capital,traditional,False,"Deploys Patient Capital to 'social enterprises in agriculture, education, energy, healthcare, jobs' in emerging markets. Real-economy social enterprises."
+founders-first-capital-partners,Founders First Capital Partners,SMV,mixed,False,"Revenue-based loans to 'Service-based & B2B or B2G businesses with $500K-$10M+ revenue'. Vague service businesses, no tech signal; not clearly tech."
+rsf-social-finance,RSF Social Finance,Patient Capital,traditional,False,"Finances 'Mission-driven businesses and nonprofits in Food and Agriculture, Climate and Energy, Education, Community Impact'. Real-economy sectors."
+common-future,Common Future,Patient Capital,traditional,False,"Invests in 'Economic justice organizations, community-rooted organizations...cooperative business ecosystems'. Community/cooperative real economy, no tech."
+village-capital,Village Capital,Patient Capital,mixed,False,"Funds 'Impact-creating startups in Climate Innovation & Adaptation, Economic Mobility, Equitable Access' globally. Mix of startups across non-tech impact themes."
+collab-capital,Collab Capital,Patient Capital,mixed,False,"Invests in 'Industry-defining startups in Community Infrastructure, Healthcare Access, Economic Mobility'. Startups but across non-software impact spaces; not clearly tech."
+boston-impact-initiative,Boston Impact Initiative,Patient Capital,traditional,False,"Funds 'Small businesses, worker cooperatives, Black/Latino-owned enterprises, community-owned real estate'. Local real-economy businesses and real estate."
+temasek,Temasek,Sovereign Capital,mixed,False,"'global investment | global growth and innovation companies' — diversified sovereign portfolio, thin text, no clear tech-only signal. Do not guess tech."
+gic,GIC,Sovereign Capital,mixed,False,"'Diversified across 40+ countries; deals include Anthropic, Brookfield, National Storage REIT, Neoenergia'. Tech alongside real estate/energy — diversified."
+mubadala,Mubadala,Sovereign Capital,mixed,False,"'global strategic sectors' — diversified sovereign wealth fund, thin text, no software/tech-only signal. Mixed, not tech."
+sanabil-investments,Sanabil Investments,Sovereign Capital,mixed,False,"'private investments | global private companies and funds' — diversified sovereign fund-of-funds, thin text, no tech-specific signal."
+public-investment-fund,Public Investment Fund,Sovereign Capital,mixed,False,"Diversified globally/domestically: 'Giga-Projects, 220+ companies; Riyadh Air, FIFA, State Street ETF, King Street private credit'. Broad real-economy + finance."
+qatar-investment-authority,Qatar Investment Authority,Sovereign Capital,mixed,False,"Diversified across 'Real Estate, Infrastructure, TMT, Healthcare, Financial Institutions, Retail, Industrials, Funds'. Broad sovereign portfolio, not tech-only."
+bpifrance,Bpifrance,Sovereign Capital,mixed,False,"Public investment bank funding 'French entrepreneurs, French companies' across all sectors via loans, equity, export credit. Economy-wide, not tech-specific."
+british-business-bank,British Business Bank,Sovereign Capital,mixed,False,"Funds 'UK smaller businesses across regions' economy-wide via debt/equity; 'tech and life sciences via LIFTS' is one slice. Broad SME mandate, not tech-only."
+eic-fund,EIC Fund,Sovereign Capital,mixed,False,"Funds deep-tech across 'Advanced Manufacturing, Agri-Food, AI/Data, Built Environment, Climate Tech, Energy, Quantum, Space'. AI plus heavy physical sectors."
+european-investment-fund,European Investment Fund,Sovereign Capital,mixed,False,"Backs 'European SMEs, infrastructure projects, fund managers (VC, PE, private credit, climate/infra funds)'. Economy-wide SME and infra mandate, not tech-only."
+nato-innovation-fund,NATO Innovation Fund,Sovereign Capital,mixed,False,"Deep-tech across 'Novel Materials & Manufacturing, Energy, Space, AI, Autonomy, Quantum, Biotech, Hypersonics'. AI spread across heavy physical/hardware sectors."
+kfw-capital,KfW Capital,Sovereign Capital,mixed,False,"'German and European venture funds' — fund-of-funds with thin text, no sector or tech-specific signal. Mixed, not clearly tech."
+edbi,EDBI,Sovereign Capital,tech,False,"Invests in 'high-growth technology companies: AI, fintech, biotech, telecom, healthcare tech'; portfolio Carta, AlphaSense, Circles, Endowus. Tech-dominated."
+sginnovate,SGInnovate,Sovereign Capital,tech,False,"'Invest in Deep Tech Startups' across 'emerging tech domains' in Singapore. Tech-dominated, no heavy physical-sector breakout in text."
+khazanah-nasional,Khazanah Nasional,Sovereign Capital,mixed,False,"'Multi-sector domestic and global investments'; Dana Impak spans Mid-Tier Companies, Semiconductor/Advanced Manufacturing, VC. Diversified sovereign, not tech-only."
+israel-innovation-authority,Israel Innovation Authority,Sovereign Capital,mixed,False,"Funds 'Israeli high-tech and deep-tech, AI/Bioconvergence, climate tech, critical minerals'. AI plus physical sectors (critical minerals, manufacturing accelerators)."
+innovate-uk,Innovate UK,Sovereign Capital,mixed,False,Backs 'UK deep-tech businesses in priority sectors'; cites 'Future offshore wind £10M'. AI/deep-tech spread including heavy physical (offshore wind).
+in-q-tel,In-Q-Tel,Sovereign Capital,tech,False,"Invests in 'startups in space, biotech, microelectronics, AI, and frontier tech' for national security; 1000+ investments, 50+ unicorns. Frontier-tech dominated."
+high-alpha,High Alpha,Venture Studio,tech,False,"Creates and funds 'B2B SaaS / enterprise software companies'. Explicitly software/SaaS; horizontal B2B SaaS, not a single vertical."
+atomic,Atomic,Venture Studio,tech,False,"Venture studio co-founding companies incl. conversational AI (Replicant), AI data centers, consumer health platform. Software/AI/platform companies."
+expa,Expa,Venture Studio,tech,False,"Company studio building 'category-defining companies (biotech, fintech, air travel, real estate data, regulatory AI, cybersecurity)'. Predominantly software/digital."
+betaworks,Betaworks,Venture Studio,tech,False,"Builds/invests in 'AI startups across agent systems, interfaces, app layer, native applications'; consumer internet tech. Software/AI companies."
+hexa,Hexa,Venture Studio,tech,False,"Startup studio where 'founders build software companies from 0 to scale'; 50+ companies, $5B valuation. Explicitly software companies."
+rocket-internet,Rocket Internet,Venture Studio,tech,False,'incubates and invests in internet and technology companies globally'. Explicitly internet/technology company formation.
+idealab,Idealab,Venture Studio,tech,False,Technology incubator spinning 'big problems with technology solutions' into companies; tests tech ideas in parallel. Technology startups.
+pioneer-square-labs,Pioneer Square Labs,Venture Studio,tech,False,Startup studio + VC creating 'technology startups' and early-stage companies via PSL Ventures. Explicitly technology startup formation.
+human-ventures,Human Ventures,Venture Studio,mixed,False,"Builds 'human-needs companies in health, work, money, experience, connection, media'. Some digital but spans non-software consumer needs; not clearly tech."
+science-inc,Science Inc.,Venture Studio,tech,False,Builds 'digital businesses' with 'digital company founders' — software/digital is the core product.
+wilbur-labs,Wilbur Labs,Venture Studio,mixed,False,"Studio portfolio spans Vogo, Barkbus, Vitabox, Cincy Brands, Joblist, FinanceHQ — mix of physical-service/CPG and digital/fintech, no consistent tech core."
+juxtapose,Juxtapose,Venture Studio,tech,False,Creates 'transformative technology businesses' paired with CEOs — technology is the core product.
+founders-factory,Founders Factory,Venture Studio,tech,False,"Builds/funds 'Fintech, Industrials, Health, Deep Tech founders from idea to seed' — tech startups across sectors."
+entrepreneur-first,Entrepreneur First,Venture Studio,tech,False,Turns individuals into funded founders building 'unicorn cofounding teams' / AI startups from scratch — software/tech ventures.
+antler,Antler,Venture Studio,tech,False,Backs 'AI builders and category-defining companies' globally at pre-seed — tech startups.
+enhance-ventures,Enhance Ventures,Venture Studio,tech,False,Venture studio building 'digital businesses' / early-stage ventures in MENAPT — digital is the core.
+team8,Team8,Venture Studio,tech,False,"Builds 'Cybersecurity, Software Infrastructure, Fintech, Digital Health' companies — software/tech core."
+fractal-software,Fractal Software,Venture Studio,tech,True,Launches 'vertical AI and industry-specific SaaS companies' — software serving traditional verticals.
+weekend-fund,Weekend Fund,LMV,tech,False,Solo-GP writing early checks into 'consumer and B2B' startups (Product Hunt founder) — internet/software startups.
+pioneer,Pioneer,LMV,tech,False,Accelerator for 'idea-stage and pre-seed' internet-native builders globally — software startups.
+hf0,HF0,LMV,tech,False,Residency funding 'AI startups' / AI-native repeat founders — software/AI core.
+venture10x,Venture10X,LMV,tech,False,"Backs 'lean, capital-efficient, high-growth B2B software companies' (plus some alt/public assets) — software-led."
+curious,Curious,Portfolio Capital,tech,False,Permanent-capital holdco that 'acquires and builds leading software businesses' at $1M-$5M revenue — software.
+apex-point-equity,Apex Point Equity,Portfolio Capital,tech,False,"Micro-PE acquiring 'B2B SaaS, founder led and bootstrapped, $500k+ ARR' — software."
+alley-street,Alley & Street,Search/ETA,tech,False,Micro-PE/search fund acquiring 'undervalued micro-SaaS with strong unit economics' — software.
+soft-equities,Soft Equities,Portfolio Capital,tech,False,Micro-PE acquiring/investing in 'early-stage SaaS companies with product-market fit' — software.
+river-saas-capital,River Saas Capital,SMV,tech,False,"Non-dilutive capital (venture debt, RBF) for 'US-based B2B SaaS businesses with $150K+ MRR' — software."
+saas-growth-ventures,SaaS Growth Ventures,LMV,tech,False,Seed/Series A equity into 'capital-efficient B2B SaaS companies' $500K-$5MM ARR — software.
+golden-section,Golden Section,SMV,tech,True,Growth equity + RBF for 'B2B vertical SaaS founders' at $1M-$8M ARR — software serving verticals.
+novaspark-holdings,NovaSpark Holdings,Portfolio Capital,mixed,False,"Permanent capital for 'software companies (SaaS, digital agencies) AND tech-enabled essential service businesses' — explicitly both software and physical service operators."
+entrepreneurship-through-acquisition-and-search-fund-resource-library,Entrepreneurship Through Acquisition and Search Fund Resource Library,Search/ETA,mixed,False,"ETA resource library serving 'aspiring search-fund CEOs and small/mid-market business owners' across any sector — no tech signal, sector unspecified."
+evergreen-evergreensg-com,Evergreen (evergreensg.com),Portfolio Capital,tech,False,"Acquires 'Technology Services companies' — managed IT, government IT, application software partners; targets are tech/IT firms, not physical assets."
+everhold,Everhold,Portfolio Capital,mixed,False,Buys-and-holds founder-led B2B businesses 'particularly service providers or vertical SaaS platforms' — explicitly both physical services and software.
+fund-for-employee-ownership,Fund for Employee Ownership,Patient Capital,traditional,False,"Acquires 'Northeast Ohio small-to-medium-sized companies with retiring owners' for employee ownership — local Main Street SMBs, no tech signal."
+gt-entrepreneurs,GT Entrepreneurs,Search/ETA,traditional,False,"Search funds 'particularly construction, advanced manufacturing, supply chain' — physical real-economy businesses."
+hold-co,HOLD.co,Portfolio Capital,traditional,False,"Acquires 'profitable, asset-backed companies in B2B manufacturing, industrial services, logistics, construction support' — physical assets."
+perpetual,Perpetual,Patient Capital,mixed,False,"Text too thin — only 'Perpetual Investors GmbH' address, target companies unspecified."
+perpetual-capital,Perpetual Capital,Patient Capital,mixed,False,"Control/minority in 'middle-market operating businesses, $5-50M cash flows' — sector unspecified, no tech signal."
+purpose-evergreen-capital,Purpose Evergreen Capital,Patient Capital,mixed,False,"Patient capital for 'mid-sized companies / SMEs in steward-ownership' — sector unspecified, no tech signal."
+search-fund-accelerator,Search Fund Accelerator,Search/ETA,mixed,False,"Funds searchers 'acquiring small businesses' — generic small businesses, no sector or tech signal."
+search-funds,Search Funds,Search/ETA,mixed,False,"Search fund equity into 'business services, software & internet, healthcare' — explicitly mixes software and non-tech services."
+springwater,Springwater,Portfolio Capital,tech,False,Entrepreneur-led acquirer of 'founder-led B2B SaaS €1-10m ARR' — software.
+sundance-growth,Sundance Growth,SMV,tech,False,"Growth equity into 'B2B Software, mission-critical/system of record' bootstrapped companies — software."
+uk-sovereign-ai-fund,UK Sovereign AI Fund,Sovereign Capital,tech,False,"Sovereign venture fund backing 'British AI startups, pre-seed to growth' — AI/software."
+upliift,Upliift,Portfolio Capital,tech,False,Permanent equity acquirer of 'European B2B software €1-25m revenue in niche markets' — software.
+meritholdings,Meritholdings,Patient Capital,tech,False,Buy-build-hold of 'software companies in niche verticals' (via family-business succession/MBO situations) — software targets.
+mosaic,Mosaic,Portfolio Capital,tech,False,"Permanent-capital acquirer of 'B2B SaaS/on-prem $1-10M ARR, vertical or niche horizontal' — software."
+office-of-strategic-capital-osc,Office of Strategic Capital (OSC),Sovereign Capital,tech,False,DoD financier across '31 covered technology categories / critical technology areas' incl. component-level tech — deep/strategic technology.
+float-finance,Float Finance,SMV,tech,False,Revenue-based financing for 'European tech / SaaS companies with subscription revenue' — software.
+re-cap,Re:cap,SMV,tech,False,Non-dilutive credit for 'European tech/growth/SaaS companies with recurring revenue' — funds software firms directly.
+red-forest-capital,Red Forest Capital,Search/ETA,traditional,False,Search-fund family office backing entrepreneurs 'acquiring small businesses' — no tech signal.
+eta-equity,ETA Equity,Search/ETA,traditional,False,ETA/search-fund PE 'investing in and supporting search fund entrepreneurs' acquiring small businesses — no tech signal.
+nobody-studios,Nobody Studios,Venture Studio,tech,False,"'AI-native, high-velocity venture studio building portfolio of AI startups' — funds software/AI companies."
+wildfront,Wildfront,Portfolio Capital,tech,False,'We buy SaaS companies' — acquires 'profitable SaaS and AI tools'; software is the product.
+itrinity,itrinity,Portfolio Capital,tech,False,"Acquires 'SaaS businesses... uptime monitoring, email tools, geo-targeting' — software products."
+asseco-group,Asseco Group,Portfolio Capital,tech,False,Federation acquiring 'innovative profitable software companies' producing their own software products.
+carlson-private-capital-partners,Carlson Private Capital Partners,Patient Capital,mixed,False,Family patient equity for generic 'businesses with potential to create sustainable long-term value' — no sector/tech signal; too thin.
+funds-for-good,Funds For Good,Patient Capital,traditional,False,"Honor loans to 'social entrepreneurs or those in precarious employment' — real-economy social enterprises, no tech signal."
+macarthur-foundation,MacArthur Foundation,Patient Capital,mixed,False,"Grantmaker across Climate, Criminal Justice, Local News, AI Opportunity — broad social grants, not tech-company funding."
+mission-driven-finance,Mission Driven Finance,Patient Capital,traditional,False,"Loans to 'small businesses & nonprofits', impact real estate, employee-ownership transitions — no tech signal."
+mozilla-foundation,Mozilla Foundation,Patient Capital,mixed,False,"Nonprofit grantmaker funding 'changemakers, tech educators, community contributors' via grants/festivals — not a company-funder; thin."
+novo-nordisk-foundation,Novo Nordisk Foundation,Patient Capital,mixed,False,"Grants to 'research institutions, life-science ecosystem', health & sustainability — wet-science/research, no software signal; broad foundation."
+pohlad-companies,Pohlad Companies,Patient Capital,traditional,False,"Family operating company holding 'Minnesota Twins, operating subsidiaries' — physical operating businesses."
+pritzker-group,Pritzker Group,Patient Capital,mixed,False,Permanent equity for generic 'entrepreneur- and family-owned companies' — no sector/tech signal; too thin to call tech.
+bending-spoons,Bending Spoons,Portfolio Capital,tech,False,"Acquires 'iconic digital/software products' (Evernote, WeTransfer, Vimeo, Meetup) — software is the product."
+better-ventures,Better Ventures,LMV,mixed,False,"Backs 'AI/ML, software, materials science, and biotechnology' — half software/AI, half hard-science deep tech; genuinely both."
+forum-ventures,Forum Ventures,LMV,tech,False,"Pre-seed for 'B2B software founders', 'AI venture studio' from zero-to-one — software/AI startups."
+south-park-commons,South Park Commons,LMV,tech,False,First-check equity for technical founders in 'deep-tech / AI / frontier domains' — software/AI/frontier tech.
+smb-investor-network,SMB Investor Network,Search/ETA,traditional,False,Co-investment platform for 'lower-market SMB acquisitions' alongside search funds — no tech signal.
+sovereign-tech-fund,Sovereign Tech Fund,Sovereign Capital,tech,False,"Public funding for 'open-source software components, maintainers, projects' — the funded economy is software infrastructure."
+the-builders-fund,The Builders Fund,Patient Capital,mixed,False,"Growth equity for 'purpose-driven companies' in climate/regenerative food and social justice/wellness/health — mixed sectors, no tech signal."
+aligned-climate-capital,Aligned Climate Capital,LMV,mixed,False,"Clean-energy 'Infrastructure and Venture' verticals — physical energy infra plus venture; page thin, genuinely mixed."
+risefi,RiseFi,SMV,traditional,False,"Revenue/inventory-based financing for 'SMB merchants' on Shopify/WMS — funds goods-selling merchants and inventory, not tech firms."
+settle,Settle,SMV,traditional,False,Working-capital/inventory financing for 'CPG brands and ecommerce businesses' — physical consumer-goods brands.
+83k-capital,83K Capital,Portfolio Capital,traditional,False,"Permanent equity in 'property management, home services, essential-service SMBs' plus real estate — physical businesses."
+andromeda,Andromeda,Portfolio Capital,tech,True,Permanent acquirer of 'vertical market software (VMS) companies' (Constellation network) — software serving verticals.
+atlasview-equity,Atlasview Equity,Portfolio Capital,tech,False,Majority equity in 'lower-market software & tech-enabled businesses' — software/tech-enabled is the product.
+broadtree-partners,Broadtree Partners,Search/ETA,mixed,False,"Lower-middle-market PE for 'privately held companies, ~75% recurring revenue' — recurring revenue alone isn't tech; no software mention."
+brydon-group,Brydon Group,Search/ETA,mixed,False,Descriptor says 'vertical software' but self-description is purely 'scale small businesses' via CEO-in-Residence — conflicting/thin tech signal.
+dvg-partners,DVG Partners,Search/ETA,traditional,False,Veteran-owned platform managing 'lower middle market operating businesses' — no tech signal.
+patagonia-works,Patagonia Works,Patient Capital,mixed,False,"Holdco backing 'responsible start-up companies' for 'positive benefit to the environment' — sector unspecified, no tech signal; thin."
+perpetua-capital,Perpetua Capital,Patient Capital,mixed,False,"Family office across 'Equities, Real Estate, Commodities, Impact, Venture Capital' — multi-asset, spans physical and venture."
+founder-institute,Founder Institute,LMV,tech,False,'World's Largest AI-Native Company Builder' accelerator + VC fund for early-stage founders — tech/AI startups.
+onesixone-ventures,OneSixOne Ventures,LMV,mixed,False,Only 'pre-seed venture fund / platform / community' with no target description — too thin to determine economy.
+beacon-oral-specialists,Beacon Oral Specialists,Portfolio Capital,traditional,False,Roll-up of 'oral and maxillofacial surgeons / established practices' (DSO-style) — physical medical practices.
+heartland-dental,Heartland Dental,Portfolio Capital,traditional,False,"Dental Support Organization affiliating 'dentists and dental practices' (1,900 offices) — physical practices."
+hummock-capital,Hummock Capital,Patient Capital,mixed,False,"Family partnership 'investing across multiple industries' in operating companies — generic, no sector/tech signal."
+snell-ventures,Snell Ventures,Patient Capital,traditional,False,Ministry-focused family holdco owning 'manufacturing businesses and other companies' — physical manufacturing.
+impact,Impact,Sovereign Capital,mixed,False,"Regional development capital across 'real estate, brownfield, housing, hotels, and tech (Astrobotic)' — explicitly both physical and tech."
+vela-software-group,Vela Software Group,Portfolio Capital,tech,False,Funds/acquires vertical-market & enterprise software companies (Constellation operating group).
+bridges-fund-management,Bridges Fund Management,Patient Capital,mixed,False,Impact PE in decarbonisation growth cos PLUS UK property/real assets and outcomes partnerships.
+fika-ventures,Fika Ventures,LMV,tech,False,"Seed fund for B2B software, fintech and marketplace founders."
+ford-foundation,Ford Foundation,Patient Capital,traditional,False,Grantmaking + Mission Investments into social-justice nonprofits and civic organizations.
+founder-collective,Founder Collective,LMV,tech,False,"Sector-agnostic seed in tech startups (Uber, WHOOP, SeatGeek, Trade Desk, Suno, Shield AI)."
+generation-investment-management,Generation Investment Management,Patient Capital,mixed,False,Pure-play sustainable manager across public + private + growth equity; no specific tech focus.
+heron-foundation,Heron Foundation,Patient Capital,traditional,False,Mission investing into community-development enterprises and U.S. communities.
+homebrew,Homebrew,Patient Capital,tech,False,"Seed fund for mission-driven founders solving problems explicitly ""using technology""."
+iconiq-capital,Iconiq Capital,Patient Capital,mixed,False,Tech-disruption ventures (Anthropic) AND real assets; multi-platform family office.
+koch-industries,Koch Industries,Portfolio Capital,mixed,False,"Diversified operator: paper, energy, ag, materials (physical) plus software businesses."
+kresge-foundation,Kresge Foundation,Patient Capital,traditional,False,"Grants + social investments to U.S. cities, community-development, civic/human-services orgs."
+leapfrog-investments,LeapFrog Investments,Patient Capital,mixed,False,"EM financial-services/healthcare incl. fintech (Moniepoint) AND physical energy/pharmacy (Sun King, Pharmacity, ReNew)."
+long-journey-ventures,Long Journey Ventures,LMV,mixed,False,"Sector-agnostic early-stage fund; text (""weirdos/something crazy"") gives no tech signal."
+marlin-equity-partners,Marlin Equity Partners,Portfolio Capital,tech,False,"Software & technology PE: take-privates and platform M&A (Bazaarvoice, Medius, Exegy)."
+wefunder,"Wefunder,  ...",SMV,tech,False,Funds profit-focused software and software-enabled startups (calm/bootstrapped companies).
+prime-coalition,Prime Coalition,Patient Capital,tech,True,Catalytic capital into early-stage climate technology companies.
+solen-software-group,Solen Software Group,Portfolio Capital,tech,True,Permanent-capital acquirer of vertical/critical-workflow software businesses.
+hyperplane-venture-capital,Hyperplane Venture Capital,LMV,tech,False,"First-check seed into AI, deep tech, infrastructure, robotics, defense, autonomy startups."
+apex-capital-group,Apex Capital Group,Patient Capital,mixed,False,"Generic growth PE across ""select sectors""; intangibles-driven, no tech signal."
+astia,Astia,LMV,mixed,False,Venture into women-led health/climate/prosperity companies; no explicit software/tech signal.
+caisse-de-d-p-t-et-placement-du-qu-bec,Caisse de dépôt et placement du Québec,Sovereign Capital,mixed,False,"Diversified pension: private equity, infrastructure, real estate, public markets."
+calpers,CalPERS,Sovereign Capital,mixed,False,Diversified public pension across global public and private markets.
+calm-storm-ventures,Calm/Storm Ventures,LMV,tech,True,Most active HealthTech/digital-health seed investor in Europe.
+capricorn-investment-group,Capricorn Investment Group,Patient Capital,mixed,False,"Climate/healthcare incl. physical energy/hardware (Fervo geothermal, Harbinger EVs)."
+climate-investment-fund,Climate Investment Fund,Sovereign Capital,traditional,False,"Concessional/blended finance for physical climate PROJECTS (renewable energy, forests, resilience)."
+diploma-plc,Diploma plc,Portfolio Capital,traditional,False,"Acquires specialist distribution / value-add product businesses (aerospace, healthcare, industrial)."
+green-climate-fund,Green Climate Fund,Sovereign Capital,traditional,False,"UN climate finance for physical mitigation/adaptation PROJECTS (off-grid solar, decarbonisation)."
+liberty-media,Liberty Media,Portfolio Capital,traditional,False,"Holding company for media/entertainment/sports assets (Formula 1, MotoGP)."
+loews-corporation,Loews Corporation,Portfolio Capital,traditional,False,"Holding company in insurance, energy, hospitality, packaging industries."
+markel-ventures,Markel Ventures,Portfolio Capital,traditional,False,"Permanent-capital acquirer of physical operating businesses (car-hauler equipment, handbags, insurance)."
+norges-bank-investment-management,Norges Bank Investment Management,Sovereign Capital,mixed,False,"Sovereign wealth: ~7,200 listed equities, bonds, real estate, renewable infrastructure."
+skoll-foundation,Skoll Foundation,Patient Capital,traditional,False,"Grants/investment in social entrepreneurs (community health, land rights, agriculture, education)."
+sovereign-s-capital,Sovereign's Capital,Patient Capital,mixed,False,"Multi-strategy: early-stage tech VC AND LMM PE, public equities, real estate."
+aspect-investors,Aspect Investors,Search/ETA,mixed,False,"Search-fund investor buying operating cos incl. software, healthcare AND manufacturing."
+berkshire-partners-acquisitions,Berkshire Partners Acquisitions,Portfolio Capital,mixed,False,"Middle-market PE across digital infrastructure, services and industrials."
+caltius-equity-partners,Caltius Equity Partners,Portfolio Capital,mixed,False,Debt & equity to generic middle-market companies; no sector/tech detail given.
+emerson-collective,Emerson Collective,Patient Capital,traditional,False,"Impact investment in entrepreneurs in education, economic mobility, immigration, environment."
+national-investment-infrastructure-fund-india,National Investment & Infrastructure Fund (India),Sovereign Capital,mixed,False,Sovereign fund: infrastructure assets and climate PLUS private-markets growth equity.
+north-park-group,North Park Group,Patient Capital,traditional,False,Acquires family-owned U.S. manufacturing and distribution businesses.
+revtek-capital,RevTek Capital,SMV,tech,False,Non-dilutive growth credit to recurring-revenue / SaaS companies.
+trilogy-software,Trilogy Software,Portfolio Capital,tech,False,'AI-first SaaS operating platform that buys and scales software businesses'; acquires mature SaaS products. Core target is software.
+enduring-ventures,Enduring Ventures,Patient Capital,mixed,False,"Explicitly 'industry-agnostic'; buys VC fallen angels, non-core divestitures, lower-middle-market turnarounds. No consistent tech focus."
+evermore-industries,Evermore Industries,Patient Capital,traditional,False,Acquires/operates sectorless 'mission-critical businesses' from retiring owners; legacy-honoring holdco. No tech signal.
+lab-one-capital,Lab One Capital,Patient Capital,traditional,False,"Buys/holds 'Western Canadian small businesses' and family-held companies forever. Main-street SMB, no tech signal."
+long-holding-company,Long Holding Company,Portfolio Capital,mixed,False,"Buys 'B2B information / software / data / events businesses'; software/data pull tech, info/events pull traditional. Mixed."
+opalkadia,OpalKadia,Patient Capital,mixed,False,"Operating platforms across 'capital, real assets, sports, media, wellness, tech'; real assets + tech together. Mixed."
+sig-partners,SIG Partners,Patient Capital,traditional,False,"'Acquiring and growing great American businesses' $4M+ revenue, legacy-focused owners. Sectorless main-street SMB, no tech."
+sagamore-mountain,Sagamore Mountain,Portfolio Capital,traditional,False,"Acquires regional Central Coast CA 'small businesses with consistent cash flow', no startups. Real-economy SMB, no tech."
+saturn-five,Saturn Five,Patient Capital,traditional,False,"'Buying and operating some of the best small businesses in America'; main-street, cash-generating. No tech signal."
+stoiclane,StoicLane,Portfolio Capital,traditional,False,"Builds 'Finance, Insurance & Real Estate (FIRE) businesses'; 'tech enablement opportunity' = uses-tech, not fintech. Traditional."
+stonehelm-group,StoneHelm Group,Patient Capital,traditional,False,Acquires sectorless 'recurring revenue businesses' in niche inefficient markets + corporate carveouts. No tech signal.
+traction,Traction,Patient Capital,traditional,False,"'Family-owned Western US businesses with $2M-$10M EBITDA'; permanent-capital. Sectorless SMB, no tech signal."
+impro-ventures,Impro Ventures,LMV,tech,True,"Funds pre-seed/Series A 'edtech, hrtech, fintech, deeptech, agrotech, oceantech' in emerging markets. Tech serving verticals."
+startup-ignition,Startup Ignition,LMV,tech,False,Pre-seed fund 'investing in visionary founders and early-stage SaaS and tech product companies'. Clearly software/tech.
+aij-global-holdings,AIJ Global Holdings,Search/ETA,mixed,False,Search-fund SMEs + private equity + late-stage venture + commercial real estate. Multi-asset incl. real estate; mixed.
+aegis-ventures,Aegis Ventures,Venture Studio,tech,True,"Venture studio building 'AI-native healthtech companies' in biomarkers, workflow automation, RWD. Tech serving healthcare."
+align-capital-partners,Align Capital Partners,Portfolio Capital,mixed,False,"Software & Tech-Enabled Services PLUS Industrial Services, Specialty Manufacturing & Distribution. Both economies; mixed."
+apis-heritage-capital-partners,Apis & Heritage Capital Partners,Patient Capital,traditional,False,"ESOP buyouts of SMEs in manufacturing, construction, logistics, waste, landscaping, agriculture, food processing. Real-economy."
+appalachian-capital,Appalachian Capital,Patient Capital,traditional,False,"Appalachia 'boring' lower/middle-market companies, stable client bases, fragmented industries. Sectorless real-economy SMB."
+arada-capital-partners,Arada Capital Partners,Search/ETA,traditional,False,"Acquires 'solid, profitable' SMEs worldwide via Search Funds. ETA thesis is non-tech; no sector/tech signal. Traditional."
+bow-river-capital,Bow River Capital,Portfolio Capital,tech,False,"Software growth equity in 'Vertical SaaS, HCM SaaS' and tech-enabled services with durable ARR. Core target is software."
+cofides,COFIDES,Sovereign Capital,mixed,False,"Spanish internationalization + impact; portfolio incl. PLD Space (space tech) alongside Sacyr, infra. Mixed sectors."
+cranemere,Cranemere,Patient Capital,traditional,False,"Permanent capital for founder/family companies across 'services, industrial, and consumer sectors'. Real-economy, no tech."
+crestmont-capital,Crestmont Capital,SMV,traditional,False,"Lender to SMBs across '500+ industries'; equipment financing, SBA, MCA, invoice. Main-street lending, no tech focus."
+development-bank-of-southern-africa-dbsa,Development Bank of Southern Africa (DBSA),Sovereign Capital,traditional,False,"Infrastructure DFI: energy, water, ICT, transport, education, health projects. Physical infrastructure financing, not tech firms."
+efficient-capital-labs,Efficient Capital Labs,SMV,tech,False,Non-dilutive ARR-based capital to 'cross-border SaaS and AI companies' with recurring revenue. Core target is software/AI.
+fonsis-fonds-souverain-d-investissements-strat-giques,FONSIS (Fonds Souverain d'Investissements Stratégiques),Sovereign Capital,mixed,False,Text is only 'national sovereign strategic investment fund (Senegal)'; too thin to determine target economy.
+garden-city-equity,Garden City Equity,Patient Capital,traditional,False,"Permanent holdco acquiring sectorless founder/family businesses, $5-25M net income, 'forever home'. Main-street, no tech."
+grupo-santa-marta,Grupo Santa Marta,Search/ETA,traditional,False,Search-fund investor in Spanish 'cash-flow-positive SMBs in succession scenarios'. ETA thesis non-tech; no sector signal.
+hoban-family-office,Hoban Family Office,Patient Capital,traditional,False,"'Real estate investment' family office: commercial/multi-family real estate, acquisitions, JVs in Pacific NW. Real assets, not proptech."
+impact-fund-denmark-ifu,Impact Fund Denmark (IFU),Sovereign Capital,mixed,False,"DFI: Green Energy & Infra, Financial Services, Food, Healthcare in 45+ countries; incl. venture capital sleeve. Mixed."
+innesto-partners,Innesto Partners,Search/ETA,traditional,False,"European search funds buying 'profitable small businesses in fragmented industries' with stable cash flows. ETA, no tech signal."
+ireland-strategic-investment-fund-isif,Ireland Strategic Investment Fund (ISIF),Sovereign Capital,mixed,False,"Sovereign fund: climate, housing, energy grid PLUS quantum computing (Equal1). Tech sleeve alongside infra; mixed."
+legacy-holdings,Legacy Holdings,Patient Capital,traditional,False,"Permanent capital for 'family-owned American infrastructure businesses' in fragmented industries, Southeast. Real-economy SMB."
+legacy-search-partners,Legacy Search Partners,Search/ETA,traditional,False,"European ETA investor; search funds buying 'profitable owner-managed businesses', succession deals. ETA thesis non-tech."
+maharlika-investment-corporation-mic,Maharlika Investment Corporation (MIC),Sovereign Capital,traditional,False,"Philippine SWF: power grid, energy security (Petron crude inventory), national-development infra. Physical infrastructure, not tech."
+milk-street-ventures,Milk Street Ventures,Search/ETA,traditional,False,Search-fund investor backing searchers becoming company owners/CEOs. ETA thesis non-tech; no sector/tech signal. Traditional.
+moonbase-capital,Moonbase Capital,Search/ETA,traditional,False,"Fund of search funds; 'established but stagnating SMEs in succession scenarios' globally. ETA thesis non-tech, no sector signal."
+newton-equity-partners,Newton Equity Partners,Search/ETA,traditional,False,Fund-of-search-funds on 'succession-driven B2B SMEs'. ETA thesis non-tech; no tech sector signal. Traditional.
+nigeria-sovereign-investment-authority-nsia,Nigeria Sovereign Investment Authority (NSIA),Sovereign Capital,mixed,False,"SWF: infra (data centers, ports), healthcare, renewable energy PLUS digital/tech Impact Innovation Fund. Mixed sectors."
+norfund-norwegian-investment-fund-for-developing-countries,Norfund (Norwegian Investment Fund for Developing Countries),Sovereign Capital,mixed,False,"DFI funding renewable energy, green infrastructure, financial inclusion in developing countries; physical assets + financial services, not software."
+obran-cooperative,Obran Cooperative,Patient Capital,traditional,False,"Acquires operating businesses in Health, Employment Services, Logistics — physical/labor businesses, no tech as core product."
+patona-partners,Patona Partners,Patient Capital,mixed,False,"Family office buys $10-100M-sales cos across business services, industrial, financial services, consumer retail, technology, media — broad mix incl. tech."
+project-equity,Project Equity,Patient Capital,traditional,False,"Employee-ownership transitions for SMBs in Manufacturing and Food — physical operating businesses, no tech signal."
+pula-fund-bank-of-botswana,Pula Fund (Bank of Botswana),Sovereign Capital,mixed,False,"Sovereign wealth fund investing foreign-reserve surpluses across global financial markets; multi-asset, not tech-specific."
+recurring-capital-partners,Recurring Capital Partners,SMV,tech,False,"Growth debt for B2B SaaS founders ($4-30M ARR, high gross margins) — clearly funds software companies; horizontal SaaS, no single vertical."
+remote-first-capital,Remote First Capital,LMV,tech,False,"Funds remote-work tools, global-work tools, engineering and no-code tools — software products; horizontal, not a named vertical."
+smeventures,SMEVentures,Search/ETA,traditional,False,"Search fund acquiring asset-light B2B service SMEs ($1.5-6M EBITDA) from retiring owners; service businesses, no software signal."
+spectra-investments,Spectra Investments,Search/ETA,mixed,False,"Backs searchers acquiring SMEs across Brazil/LatAm/globally; sector-agnostic search-fund LP, no tech signal — too thin to call tech."
+spectrum-equity,Spectrum Equity,SMV,tech,False,"Growth equity for recurring-revenue software/internet companies (Ancestry, AllTrails, Definitive Healthcare) — clearly tech; horizontal software/internet."
+superangel-fund,SuperAngel.Fund,LMV,mixed,False,"Invests in Consumer (CPG brands physical) plus eCommerce SaaS, marketplaces, PropTech, Future of Work — genuinely both tech and physical."
+ttcer-partners,TTCER Partners,Search/ETA,mixed,False,Search fund backing recurring-revenue cash-flow businesses; no sector named and no software signal — too thin to call tech.
+tembo-search-partners,Tembo Search Partners,Search/ETA,traditional,False,"Search fund buying German Mittelstand SME succession in education, clean tech, health — physical operating businesses, no software signal."
+tet-ventures,Tet Ventures,LMV,mixed,False,"Foodtech investing in teams 'rebuilding the global food system'; food is partly physical/partly platform — ambiguous, do not guess tech."
+vesta-software-group,Vesta Software Group,Portfolio Capital,tech,True,"Buy-and-hold acquirer of vertical market software companies (60+ acquisitions, Constellation-style) — funds tech serving named verticals."
+vibe-capital,Vibe Capital,LMV,tech,False,"Early-stage equity into technology companies globally (emerging markets) — funds tech startups; generic 'technology', no single vertical."
+visible-hands-vhnyc-fellowship,Visible Hands (VHNYC Fellowship),LMV,tech,False,Fellowship/grant for early-stage founders building tech or tech-enabled startups in NYC — startup accelerator funding software startups.
+vistara-growth,Vistara Growth,SMV,tech,False,"Growth debt/equity for mid-later-stage technology companies across North America — clearly funds tech; generic 'technology', no single vertical."
+volition-capital,Volition Capital,SMV,tech,False,"Growth equity into capital-efficient software, CTV ad-tech, workforce data infrastructure, modern ops platforms — software; horizontal."
+wad-capital,WAD Capital,Search/ETA,traditional,False,"Institutional search fund buying European SMEs in B2B services, energy transition, healthcare — real-economy operating businesses, no software signal."
+zero-1,Zero 1,Venture Studio,mixed,False,"Corporate venture builder co-building new companies (Lifted, Heata, Zoe) with corporates; no software word — too thin to call tech."
+base-case-capital,base case capital,LMV,mixed,False,Writes first checks into pre-product/pre-idea founders ('builders still dreaming'); no sector or software signal — too thin to call tech.
+alaska-permanent-fund-corporation,Alaska Permanent Fund Corporation,Sovereign Capital,mixed,False,"Sovereign wealth fund: global multi-asset portfolio (public equities, PE, real estate, fixed income) — not tech-specific."
+align-collaborate,Align Collaborate,Search/ETA,mixed,False,"Equity for independent sponsors in LMM: business services, industrial services, software, tech-enabled services, manufacturing, distribution — broad buyout mix."
+alleyway-capital,Alleyway Capital,Portfolio Capital,tech,False,"Acquires small SaaS, marketplaces, content sites ($200K-$2M ARR) — buys digital/software businesses; horizontal digital, no single vertical."
+american-operator,American Operator,Search/ETA,traditional,False,"All-cash acquisition of Main Street SMBs from retiring owners (plumbing, painting, communications) — physical service businesses."
+apex-service-partners,Apex Service Partners,Portfolio Capital,traditional,False,"Consolidation platform for local HVAC, plumbing, electrical contractors across 50+ markets — physical home-services businesses."
+avon-river-ventures,Avon River Ventures,SMV,mixed,False,"Structured credit/RBF/asset-based lending to SMBs and specialty lenders in G7; sector-agnostic real-economy lending, no tech signal."
+bahrain-mumtalakat-holding-company,Bahrain Mumtalakat Holding Company,Sovereign Capital,mixed,False,"Sovereign wealth fund of Bahrain, sector-agnostic strategic assets (e.g. McLaren Automotive) — multi-asset, not tech-specific."
+bay-grove,Bay Grove,Patient Capital,traditional,False,Owner-operator permanent holdco; platform lineage is Lineage Logistics (cold-storage warehousing) — physical logistics/real assets.
+beacon-software,Beacon Software,Portfolio Capital,tech,True,Permanent acquirer of essential 'Main Street software' businesses ($1M+ ARR) — buys vertical software serving Main Street sectors.
+big-band-software,Big Band Software,Portfolio Capital,tech,False,"Buy-and-hold acquirer of B2B SaaS companies ($1-10M ARR) — clearly funds software; horizontal B2B SaaS, no single vertical."
+blenheim-chalcot,Blenheim Chalcot,Venture Studio,tech,True,"Venture builder originating tech ventures in financial services, education, public services, health (62 built) — funds tech across named verticals."
+blue-like-an-orange-sustainable-capital,Blue like an Orange Sustainable Capital,Sovereign Capital,mixed,False,"Mezzanine debt to EM SMEs in renewable energy, infrastructure, healthcare, education, financial services, agribusiness — physical/impact, not software."
+bluejay-capital,Bluejay Capital,Portfolio Capital,traditional,False,"Independent sponsor in transportation & logistics: trucking, freight rail, ports, warehousing, last-mile — overwhelmingly physical; 'tech-enabled' is the trap."
+british-columbia-investment-management-corporation-bci,British Columbia Investment Management Corporation (BCI),Sovereign Capital,mixed,False,"Institutional pension investor, global multi-asset (credit, PE, infrastructure, real estate) for public-sector clients — not tech-specific."
+cpc,CPC,Portfolio Capital,mixed,False,Perpetual buy-build-hold holdco acquiring 'great businesses' with no enterprise leverage; no sector or software signal — too thin to call tech.
+cake-ventures,Cake Ventures,LMV,tech,False,"Pre-seed/seed into products for 'tomorrow's internet users' (aging, women's spending, deskless work) — funds internet/software startups; horizontal."
+cephas-partners,Cephas Partners,Patient Capital,mixed,False,Faith-based PE deploying alternative investments globally; no sector or software signal — too thin to call tech.
+cicero-capital,Cicero Capital,Search/ETA,mixed,False,Search fund acquiring and operating one Indian SME (succession); no sector named and no software signal — too thin to call tech.
+climate-fund-managers,Climate Fund Managers,Sovereign Capital,traditional,False,"Funds physical climate infrastructure/real assets: renewable energy, water/sanitation, green hydrogen, green grids, resilient cities in emerging markets. Not software."
+coho-growth-capital,Coho Growth Capital,SMV,tech,False,'Growth Debt for Software Companies' lending to B2B software/SaaS firms with $2-20M revenue.
+continua,Continua,Portfolio Capital,mixed,False,Holdco acquiring established businesses 'across software and industrial sectors' — both tech and physical industrial.
+cornisa-capital,Cornisa Capital,Search/ETA,mixed,False,Search fund acquiring one Chilean company in a 'fragmented industry'; no sector or tech signal named — too thin to call tech.
+cottonwood-acquisitions,Cottonwood Acquisitions,Patient Capital,mixed,False,Family office buying generic 'small to mid-sized businesses'; no sector or tech signal stated.
+define-capital,Define Capital,Portfolio Capital,tech,False,"Permanent home for 'B2B SaaS, on-premise, or software-enabled businesses' — core product is software."
+diagram,Diagram,Venture Studio,tech,True,"Venture builder creating Fintech and Climatetech software companies (Synctera, Nesto, ClearEstate); fintech = tech serving traditional sector."
+empowered-ventures,Empowered Ventures,Patient Capital,mixed,False,"ESOP holdco buying businesses with 'differentiated products, stable financials'; no sector or tech signal named."
+encore-one,Encore One,Search/ETA,mixed,False,Co-invests in generic 'lower middle-market companies' change-of-control deals; no sector or tech signal stated.
+exa-capital,Exa Capital,Portfolio Capital,tech,False,"'Forever home for enterprise software companies' (healthtech, HR solutions) — core product is software."
+forum-family-office,FORUM Family Office,Patient Capital,mixed,False,"Buys generic small/medium European companies plus listed mid-cap niche leaders; no sector or tech signal — diversified, too thin for tech."
+faith-driven-vc,Faith Driven VC,LMV,tech,False,"Backs scalable Christian-marketplace ventures (Amazon/Airbnb/Uber/App Store analogues, ARK marketplace + Arkbnb) — software platforms/marketplaces."
+fenix-holdco,Fenix Holdco,Portfolio Capital,traditional,False,"Acquires/operates physical essential businesses: water treatment systems, industrial components manufacturing, agricultural systems."
+foundation-investment-partners,Foundation Investment Partners,Patient Capital,traditional,False,"Buys niche industrial SMBs: paper packaging, industrial tools, drainage distribution — physical manufacturing/distribution."
+fullsteam,Fullsteam,Portfolio Capital,tech,False,Vertical SaaS / industry-specific software acquirer plus payments platform; targets are software companies (VMS roll-up).
+fundsquire,Fundsquire,SMV,mixed,False,"Non-dilutive finance to UK SaaS but also manufacturing, renewables/cleantech, medtech, agritech — genuinely mixed sectors."
+greybull-stewardship,Greybull Stewardship,Patient Capital,mixed,False,Buys generic 'established smaller US-based private businesses'; no sector or tech signal stated.
+guardians-of-new-zealand-superannuation-nz-super-fund,Guardians of New Zealand Superannuation (NZ Super Fund),Sovereign Capital,mixed,False,"Diversified sovereign pension: global growth equities, NZ infrastructure (offshore wind), venture fund — spans physical infra and equities."
+hanover-partners,Hanover Partners,Patient Capital,traditional,False,"Acquires proprietary-product, capital-equipment and engineered-systems companies — physical industrial manufacturing."
+hashed-health,Hashed Health,Venture Studio,tech,True,"Healthcare venture studio building healthtech software companies (ProCredEx, Bramble Health); healthtech = tech serving a traditional sector."
+hassan-equity,Hassan Equity,Patient Capital,traditional,False,"Permanent holdco owning financial services, energy, real estate, workforce/business-solutions companies — physical/services real-economy."
+hawk-infinity-software,Hawk Infinity Software,Portfolio Capital,tech,False,Nordic niche B2B software serial acquirer; targets are founder-led software businesses (compounding holdco).
+healthcare-of-ontario-pension-plan-hoopp,Healthcare of Ontario Pension Plan (HOOPP),Sovereign Capital,mixed,False,"Diversified institutional pension across public equities, infrastructure, private credit/equity, real estate — spans physical assets and equities."
+hum-capital,Hum Capital,SMV,mixed,False,Funding platform connecting generic 'growth companies' with capital ($1M-$50M); no sector or tech signal in the targets named.
+indus-holding-ag,INDUS Holding AG,Patient Capital,traditional,False,Evergreen holdco of Mittelstand engineering/industrial companies in family succession — physical industrial.
+incofin-investment-management,Incofin Investment Management,Patient Capital,traditional,False,"Impact manager financing inclusive-finance institutions, food/agri value-chain firms, and water-sector firms in emerging markets — financial/physical."
+invictus-growth-partners,Invictus Growth Partners,Portfolio Capital,tech,False,"Acquires/invests in B2B SaaS ($10M+ ARR) in automation, cloud software, cybersecurity, fintech — core product is software."
+iroquois-valley-farmland-reit,Iroquois Valley Farmland REIT,Patient Capital,traditional,False,"Farmland REIT buying physical organic farmland and conservation ranches — real assets, not tech."
+ithmar-capital,Ithmar Capital,Sovereign Capital,mixed,False,Moroccan sovereign fund backing 'multi-sector transformational' strategic projects; no sector or tech signal specified — too broad to call tech.
+llr-partners,LLR Partners,Portfolio Capital,tech,False,"Lower-middle-market PE focused on software and tech-enabled companies (fintech, healthcare, education, industrial software)."
+lvo-industries,LVO Industries,Portfolio Capital,mixed,False,Patient capital to private companies and 'industrial families' plus public-market equities; no tech signal — industrial/diversified.
+lakefield-veterinary-group,Lakefield Veterinary Group,Portfolio Capital,traditional,False,"Acquires physical veterinary practices for succession — operates real-economy practices, not software."
+leo-software-group,Leo Software Group,Portfolio Capital,tech,False,Constellation/Vela operating group buying-and-holding B2B vertical/enterprise software businesses — core product is software.
+local-enterprise-assistance-fund-leaf,Local Enterprise Assistance Fund (LEAF),Patient Capital,traditional,False,"Nonprofit CDFI financing co-ops, small businesses, and healthy-food businesses — community/physical real-economy, no tech."
+m2o,M2O,Search/ETA,mixed,False,Family office backing search-fund entrepreneurs and long-term-hold acquisitions; no sector or tech signal named.
+maple-vc,Maple VC,LMV,tech,False,First-check seed venture firm backing global seed/pre-seed startups (SF/Canada/Cambridge/Korea networks) — venture-scale tech startups.
+multiplier-capital,Multiplier Capital,SMV,tech,False,Growth-debt/term-loan lender to 'rapidly growing tech-enabled growth companies'.
+nordstjernan,Nordstjernan,Patient Capital,traditional,False,Family-controlled house holding Nordic industrial/services companies for decades; no tech signal — industrial real-economy.
+northspring-partners,Northspring Partners,Search/ETA,mixed,False,Search-fund-of-funds backing entrepreneurs acquiring generic micro-cap businesses ($5-40M rev); no sector or tech signal stated.
+novastone-capital-advisors,Novastone Capital Advisors,Search/ETA,mixed,False,Operator-led search fund program for generic 'SME succession' globally; no sector or tech signal named.
+optrust,OPTrust,Sovereign Capital,mixed,False,Public pension 'global diversified portfolio' across public + private + infrastructure + real estate; multi-asset with no tech focus.
+psp-investments,PSP Investments,Sovereign Capital,mixed,False,"Pension 'global multi-asset portfolio: PE, infrastructure, credit, real estate, natural resources'; diversified, no tech signal."
+pyxis-software-group,PYXiS Software Group,Portfolio Capital,tech,True,"Buy-and-hold acquirer of 'vertical market software companies' (attractions, K-12, logistics, payments) — VMS serving verticals."
+partners-for-growth,Partners for Growth,SMV,tech,False,"'Growth-debt provider for tech / innovation companies', often VC-backed; funds the tech/innovation economy broadly."
+pearl-street-holdings,Pearl Street Holdings,Search/ETA,traditional,False,"Acquires 'lower middle market manufacturing & industrial services businesses' — physical industrial operators, not tech."
+penntech-holdings,PennTech Holdings,Portfolio Capital,tech,False,Holdco acquiring 'profitable niche B2B software & tech-enabled services companies' — software is the core product.
+pentagreen-capital,Pentagreen Capital,Sovereign Capital,traditional,False,"Blended-finance debt for 'clean infrastructure projects in Asia' — physical infrastructure, not tech-enabled companies."
+proparco,Proparco,Sovereign Capital,mixed,False,"DFI lending/equity to 'private companies and financial institutions' across Africa/Asia/LatAm; broad development finance, no tech focus."
+quadshift,Quadshift,Portfolio Capital,tech,True,Serial acquirer of 'B2B vertical market software in regulated / essential industries' — VMS serving verticals.
+raven-indigenous-capital-partners,Raven Indigenous Capital Partners,Patient Capital,mixed,False,"Seed-Series B VC in 'Indigenous-led B2B & B2C companies'; no software/platform signal in targets, too thin to call tech."
+recur-software,Recur Software,Portfolio Capital,tech,True,"Holdco for 'mission-critical vertical software companies, $1M-$10M ARR' — vertical SaaS is the core product."
+redemptive-capital,Redemptive Capital,Patient Capital,traditional,False,"Multi-strategy across 'value-add / distressed real estate, faith-aligned businesses, asset-backed lending' — real assets, not tech."
+redesign-health,Redesign Health,Venture Studio,tech,True,"Venture builder of 'next-generation healthcare companies', 'applied technology platform', AI-native — healthtech for the health vertical."
+redwood-services,Redwood Services,Portfolio Capital,traditional,False,"Roll-up of 'residential HVAC, Plumbing and Electrical home services businesses' — physical home-services operators."
+riverbound-partners,Riverbound Partners,Search/ETA,traditional,False,Acquires faith-driven 'services/distribution/manufacturing' companies $2-5M EBITDA — physical real-economy businesses.
+sage-capital-partners,Sage Capital Partners,Search/ETA,mixed,False,Search-fund investor in 'Canadian SMEs in the lower mid-market'; generic SMEs with no tech signal.
+sartor-capital,Sartor Capital,Search/ETA,mixed,False,"Search fund acquiring a 'mid-sized Mexican company with recurring revenue in a growing industry'; no tech signal, single SME."
+satori-capital,Satori Capital,Patient Capital,mixed,False,"PE in companies '$5M-$50M EBITDA, mission/purpose-driven'; generic conscious-capitalism targets, no tech signal."
+search-fund-ventures,Search Fund Ventures,Search/ETA,traditional,False,"Buys 'small businesses with essential services, 10+ years operating history'; SMBs with 'AI upside' as add-on, not tech targets."
+searchright,SearchRight,Search/ETA,mixed,False,"Co-invests in 'European SMEs (Benelux) seeking succession' via search funds; generic SMEs, no tech signal."
+seed-commons,Seed Commons,Patient Capital,traditional,False,"Non-extractive CDFI loans to 'worker cooperatives and communities' — community/real-economy lending, not tech."
+serafin-unternehmensgruppe,Serafin Unternehmensgruppe,Patient Capital,mixed,False,Family holdco investing in 'established European companies across diversified industries'; no tech focus.
+state-of-wisconsin-investment-board-swib,State of Wisconsin Investment Board (SWIB),Sovereign Capital,mixed,False,"Pension 'diversified institutional portfolio (public equities, private credit, private markets)'; multi-asset, no tech focus."
+steward,Steward,Patient Capital,traditional,False,"Community-lending platform that on-lends to 'regenerative agriculture farmers and food producers' — funds farms, real-economy."
+stewardship-partners,Stewardship Partners,Search/ETA,mixed,False,Single-business ETA acquirer of 'one exceptional business'; no sector or tech signal given.
+swedfund,Swedfund,Sovereign Capital,mixed,False,"DFI equity/debt to 'private-sector companies in developing countries' advancing Agenda 2030; broad, no tech focus."
+symbiotics,Symbiotics,Patient Capital,mixed,False,"Impact debt to 'MSME lenders, microfinance institutions, fintechs, inclusive-finance providers' — mix of financial services and fintech."
+the-cambria-group,The Cambria Group,Search/ETA,mixed,False,"PE acquiring 'small and mid-sized businesses across a wide range of industries'; not start-ups, no tech focus."
+the-lightsmith-group,The Lightsmith Group,Sovereign Capital,mixed,False,"Growth equity in 'A&R companies in infrastructure & energy resilience and supply chain resilience'; spans infra and companies, ambiguous."
+thesis-capital,Thesis Capital,Patient Capital,mixed,False,"Permanent-equity acquirer of 'founder/family businesses $15M-$80M, $3M-$20M FCF'; lower-middle-market, no tech signal."
+torana-group,Torana Group,Patient Capital,traditional,False,"Invests in 'essential industries (food, beverage, supplements, health care)' via employee ownership — physical real-economy businesses."
+union-software-group,Union Software Group,Portfolio Capital,tech,True,"Operator-led acquirer of 'high-quality vertical market software businesses, $1M+ ARR, mission-critical software' — VMS."
+verlinvest,Verlinvest,Patient Capital,mixed,False,"Family evergreen in 'consumer-first leaders in food/beverage/FMCG, health, consumer tech, lifestyle brands' — physical brands + consumer tech."
+viceversa,Viceversa,SMV,tech,False,Revenue-based financing for 'digital businesses (ecommerce/DTC)' to scale marketing/working capital — funds digital-native commerce.
+waterequity,WaterEquity,Patient Capital,traditional,False,"Impact funds investing in 'financial institutions, enterprises, and infrastructure' delivering water and sanitation — water infrastructure."
+wayfinder-capital,WayFinder Capital,Search/ETA,traditional,False,"Search-fund investor in 'Australian mid-market companies' (All Essential, Austral Herbs, Granular Products) — physical SMEs."
+workhorse-capital,Workhorse Capital,SMV,tech,False,Growth equity for 'already-successful software and technology-enabled service businesses with recurring revenue' — SaaS/TES.
+workshop-ventures,Workshop Ventures,Venture Studio,mixed,False,"Venture studio building 'pre-seed/seed climate and education companies'; could be software or hardware, too thin to call tech."
+wrench-group,Wrench Group,Portfolio Capital,traditional,False,Home-services roll-up of 'HVAC/Plumbing/Electrical market leaders across 26 markets' — physical home-services operators.
+xo-capital,XO Capital,Portfolio Capital,tech,False,"Buy-and-operate of 'B2B SaaS, $30k-$60k MRR, 80%+ gross margins' micro-SaaS — software is the core product."
+responsability-investments,responsAbility Investments,Patient Capital,mixed,False,"Impact manager in financial inclusion, climate finance, and sustainable food in emerging markets; real-economy/physical skew, no software signal."
+braccia-capital,Braccia Capital,Patient Capital,mixed,False,Multi-generational family office; targets 'unspecified' — text too thin to determine tech vs traditional.
+deep-science-ventures,Deep Science Ventures,Portfolio Capital,mixed,False,"Venture creator across Agriculture, Computation, Climate, Pharma, Education; mixes physical science (ag/pharma/climate) with computation."
+elemental-impact,Elemental Impact,Sovereign Capital,mixed,False,"Catalytic capital for first-of-a-kind climate-tech projects via project finance across energy, industry, food, water, transport; physical projects."
+enduring-planet,Enduring Planet,SMV,mixed,False,"Working capital for climate startups and SMBs across mitigation, removal, adaptation; climate skews physical, no clear software focus."
+neta-foundation,NETA Foundation,Sovereign Capital,mixed,False,Funds early-stage pre-commercialization 'technology' from universities/research; domain unspecified (could be deep/physical tech).
+refactor-capital,Refactor Capital,LMV,mixed,False,"Hard tech 'atoms not bits': Aerospace, Applied Bio, Critical Materials, Energy, Fertility plus AI Infra; explicit physical scale signal."
+9t-capital,9T Capital,Search/ETA,traditional,False,"ETA/search-fund investor acquiring operating companies across N. America, Europe, S. America; operating-business acquisition."
+alza-capital,ALZA Capital,Search/ETA,traditional,False,Search-fund PE; 67 operating companies across 9 industries via search & acquisition; operating-business buyouts.
+infinitas-partners,Infinitas Partners,Search/ETA,mixed,False,Search fund acquiring healthcare/medtech/health-tech SMEs on revenue/EBITDA multiples; tech-vertical wording but operating-business acquisition.
+mirablau,Mirablau,Search/ETA,traditional,False,Search-fund investor backing entrepreneurship-through-acquisition of SMEs worldwide; operating-business acquisition.
+onetoone-asset-management,ONEtoONE Asset Management,Search/ETA,traditional,False,Search-funds program backing searchers acquiring SMEs (mostly European); operating-business acquisition.
+search-fund-oz,Search Fund Oz,Search/ETA,traditional,False,Helps Australians 'buy good businesses'; search-fund acquisition of operating SMEs.
+search-fund-pioneers-eu,Search Fund Pioneers (EU),Search/ETA,traditional,False,Backs next generation of search-fund entrepreneurs acquiring operating businesses in Europe; ETA acquisition model.
+vonzeo-capital,Vonzeo Capital,Search/ETA,traditional,False,"Invests in search-fund entrepreneurs who 'acquire, grow, and sell a business' globally; operating-business acquisition."
+hal-investments,HAL Investments,Portfolio Capital,mixed,False,Permanent-equity holdco with shareholdings in listed/non-listed companies across 'a wide range of industries'; no software signal.
+industriv-rden,Industrivärden,Patient Capital,traditional,False,"Long-term concentrated stakes in named Nordic industrials/banks: Sandvik, Volvo, Handelsbanken, Essity, SCA, Skanska."
+investor-ab,Investor AB,Patient Capital,traditional,False,"Wallenberg holdco owning named global industrials/pharma/banks: ABB, AstraZeneca, Atlas Copco, Electrolux, SEB, Saab."
+korys,Korys,Patient Capital,mixed,False,"Colruyt family investment co. in Conscious Consumer, Energy Transition, Healthy Living; profitable businesses, no clear software focus."
+sofina,Sofina,Portfolio Capital,mixed,False,"Patient-capital partner to entrepreneurs/families backing growing companies in Europe/Asia/US; includes VC/growth fund LP, no named software portfolio."
+teoh-capital,Teoh Capital,Portfolio Capital,mixed,False,Permanent capital into 'B2B SaaS with $1-50M recurring revenue' plus heritage brands and family-owned businesses; software and traditional brands.
+venture-growth-partners-australia,Venture Growth Partners (Australia),Portfolio Capital,mixed,False,"Long-duration holdco acquiring profitable, low-capital-intensity, 'sector agnostic' Australian SMEs ($1-6M earnings); no tech signal."
+wendel,Wendel,Patient Capital,traditional,False,"Family investment co. in named European industrials: Bureau Veritas, Stahl, Tarkett, IHS Towers, Globeducate, Scalian."
+8fig,8fig,SMV,mixed,False,"Non-dilutive funding for Amazon/Shopify ecommerce sellers; sellers sell physical goods via a platform, not core-tech companies."
+choco-up,Choco Up,SMV,mixed,False,"Revenue-based financing for SMEs/startups in ecommerce, retail, services; borrower base spans physical retail and services."
+indifi,Indifi,SMV,traditional,False,"Small-business lending to Indian SMEs in travel, e-commerce, hotel, retail, restaurant verticals; mostly physical/main-street SMBs."
+multipli,Multipli,SMV,traditional,False,"Non-bank lender doing vendor/equipment finance and chattel mortgages for IT/telco, clean energy, commercial equipment; physical real assets."
+ratio,Ratio,SMV,tech,False,"Recurring-revenue financing explicitly for B2B SaaS, hardware, robotics, VARs and SaaS startups; funds software/tech companies."
+tractor-ventures,Tractor Ventures,SMV,mixed,False,"Growth/venture debt for AU/NZ SMEs, ecommerce, and SaaS (>$50K MRR) plus VC-backed startups; mix of SaaS, ecommerce, and SMEs."
+abu-dhabi-investment-authority-adia,Abu Dhabi Investment Authority (ADIA),Sovereign Capital,traditional,False,"Sovereign wealth fund prudently diversified across global asset classes for long-term value; broad real-economy portfolio, not tech-focused."
+adaptation-fund,Adaptation Fund,Sovereign Capital,traditional,False,"Climate-adaptation grant-maker to developing-country governments and implementing entities; project/readiness grants, not tech-company funding."
+asian-infrastructure-investment-bank-aiib,Asian Infrastructure Investment Bank (AIIB),Sovereign Capital,traditional,False,"Multilateral development bank financing infrastructure: energy, transport, water, telecom, climate across member economies; physical infrastructure."
+european-bank-for-reconstruction-and-development-ebrd,European Bank for Reconstruction and Development (EBRD),Sovereign Capital,traditional,False,"MDB funding private sector in energy, financial institutions, agribusiness, infrastructure, manufacturing, real estate; real-economy sectors."
+finance-in-motion,Finance in Motion,Sovereign Capital,traditional,False,Blended-finance impact manager deploying via local financial institutions for renewable energy and agriculture in emerging markets; physical/FI focus.
+idb-invest,IDB Invest,Sovereign Capital,traditional,False,"Private-sector arm of IDB funding LatAm agribusiness, social infrastructure, tourism, energy, transport, water, FIs; real-economy mandate."
+international-finance-corporation-ifc,International Finance Corporation (IFC),Sovereign Capital,traditional,False,"World Bank Group private-sector financier across agribusiness, FIs, infrastructure, manufacturing, health in developing countries; one VC line among many."
+multilateral-investment-guarantee-agency-miga,Multilateral Investment Guarantee Agency (MIGA),Sovereign Capital,traditional,False,"WBG political-risk and credit guarantor for investors in developing markets; insurance/guarantees across all sectors, not tech-company funding."
+sifem-swiss-investment-fund-for-emerging-markets,SIFEM Swiss Investment Fund for Emerging Markets,Sovereign Capital,traditional,False,Swiss DFI fund-of-funds financing SMEs in developing countries via local financial intermediaries; broad real-economy SME base.
+u-s-international-development-finance-corporation-dfc,U.S. International Development Finance Corporation (DFC),Sovereign Capital,traditional,False,"US DFI funding critical minerals, healthcare, energy, agriculture, infrastructure, plus tech/telecom; predominantly real-economy/infrastructure."
+mb2-dental,MB2 Dental,Portfolio Capital,traditional,False,Dental Partnership Organization operating 500+ dental practices with 1700+ dentists; operates physical dental practices (literal traditional example).
+new-harbor-capital,New Harbor Capital,Portfolio Capital,mixed,False,"Control PE in 'Technology-Enabled Services' plus Healthcare and Education lower middle-market; 'tech-enabled services' = labor/locations + software, not pure tech."
+agri3-fund,AGRI3 Fund,Sovereign Capital,traditional,False,"Blended finance for sustainable land-use: agriculture, reforestation, deforestation prevention via partner banks. Physical land/agriculture, not tech."
+ajvc,AJVC,LMV,tech,False,"India pre-seed fund backing first-time founders, prototypes, pre-incorporation startups; generalist early-stage software/startup capital."
+apg-asset-management,APG Asset Management,Patient Capital,mixed,False,"Pension manager across infrastructure, real estate, PE, direct ventures, natural capital, bonds; broadly diversified, not a tech bet."
+agriculture-capital,Agriculture Capital,Patient Capital,traditional,False,"Real-asset investor in farmland (20K+ acres) and food processing/midstream infrastructure; physical regenerative-ag assets, not tech."
+ajim-capital,Ajim Capital,LMV,tech,False,"Pre-seed/seed VC for Africa's tech companies: fintech, logistics, vertical SaaS, AI, commerce, dev tools. Clearly software/tech, generalist."
+ambassador-development-group,Ambassador Development Group,Portfolio Capital,traditional,False,"Faith-based evergreen holdco directly acquiring small and medium-sized businesses; generic SMB acquisitions, no tech signal."
+beacon-behavioral-health-partners,Beacon Behavioral Health Partners,Portfolio Capital,traditional,False,"Behavioral-health MSO acquiring/partnering with outpatient psychiatry practices; buys/operates physical medical practices, not tech."
+blue-collar-trades-group,Blue-Collar Trades Group,Search/ETA,traditional,False,"Acquires blue-collar SMBs in construction, fabrication, agriculture, home services, specialty trade; physical operating businesses."
+bluefront-equity,Bluefront Equity,Patient Capital,traditional,False,"Growth PE in Nordic seafood value chain: biology, fish health, automation, aquaculture; physical seafood-sector companies, not tech."
+canadian-co-operative-investment-fund,Canadian Co-operative Investment Fund,Patient Capital,mixed,False,"Debt/loan financing for Canadian co-operatives creating community benefits; sector-agnostic co-ops, no tech signal, text thin -> mixed."
+capifly,Capifly,SMV,tech,True,"Shariah-compliant venture debt to MENA software companies with 250k+ ARR, VC-backed; explicitly funds software/SaaS firms."
+capital-impact-partners,Capital Impact Partners,Patient Capital,mixed,False,"CDFI lending to real-estate developers, small businesses, food/health/employee-ownership projects; mainly physical community economy, no tech signal."
+catalytic-futures-fund,Catalytic Futures Fund,Patient Capital,mixed,False,"Recoverable grants and early-stage venture investments in ventures supporting girls/youth of color; sector-agnostic, no tech signal -> mixed."
+cedo-capital,Cedo Capital,Search/ETA,traditional,False,"Search fund acquiring a single Polish SME (acquired a vegetable processor) facing succession; buys/operates physical SME, not tech."
+chisos,Chisos,SMV,traditional,False,"CISA funding for entrepreneurs, athletes, creators, golfers; funds people, not software companies; no tech-company signal."
+climate-asset-management,Climate Asset Management,Patient Capital,traditional,False,"Natural-capital manager investing in sustainable land use, biodiversity, nature-based carbon projects; physical natural assets, not tech."
+compagnie-du-bois-sauvage,Compagnie du Bois Sauvage,Patient Capital,mixed,False,"Belgian family industrial holding making long-term patrimonial equity stakes (e.g. Jeff de Bruges); diversified industrial/consumer, not tech."
+creation-investments-capital-management,Creation Investments Capital Management,Patient Capital,mixed,False,Impact PE/credit in financial-services and financial-inclusion firms for unbanked in emerging markets; includes fintech-adjacent but also traditional FIs -> mixed.
+crediblex,CredibleX,SMV,mixed,False,"Embedded SME working-capital lender (receivables, payables, POS, B2B) in UAE/GCC; funds generic SMEs via platform partners, no tech-fundee signal."
+de-agostini,De Agostini,Patient Capital,mixed,False,"Italian family holding with diversified global brands (recent: Legami); broad industrial/consumer portfolio, not a tech bet."
+dermcare-management,DermCare Management,Portfolio Capital,traditional,False,"Dermatology MSO/roll-up acquiring dermatology practices; buys and operates physical medical practices, not tech."
+dirt-capital-partners,Dirt Capital Partners,Patient Capital,traditional,False,"Farmland impact investor: land partnerships with regenerative farmers, 23,000+ acres, conservation easements; physical farmland, not tech."
+epitome-capital,Epitome Capital,Search/ETA,traditional,False,"UK SMB holdco acquiring manufacturing, engineering, logistics, distribution, facilities, B2B services firms; physical operating SMEs."
+firstpick,FIRSTPICK,LMV,tech,False,"First-check VC for Baltic founders building AI-first software, generalist early-stage; clearly software/tech startups."
+farmland-lp,Farmland LP,Patient Capital,traditional,False,"Organic/regenerative farmland fund acquiring 19,000+ acres and converting to organic; physical farmland real asset, not tech."
+ferd-as,Ferd AS,Patient Capital,mixed,False,"Norwegian family investment company: PE, real estate, external managers, impact, social entrepreneurs; broadly diversified, not tech-focused."
+firstcheck-africa,FirstCheck Africa,LMV,tech,False,"First-check pre-seed/seed VC for female-led African startups, sector-agnostic; early-stage venture capital for startups -> tech."
+flapkap,FlapKap,SMV,traditional,False,"Revenue-based/POS funding for SMEs in e-commerce, retail, restaurants, clinics in MENA; funds physical/main-street businesses, no tech-fundee signal."
+flow48,Flow48,SMV,mixed,False,"Revenue-based and invoice financing for SMEs needing working capital; generic SME fundees with no tech signal, text thin -> mixed."
+forest-investment-associates,Forest Investment Associates,Patient Capital,traditional,False,"TIMO managing 2M+ acres of sustainable timberland in US South, Brazil, Chile; physical timberland real asset, not tech."
+founders-home-service-group,Founders Home Service Group,Portfolio Capital,traditional,False,"Home-services holdco acquiring HVAC, plumbing, electrical SMBs from retiring owners; buys/operates physical trades businesses."
+garlic-equity-capital,Garlic Equity Capital,Search/ETA,traditional,False,"Singapore/Malaysia search fund taking majority stakes in established SMEs facing succession; acquires/operates physical SME, not tech."
+generate-capital,Generate Capital,Patient Capital,traditional,False,"Sustainable-infrastructure capital: distributed energy, mobility, water, waste, data centers; physical infrastructure project finance, not software."
+groupe-bruxelles-lambert,Groupe Bruxelles Lambert,Patient Capital,mixed,False,"Investment holding in large European listed firms (adidas, Pernod Ricard, SGS) and private assets; broadly diversified, not a tech bet."
+gulf-islamic-investments-gii,Gulf Islamic Investments (GII),Patient Capital,mixed,False,"Shariah-compliant firm across PE, VC (Mumzworld, zSpace) and real estate (warehouses, schools, towers); mix of tech VC and physical real estate."
+gulf-succession-partners,Gulf Succession Partners,Search/ETA,mixed,False,"UAE search fund acquiring one mature SME in business services, healthcare, technology, or light manufacturing; technology among sectors -> mixed."
+hasan-vc,HASAN.VC,LMV,tech,False,Shariah venture fund + accelerator backing early-stage ethical 'Camel Startups' in SE Asia/Muslim world; early-stage startup venture capital -> tech.
+ingka-investments,Ingka Investments,Patient Capital,traditional,False,"Permanent forestland owner: 495,000 hectares across seven countries managed as 'forests forever'; physical forestland real asset, not tech."
+invest-appalachia,Invest Appalachia,Patient Capital,mixed,False,"Blended/catalytic capital (grants, loans, equity) for community projects and entrepreneurs in Central Appalachia (e.g. Renaissance Fiber); community economy, no tech signal."
+italmobiliare,Italmobiliare,Patient Capital,traditional,False,"Italian family industrial holding; portfolio is coffee (Caffe Borbone), perfume/pharma, sporting goods (Tecnica), insurance, food — physical operating companies."
+kingdom-capital,Kingdom Capital,Patient Capital,mixed,False,Long-horizon equity into 'faith-aligned operating companies' with no sector or tech signal; too thin to call tech.
+linea-capital,Linea Capital,SMV,tech,False,"Revenue-based funding for 'post-revenue, tech-enabled South African companies'; explicitly tech-enabled but horizontal, not vertical-software."
+lioncrest-industries,Lioncrest Industries,Portfolio Capital,traditional,False,"Industrial holdco acquiring packaging, precision manufacturing, and industrial distributors (pumps, valves) — physical real assets."
+liquidus-partners,Liquidus Partners,Patient Capital,mixed,False,Private credit for ESOP transitions of generic 'private businesses'; no sector or tech signal.
+lynx-equity,Lynx Equity,Portfolio Capital,traditional,False,Buy-and-hold of SMBs from retiring owners explicitly 'in stable industries'; no tech signal.
+milestone-search-capital,Milestone Search Capital,Search/ETA,traditional,False,India search fund buying cash-profitable businesses with explicit 'low tech-obsolescence risk' — deliberately non-tech.
+monarch-investment-partners,Monarch Investment Partners,Patient Capital,mixed,False,Financing ESOP transitions of employee-owned businesses; no sector or tech signal.
+n-1-capital,N+1 Capital,SMV,tech,False,"Revenue-based growth capital for Indian companies with 'ARR'; ARR connotes recurring/SaaS revenue, so tech is the read; horizontal not vertical."
+new-forests,New Forests,Patient Capital,traditional,False,"Forestry/natural-capital manager investing in timber plantations, conservation, agriculture, processing — physical real assets."
+okintek-capital,Okintek Capital,Search/ETA,traditional,False,Search fund buying one B2B business in healthcare/BFSI/real estate/renewable energy; no tech-product signal.
+outlast-fund,Outlast Fund,LMV,tech,False,"Pre-seed/seed in B2B SaaS, AI infrastructure, digital health, fintech, deep-tech — clearly tech but a generalist, not vertical-software-only."
+peugeot-invest,Peugeot Invest,Patient Capital,traditional,False,"French family holding; stakes in Stellantis (autos), Forvia (auto parts), LISI, Robertet — industrial operating companies."
+root-capital,Root Capital,Patient Capital,traditional,False,Nonprofit lender extending credit to small and growing agricultural businesses in the Global South — physical agriculture.
+rouge-river-capital,Rouge River Capital,Portfolio Capital,traditional,False,"Own-capital holdco acquiring Canadian operating businesses in Consumer, Logistics, Industrials — physical sectors."
+shawbrook-eot-finance,Shawbrook EOT Finance,Patient Capital,mixed,False,"Lender financing UK SME transitions to Employee Ownership Trusts; generic SMEs, no sector or tech signal."
+sila-services,Sila Services,Portfolio Capital,traditional,False,"Home-services platform consolidating HVAC, Plumbing, and Electrical contractors — physical operating businesses."
+southern-home-services,Southern Home Services,Portfolio Capital,traditional,False,Consolidator of HVAC/Plumbing/Electrical/Generator home-service businesses — physical real-economy operators.
+specialty1-partners,Specialty1 Partners,Portfolio Capital,traditional,False,Specialty dental DSO acquiring endodontic/oral-surgery/periodontic practices — physical clinical practices.
+spring-lane-capital,Spring Lane Capital,Patient Capital,traditional,False,"Project finance + equity for sustainable real-asset platforms in Energy, Waste, Transportation, Food & Ag — physical real assets."
+succession-capital-partners-india,Succession Capital Partners India,Search/ETA,traditional,False,"Search fund acquiring 'India's traditional businesses', asset-light B2B with recurring revenue; explicitly traditional."
+talanton,Talanton,Patient Capital,mixed,False,Faith-driven impact fund backing growth-stage 'missing middle' businesses ($500K-$15M rev) in Sub-Saharan Africa; no tech signal.
+tenacity-works-fund,Tenacity Works Fund,Patient Capital,mixed,False,Revolving loan fund for worker co-ops across Canada; no sector or tech signal.
+the-seer-group,The SEER Group,Portfolio Capital,traditional,False,"Home-services group partnering with local HVAC, plumbing, and electrical businesses — physical operators."
+trailhead-capital,Trailhead Capital,Patient Capital,mixed,False,"VC backing entrepreneurs 'building the regenerative future of food and agriculture'; emphasis is physical regenerative ag/food, may include agtech — not clearly tech."
+transition-capital-partners,Transition Capital Partners,Patient Capital,mixed,False,Long-hold PE in 'middle market companies in Texas'; no sector or tech signal.
+untapped-global,Untapped Global,SMV,mixed,False,"'Tech-enabled' framing but Smart Asset Financing funds physical assets — clean water, solar, e-mobility — tracked via IoT; genuinely both."
+vetcor,Vetcor,Portfolio Capital,traditional,False,Veterinary care network acquiring/partnering with 900 community veterinary practices — physical clinics.
+veterinary-practice-partners,Veterinary Practice Partners,Portfolio Capital,traditional,False,Veterinary roll-up co-owning hospitals with vets (190+ practices) — physical clinical practices.
+wing-vasiksiri,Wing Vasiksiri,LMV,tech,False,"Solo-GP fund backing 'Southeast Asian technology ecosystem' founders at earliest stages; horizontal tech, not vertical-software."
+i2i-ventures,i2i Ventures,LMV,mixed,False,"Pakistan pre-seed/seed fund, explicitly 'sector agnostic', never says technology; too thin to call tech."
+acon-investments,ACON Investments,Portfolio Capital,traditional,False,"LatAm PE buying Consumer, Industrials, and Business Services via buyouts and carveouts — physical/traditional sectors."
+adenia-partners,Adenia Partners,Patient Capital,mixed,False,Pan-African PE making control investments in 'medium-sized companies'; no sector or tech signal.
+africinvest,AfricInvest,Patient Capital,mixed,False,Pan-African PE across multiple sectors via growth funds; no specific tech signal.
+alpine-investors,Alpine Investors,Portfolio Capital,mixed,False,"People-first PE in 'software, services, MSPs'; funds software but also services/MSPs — genuinely both."
+amethis,Amethis,Patient Capital,mixed,False,Pan-African/MENA/Europe impact PE in mid-sized companies (CA 5-200M EUR); no sector or tech signal.
+apheon,Apheon,Patient Capital,traditional,False,"Benelux long-hold PE in family businesses across consumer, industrials, healthcare distribution — physical sectors."
+aqua-capital,Aqua Capital,Portfolio Capital,traditional,False,LatAm PE investing across the Agribusiness and Food value chain (upstream to downstream) — physical agri/food.
+ata-capital,Ata Capital,Patient Capital,mixed,False,South African PE in private businesses plus real estate (Ata Terra); no specific tech signal.
+aterian-investment-partners,Aterian Investment Partners,Patient Capital,mixed,False,"Middle-market PE; 'technology' cited as an operational lever (equipment, processes, product innovation), not a target sector — generic middle market."
+aurora-capital-partners,Aurora Capital Partners,Patient Capital,mixed,False,"Buys whole companies in 'Industrial & Business Services, Industrial Technologies, Software & Tech-Enabled Services'; tech-enabled=uses-tech, blended with industrials."
+bgf,BGF,Patient Capital,mixed,False,"Funds SMEs, deep tech, life sciences, university spinouts to well-known brands across UK/Ireland; blend of tech and traditional businesses."
+bangladesh-infrastructure-finance-fund,Bangladesh Infrastructure Finance Fund,Sovereign Capital,traditional,False,"Infrastructure, energy efficiency, renewable energy, waste management, food/agriculture value chain — physical real-asset project finance."
+builders-vision,Builders Vision,Patient Capital,traditional,False,"Solutions in food & agriculture, energy, and oceans; blue economy — physical real-economy sectors, no software/platform signal."
+buoyant-ventures,Buoyant Ventures,LMV,tech,True,"Invests in 'AI, software, and simple hardware'; 'Intelligence Layer of the Physical World' — software/AI serving physical verticals (climate)."
+capitalworks,Capitalworks,Patient Capital,mixed,False,"Emerging-market growth equity in financial, education, health verticals; whole-company PE with no software/platform tech signal."
+charlesbank-capital-partners,Charlesbank Capital Partners,Portfolio Capital,mixed,False,"Middle-market buyouts across Business & Consumer Services, Healthcare, Industrial, Technology & Tech Infrastructure — blended sectors."
+chryscapital,ChrysCapital,Patient Capital,mixed,False,"Consumer, Enterprise Technology, Financial Services, Healthcare, Manufacturing, New Economy — blend of tech and physical sectors."
+churchill-asset-management,Churchill Asset Management,SMV,mixed,False,Lends to PE-owned middle-market companies and their portfolios; no sectors or tech signal named — thin.
+comvest-credit-partners,Comvest Credit Partners,SMV,mixed,False,Senior secured debt to sponsored/non-sponsored middle-market companies; no sectors or tech signal named — thin.
+congruent-ventures,Congruent Ventures,Patient Capital,mixed,False,"Early-stage climate-tech across 'atoms, bits, or business models' — atoms=physical/hardware, not software-specific; blended."
+counteract,Counteract,LMV,mixed,False,"Backs carbon-removal founders (DAC, mineralisation, soil carbon, weathering) — physical/hardware climate, not software/platform."
+court-square-capital-partners,Court Square Capital Partners,Portfolio Capital,mixed,False,"Middle-market company builder in Business Services, Healthcare, Industrials, and Tech & Telecom — blended sectors."
+deutsche-beteiligungs-ag,Deutsche Beteiligungs AG,Portfolio Capital,mixed,False,"Mittelstand PE in industry, broadband telecom, IT services/software, healthcare — blend of industrial and software/IT."
+development-partners-international,Development Partners International,Patient Capital,mixed,False,"African growth equity in financial services, healthcare, consumer, infrastructure — blend of services and physical sectors."
+eb-capital,EB Capital,Sovereign Capital,traditional,False,"Brazilian PE in climate (decarbonization), agribusiness, and real estate — physical real-asset sectors, no software signal."
+eci-partners,ECI Partners,Patient Capital,mixed,False,Growth businesses with strong management seeking to scale internationally; no sectors or tech signal named — thin.
+energy-transition-ventures,Energy Transition Ventures,LMV,mixed,False,"Distributed Energy, Electrification, Mobility, Resource Efficiency, Enabling Technologies — physical energy/hardware, not software-specific."
+equistone-partners-europe,Equistone Partners Europe,Patient Capital,mixed,False,Change-of-ownership deals for €50m-€500m EV businesses; no sectors or tech signal named — thin.
+everstone-capital,Everstone Capital,Patient Capital,mixed,False,Mid-market control PE with India/SE Asia nexus; no sectors or tech signal named — thin.
+ffl-partners,FFL Partners,Portfolio Capital,mixed,False,"Middle-market healthcare and 'tech-enabled services' — tech-enabled=uses-tech trap, blended with healthcare; not software-specific."
+fors-capital,FORS Capital,Patient Capital,mixed,False,Brazilian ESG growth equity for financial results with environmental/social impact; no sectors or tech signal named — thin.
+gimv,Gimv,Portfolio Capital,mixed,False,"Invests across Consumer, Healthcare, Smart Industries, Sustainable Cities — blend of physical industries and tech-adjacent themes."
+hall-capital,Hall Capital,Portfolio Capital,traditional,False,"Holdco of operating businesses in automotive, real estate, oil & gas — physical real-asset operating affiliates."
+helios-investment-partners,Helios Investment Partners,Patient Capital,mixed,False,"Africa-focused PE, Helios Climate, and Helios Digital Ventures — blend of physical PE/climate and digital ventures."
+iconiq,ICONIQ,Patient Capital,mixed,False,MFO wealth + Real Assets + Venture & Growth (e.g. Anthropic AI) + Impact — blend of real assets and software/AI venture.
+ig4-capital,IG4 Capital,Patient Capital,mixed,False,"LatAm special situations, market dislocations, distressed and NPLs; financial/situational focus, no sectors or tech signal — thin."
+injaro-investments,Injaro Investments,Patient Capital,mixed,False,Africa-focused PE and private credit for impact-oriented SMEs; no sectors or tech signal named — thin.
+inside-capital-partners,Inside Capital Partners,Patient Capital,traditional,False,"Southeast African businesses in waste/recycling, solar energy, hospitality, manufacturing — physical operating businesses."
+kv-asia-capital,KV Asia Capital,Portfolio Capital,traditional,False,"SE Asia mid-sized firms in business services, energy services, distribution & logistics, financial/healthcare services — physical operations."
+kawisafi-ventures,KawiSafi Ventures,Patient Capital,mixed,False,Sub-Saharan off-grid renewable energy plus mobile payments — blend of energy hardware (physical) and payments software.
+lockheed-martin-ventures,Lockheed Martin Ventures,Portfolio Capital,mixed,False,"Deep-tech and dual-use technologies in defense/aerospace — hardware-heavy deep tech, not software/platform-specific."
+mid-europa-partners,Mid Europa Partners,Portfolio Capital,mixed,False,Established CEE mid-market businesses across multiple sectors; no sector specifics or tech signal named — thin.
+monroe-capital,Monroe Capital,SMV,mixed,False,"Private credit to middle market across healthcare, technology, sports/media, retail, specialty finance, real estate — blended sectors."
+muzinich-co,Muzinich & Co,SMV,mixed,False,"Corporate credit to SMEs / lower middle-market companies in Europe, Asia, US; no sectors or tech signal named — thin."
+neom-investment-fund,NEOM Investment Fund,Sovereign Capital,mixed,False,"Funds NEOM sectors: energy, biotech, mobility, food, water, construction, financial services, media — blend of physical and tech."
+newspring-mezzanine,NewSpring Mezzanine,SMV,mixed,False,"LMM companies across technology, healthcare, consumer, business services, manufacturing/distribution, franchises — blended sectors."
+nexxus-capital,Nexxus Capital,SMV,mixed,False,"Mexican/Iberian mid-market growth in consumer goods, health/pharma; physical/consumer focus, no software/platform tech signal."
+norsad-capital,Norsad Capital,SMV,traditional,False,"Sub-Saharan debt to Financial Institutions, Food Value Chain, Soft & Social Infrastructure — physical/infrastructure sectors."
+norwest-equity-partners,Norwest Equity Partners,Portfolio Capital,mixed,False,"Middle-market buyouts in business services, consumer, and industrial companies — blend of services and physical industry."
+olympus-partners,Olympus Partners,Portfolio Capital,traditional,False,Middle-market growth/buyout of 'family- and entrepreneur-owned businesses across multiple sectors' driven by add-on M&A; no tech signal.
+oman-investment-authority,Oman Investment Authority,Sovereign Capital,mixed,False,"Sovereign fund managing state assets across sectors aligned with Vision 2040 incl. 'modern-technology transfer'; broad multi-asset, not specifically tech."
+oval-partners,Oval Partners,Patient Capital,mixed,False,Multifamily-office holdco backing 'founders of growing businesses' with no sector or tech signal; too thin to call tech.
+pamlico-capital,Pamlico Capital,Portfolio Capital,tech,False,"Targets 'Communications, Healthcare IT, Info Services, Software, Tech-Enabled Services' middle-market companies — explicit software/tech focus."
+patria-investments,Patria Investments,Portfolio Capital,mixed,False,"LatAm alt-asset manager across PE, infrastructure, real estate, credit, insurance; broad real-asset heavy, not specifically tech."
+peakline-partners,Peakline Partners,Patient Capital,mixed,False,"Curated platform spanning real estate (multifamily/office/industrial/retail), PE/private credit, and VC fund-of-funds; multi-asset incl. real assets."
+pearl-capital-partners,Pearl Capital Partners,Patient Capital,traditional,False,"East African agribusiness SMEs in dairy, horticulture, vanilla, coffee, meat, poultry — physical farming/value chains, no tech."
+phatisa,Phatisa,Patient Capital,traditional,False,"African 'food value chain' PE plus a housing fund — physical agriculture and real estate, no tech signal."
+premji-invest,Premji Invest,Patient Capital,mixed,False,"Evergreen across 'AI/drug discovery, biopharmaceuticals/gene therapy, robotics, plant chemistry' — mix of tech/deep-tech and physical biopharma/science."
+renew-capital,Renew Capital,LMV,tech,False,'Early-Stage Venture Capital Firm in Africa' funding 'tech and tech-enabled African startups' — explicit tech focus.
+riverwood-capital,Riverwood Capital,Portfolio Capital,tech,False,Growth equity into 'high-growth technology and technology-related companies' — explicit tech mandate.
+s2g-investments,S2G Investments,Patient Capital,mixed,False,"Venture & growth in food & agriculture, energy, and oceans — physical real-economy sector transition; not exclusively tech."
+sahel-capital,Sahel Capital,Patient Capital,traditional,False,"Sub-Saharan 'food and agriculture' across crop/livestock value chains, processing, branded packaged foods — physical, no tech."
+saudi-industrial-development-fund,Saudi Industrial Development Fund,Sovereign Capital,traditional,False,"Development-finance loans for Industrial, Mining, renewable Energy, and Logistics projects — physical infrastructure, not tech."
+the-sovereign-fund-of-egypt,The Sovereign Fund of Egypt,Sovereign Capital,mixed,False,"Sovereign multi-sector subfunds: Tourism/Real Estate, Infrastructure/Utilities, Healthcare/Pharma, Financial Services/Fintech, telecoms — mostly physical with some fintech."
+tower-arch-capital,Tower Arch Capital,Portfolio Capital,traditional,False,Control PE in 'middle-market businesses (often family/founder/entrepreneur-owned)' via recaps and growth; no tech signal.
+trinity-capital,Trinity Capital,SMV,mixed,False,"Venture-debt BDC spanning Tech Lending plus Equipment Financing, Healthcare/Life Sciences, Sponsor Finance, Asset-Based Lending — tech plus physical-collateral lending."
+trivest-partners,Trivest Partners,Patient Capital,traditional,False,PE 'exclusively focused on founder-led and family-owned businesses' lower middle market in US/Canada; no tech signal.
+verod-capital,Verod Capital,Patient Capital,mixed,False,"African PE across consumer, financials, materials, industrials, etc. plus a separate VC fund for 'FinTech, Logistics, HealthTech, EdTech, Software' startups — genuinely both."
+victory-park-capital,Victory Park Capital,SMV,mixed,False,"Asset-backed credit and specialty finance to non-bank FIs, asset managers, and 'specialty real estate' — financial/real-asset collateral, not specifically tech."
+vista-credit-partners,Vista Credit Partners,SMV,tech,False,'Dedicated to enterprise software' — credit to sponsor-backed and founder-led 'software and tech-enabled' companies; explicit software focus.
+wind-point-partners,Wind Point Partners,Portfolio Capital,traditional,False,"Control PE in Consumer Products (Pet, Food), Industrial Products (Specialty Materials, Packaging), services — physical products, no tech."
+i80-group,i80 Group,SMV,tech,True,"Asset-based finance to 'fintech and other sectors... platforms with scalable models' — fintech-led, platform/scalable tech signal."
+blue-frame-capital,Blue Frame Capital,Search/ETA,traditional,False,"Search-fund capital for searchers acquiring 'traditional operating businesses (predictable revenue, low customer concentration)' — explicitly traditional."
+eta-funding-partners,ETA Funding Partners,Search/ETA,traditional,False,Equity to self-funded searchers in the ETA ecosystem acquiring established operating businesses; no sector/tech signal — canonical main-street ETA.
+kingsway-search-xcelerator,Kingsway Search Xcelerator,Portfolio Capital,mixed,False,"ETA buyouts in 'B2B Services, Healthcare, Software, Skilled Trades, Financial Services' — Software named alongside Skilled Trades; genuinely both."
+nakani-capital-partners,Nakani Capital Partners,Search/ETA,traditional,False,"Acquires 'niche manufacturing, distribution or service businesses' with recurring revenue from retiring owners — physical operating businesses, no tech."
+pinestone-capital,Pinestone Capital,Search/ETA,traditional,False,Single-target search acquisition of 'services-based businesses' in a 'fragmented/niche industry'; recurring revenue but no tech signal.
+search-capital-partners,Search Capital Partners,Search/ETA,traditional,False,Fund-of-search-funds backing searchers 'acquiring and scaling SMEs' in Italy/Europe; operating-business ETA with no tech signal.
+software-combined,Software Combined,Portfolio Capital,tech,False,Perpetual-hold acquirer of 'successful B2B tech businesses' / 'B2B software businesses' in Europe and Oceania — explicit software focus.
+trilogy-search-partners,Trilogy Search Partners,Search/ETA,mixed,False,"Search-fund equity for acquiring 'SaaS, healthcare & healthcare IT, tech-enabled services, and B2B services' — SaaS/IT tech plus traditional services."
+65-equity-partners,65 Equity Partners,Patient Capital,mixed,False,"Long-hold minority equity in family/entrepreneur-led middle-market firms across 'consumer, industrials, business services, healthcare, technology' — tech is one of many."
+asi-biz-exchange-eta-search-fund,ASI Biz-Exchange ETA Search Fund,Search/ETA,traditional,False,South Africa ETA backing searchers acquiring 'established private companies' from retiring owners; no sector/tech signal — operating-business succession.
+altas-partners,Altas Partners,Patient Capital,mixed,False,"Long-hold PE in 'high-quality North American businesses with untapped potential,' 1-2/year; no sector named — too thin to call tech."
+arpa-capital,Arpa Capital,Search/ETA,traditional,False,Mexico-focused acquirer of 'services sector mid-sized companies' with EBITDA >10% from retiring owners; no tech signal.
+btg-pactual-timberland-investment-group,BTG Pactual Timberland Investment Group,Patient Capital,traditional,False,"TIMO investing in 'commercial timberland assets globally' (3.3M acres) — physical forestry real assets, no tech."
+banner-ridge-partners,Banner Ridge Partners,Patient Capital,mixed,False,"PE secondaries / fund-of-funds buying LP stakes in 'niche PE managers (distressed, special situations, structured credit, turnaround)'; meta-allocator, underlying not tech."
+bridge-capital,Bridge Capital,Search/ETA,traditional,False,"First search fund in Paraguay; acquired ProAgro — 'agronomic solutions, agricultural inputs, grain storage, fertilizer' agribusiness — physical, no tech."
+burford-capital,Burford Capital,SMV,traditional,False,"Litigation finance funding 'commercial litigation, arbitration, antitrust' claims for Fortune 500 and law firms — legal-claim asset class, not tech companies."
+cdib-capital-group,CDIB Capital Group,Sovereign Capital,mixed,False,"Asia-Pacific PE, VC, and asset management across 250+ portfolio companies over 65+ years; broad multi-strategy, no specific tech signal."
+castlelake,Castlelake,SMV,traditional,False,"Asset-based private credit on hard/financial assets: jumbo mortgages, residential lending, specialty finance, consumer credit. Real assets, not tech companies."
+crayhill-capital-management,Crayhill Capital Management,SMV,traditional,False,"Asset-based specialty finance (senior facilities, structured finance) collateralized by real/financial assets across Commercial Finance, Power & Infrastructure, Real Estate, TMT, tax-equity."
+galena-asset-management,Galena Asset Management,Patient Capital,traditional,False,"Commodity trade finance and commodity-related PE affiliated with Trafigura commodity trading house. Physical commodities, not tech."
+greenbacker-capital,Greenbacker Capital,Patient Capital,traditional,False,"Independent power producer that acquires/owns/operates clean energy infrastructure assets (solar, wind, storage). Real energy assets, not software companies."
+hollyport-capital,Hollyport Capital,Patient Capital,mixed,False,"PE secondaries buying tail-end/legacy LP stakes 'across fund types and geographies' — sector-agnostic underlying holdings, no tech signal."
+icg-strategic-equity,ICG Strategic Equity,Patient Capital,mixed,False,"GP-led secondaries / single-asset continuation vehicles for sponsors' best portfolio companies; sector-agnostic, no tech-specific signal in text."
+marathon-asset-management,Marathon Asset Management,Patient Capital,traditional,False,"Opportunistic/asset-based credit across transportation, healthcare, real estate, consumer, specialty finance, CLOs. Real-economy and asset-based credit, not tech equity."
+nova-infrastructure,NOVA Infrastructure,Patient Capital,traditional,False,"Middle-market infrastructure equity in environmental services, transportation, energy, and 'digital infrastructure' (physical infra assets), not software companies."
+newview-capital,NewView Capital,Patient Capital,tech,False,Hybrid primary/secondary venture investor in 'enterprise software and fintech' growth/scale-up companies. Clearly software-sector tech.
+northleaf-capital-partners,Northleaf Capital Partners,Patient Capital,mixed,False,"Mid-market PE, private credit (incl. asset-based specialty finance) and infrastructure; includes 'venture & growth' but dominated by sector-agnostic mid-market/credit/infra."
+primary-wave-music,Primary Wave Music,Patient Capital,traditional,False,"Acquires music catalogs / IP and publishing rights (Marley, Prince, etc.). IP/royalty real assets, not a tech company."
+promised-land-opportunity-zone-fund,Promised Land Opportunity Zone Fund,Patient Capital,traditional,False,Opportunity-zone fund holding U.S. farmland (corn/soybean acreage) on fixed-rate leases. Real agricultural assets.
+slm-partners,SLM Partners,Patient Capital,traditional,False,"Real-assets manager in regenerative agriculture and forestry (croplands, grasslands, forestlands). Physical land assets."
+spuri-capital,Spuri Capital,Search/ETA,traditional,False,"Brazil search fund acquiring one mid-sized operating company; preferred sectors renewable energy, healthcare, construction, agribusiness. Buys a physical business, no tech signal."
+tree-line-capital-partners,Tree Line Capital Partners,Patient Capital,mixed,False,"Lower middle-market direct lending (term loans, unitranche) for acquisitions/recaps/refinancings; no sector or tech signal — too thin to tell economy."
+v-rde-partners,Värde Partners,Patient Capital,traditional,False,"Credit and asset-based finance: real estate lending, commercial/consumer/fund finance, corporate credit. Asset-based/real-estate credit, not tech equity."
+water-infrastructure-partners,Water Infrastructure Partners,Patient Capital,traditional,False,U.S. water infrastructure private equity holding physical water infrastructure assets. Real assets.
+xpv-water-partners,XPV Water Partners,Patient Capital,traditional,False,"Water-sector growth equity/roll-ups in engineered products, drilling services, diagnostics, nutrient management (Atlas-SSI, Weisinger, Axius Water). Physical/industrial water companies."
+african-capital-alliance,African Capital Alliance,Patient Capital,mixed,False,"Pan-African growth PE across 7 sectors plus real estate (retail/commercial/residential/hospitality) and asset management. Sector-agnostic growth + real estate, no tech focus."
+all-in-capital,All In Capital,LMV,tech,False,"Pre-seed/seed VC investing in Indian startups via a founder community, leads rounds. Startup/tech VC."
+anorak-ventures,Anorak Ventures,LMV,tech,False,Seed-stage venture firm backing 'transformative people & technology' — 120+ pre-seed/seed technology companies. Clearly tech.
+arizona-founders-fund,Arizona Founders Fund,LMV,tech,False,"Seed/early-stage fund 'dedicated to its software startups' (Allbound, Better Agency). Explicitly software."
+artha-venture-partners,Artha Venture Partners,LMV,tech,False,'India's first microVC fund house' backing early-stage/early-growth high-potential startups. Startup/tech VC.
+atento-capital,Atento Capital,Patient Capital,tech,False,"Tulsa micro-VC making direct startup + fund LP investments, incl. deep-tech LatAm startups via GridX. Startup/tech investor."
+booom,BOOOM,LMV,tech,False,"European pre-seed/seed VC in B2B/supply-chain/B2C startups (Qogita, Flatpay, SPREAD AI, Habyt). Software/marketplace startups."
+beacon-fund,Beacon Fund,SMV,mixed,False,"Private debt to Vietnamese 'missing middle' SMEs, explicitly 'not hyper-growth,' underserved by banks; no sectors or tech signal given."
+behind-genius-ventures,Behind Genius Ventures,LMV,tech,False,"Pre-seed/seed VC backing technical founders / 'technical storytellers,' incl. companies applying technology in legacy industries. Funds tech startups."
+cantos,Cantos,LMV,tech,False,"Deep-tech/'near frontier' VC: micro-fission, unmanned defense, space, biotech, materials (Radiant, Neros, Astranis). Innovation is the technology itself."
+cortado-ventures,Cortado Ventures,LMV,tech,True,"Seed-stage 'B2B tech for critical industries' (Energy, Healthcare, Manufacturing, Mobility & Logistics). Tech/SaaS serving traditional verticals."
+emblem,Emblem,LMV,tech,False,"VC partnering with European founders at (pre)seed stage; portfolio is software startups (Lovable, Synq, Volta). Clearly tech."
+eximius-ventures,Eximius Ventures,LMV,tech,False,"Pre-seed VC in Indian startups (Eka Care, Jar, Skydo — health/fintech). Startup/tech VC."
+flyover-capital,Flyover Capital,LMV,tech,False,"Seed/Series Seed venture in middle-America 'tech leaders' / software companies (Opendorse, Verusen, Snappy Kraken). Software startups."
+inflexor-ventures,Inflexor Ventures,LMV,tech,False,"Science/Engineering/Technology VC backing IP-led deep-tech, biotech, fintech founders. Tech-enabled startups."
+innova-memphis,Innova Memphis,LMV,tech,False,"Early-stage seed investor in technology, healthcare and AgTech with strong IP. Tech/healthtech/agtech startups."
+investisseurs-partenaires-i-p,Investisseurs & Partenaires (I&P),Patient Capital,mixed,False,"Impact investor financing SMEs and start-ups across ~20 Sub-Saharan countries; broad real-economy SMEs + startups, no tech focus."
+kcrise-fund,KCRise Fund,LMV,tech,False,"Early-stage VC in tech companies tied to Kansas City — healthtech, AI, vertical SaaS, construction tech. Tech startups."
+leonis-capital,Leonis Capital,LMV,tech,False,Research-driven pre-seed VC for technical founders building AI-native startups. Clearly tech/AI.
+lumis-partners,Lumis Partners,Portfolio Capital,mixed,False,"'Build-Buy-Invest' alternative-assets platform, sector & stage agnostic, in Indian businesses and funds. Sector-agnostic holdco model, no tech focus."
+magarac-venture-partners,Magarac Venture Partners,LMV,tech,False,"Early-stage (seed/Series A) Midwest VC backing 'market defining companies'; standard venture-equity tech framing, $500k-$5M checks."
+mairs-power-venture-capital,Mairs & Power Venture Capital,LMV,tech,False,"Upper-Midwest venture in Software, Business Services, Healthcare, FinTech, EdTech. Multi-sector tech (software/fintech/edtech)."
+nabventures,NABVENTURES,Sovereign Capital,traditional,False,"Funds 'agriculture, food, rural businesses and agri/rural financial services in India' - real-economy agribusiness/rural firms, not agtech software."
+nucleus-capital,Nucleus Capital,LMV,tech,False,"Backs 'Programmable Biology, Food Technology, Neo Industrials' technical teams - deep tech/biotech, core innovation is technology."
+redbud-vc,Redbud VC,LMV,tech,False,Pre-seed into 'earliest-stage generalist tech founders building massive tech companies' - funds tech startups.
+robin-capital,Robin Capital,LMV,tech,False,"Angel/seed into 'Software 3.0/AI, deeptech (robotics, space)' founders - software/AI/deep tech is the product."
+sarah-smith-fund,Sarah Smith Fund,LMV,tech,False,"Pre-seed/seed into 'AI, fintech, healthcare, generative AI' founders - AI/genAI-led tech thesis across sectors."
+sauce-vc,Sauce VC,LMV,traditional,False,"Funds 'F&B, personal care, apparel/lifestyle consumer brands' in India - physical consumer-product brands, no tech signal."
+silverton-partners,Silverton Partners,LMV,tech,False,Early-stage 'startups where technology can be used to build significant barriers' in Texas - tech is the moat/product.
+tilia-impact-ventures,Tilia Impact Ventures,Patient Capital,mixed,False,"Backs 'sector-agnostic impact-driven founders solving environmental/social challenges' - no software/tech signal, do not guess tech."
+wayfinder-ventures,Wayfinder Ventures,LMV,tech,False,"Funds startups in 'software, climate, frontier tech, AI, logistics' - tech-dominated early-stage thesis."
+irrvrntvc,irrvrntVC,LMV,tech,True,"Funds 'AdTech, Ecomm Enablement, NextGen Commerce, Vertical SaaS, Fintech, Marketplaces' - vertical SaaS/fintech serving commerce verticals."
+212,212,LMV,tech,False,"'Leading VC backing B2B tech startups in emerging markets' (Turkey, MENA) - funds tech companies."
+black-farmer-fund,Black Farmer Fund,Patient Capital,traditional,False,"Invests in 'Black farmers, herbalists, restaurant owners, caterers, food distributors' - physical food/farm businesses."
+black-sheep-capital,Black Sheep Capital,LMV,tech,False,"Funds 'SaaS, AI, regtech, fintech, marketplaces' early-stage - tech-led (SaaS/AI) thesis, not predominantly one vertical."
+bridgewest-ventures-nz,Bridgewest Ventures NZ,Venture Studio,tech,False,"Deep-tech incubator in 'Clean Tech, AI/ML, MedTech, Life Sciences, Advanced Sensors' - deep tech is the product."
+cambridge-innovation-capital,Cambridge Innovation Capital,Patient Capital,tech,False,Series A into 'Cambridge University-linked deep tech and life sciences startups' - deep tech/life sciences companies.
+climate-vc-fund-2040-ventures,Climate VC Fund (2040 Ventures),LMV,tech,True,"'Australasian climate venture capital' funding 'climate-tech startups' in water, energy, waste, agri-food - climatetech serving climate vertical."
+concrete-ventures,Concrete Ventures,LMV,tech,False,Atlantic Canadian pre-seed for founders 'building massively scalable tech businesses' - funds tech startups.
+eastend-ventures,Eastend Ventures,LMV,tech,False,Early-stage investor backing 'B2B tech companies' in Australia - funds tech firms.
+first-australians-capital,First Australians Capital,Patient Capital,traditional,False,"Blended/community capital for 'First Nations-led businesses, industry-agnostic, regional/rural' - real-economy community businesses, no tech signal."
+island-capital-partners,Island Capital Partners,LMV,mixed,False,"'We invest mostly at the pre-seed and seed' in PEI/Atlantic Canada startups - text too thin, no explicit tech signal."
+lendistry-capital-partners,Lendistry Capital Partners,Patient Capital,traditional,False,"Private/structured credit to 'U.S. SMBs, particularly underserved/minority entrepreneurs' - funds real-economy SMBs (its own platform is tech, not its targets)."
+maui-toa,Maui Toa,Patient Capital,tech,False,"VC into 'high-growth impact-led technology and innovation companies' in NZ - funds tech companies (generic, no vertical)."
+maycomb-capital,Maycomb Capital,Patient Capital,traditional,False,"Outcomes-financing for 'social enterprises in workforce, early childhood, affordable housing, healthcare access, social services' - physical/social real-economy."
+native-american-venture-fund-navf,Native American Venture Fund (NAVF),Patient Capital,traditional,False,"Diversified Tribal Enterprises: 'pharmaceutical production, specialty finance, renewable energy, e-commerce, online gaming, carbon credits' - mostly physical real-economy."
+oxford-science-enterprises,Oxford Science Enterprises,Patient Capital,tech,False,"Evergreen VC for 'Oxford spinouts in Deep Tech, Life Sciences, HealthTech' - deep tech/life sciences dominant."
+psv-preseed-ventures,PSV (PreSeed Ventures),Patient Capital,tech,False,Pre-seed venture house for 'Nordic software and deep-tech startups out of DTU' - software/deep tech companies.
+pangaea-ventures,Pangaea Ventures,Patient Capital,tech,False,"Hard-tech investor in 'materials science, chemistry, biology hard-tech companies' - deep/hard tech is the product."
+runway-rooted-fund,RUNWAY (Rooted Fund),Patient Capital,traditional,False,"Integrated capital into 'Black-owned businesses, cooperatives, social impact organizations' across U.S. - main-street/community, no tech signal."
+restorative-economies-fund-kataly-foundation,Restorative Economies Fund (Kataly Foundation),Patient Capital,traditional,False,"Integrated capital for 'land/housing stabilization, built environment infrastructure, community projects' - physical land/housing real-economy."
+sunwealth,Sunwealth,Patient Capital,traditional,False,"Project finance for 'community-based solar and storage projects' - physical clean-energy assets, not software companies."
+tricor-pacific-capital,Tricor Pacific Capital,Patient Capital,traditional,False,Family office buying 'mature durable businesses (EBITDA $5-25M) and real estate' - buyout of physical businesses/real assets.
+triptyq-capital,Triptyq Capital,LMV,tech,False,"Seed into 'tech startups in digital entertainment & interactive media (digital tools, platforms, fan engagement)' - funds tech/platforms."
+virescent-ventures,Virescent Ventures,Sovereign Capital,tech,True,"Funds 'climate tech companies: clean energy, mobility & smart cities, food & ag, circular economy' - climatetech serving climate vertical."
+bergman-beving,Bergman & Beving,Portfolio Capital,traditional,False,"Serial acquirer of 'niche technology companies' in Machinery & Equipment, Safety Tech, PPE, Utilities - physical industrial products, not software."
+better-society-capital,Better Society Capital,Patient Capital,traditional,False,"Social-impact investor across 'housing, economic opportunity, climate and energy, health' via fund managers - real-economy/social sectors, no tech signal."
+boston-omaha,Boston Omaha,Portfolio Capital,traditional,False,"Holdco operating 'broadband, billboards, surety insurance, asset management' - physical infrastructure/insurance businesses."
+bronze-valley,Bronze Valley,LMV,tech,False,"Funds under-resourced founders in 'SaaS, consumer, health, marketplace, cybersecurity' - SaaS/marketplace/cyber-led tech thesis."
+cherokee-investment-management,Cherokee Investment Management,Sovereign Capital,traditional,False,"Strategic acquisitions held in perpetuity of 'MBE businesses; utilities, financial services, healthcare, energy' - physical/services holdco."
+compass-diversified,Compass Diversified,Portfolio Capital,traditional,False,"Publicly-traded holdco doing 'platform + add-on acquisitions of middle-market companies' - diversified physical businesses, no tech signal."
+development-bank-of-wales,Development Bank of Wales,Sovereign Capital,mixed,False,"Economy-wide Welsh finance: 'starting, growing, buying, tech ventures, property development, going green' - broad mandate incl. tech and property."
+eos-advisory,Eos Advisory,LMV,tech,False,"Invests in and commercialises 'knowledge intensive science and technology companies' (diagnostics, clean energy); innovation/tech is the core product."
+fintech-ventures-fund,Fintech Ventures Fund,LMV,tech,True,"Funds 'early-stage North American fintech (insurtech, wealthtech, banking, lending)' — software/platforms serving financial-services verticals."
+g-o-a-t-brand-labs,G.O.A.T Brand Labs,Portfolio Capital,traditional,False,"Acquires/rolls up Indian D2C consumer brands in the 'lifestyle space'; targets are physical consumer-product brands, not software."
+hggc,HGGC,Portfolio Capital,mixed,False,"Mid-market PE across 'technology, business services, financial services, and consumer sectors' — spans tech and non-tech."
+halcyon-futures,Halcyon Futures,Patient Capital,tech,False,"Backs founders 'building in AI safety, biosecurity, critical cybersecurity' — AI/cyber are the core technology."
+idun-industrier,Idun Industrier,Portfolio Capital,traditional,False,Permanent owner of 'small and medium sized high-quality Swedish companies that are market leaders in small niches' — physical niche businesses.
+judges-scientific,Judges Scientific,Portfolio Capital,traditional,False,"Serial acquirer of 'scientific instrument businesses' — physical instrument manufacturers, not software-led."
+lifco,Lifco,Portfolio Capital,traditional,False,"Acquires 'market-leading niche businesses (Dental, Demolition & Tools, Systems Solutions)' — physical niche operating companies."
+metaplanet,Metaplanet,Patient Capital,tech,False,"Evergreen firm backing 'deep-tech mission-driven founders in AI & Robotics, Life Sciences, Enterprise, Crypto' — technology is the core."
+nexphase-capital,NexPhase Capital,Portfolio Capital,mixed,False,"Mid-market PE in 'consumer, healthcare, and software & technology' — mix of tech and non-tech sectors."
+northern-gritstone,Northern Gritstone,Patient Capital,tech,False,Invests in 'deep technology and life sciences spinouts' from Northern England universities — science/tech is the core product.
+nucleation-capital,Nucleation Capital,LMV,mixed,False,"Funds 'advanced nuclear, carbon capture, grid enhancement ventures' — deep-tech energy hardware; scale comes from physical energy assets, not software."
+oss-capital,OSS Capital,LMV,tech,False,Exclusively backs 'commercial open source software (COSS) startup founders' — pure software.
+outset-capital,Outset Capital,LMV,tech,False,"Backs 'AI, devtools, robotics, future of work founders' — technology is the core product."
+overline,Overline,LMV,tech,False,Inception-to-seed startup VC writing 'first checks' to Southeast founders; canonical early-stage tech-startup venture.
+penta-capital,Penta Capital,Portfolio Capital,traditional,False,"UK mid-market PE buy-outs of 'businesses with leading niche positions, proven profitable growth' — no tech signal; established SMB buyouts."
+razor-group,Razor Group,Portfolio Capital,traditional,False,"Aggregator roll-up of 'Amazon FBA / e-commerce brands' — physical consumer-product brands, not software."
+soundcore-capital-partners,Soundcore Capital Partners,Portfolio Capital,traditional,False,"Buy-and-build PE in 'Industrial Services, Specialty Manufacturing, Value-Added Distribution' — physical lower-middle-market businesses."
+teqnion,Teqnion,Portfolio Capital,traditional,False,Serial acquirer of 'robust industrial companies operating in narrow technology niches' — physical industrial subsidiaries.
+wealth-partners-capital-group,Wealth Partners Capital Group,Patient Capital,traditional,False,"Invests M&A/growth capital into 'Registered Investment Advisors (RIAs)' — wealth-management service firms, not software."
+1337-ventures,1337 Ventures,LMV,tech,False,Early-stage VC + accelerator for 'Southeast Asia startups seeking product-market fit' — tech-startup funder.
+ahl-venture-partners,AHL Venture Partners,Patient Capital,mixed,False,"African businesses across 'Climate Action, Financial Inclusion, and Food & Agriculture' — mixes fintech with physical agri/climate sectors."
+arm-harith-infrastructure-investment,ARM-Harith Infrastructure Investment,Patient Capital,traditional,False,"Infrastructure PE in 'Power & Energy Transition, Transport & Logistics, Water/Waste' projects — physical infrastructure."
+activat-vc,Activat VC,LMV,tech,False,Funds 'IT startups in Kazakhstan / Central Asia at pre-seed and seed' — IT/software startups.
+anchorless-bangladesh,Anchorless Bangladesh,LMV,tech,False,Early-stage 'Venture Capital for Bangladesh' backing founders with transformative ideas — startup-tech venture funder.
+bank-of-north-dakota,Bank of North Dakota,Sovereign Capital,traditional,False,"State development bank: 'ag loans, business loans, infrastructure revolving loan funds, student loans' — overwhelmingly traditional lending (small VC fund aside)."
+catalyst-fund,Catalyst Fund,LMV,tech,True,Funds founders 'building tech solutions for climate adaptation in Africa (fintech for climate resilience)' — fintech/climate-tech serving a vertical.
+cehta-capital,Cehta Capital,Patient Capital,mixed,False,"Funds 'circular economy, renewable energy, waste valorization, agrovoltaics, desalination' plus startup verticals — mix of physical projects and startups."
+dob-equity,DOB Equity,Patient Capital,traditional,False,"East Africa impact equity in 'Sustainable Food Systems, Renewable Energy, Water & Sanitation Services' — physical real-economy sectors."
+franchise-equity-partners,Franchise Equity Partners,Patient Capital,traditional,False,Provides growth capital to 'best-in-class franchise operators' — physical franchise operating businesses.
+goodwell-investments,Goodwell Investments,Patient Capital,mixed,False,"African companies in 'agriculture, financial services, mobility and logistics' — mixes financial services with physical agri/mobility."
+hadley-capital,Hadley Capital,Portfolio Capital,traditional,False,"'Small Business Private Equity ... We Buy Small Companies' — buyouts of family/founder-owned small businesses, no tech signal."
+hadley-family-capital,Hadley Family Capital,Search/ETA,traditional,False,Search-fund investor backing 'acquisition entrepreneurs targeting small and family-owned businesses' — physical SMB acquisition.
+healthcap-africa,HealthCap Africa,LMV,tech,True,Pre-Series A VC into 'healthtech and fintech startups' across Africa — software serving health/finance verticals.
+hidden-valley-capital,Hidden Valley Capital,Search/ETA,traditional,False,"Owner-operator group acquiring 'lower & middle market businesses' to give them a permanent home — physical SMBs, no tech signal."
+impacta-vc,Impacta VC,LMV,tech,True,"Seed VC for LATAM founders in 'insurance, mental health, agtech, accessibility' — predominantly tech/software serving verticals (insurtech, agtech)."
+japan-bank-for-international-cooperation-jbic,Japan Bank for International Cooperation (JBIC),Sovereign Capital,traditional,False,"Policy bank financing 'energy/resources/infrastructure projects globally, hydrogen/clean energy, export loans' — overwhelmingly infrastructure/trade finance."
+lereko-investments,Lereko Investments,Patient Capital,traditional,False,"Holding company in 'automotive, mining, property management, renewable energy, gaming, logistics' — physical/diverse real-economy assets."
+most-ventures,MOST Ventures,LMV,tech,False,Seed/Series A VC 'empowering Central Eurasian tech founders' — explicit tech-startup funder.
+mass-general-brigham-ventures,Mass General Brigham Ventures,Patient Capital,mixed,False,"Healthcare-system CVC, but page is 'navigation-only' with funded-target sectors 'unspecified' — text too thin to call tech."
+mille-lacs-corporate-ventures,Mille Lacs Corporate Ventures,Portfolio Capital,traditional,False,"Operates physical businesses: 'gaming, hospitality, government contracting, tribal economy investing, cultivation' — real-asset operating companies, no software/platform core."
+new-mexico-state-investment-council,New Mexico State Investment Council,Sovereign Capital,mixed,False,"Multi-asset sovereign fund: 'public equity / fixed income / private equity / real estate / NM-resident venture capital' — spans real estate and VC, not tech-specific."
+old-mutual-private-equity,Old Mutual Private Equity,Patient Capital,mixed,False,"Generalist PE in 'medium to large companies operating predominantly in South Africa across all sectors' — no tech signal, all-sector."
+patamar-capital,Patamar Capital,Patient Capital,mixed,False,"Funds 'affordable housing, climate, healthcare, education, agriculture, SME digitization' — mix of physical sectors and digitization; genuinely both."
+persistent-energy,Persistent Energy,Patient Capital,traditional,False,"'Venture Builder' for 'solar, off-grid energy, e-mobility, clean-tech' in Africa — physical energy infrastructure/hardware, not a software platform."
+pomona-impact,Pomona Impact,Patient Capital,mixed,False,"Funds 'growth-stage social enterprises'; accelerators in 'Greentech, Agri Food Systems, Renewables' — impact/physical-leaning, no software signal, ambiguous."
+roche-venture-fund,Roche Venture Fund,Patient Capital,mixed,False,"Invests in 'pharmaceuticals, diagnostics and digital health' — pharma/diagnostics are bio/physical; digital health is tech. Genuinely both."
+sp-ventures,SP Ventures,Patient Capital,tech,True,"'AgFoodTech and ClimateTech founders ... agritech, agri-fintech' — software/platforms serving agriculture (vertical tech)."
+salkantay-ventures,Salkantay Ventures,LMV,tech,True,"Funds 'EdTech, JobTech, HealthTech, Fintech, Proptech, SaaS, Agtech' — software verticals serving traditional sectors."
+sango-capital,Sango Capital,Patient Capital,traditional,False,"Mid/upper-middle-market businesses in 'food value chain, energy/power, infrastructure' across Africa — physical real-economy sectors."
+seedstars-africa-ventures,Seedstars Africa Ventures,LMV,mixed,False,"Early-stage across 'fintech, energy, telecom, agritech, e-mobility' — fintech/agritech are software but energy/telecom/e-mobility are physical; both."
+smash-vc,Smash.vc,Search/ETA,mixed,False,"Backs SMB acquisitions of 'towing, SaaS, profitable businesses' by searchers — mix of physical SMBs and SaaS; SMB ETA capital."
+tana-africa-capital,Tana Africa Capital,Patient Capital,mixed,False,Evergreen 'African companies (page sparse on sector specifics)' — text too thin to determine tech vs physical.
+verod-kepple-africa-ventures,Verod-Kepple Africa Ventures,LMV,tech,True,"Backs Pan-African 'tech founders ... embedded finance, fintech, payments' at Series A — software/fintech serving the continent (vertical tech)."
+argosy-private-equity,Argosy Private Equity,Portfolio Capital,traditional,False,"Lower-middle-market 'advanced manufacturing and business services companies' — physical manufacturing/services, no tech-product core."
+atlantic-street-capital,Atlantic Street Capital,Portfolio Capital,traditional,False,"Operationally focused PE in generic 'lower middle market businesses run by entrepreneurs' — control buyout of mature companies, no tech signal."
+boyne-capital,Boyne Capital,Portfolio Capital,traditional,False,"Lower-middle-market buyout of 'companies whose founders and families are still deeply involved' — mature real-economy businesses, no tech signal."
+copley-equity-partners,Copley Equity Partners,Patient Capital,traditional,False,"Evergreen family office buying 'industry-agnostic' lower-middle-market companies with '$2-$25M in earnings/free-cash flow' — mature cash-flow businesses, no tech signal."
+huron-capital,Huron Capital,Portfolio Capital,traditional,False,"Buy-and-build in 'infrastructure services, facility services, residential services' — physical services businesses."
+methuselah-fund,Methuselah Fund,Patient Capital,traditional,False,"Longevity 'biotech and medtech' (organ regeneration, senescent cell clearance, cryopreservation) — innovation is biological, not software/data/AI/platform."
+northstar-capital,Northstar Capital,SMV,traditional,False,"Unitranche/mezzanine/equity to generic 'lower middle market sponsor-backed businesses' — debt financing of mature companies, no tech signal."
+southfield-capital,Southfield Capital,Portfolio Capital,traditional,False,"Partners with 'entrepreneur-built business services companies ... $4-20M EBITDA' — physical/services businesses, no tech-product core."
+spell-capital-partners,Spell Capital Partners,Patient Capital,traditional,False,"Family-office control equity + mezzanine in generic 'lower middle market companies' — mature-company buyout, no tech signal."
+what-if-ventures,What If Ventures,LMV,mixed,False,"Funds 'mental health, digital health, primary care, defense tech' (Alto/Atai neuroscience) — digital/defense tech mixed with bio/care; both."
+white-wolf-capital,White Wolf Capital,Portfolio Capital,traditional,False,Equity+credit 'built exclusively for the lower middle market' with no sector or tech signal — mature-company capital across the stack.
+1st-commercial-credit,1st Commercial Credit,SMV,traditional,False,"Factoring/ABL for SMBs in 'staffing, manufacturing, trucking, construction, healthcare, distribution' — finance for physical real-economy SMBs."
+acumen-resilient-agriculture-fund,Acumen Resilient Agriculture Fund,Sovereign Capital,traditional,False,"'Agri Impact Fund' investing in African 'agribusinesses' for smallholder-farmer climate resilience — physical agriculture, not agtech software."
+agri-frontier,Agri Frontier,Patient Capital,traditional,False,"Agri Growth Fund into 'African agri-SMEs ... women-led agribusinesses' — physical agriculture businesses, no tech-product core."
+astanor-ventures,Astanor Ventures,Patient Capital,mixed,False,"Agrifood 'from soil and sea to gut' — biodiversity, soil health, water; spans physical regenerative food system and agtech; genuinely both."
+bansk-group,Bansk Group,Portfolio Capital,traditional,False,"Builds 'distinctive consumer brands in beauty, consumer health, food & beverage, household products' (amika, PetIQ, Red's) — physical consumer products."
+clear-frontier-ag-management,Clear Frontier Ag Management,Patient Capital,traditional,False,"'Organic farmland investment manager' acquiring '35,000+ acres' of row-crop farmland — direct real-asset (farmland) ownership."
+commercial-credit-group,Commercial Credit Group,SMV,traditional,False,"'Heavy equipment finance lender' for 'construction, manufacturing, transportation, waste' — lending against physical equipment assets."
+commercial-finance-partners,Commercial Finance Partners,SMV,traditional,False,"Non-bank direct lender to SMBs in 'staffing, manufacturing, medical, transportation, construction' — finance for physical real-economy businesses."
+expansion-capital-group,Expansion Capital Group,SMV,traditional,False,"Working-capital funder across 700+ main-street industries 'auto repair, cosmetology, restaurants, retail, landscaping' — physical SMB finance."
+gibraltar-business-capital,Gibraltar Business Capital,SMV,traditional,False,"'Asset-Based Lending Partner' for lower-mid-market 'food manufacturing, consumer, services' on AR/inventory/M&E collateral — physical-asset lending."
+hatch-blue,Hatch Blue,LMV,mixed,False,"Aquaculture/seafood value chain: 'next-generation Farming Technology Innovations, Blue Carbon, Alternative Seafood' — physical farming plus aquaculture tech; both."
+hilton-foundation-program-related-investments,Hilton Foundation Program-Related Investments,Patient Capital,mixed,False,"PRIs (loans/equity) to 'charitable and commercial organizations' in Foundation initiative areas — sector-agnostic mission capital, no tech signal."
+mce-social-capital,MCE Social Capital,Patient Capital,traditional,False,"Loan guarantees/debt to 'Financial Service Providers + Small and Growing Businesses' in emerging markets — microfinance/SGB real-economy lending, no tech signal."
+mars-investment-accelerator-fund-iaf,MaRS Investment Accelerator Fund (IAF),Sovereign Capital,tech,False,"Backs 'founders building breakthrough technology companies' from day zero through seed — general (horizontal) tech, not a single vertical."
+maine-venture-fund,Maine Venture Fund,Sovereign Capital,mixed,False,"Equity into Maine companies across 'food & beverage, technology, manufacturing, healthcare/SaaS' — mix of physical sectors and tech/SaaS; both."
+massachusetts-capital-resource-company,Massachusetts Capital Resource Company,Patient Capital,traditional,False,Mezzanine/long-term debt + late-stage venture capital to generic Massachusetts-based businesses for acquisitions/buyouts/recaps; no tech signal.
+massachusetts-clean-energy-center-masscec,Massachusetts Clean Energy Center (MassCEC),Sovereign Capital,mixed,False,Funds 'climatetech industry' and 'hard technologies' but climatetech spans physical energy hardware/infrastructure; mix of tech and real assets.
+ny-green-bank,NY Green Bank,Sovereign Capital,traditional,False,"Construction/predevelopment/interconnection loans to build out 'clean energy and renewable infrastructure'; finances physical energy assets, not software."
+northpoint-commercial-finance,Northpoint Commercial Finance,SMV,traditional,False,"Inventory/floorplan/asset-based financing for marine, RV, housing, powersports, ag, construction dealers; physical-goods channel finance."
+ocean-14-capital,Ocean 14 Capital,Patient Capital,traditional,False,"Blue-economy growth equity into aquaculture, alternative protein, fisheries, circular plastics; physical ocean/food businesses, not software."
+peakbridge,PeakBridge,Patient Capital,mixed,False,"FoodTech/NutriTech 'scalable, protectable technologies' but food tech mixes software and physical products/ingredients; not clearly software-only."
+penny-jar-capital,Penny Jar Capital,LMV,tech,False,Seed founders 'using AI to reimagine how the real world works'; explicit AI/software focus.
+piedmont-business-capital,Piedmont Business Capital,Patient Capital,traditional,False,CDFI/CDC making SBA 504 loans for owner-occupied commercial real estate and small business owners; physical real-economy lending.
+reinvestment-fund,Reinvestment Fund,Patient Capital,traditional,False,"CDFI financing childhood education, housing, food systems, K-12, commercial real estate; community/physical-asset lending, no tech."
+revere-capital,Revere Capital,SMV,traditional,False,Private credit to non-bank lenders and lower-middle-market commercial real estate bridge loans; specialty finance against physical assets.
+slr-capital-partners,SLR Capital Partners,SMV,traditional,False,"Direct lending to U.S. middle-market: manufacturing, healthcare, equipment leases, ABL; asset-based/physical-economy credit."
+sallyport-commercial-finance,Sallyport Commercial Finance,SMV,traditional,False,"Factoring/ABL for manufacturing, oil & gas, apparel, food & beverage, staffing, wholesale; receivables finance for physical businesses."
+sandbridge-capital,Sandbridge Capital,Patient Capital,traditional,False,"Consumer growth equity into luxury, beauty, health & wellness branded consumer companies; physical consumer brands."
+social-finance,Social Finance,Patient Capital,traditional,False,"Outcomes-based financing for workforce, education, health, housing projects; social/public-sector capital, no tech companies."
+tedco-maryland-technology-development-corporation,TEDCO (Maryland Technology Development Corporation),Sovereign Capital,tech,False,Funds 'early-stage technology and life sciences companies in Maryland'; explicit technology-company mandate.
+the-veteran-fund,The Veteran Fund,LMV,tech,False,Seed equity into 'high-growth critical technology startups' with 100X potential; explicit tech-startup focus.
+the-yield-lab,The Yield Lab,LMV,mixed,False,Early-stage agrifoodtech; agrifood mixes software/platforms with physical bioscience and food production; not clearly software-only.
+thirty-five-ventures-35v,Thirty Five Ventures (35V),Patient Capital,mixed,False,"Startups in fintech/AI/health plus equity in physical sports teams and leagues (Major League Pickleball, PSG); genuinely both."
+total-impact-capital,Total Impact Capital,Patient Capital,traditional,False,"Impact vehicles for basic human needs—health services, water/sanitation, sustainable agriculture via NGOs/social enterprises; not tech."
+unovis-asset-management,Unovis Asset Management,Patient Capital,traditional,False,"Invests across alternative-protein value chain—plant-based, cellular ag, novel proteins; physical food-production companies."
+veg-capital,Veg Capital,Patient Capital,traditional,False,"Early-stage capital into plant-based/cultivated meat, dairy, egg, seafood replacement companies; physical food-product makers."
+white-oak-global-advisors,White Oak Global Advisors,SMV,traditional,False,"Specialty finance/ABL, factoring, equipment leasing, C-PACE, trade finance to SMEs across industrials, transport, energy, real estate."
+whitehorse-finance,WhiteHorse Finance,SMV,traditional,False,"BDC making senior secured loans to lower-middle-market companies ($50M-$350M EV); generalist private-credit lending, no tech signal."
+wisconsin-investment-fund,Wisconsin Investment Fund,Sovereign Capital,mixed,False,"Fund-of-funds LP commitments to seed/early-stage Wisconsin VC managers; underlying targets generic startups, no explicit tech focus."
+ecapital,eCapital,SMV,traditional,False,"Factoring/ABL/supply-chain/freight finance to SMBs across 80+ industries (healthcare, staffing, transportation); physical-business lending."
+a-p-moller-holding,A.P. Moller Holding,Patient Capital,traditional,False,"Holdco owning Maersk, Danske Bank, Unilabs, offshore/energy/shipping/packaging; principal equity in physical operating businesses."
+ananda-impact-ventures,Ananda Impact Ventures,Patient Capital,mixed,False,"Frontier impact tech spanning decarbonisation, energy, FemTech, NatureTech, biosecurity, blue economy; mixes software and physical/bio tech."
+axon-partners-group,Axon Partners Group,LMV,tech,False,Growth/ClimaTech and funds-of-VC-funds 'empowering opportunities in technology and innovation'; explicit technology-company focus.
+borski-fund,Borski Fund,LMV,mixed,False,"Venture capital for women-led/diverse teams to reduce gender gap; no stated sector/tech focus, too thin to call tech."
+camber-creek,Camber Creek,LMV,mixed,True,Funds proptech/CRE-finance software (tech-for-vertical) AND directly buys cash-flowing real estate; explicitly both per self-description.
+change-ventures,Change Ventures,LMV,mixed,False,"Pre-seed/seed backing 'ambitious Baltic founders' with global-scale teams; no explicit sector/tech signal in text, too thin to call tech."
+coparion,Coparion,Sovereign Capital,tech,False,VC co-investments into 'young German technology companies' across all tech industries; explicit technology mandate.
+educapital,Educapital,LMV,tech,True,"Europe's largest Edtech & Future-of-Work VC; funds software/platforms (K12, higher ed, skills, talent) serving the education vertical."
+first-momentum-ventures,First Momentum Ventures,LMV,mixed,False,"Pre-seed deep tech: software infra & AI/ML but also climate/energy, manufacturing/robotics, aerospace hardware; mixes software and physical."
+foreground-capital,Foreground Capital,LMV,mixed,False,"Women's health across life sciences, digital health, services; digital health is tech but life sciences/services span physical/clinical."
+indico-capital-partners,Indico Capital Partners,LMV,mixed,False,Iberian 'tech companies' plus ocean-related SMEs/startups for marine ecosystems; tech focus diluted by physical blue-economy SMEs.
+innogest-capital,Innogest Capital,LMV,mixed,False,"Invests in 'Technology and Healthcare companies'; healthcare may include physical/clinical, text too thin to isolate software-only."
+inveready,Inveready,Patient Capital,mixed,False,"Spanish financial-services firm with six alternative strategies and wealth management across small/mid-market; generalist, no tech focus."
+iron-wolf-capital,Iron Wolf Capital,LMV,mixed,False,"Deep tech/AI/defence: AI/robotics/photonics software but also pharma, agritech, hardware; mixes software and physical/bio tech."
+kirkbi,KIRKBI,Patient Capital,traditional,False,Holding company of the LEGO Group and family operating businesses; principal equity in physical toy/operating companies.
+learn-capital,Learn Capital,LMV,tech,True,"Edtech specialty VC; backs learning platforms, curriculum, AI for work (Coursera, Udemy, Andela) — software serving the education vertical."
+luxempart,Luxempart,Portfolio Capital,mixed,False,Generalist listed investment company in 'private and listed companies' across Benelux/France/Germany; no tech-sector signal.
+mustard-seed-maze,Mustard Seed MAZE,Patient Capital,mixed,False,"Impact VC across mental health, workforce inclusion, climate tech, circular economy, social housing — mix of tech and physical/social themes."
+oneragtime,OneRagtime,LMV,tech,False,"Funds 'AI-augmented platforms, deeptech and AI, creator economy, marketplaces, fintech' — horizontal software/AI startups."
+p101-ventures,P101 Ventures,LMV,mixed,False,'Italian VC ecosystem'; backs 'people committed to changing the world' — no explicit software/digital sector word in text.
+pitchdrive,Pitchdrive,LMV,tech,False,"Backs 'B2B tech, e-commerce and software-driven hardware'; horizontal early-stage software startups."
+plexo-capital,Plexo Capital,LMV,mixed,False,"Fund-of-funds + direct into 'category-defining companies... building the future'; generic VC platitudes, no tech-sector word."
+practica-capital,Practica Capital,LMV,tech,True,"Baltic VC; portfolio 'BioTech, MedTech, SaaS, AI, Marketplace/Ecommerce, FinTech/AgTech' — includes named vertical-tech (fintech/medtech/agtech)."
+reach-capital,Reach Capital,LMV,tech,True,"Edtech VC across 'learning, health, and work' (Replit, Stepful) — software serving education/health verticals."
+ring-capital,Ring Capital,Patient Capital,mixed,False,"Impact firm: 'low-carbon economy, inclusive services, sustainable agriculture'; mix of tech and physical/infrastructure themes."
+senovo,Senovo,LMV,tech,False,"'B2B software/SaaS, AI-first products in cybersecurity, industrial tech, open source, infrastructure' — horizontal B2B SaaS, no vertical focus."
+shorooq-partners,Shorooq Partners,LMV,tech,False,"MENA VC in 'Fintech, Software, Frontier Tech, Platform'; software-dominant though fintech present, mixed horizontal/vertical, default false."
+spicehaus-partners,Spicehaus Partners,LMV,tech,True,"Swiss B2B software VC: 'fintech, proptech, big data, robotics, cybersecurity' — names fintech/proptech vertical-tech."
+wamda-capital,Wamda Capital,Patient Capital,mixed,False,Evergreen MENA fund backing 'transformational businesses'; no explicit software/digital sector word in text.
+advent-partners,Advent Partners,Patient Capital,mixed,False,'Growth-focused private equity in Australia' backing 'market-leading Australian companies to scale'; no tech-sector signal.
+cox-family-holdings,Cox Family Holdings,Patient Capital,traditional,False,"Operating companies in 'agricultural, turf and ornamental, and industrial vegetation markets, plus real assets' — physical real-economy businesses."
+creadev,Creadev,Patient Capital,mixed,False,"Family office into high-potential PMEs in 'santé (health), alimentation (food), and climat (climate)' — mostly physical SMEs, no software signal."
+gresham-capital-partners,Gresham Capital Partners,Patient Capital,mixed,False,"Growth capital to 'leading growth companies' in Australia; generic growth PE, no tech-sector signal."
+jab-holding-company,JAB Holding Company,Patient Capital,traditional,False,"Long-hold ownership of consumer brands and life insurance (Keurig Dr Pepper, JDE Peet's, NVA) — physical consumer/insurance businesses."
+metrics-credit-partners,Metrics Credit Partners,SMV,traditional,False,"Non-bank private credit to 'corporate borrowers, real estate'; lends to general corporates and property, no tech focus."
+ngai-tahu-holdings,Ngai Tahu Holdings,Patient Capital,traditional,False,"Iwi-owned subsidiaries in 'primary industries, property, tourism' (Farming, Seafood, Property, Tourism) — physical real-economy assets."
+oceania-capital-partners,Oceania Capital Partners,Portfolio Capital,mixed,False,"Permanent-capital PE in 'consumer brands, industrial services, data, sports media' — mostly physical businesses plus data."
+psp-partners,PSP Partners,Patient Capital,mixed,False,Buyouts of 'advanced-industrials and business/tech-services'; also 'high-growth B2B software' plus 'multifamily and industrial real estate' — genuinely both.
+patricia-industries,Patricia Industries,Patient Capital,traditional,False,"Long-hold ownership of operating companies (Mölnlycke, Permobil, Piab, BraunAbility) — physical medical-device/industrial manufacturers."
+pritzker-private-capital,Pritzker Private Capital,Patient Capital,traditional,False,Buyouts of middle-market family companies in 'manufactured products and services' — physical real-economy businesses.
+reuben-brothers,Reuben Brothers,Patient Capital,traditional,False,"Direct ownership of 'luxury hotels, racecourses, Newcastle United FC, real estate, shipping, aviation' — physical/real-asset businesses."
+skion,SKion,Patient Capital,mixed,False,"Mittelstand stakes in 'industrial goods, specialty chemicals, electrical engineering, optics, renewables, IT, medtech, water technology' — industrial plus IT/medtech."
+tanarra-capital,Tanarra Capital,Patient Capital,mixed,False,"'Sector-agnostic alternative asset strategies' across Asia Pacific with a VC sleeve (Tin Alley Ventures); diversified, not tech-specific."
+tattarang,Tattarang,Patient Capital,mixed,False,"Family office across 'Agri-Food, Energy, Health, Technology, Consumer, Property, Resources' (R.M.Williams, wind farm) — mostly physical plus a tech sleeve."
+the-olayan-group,The Olayan Group,Patient Capital,traditional,False,"Operating companies in 'F&B, Restaurants, Health & Personal Care, Energy Services' plus real estate and fixed income — physical/financial assets."
+third-sphere,Third Sphere,LMV,mixed,False,"Climate/systems-change: 'clean energy, sustainable cities, clean water, transportation' — mix of tech and physical infrastructure themes."
+tsao-family-office,Tsao Family Office,Patient Capital,mixed,False,"Diversified allocator across 'equities, private equity, credit, real estate' with impact themes; multi-asset, not tech-specific."
+wireframe-ventures,Wireframe Ventures,LMV,tech,False,"Seed VC in 'climate, biology/biotech, AI/automation, healthcare, EV' (Mammoth Bio, SPAN, Electriphi) — technology to build a better world."
+catalyst-romania,Catalyst Romania,LMV,tech,False,"Backs 'tech & tech-enabled services' — enterprise IT, vertical apps, e-commerce, marketplaces, platforms; software-centric growth investor."
+cintrifuse-capital,Cintrifuse Capital,LMV,tech,False,"Backs 'high-growth Cincinnati startups' plus national VC funds; portfolio is concretely software (Narratize, Pay Theory, Soundtrace)."
+fidelis-ventures,Fidelis Ventures,Patient Capital,mixed,False,"Faith-aligned: 'real estate development + venture capital funds' backing non-profits, startups, educational institutions — mix of real estate and VC."
+lbbw-venture-capital,LBBW Venture Capital,Sovereign Capital,tech,True,"Backs 'disruptive IT and life science' — enterprise software, IoT, AI/ML, MedTech, Healthcare IT, fintech; names medtech/fintech verticals."
+numus-financial,Numus Financial,LMV,mixed,False,"Names 'clean tech, SaaS, biotech/healthcare' but also 'roll-ups of fragmented industries' — a traditional signal alongside tech, genuinely both."
+one-way-ventures,One Way Ventures,LMV,tech,False,"Seed VC backing immigrant founders of 'high-impact global companies' (Tive, Buddy.ai, Chipper Cash) — software/marketplace startups."
+presto-ventures,Presto Ventures,LMV,tech,False,"Deeptech/defense VC in 'security, defense, aerospace, dual-use' where 'software alone cannot solve' — frontier-tech startups, horizontal."
+tecpier,TecPier,LMV,tech,True,"Funds 'early-stage B2B tech startups in maritime, logistics, and supply chain' (named SaaS firms) — software serving traditional verticals."
+blue-owl-capital,Blue Owl Capital,SMV,mixed,False,"Text is only 'mega-pe-scope-review' placeholder; no description of what it funds, so cannot determine economy."
+keensight-capital,Keensight Capital,SMV,mixed,False,Text is only 'mega-pe-scope-review' placeholder; no self-description of funded companies — too thin to judge tech.
+anamcara-capital,Anamcara Capital,LMV,tech,False,Solo-GP micro VC investing in 'B2B software/AI' — clearly funds software/AI startups.
+cambrian-ventures,Cambrian Ventures,LMV,tech,True,"'Fintech-focused pre-seed/seed' — funds fintech software, tech serving a traditional financial sector."
+capitala-group,Capitala Group,SMV,mixed,False,"'Lower middle market private credit and equity firm' — LMM with no tech signal; never classified tech, economy unclear."
+enza-capital,Enza Capital,LMV,mixed,False,Pan-Africa micro VC (pre-seed to Series B) with no software/sector signal in text — too thin to assume tech.
+landscape-workshop,Landscape Workshop,Portfolio Capital,traditional,False,"'Commercial landscaping acquisition platform' — buys/operates physical landscaping businesses, real-economy services."
+mission-pet-health,Mission Pet Health,Portfolio Capital,traditional,False,"'Veterinary practice roll-up platform' — acquires physical vet practices, a real-economy services roll-up."
+sellerx,SellerX,Portfolio Capital,traditional,False,"'Amazon FBA brand aggregator / house of brands' — buys physical consumer-goods brands, not software companies."

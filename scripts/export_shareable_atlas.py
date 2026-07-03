@@ -638,22 +638,27 @@ def build_report(db_path: Path, export_dir: Path) -> tuple[Path, Path, Path]:
     rank_by_entity = {row["entity_id"]: row for row in ranked}
 
     export_claims_csv(csv_path, entities, claims_by_entity)
-    html_path.write_text(
-        render_html(
-            asset_classes=asset_classes,
-            asset_counts=asset_counts,
-            instrument_mappings=instrument_mappings,
-            status_counts=status_counts,
-            entities=entities,
-            claims=claims,
-            claims_by_entity=claims_by_entity,
-            rank_by_entity=rank_by_entity,
-            source_count=source_count,
-            paper_ready_count=paper_ready_count,
-            generated_at=generated_at,
-        ),
-        encoding="utf-8",
+    from boundary_appendix_render import load_boundary_appendix, render_appendix_sections
+    _atlas_html = render_html(
+        asset_classes=asset_classes,
+        asset_counts=asset_counts,
+        instrument_mappings=instrument_mappings,
+        status_counts=status_counts,
+        entities=entities,
+        claims=claims,
+        claims_by_entity=claims_by_entity,
+        rank_by_entity=rank_by_entity,
+        source_count=source_count,
+        paper_ready_count=paper_ready_count,
+        generated_at=generated_at,
     )
+    _appendix = load_boundary_appendix()
+    if _appendix:
+        _marker = '<section id="instrument-providers">'
+        _atlas_html = _atlas_html.replace(
+            _marker, render_appendix_sections(_appendix) + "\n\n    " + _marker, 1
+        )
+    html_path.write_text(_atlas_html, encoding="utf-8")
     cover_note_path.write_text(
         render_cover_note(
             entity_count=len(entities),

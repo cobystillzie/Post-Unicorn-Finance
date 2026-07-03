@@ -319,6 +319,25 @@ CLASS_KEYWORDS = {
         "independent sponsor",
         "fundless sponsor",
         "search vehicle",
+        # Expansion 2026-05-28: SMB succession + owner-operator vocabulary
+        "owner-operator",
+        "owner operator",
+        "owner-led",
+        "owner led",
+        "succession",
+        "succession planning",
+        "buy and grow",
+        "buy-and-grow",
+        "take over",
+        "owner transition",
+        "smb investor",
+        "smb buyer",
+        "lower middle market",
+        "lower-middle-market",
+        "main street",
+        "main street business",
+        "operating partner",
+        "operator partner",
     ],
     "Sovereign Capital": [
         "sovereign",
@@ -472,6 +491,23 @@ CLASS_KEYWORDS = {
         "micro VC",
         "emerging manager",
         "emerging fund",
+        # Expansion 2026-05-28: operator-led + thesis-led + first-check language
+        "first check",
+        "first checks",
+        "writing checks",
+        "small checks",
+        "thesis-driven",
+        "thesis driven",
+        "founder-first",
+        "founder first",
+        "ex-operator",
+        "ex operator",
+        "fund i",
+        "fund one",
+        "rolling vehicle",
+        "scout fund",
+        "syndicate",
+        "writing first checks",
     ],
 }
 
@@ -1536,6 +1572,20 @@ def infer_intake_asset_class(lead: dict[str, str], text: str) -> tuple[str, int,
 
 
 def source_supports_intake(lead: dict[str, str], page: sqlite3.Row) -> tuple[bool, dict[str, object], str, str]:
+    # Gate-tightening (2026-05-28): block article-extraction leads with generic
+    # placeholder target_entity_type from auto-promoting. These created a flood
+    # of false positives (IBM, Salesforce, SaaSPlaybook ending up as "capital
+    # allocators") because article scrapes don't carry firm-specific role
+    # vocabulary. Manual_curation or user_discovered leads with the same
+    # placeholder are still allowed since a human vetted the firm identity.
+    lead_type = lead.get("lead_type", "")
+    target_role = lead.get("target_entity_type", "")
+    if lead_type == "article_extraction" and (
+        target_role.startswith("article-listed")
+        or target_role.startswith("article-mentioned")
+        or target_role.startswith("directory-listed")
+    ):
+        return False, {}, "", "article-extraction lead with generic target_entity_type; manual curation required before promotion"
     text = f"{page['title']} {page['raw_text']}"
     lower = text.lower()
     name_tokens = significant_tokens(lead["name"])

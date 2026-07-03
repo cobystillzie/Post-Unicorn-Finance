@@ -1,0 +1,34 @@
+2026-06-17 RE-FILTER of 2026-06-15 discovery finds: 24 firms web-verified vs strict tri-filter (tech-enabled + allocator + anti-power-law), operator-approved. Atlas 123 -> 125. Backups: data/runtime/backup_2026-06-17/.
+
+2026-06-17 audit REMOVE teixo [was Permanent/verified]: tech=NO (Portuguese construction subcontractors; civil works/infrastructure/MEP) + pre-deal (portfolio "empty by design", first acquisition 2027). Operator-directed removal; confirms 2026-06-15 over-admission note. (Stays in held_names.)
+
+2026-06-17 NEW CLASS "Impact Capital" (Active Experiments, packet + taxonomy): tech-enabled mission/impact allocators that explicitly reject the unicorn/power-law model (frontier-market & catalytic VC, impact funds). Tech-enabled REQUIRED going forward. Distinct from the reserved Sovereign Capital (sovereign wealth / DFI / blended).
+2026-06-17 audit ADD sprinter-studio [Studio/verified/med]: build-and-own AI venture factory; anti-PL core "we run dozens of experiments... only scale what works" + "owned and operated forever"; named SaaS products. tech=yes. (re-filter; hand-verified live homepage)
+2026-06-17 audit ADD tolomato [Studio/verified/med]: permanent-capital holdco that also builds from scratch (GoWP, Quickly Hire SaaS, the402.ai); anti-PL core "No fund timeline. No exit clock."; 3 named holdings. tech=partial. (re-filter)
+2026-06-17 audit ADD rhino-impact-fund [Impact Capital/verified/med]: Sudan's first equity (pre-seed/seed) impact VC; anti-PL core ("Why the Rhino?") "we don't chase unicorns we build Rhinos" + "Built to last, not just to exit"; portfolio Enigma AI / Nil Pay / Tejan; DFI-backed. tech=partial. INAUGURAL Impact Capital member. (re-filter)
+2026-06-17 audit RECLASS delta-fund: Reserved -> Impact Capital. OPERATOR/ETHAN-VOUCHED EXCEPTION: tech=no but admitted by directive; going-forward Impact requires tech-enabled.
+2026-06-17 audit RECLASS zebra-impact-ventures: Reserved -> Impact Capital (impact + anti-PL; signal still weak, conf low).
+2026-06-17 audit RECLASS village-capital: Reserved -> Impact Capital (impact accelerator; web-verify still pending).
+2026-06-17 audit RECLASS bridges-evergreen: Permanent -> Impact Capital (impact/steward).
+2026-06-17 audit RECLASS purpose-evergreen-capital: Permanent -> Impact Capital (impact/steward).
+2026-06-17 audit RECLASS purpose-ventures: Permanent -> Impact Capital (impact/steward).
+2026-06-17 funds_verified ADD sprinter-studio, tolomato, rhino-impact-fund: self_id_quote=verbatim anti-PL, hand_verified=YES, status=verified, round=refilter-2026-06-15.
+
+2026-06-17 HOLD (flag only; NOT written to atlas) perpetun [proposed Studio]: build-and-own applied-AI studio; anti-PL core "we think in decades, not quarters"; BUT self-states "10+ year horizon" -> OPERATOR REVIEW NEEDED: classed Studio (build-and-hold, no exit) or routed to liquidity-lens (stated horizon)? The 10yr mark also brushes the Unicorn-exclusion threshold (>=10yr). Awaiting operator ruling. (In held_names.)
+
+2026-06-17 DROP x16 (added to held_names; failed tri-filter):
+  tech=NO -> boxfund (consumer brands), everoak-holdings, lykos-sovereign-group, cembra-holding-company, perpetuo-group (explicitly excludes software), fillmore-partners, vesper, arbor-permanent-owners (industrials), victorinusgroup, kindred-partners, heronshaw (manufacturing), elmore-companies, n-industries, centerfield-capital-partners (LMM PE; also pro-exit).
+  anti-PL=NO / pro-exit -> ari-venture-studio (exit in 4-6yr / 34% IRR; anti-unicorn only a blog title), sequel-capital (scale & exit in 2-3yr; clear exit thesis).
+2026-06-17 HOLD (unverifiable) boring-ventures: homepage still spam-injected (German casino/poker); cannot cleanly verify. (In held_names.)
+
+2026-06-17 FLAG (existing members; tech_enabled re-verified, NOT auto-edited per flag-don't-edit -> left as flagged-pending pending operator decision):
+  everhold [Permanent] tech=PARTIAL (mandate names "vertical SaaS platforms" + services) but PRE-DEAL ("now evaluating its first acquisition targets", no named portfolio).
+  long-holding-company [Permanent] tech=PARTIAL (mandate names "software" but all 6 named holdings are media/data/live-events). allocator=yes.
+
+2026-06-17 packet REGEN site/post_unicorn_atlas_packet.{html,pdf} = 125 entities; Impact Capital (7) shown in Active Experiments. Fixed scripts/export_atlas_pdf.py (isolated Chrome --user-data-dir) so the headless print-to-pdf step works on Windows (was a silent no-op against a running Chrome).
+
+2026-06-17 TASK-2 DISCOVERY (anti-PL, 20-agent discover -> 32 fresh -> adversarial re-verify). ADMIT x6 (atlas 125->131): round2-capital-partners[Nimble], cypress-growth-capital[Nimble], long-term-impact[Impact Capital], upright-capital[SMV], sandbox-ventures[Studio], kiko-ventures[Permanent](flag: deep-tech/cleantech hardware, captive of IP Group). DROP x14 (typosquat Valsoft, vaporware TCI/DLTG/Thesis/LaBarge/PreAngel, pro-exit itrinity, non-allocator Sapplify/9Ethics, ag-not-tech Planetary, dupe Noygear, shell Cobalt Glacier, Nexlayer self-labeled operators-not-allocators). REVIEW PILE -> data/runtime/review_pile_2026-06-17.md: 7 borderline (Vertus,Taurus,Blue Footed,Quadshift,Altai,Inverse,Deimann) + 5 pre-deal (Enough,Social Tech,Orrery,Savana,Soch). All 32 added to held_names.
+
+2026-06-17 TASK-2 REVIEW-PILE dispositions (operator-directed). ADMIT x5 (atlas 131->136): blue-footed-investments[Permanent], inverse-collective[Studio/in_disguise], enough-ventures[Impact Capital/pre-deal], orrery[SMV/in_disguise/needs-Ethan], soch-holdings[Permanent/as-is]. DROP x4: vertus-group, taurus (Constellation sub-arms), altai-labs (agency), deimann-com (solo product operator, not a fund). STILL FOR REVIEW: quadshift (unsure), social-tech-ventures (no disposition), savana-fund (held). DESK: perpetun, everhold, long-holding-company.
+
+2026-06-17 FINAL operator dispositions. ADMIT perpetun[Studio]. RESOLVE everhold + long-holding-company tech_enabled flagged-pending->partial (confirmed Permanent). NEW SECTION "Under Review" (packet bottom, not asset-classified) holds quadshift, social-tech-ventures, savana-fund. Atlas asset-classified=137 (+3 under review).

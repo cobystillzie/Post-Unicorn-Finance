@@ -24,6 +24,14 @@ That fragmentation is a business problem. Founders cannot easily compare capital
 
 The industry-establishment task is therefore not branding first. It is classification first. The name should earn legitimacy by organizing evidence that already exists.
 
+### Elephants, Not Unicorns — A Mental-Model Frame
+
+A useful short metaphor for the naming problem comes from SIV, an active capital-efficient-businesses investor that frames its positioning as "Elephants, Not Unicorns." Where venture capital celebrates the rare unicorn — mythical, low-probability, optimized for power-law outcomes — the metaphorical elephant is real, slower-growing, durable, and economically meaningful at scale. Elephants actually exist.
+
+The frame is not a new asset class. Mapped against the SMV vocabulary already operating in this dossier — capital-efficient, founder-led, validated revenue models, sustainable profitability, durable but bounded outcomes — the Elephants framing is a marketing articulation of the existing Strategic Middle Ventures thesis, not a structural change to the taxonomy.
+
+What the frame does well is solve a discourse problem. The unicorn metaphor has cultural and emotional weight that the phrase "strategic middle venture" does not. If this paper is to compete for attention among founders, investors, and journalists, it needs a counter-image as memorable as the unicorn. "Elephants, Not Unicorns" is one credible candidate. Whether the paper adopts it as primary framing or treats it as one of several voices is an editorial choice, not a taxonomic one.
+
 ### Core Market Problem
 
 VC is powerful but over-applied. The market needs a clearer category for companies and capital providers whose economics are built around fit, durability, control, cash flow, strategic acquisition, permanent ownership, or smaller but meaningful exits.
@@ -143,6 +151,49 @@ The atlas is strongest as a market-map and category-formation instrument. It can
 
 That means the next research work should not simply add names. It should deepen the top rows. A serious industry dossier needs fewer weak examples and more strong claims per important entity. The top 50 rows should eventually have official-site claims, source snippets, role classification, instrument evidence where relevant, and a human review decision.
 
+## External Validation And The $1–3M Bridge Gap
+
+In March 2026, Aimee Rose, Andrew Chang, and Raylene Yung published "The Early Stage Deep Tech Funding Gap: Why Great Companies Get Stuck Between Capital Markets," an investigative-sprint memo built from conversations with deep-tech founders and ecosystem partners initiated at New York Climate Week 2025. The piece is independent of this dossier and reaches a complementary conclusion: there is a real, structurally coherent capital gap between working prototype and operating business that no existing vehicle is designed to bridge. Their work is acknowledged here as one of the strongest external validations of the Post-Unicorn Finance thesis to date.
+
+### What The Memo Documents
+
+The memo names the gap as a specific dollar range — typically **$1M to $3M** — needed by deep-tech companies that have already spent years de-risking the science through grants, federal programs, and prizes, that have early customers ready to buy, and that need to close their books as an operating business by hiring a first sales person, fulfilling an initial production run, and reaching real revenue. Every existing capital vehicle has a logical reason to pass: too large for angels, too small and too early for growth-stage investors, too operational for grants, too unproven for debt, and too narrow a target market for venture-power-law math.
+
+The memo's central observation echoes investors across the ecosystem who told the authors:
+
+> "We see great companies and founders we'd want to invest in, but we have to pass because they don't fit our model. We can't do it, but someone should."
+
+This is the same fragmentation the Atlas Evidence section names: the structural pieces exist, but no single category organizes them so founders, investors, and researchers can route the right capital to the right need.
+
+### Why The Gap Is Not A Missing Asset Class
+
+The memo describes a **stage and instrument gap**, not a missing asset class. Companies in the gap fit naturally inside several existing buckets that this atlas already tracks:
+
+- **SMV** working-capital and revenue-based-financing providers,
+- **Sovereign Capital** catalytic, blended, and concessional-finance vehicles,
+- **Patient Capital** mission-driven foundations, family offices, and donor-advised philanthropic structures.
+
+What is missing is not a new bucket. What is missing is a coordinated bridge: an instrument or vehicle profile shaped for $1–3M, oriented toward operating revenue rather than continued research, structured to survive longer payback timelines than venture math allows, and positioned to be legible to founders as a real path. The atlas should track that emerging bridge as a cross-cutting **instrument layer**, not as a seventh asset class.
+
+### Two Atlas Firms Already Operating At The Bridge
+
+The memo names several organizations that already build at this seam. Two are now in the atlas and merit short profiles in the eventual paper:
+
+- **Enduring Planet** (atlas: SMV) — early-stage working-capital product specifically for climate companies. Self-describes as a non-dilutive capital partner sized for the operating-business transition. Site: [enduringplanet.com](https://enduringplanet.com/).
+- **Elemental Impact** (atlas: Sovereign Capital) — pioneered the D-SAFE (Deployment Simple Agreement for Future Equity), a financing instrument designed to bridge later-stage first-of-a-kind (FOAK) deployments. The design pattern is directly relevant to the earlier $1–3M gap as well. Site: [elementalimpact.org](https://elementalimpact.org/).
+
+Two further organizations from the memo are infrastructure rather than allocators and belong in the Ecosystem/Infrastructure layer of this project: **Innovative Finance Initiative** (playbooks for catalytic capital structures, including redeemable equity, revenue-based finance, and supply-chain finance) and **ThirdSphere** (the "speedstrapping" playbook for combining non-dilutive funding, early customer revenue, and lean operations). They are not capital allocators in their own right, but they document the bridge methodology.
+
+### How This Tightens The Thesis
+
+The Rose-Chang-Yung memo does three things for this dossier:
+
+1. **Independent confirmation** that the unicorn venture model is being applied where it does not fit, from a team that arrived at the conclusion through founder interviews rather than industry-mapping.
+2. **A specific sub-thesis** the paper should address — that the $1–3M bridge stage is the highest-leverage place to demonstrate non-unicorn capital working in practice, because it is small enough for new vehicles to test at and large enough to matter to real companies.
+3. **A roster of named firms and instruments** that the atlas can verify against its own gate and include as case studies rather than mere catalog rows.
+
+The memo's framing also strengthens this dossier's existing position that the project should be measured first by industry-establishment rigor (clear category boundaries, source-backed entity rows, defensible classification) before any fund-marketplace or investable-product claim.
+
 ## Adversarial Diligence
 
 ### Objection 1: This may not be investable.
@@ -257,6 +308,14 @@ The sequence should be:
 - Cambridge history of the SCP paradigm: [cambridge.org/core/journals/journal-of-the-history-of-economic-thought/article/rise-fall-and-legacy-of-the-structureconductperformance-paradigm/3BA4E9F9FE29BAED06E9F1860BD37052](https://www.cambridge.org/core/journals/journal-of-the-history-of-economic-thought/article/rise-fall-and-legacy-of-the-structureconductperformance-paradigm/3BA4E9F9FE29BAED06E9F1860BD37052)
 - Bain Global Private Equity Report 2025, dry-powder and deployment context: [bain.com/insights/topics/global-private-equity-report](https://www.bain.com/insights/topics/global-private-equity-report/)
 - PitchBook-reported closed-end private-capital dry-powder figure republished by Yahoo Finance: [finance.yahoo.com/news/global-private-market-funds-dry-174735581.html](https://finance.yahoo.com/news/global-private-market-funds-dry-174735581.html)
+- Rose, Aimee; Chang, Andrew; Yung, Raylene. "The Early Stage Deep Tech Funding Gap: Why Great Companies Get Stuck Between Capital Markets." March 5, 2026. Primary external memo cited in the **External Validation And The $1–3M Bridge Gap** section.
+- Elemental Impact, the D-SAFE (Deployment Simple Agreement for Future Equity) announcement and one-year retrospective: [elementalimpact.org](https://elementalimpact.org/).
+- Enduring Planet, early-stage working-capital product for climate companies: [enduringplanet.com](https://enduringplanet.com/).
+- LACI, debt-funding program for clean-technology companies across 20+ accelerators and incubators: [laincubator.org/laci-debt-fund](https://laincubator.org/laci-debt-fund/).
+- NETA Foundation, donor-advised-funds platform for catalytic philanthropic investments: [netafoundation.org](https://www.netafoundation.org/).
+- Innovative Finance Initiative, playbooks for redeemable equity, revenue-based finance, and supply-chain finance: [playbook.innovative.finance](https://playbook.innovative.finance/sections/product-types/).
+- ThirdSphere, the SpeedStrap Playbook for deep-tech bootstrapping through combined non-dilutive funding, early customer revenue, and lean operations: [thirdsphere.com](https://thirdsphere.com/).
+- SIV, "Elephants, Not Unicorns" public positioning, cited as a primary-source articulation of the SMV thesis by an active capital-efficient-businesses investor.
 
 ## Diligence Verdict
 

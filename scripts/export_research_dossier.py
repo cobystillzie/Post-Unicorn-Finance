@@ -98,7 +98,8 @@ def render_markdown(markdown: str) -> str:
             continue
         if re.match(r"^\d+\.\s+", line):
             flush_paragraph()
-            list_items.append(f"<li>{inline_markdown(re.sub(r'^\d+\.\s+', '', line).strip())}</li>")
+            numbered_text = re.sub(r"^\d+\.\s+", "", line).strip()
+            list_items.append(f"<li>{inline_markdown(numbered_text)}</li>")
             continue
         if line.startswith("> "):
             flush_paragraph()

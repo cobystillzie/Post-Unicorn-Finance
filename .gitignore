@@ -15,3 +15,6 @@ data/learning/*
 data/analysis/
 data/*.sqlite
 data/*.sqlite-*
+.gstack/
+.claude-flow/
+.swarm/

@@ -1,0 +1,26 @@
+
+=== 2026-07-01 liquidity-horizon curation (12 firms; user-directed) ===
+RECLASS sequel-capital: primary_asset_class SMV -> Nimble
+RECLASS redbud-vc: primary_asset_class LMV -> Nimble
+ADD entity ascendx-ventures [Nimble]
+ADD entity ltv-saas-fund [Nimble]
+ADD entity the2410 [Nimble]
+ADD entity futurefirst [Nimble]
+ADD entity mirai-ventures [Nimble]
+ADD entity edited-capital [SMV]
+ADD entity firstfounders [Nimble]
+ADD entity napkin-ventures [Nimble]
+ADD entity favcy-bts [Nimble]
+ADD entity cocreatd [Nimble]
+ADD horizon sequel-capital band=Nimble
+ADD horizon ascendx-ventures band=Nimble
+ADD horizon ltv-saas-fund band=Nimble
+ADD horizon redbud-vc band=Nimble
+ADD horizon the2410 band=Nimble
+ADD horizon futurefirst band=Nimble
+ADD horizon mirai-ventures band=Nimble
+UPDATE horizon edited-capital band=SMV
+ADD horizon firstfounders band=Nimble
+ADD horizon napkin-ventures band=Nimble
+ADD horizon favcy-bts band=Nimble
+ADD horizon cocreatd band=Nimble
