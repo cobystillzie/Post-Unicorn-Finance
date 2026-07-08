@@ -18,3 +18,8 @@ data/*.sqlite-*
 .gstack/
 .claude-flow/
 .swarm/
+
+# rebuildable runtime vector DB (was tracked by mistake, un-tracked 2026-07-07)
+ruvector.db
+# generated claude.ai artifact fragment (build output of scripts/build_atlas_artifact.py)
+scripts/atlas_artifact.html

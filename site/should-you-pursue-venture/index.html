@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Should You Pursue Venture? — Post-Unicorn Finance</title>
+<meta name="description" content="A short founder questionnaire that maps your goals onto the right class of capital — from classic venture to the post-unicorn alternatives.">
+<style>
+:root{
+  --paper:#f5f6f2; --ink:#141d1b; --muted:#5c6660; --rule:#dde2da;
+  --teal:#0f5257; --teal-deep:#0c2426; --teal-ink:#0a3d41; --amber:#b7791f;
+  --serif:'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+  --sans:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --mono:ui-monospace,'SF Mono','Cascadia Mono',Consolas,monospace;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.55}
+a{color:var(--teal)}a:hover{text-decoration:underline}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
+.wrap{max-width:760px;margin:0 auto;padding:0 22px}
+
+.mast{background:var(--teal-deep);color:#e9efe9;padding:48px 0 34px}
+.mast .eyebrow{font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:#8fc0b5;font-weight:700}
+.mast h1{font-family:var(--serif);font-weight:600;font-size:clamp(2rem,1.3rem+3.4vw,3.4rem);line-height:1.04;margin:12px 0 12px;color:#f4f7f2;text-wrap:balance}
+.mast p{max-width:60ch;color:#b9c9c2;font-size:1.04rem}
+.mast .back{display:inline-block;margin-top:18px;font-size:13px;letter-spacing:.05em;text-transform:uppercase;color:#8fc0b5;font-weight:600}
+
+main{padding:34px 0 60px}
+
+/* progress */
+.prog{position:sticky;top:0;background:var(--paper);padding:14px 0 10px;z-index:5;border-bottom:1px solid var(--rule)}
+.prog .bar{height:4px;background:var(--rule);border-radius:3px;overflow:hidden}
+.prog .fill{height:100%;width:0;background:linear-gradient(90deg,#2e7d32,#b7791f 55%,#37568c);transition:width .35s cubic-bezier(.16,1,.3,1)}
+.prog .lab{font-family:var(--mono);font-size:12px;color:var(--muted);margin-top:8px}
+
+/* question card */
+.card{background:#fff;border:1px solid var(--rule);border-top:3px solid var(--teal);border-radius:4px;padding:26px 26px 22px;margin-top:24px;box-shadow:0 1px 0 rgba(20,29,27,.03)}
+.qnum{font-family:var(--mono);font-size:12px;color:var(--amber);letter-spacing:.08em;text-transform:uppercase}
+.qtext{font-family:var(--serif);font-size:1.5rem;line-height:1.2;margin:8px 0 4px;text-wrap:balance}
+.qhelp{color:var(--muted);font-size:14.5px;margin:0 0 18px}
+.opts{display:flex;flex-direction:column;gap:10px}
+.opt{all:unset;cursor:pointer;display:flex;gap:13px;align-items:flex-start;border:1px solid var(--rule);border-radius:4px;padding:14px 16px;background:#fff;transition:border-color .14s ease,background .14s ease,transform .05s ease}
+.opt:hover{border-color:var(--teal);background:#fbfcfa}
+.opt:active{transform:translateY(1px)}
+.opt.sel{border-color:var(--teal);background:#eef4f1;box-shadow:inset 0 0 0 1px var(--teal)}
+.opt .dot{flex:0 0 18px;height:18px;margin-top:2px;border:2px solid var(--rule);border-radius:50%;position:relative}
+.opt.sel .dot{border-color:var(--teal)}
+.opt.sel .dot::after{content:"";position:absolute;inset:3px;background:var(--teal);border-radius:50%}
+.opt .otext{font-size:15.5px}
+.opt .otext b{display:block;font-weight:600}
+.opt .otext span{color:var(--muted);font-size:13.5px}
+
+.nav{display:flex;justify-content:space-between;align-items:center;margin-top:22px;gap:12px}
+.btn{all:unset;cursor:pointer;font-weight:700;font-size:15px;padding:11px 22px;border-radius:3px;text-align:center}
+.btn-primary{background:var(--teal-deep);color:#f4f7f2}
+.btn-primary:hover{background:var(--teal)}
+.btn-primary[disabled]{opacity:.4;cursor:not-allowed}
+.btn-ghost{color:var(--muted)}
+.btn-ghost:hover{color:var(--ink)}
+.btn-ghost[hidden]{display:none}
+
+/* result */
+.result{display:none}
+.result.show{display:block;animation:fade .4s ease both}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.verdict{background:#fff;border:1px solid var(--rule);border-left:5px solid var(--pc,var(--teal));border-radius:4px;padding:26px 28px;margin-top:8px}
+.verdict .vk{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.verdict h2{font-family:var(--serif);font-size:1.9rem;margin:8px 0 10px;line-height:1.12;text-wrap:balance}
+.verdict p{margin:8px 0;max-width:64ch}
+.matches{margin-top:22px;display:flex;flex-direction:column;gap:14px}
+.match{background:#fff;border:1px solid var(--rule);border-top:3px solid var(--pc);border-radius:4px;padding:18px 20px}
+.match .mh{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.match .mt{font-family:var(--serif);font-size:1.2rem;font-weight:600}
+.match .mscore{font-family:var(--mono);font-size:12px;color:#fff;background:var(--pc);border-radius:12px;padding:2px 10px;white-space:nowrap}
+.match .mb{color:var(--muted);font-size:14.5px;margin:8px 0 12px}
+.match .ml{font-weight:600;font-size:14px}
+.secondary{margin-top:20px;font-size:14.5px;color:var(--muted)}
+.secondary b{color:var(--ink)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.chips a{font-size:13px;border:1px solid var(--rule);border-radius:16px;padding:4px 13px;color:var(--ink);text-decoration:none;background:#fff}
+.chips a:hover{border-color:var(--teal);text-decoration:none}
+
+/* capture form */
+.capture{background:var(--teal-deep);color:#dfe9e2;border-radius:4px;padding:26px 28px;margin-top:26px}
+.capture h3{color:#f4f7f2;font-family:var(--serif);margin:0 0 8px;font-size:1.3rem}
+.capture p{color:#b9c9c2;font-size:14.5px;margin:6px 0 14px;max-width:62ch}
+.capture form{display:flex;flex-wrap:wrap;gap:10px}
+.capture input[type=email]{flex:1 1 240px;padding:11px 13px;font:inherit;font-size:15px;border:1px solid rgba(255,255,255,.22);border-radius:3px;background:#0e2f31;color:#eaf2ee}
+.capture input::placeholder{color:#8fa39b}
+.capture button{background:#e9efe9;color:var(--teal-deep);font-weight:700;border:none;border-radius:3px;padding:11px 20px;cursor:pointer}
+.capture button:hover{background:#fff}
+.capture .fine{font-size:12px;color:#8fa39b;margin-top:12px}
+.hp{position:absolute!important;left:-9999px;width:1px;height:1px;overflow:hidden}
+.restart{margin-top:22px;font-size:14px}
+.restart button{all:unset;cursor:pointer;color:var(--teal);font-weight:600;text-decoration:underline}
+
+footer{padding:22px 0 0;border-top:1px solid var(--rule);margin-top:30px;font-size:13px;color:var(--muted)}
+footer b{color:var(--ink)}
+
+@media(max-width:560px){.qtext{font-size:1.3rem}.verdict h2{font-size:1.55rem}}
+</style>
+</head>
+<body>
+<header class="mast"><div class="wrap">
+  <div class="eyebrow">Post-Unicorn Finance · A Founder Tool</div>
+  <h1>Should you pursue venture?</h1>
+  <p>Classic venture capital is one funding path — engineered for a rare, enormous outcome. It fits some companies and quietly breaks others. Answer seven questions and we'll map your goals onto the class of capital that actually fits, using the same input&#8594;output model behind the atlas.</p>
+  <a class="back" href="../">&#8592; Back to the atlas</a>
+</div></header>
+
+<main class="wrap">
+  <div class="prog" id="prog">
+    <div class="bar"><div class="fill" id="fill"></div></div>
+    <div class="lab" id="plab">Question 1 of 7</div>
+  </div>
+
+  <div id="quiz"></div>
+
+  <div class="nav" id="nav">
+    <button class="btn btn-ghost" id="back" hidden>&#8592; Back</button>
+    <button class="btn btn-primary" id="next" disabled>Next &#8594;</button>
+  </div>
+
+  <section class="result" id="result" aria-live="polite"></section>
+
+  <footer>
+    <p><b>How this works.</b> Each answer adds weight to six capital classes drawn from the atlas — Traditional&nbsp;VC, Strategic&nbsp;Middle&nbsp;Ventures, Nimble, Permanent, Studio and Impact. This is a compass, not a verdict: it points you toward the funding models worth researching, then hands you straight into the <a href="../">atlas</a> to see the real firms in each. Nothing you enter is stored unless you choose to share your email.</p>
+  </footer>
+</main>
+
+<script>
+(function(){
+  // class metadata: key -> [label, color, blurb, atlasFilter|null, atlasLabel]
+  var CLASSES = {
+    VC:        ['Traditional Venture Capital', '#494f4c',
+                'Large markets, a swing for a unicorn-scale outcome in 7–10 years, significant dilution and outside governance in exchange for rocket fuel.',
+                null, null],
+    SMV:       ['Strategic Middle Ventures', '#b7791f',
+                'Large-ish markets aiming for a strong sub-unicorn outcome (~$50–500M) on a similar-or-better clock — often with revenue-based or non-dilutive structures.',
+                'SMV', 'SMV funds'],
+    Nimble:    ['Nimble Capital', '#2e7d32',
+                'Smaller markets engineered for a fast, clean liquidity event — exits under six years by design rather than a decade-long moonshot.',
+                'Nimble', 'Nimble funds'],
+    Permanent: ['Permanent Capital', '#37568c',
+                'No forced exit. Evergreen funds, steward-ownership and holdcos that let you keep control and compound a profitable business for decades.',
+                'Permanent', 'Permanent-capital funds'],
+    Studio:    ['Venture Studios', '#5b4a8a',
+                'Build-and-own models where company creation is the investment — for founders who spin up products repeatably and want to keep ownership.',
+                'Studio', 'Venture studios'],
+    Impact:    ['Impact Capital', '#8a4664',
+                'Mission-first allocators with an explicit anti-power-law thesis — where financial return serves the mission rather than the other way round.',
+                'Impact Capital', 'Impact funds']
+  };
+
+  // Each option scores points across classes.
+  var QUESTIONS = [
+    {
+      q: 'How big is the market you’re going after?',
+      help: 'Venture math needs a market large enough for a single company to become enormous.',
+      opts: [
+        {t:'Massive — potentially category-defining, $10B+', s:{VC:3, SMV:1}},
+        {t:'Large but not winner-take-all, ~$1–10B', s:{SMV:3, VC:1, Permanent:1}},
+        {t:'A solid niche, ~$100M–1B', s:{Nimble:2, SMV:1, Studio:1}},
+        {t:'Focused and smaller, but genuinely profitable', s:{Permanent:2, Nimble:1, Studio:1}}
+      ]
+    },
+    {
+      q: 'What outcome are you actually aiming for?',
+      help: 'Be honest about the win condition, not the one investors want to hear.',
+      opts: [
+        {t:'A $1B+ company — swing for the fences', s:{VC:3}},
+        {t:'A strong $50–500M outcome is a real win', s:{SMV:3, Nimble:1}},
+        {t:'A fast, clean sale in a few years', s:{Nimble:3}},
+        {t:'A durable business I own for decades', s:{Permanent:3, Studio:1}},
+        {t:'Maximum mission and impact; money is secondary', s:{Impact:3}}
+      ]
+    },
+    {
+      q: 'How do you feel about dilution and giving up ownership?',
+      help: 'Every dollar of equity capital costs a slice of the company and some control.',
+      opts: [
+        {t:'Happy to trade big ownership for growth capital', s:{VC:3}},
+        {t:'Some dilution is fine, but I want meaningful ownership', s:{SMV:2, Nimble:1}},
+        {t:'I want to keep control and most of the equity', s:{Permanent:2, Studio:2, Nimble:1}},
+        {t:'I’d rather not raise dilutive equity at all', s:{Permanent:1, SMV:1, Studio:1}}
+      ]
+    },
+    {
+      q: 'When do you want your capital — and your investors’ — back?',
+      help: 'Liquidity timing is the single sharpest divider between these classes.',
+      opts: [
+        {t:'~7–10 years, in one big exit', s:{VC:2, SMV:1}},
+        {t:'~5–7 years, at a sub-unicorn valuation', s:{SMV:3}},
+        {t:'Under 5 years — a quick, clean exit', s:{Nimble:3}},
+        {t:'Never — I want to keep compounding', s:{Permanent:3}},
+        {t:'Whenever — I’m building products to own, not sell', s:{Studio:2, Permanent:1}}
+      ]
+    },
+    {
+      q: 'How important is staying in control?',
+      help: 'Scaling capital usually comes with boards, terms and shared decision-making.',
+      opts: [
+        {t:'I’ll take a board and outside governance for scale', s:{VC:2}},
+        {t:'Shared control is fine for the right partner', s:{SMV:1, Nimble:1}},
+        {t:'I want to stay firmly in the driver’s seat', s:{Permanent:2, Studio:2}},
+        {t:'Mission governance matters more than my personal control', s:{Impact:2}}
+      ]
+    },
+    {
+      q: 'What’s your path to profitability?',
+      help: 'How soon the business stands on its own shapes which capital fits.',
+      opts: [
+        {t:'Grow now, profit much later — blitzscale', s:{VC:3}},
+        {t:'Efficient growth, profitable on a reasonable clock', s:{SMV:2, Nimble:1}},
+        {t:'Profitable early and staying that way', s:{Permanent:3, Nimble:1, Studio:1}},
+        {t:'Profit is a means to the mission', s:{Impact:2}}
+      ]
+    },
+    {
+      q: 'Which best describes you as a founder?',
+      help: 'The shape of the founder often predicts the shape of the capital.',
+      opts: [
+        {t:'One big idea I’ll bet everything on', s:{VC:2, SMV:1}},
+        {t:'A repeatable machine spinning up products', s:{Studio:3}},
+        {t:'A focused operator building one great company', s:{Permanent:2, Nimble:1, SMV:1}},
+        {t:'A mission-driven changemaker', s:{Impact:3}}
+      ]
+    }
+  ];
+
+  var answers = new Array(QUESTIONS.length).fill(-1);
+  var cur = 0;
+
+  var quiz = document.getElementById('quiz');
+  var nextBtn = document.getElementById('next');
+  var backBtn = document.getElementById('back');
+  var fill = document.getElementById('fill');
+  var plab = document.getElementById('plab');
+  var nav = document.getElementById('nav');
+  var resultEl = document.getElementById('result');
+
+  function render(){
+    var Q = QUESTIONS[cur];
+    var html = '<div class="card"><div class="qnum">Question ' + (cur+1) + '</div>' +
+      '<div class="qtext">' + Q.q + '</div>' +
+      '<p class="qhelp">' + Q.help + '</p><div class="opts">';
+    Q.opts.forEach(function(o, i){
+      var sel = answers[cur] === i ? ' sel' : '';
+      html += '<button type="button" class="opt' + sel + '" data-i="' + i + '">' +
+        '<span class="dot"></span><span class="otext"><b>' + o.t + '</b></span></button>';
+    });
+    html += '</div></div>';
+    quiz.innerHTML = html;
+    Array.prototype.forEach.call(quiz.querySelectorAll('.opt'), function(b){
+      b.addEventListener('click', function(){
+        answers[cur] = parseInt(b.getAttribute('data-i'), 10);
+        Array.prototype.forEach.call(quiz.querySelectorAll('.opt'), function(x){ x.classList.remove('sel'); });
+        b.classList.add('sel');
+        nextBtn.disabled = false;
+      });
+    });
+    backBtn.hidden = cur === 0;
+    nextBtn.disabled = answers[cur] < 0;
+    nextBtn.textContent = cur === QUESTIONS.length - 1 ? 'See your result →' : 'Next →';
+    fill.style.width = ((cur) / QUESTIONS.length * 100) + '%';
+    plab.textContent = 'Question ' + (cur+1) + ' of ' + QUESTIONS.length;
+  }
+
+  function tally(){
+    var score = {VC:0, SMV:0, Nimble:0, Permanent:0, Studio:0, Impact:0};
+    answers.forEach(function(ai, qi){
+      var s = QUESTIONS[qi].opts[ai].s;
+      for (var k in s){ score[k] += s[k]; }
+    });
+    return score;
+  }
+
+  function showResult(){
+    fill.style.width = '100%';
+    plab.textContent = 'Complete';
+    quiz.style.display = 'none';
+    nav.style.display = 'none';
+    var score = tally();
+    var ranked = Object.keys(score).sort(function(a,b){ return score[b] - score[a]; });
+    var top = ranked[0], second = ranked[1];
+    var maxRaw = 0; answers.forEach(function(ai,qi){ var s=QUESTIONS[qi].opts[ai].s; var m=0; for(var k in s){ if(s[k]>m)m=s[k]; } maxRaw+=m; });
+    var pct = function(k){ return maxRaw ? Math.round(score[k] / maxRaw * 100) : 0; };
+
+    var ventureFits = (top === 'VC') || (score.VC >= score[top] - 1 && score.VC >= 6);
+    var meta = CLASSES[top];
+
+    var vk, h2, lede;
+    if (top === 'VC'){
+      vk = 'Your answers point to'; h2 = 'Classic venture may fit you';
+      lede = 'Your goals line up with the traditional venture playbook: a big market, a swing for a unicorn-scale outcome, and a willingness to trade ownership and control for growth capital. That path is well-mapped elsewhere — but it’s worth knowing the alternatives below, because most companies that take venture money would have been better served by one of them.';
+    } else if (ventureFits){
+      vk = 'Your answers point to'; h2 = 'Venture could work — but ' + CLASSES[top][0] + ' fits you better';
+      lede = 'You have some venture-shaped instincts, but your strongest signal is ' + CLASSES[top][0] + '. Before you optimize your whole company for a unicorn outcome, look at the class that actually matches your goals.';
+    } else {
+      vk = 'Your answers point to'; h2 = 'Venture is probably not your best fit';
+      lede = 'Your goals don’t match the venture win-condition — and that’s a feature, not a bug. Optimizing for a unicorn exit you don’t actually want is how good companies get broken. Here are the post-unicorn paths that fit you.';
+    }
+
+    var html = '<div class="verdict" style="--pc:' + meta[1] + '">' +
+      '<div class="vk">' + vk + '</div><h2>' + h2 + '</h2><p>' + lede + '</p></div>';
+
+    // top matches (top + second)
+    html += '<div class="matches">';
+    [top, second].forEach(function(k, idx){
+      var c = CLASSES[k];
+      var linkHtml = c[3]
+        ? '<a class="ml" href="../#class=' + encodeURIComponent(c[3]) + '">See the ' + c[4] + ' in the atlas →</a>'
+        : '<span class="ml" style="color:var(--muted)">Outside the post-unicorn atlas — this is the baseline the atlas contrasts against.</span>';
+      html += '<div class="match" style="--pc:' + c[1] + '">' +
+        '<div class="mh"><span class="mt">' + (idx===0?'Best match: ':'Also worth a look: ') + c[0] + '</span>' +
+        '<span class="mscore">' + pct(k) + '% match</span></div>' +
+        '<p class="mb">' + c[2] + '</p>' + linkHtml + '</div>';
+    });
+    html += '</div>';
+
+    // explore-all chips
+    html += '<div class="secondary"><b>Explore every class in the atlas:</b><div class="chips">';
+    ['SMV','Nimble','Permanent','Studio','Impact'].forEach(function(k){
+      html += '<a href="../#class=' + encodeURIComponent(CLASSES[k][3]) + '">' + CLASSES[k][0] + '</a>';
+    });
+    html += '</div></div>';
+
+    // Netlify capture form
+    html += '<div class="capture"><h3>Get your result &amp; where the field is heading</h3>' +
+      '<p>Optional — drop your email and we’ll send your matched classes plus new funds as the atlas grows. No spam, and you can ignore this entirely.</p>' +
+      '<form name="questionnaire-results" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="?submitted=1">' +
+      '<input type="hidden" name="form-name" value="questionnaire-results">' +
+      '<input type="hidden" name="result_top" value="' + CLASSES[top][0] + '">' +
+      '<input type="hidden" name="result_second" value="' + CLASSES[second][0] + '">' +
+      '<input type="hidden" name="venture_fit" value="' + (ventureFits ? 'venture-may-fit' : 'venture-may-not-fit') + '">' +
+      '<input type="hidden" name="scores" value="' + Object.keys(score).map(function(k){return k+':'+score[k];}).join(' ') + '">' +
+      '<p class="hp"><label>Leave this empty <input name="bot-field"></label></p>' +
+      '<input type="email" name="email" placeholder="you@company.com" aria-label="Your email" required>' +
+      '<button type="submit">Send my result</button>' +
+      '<p class="fine">Submissions land in the atlas owner’s Netlify dashboard, never shared. This form activates once live on Netlify.</p>' +
+      '</form></div>';
+
+    html += '<p class="restart"><button type="button" id="restart">↺ Start over</button></p>';
+
+    resultEl.innerHTML = html;
+    resultEl.classList.add('show');
+    document.getElementById('restart').addEventListener('click', function(){
+      answers = new Array(QUESTIONS.length).fill(-1); cur = 0;
+      resultEl.classList.remove('show'); resultEl.innerHTML = '';
+      quiz.style.display = ''; nav.style.display = '';
+      render(); window.scrollTo({top:0, behavior:'smooth'});
+    });
+    resultEl.scrollIntoView({behavior:'smooth'});
+  }
+
+  nextBtn.addEventListener('click', function(){
+    if (answers[cur] < 0) return;
+    if (cur === QUESTIONS.length - 1){ showResult(); return; }
+    cur++; render();
+    document.getElementById('prog').scrollIntoView({behavior:'smooth', block:'start'});
+  });
+  backBtn.addEventListener('click', function(){
+    if (cur === 0) return;
+    cur--; render();
+  });
+
+  render();
+})();
+</script>
+</body>
+</html>

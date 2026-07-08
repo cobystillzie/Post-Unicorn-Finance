@@ -1,0 +1,31 @@
+# manual_changes 2026-07-07 - evidence hardening (Ethan feedback item B + D)
+
+lighter-capital :: liquidity_band :: '' -> 'SMV'
+lighter-capital :: horizon_years :: '' -> '3-4'
+lighter-capital :: liquidity_evidence_url :: '' -> 'https://www.lightercapital.com/faq'
+lighter-capital :: liquidity_evidence_note :: '' -> 'first-party FAQ: "you pay a fixed percentage of topline revenue until the total repayment cap is reached. The repayment cap varies between 1.3-1.5X the funded amount"; RBF terms typically 3y, up to 4y. Band filled 2026-07-07 (asset_class still Under Review).'
+lighter-capital :: audit_flag APPEND :: | 2026-07-07 band fill: liquidity_band=SMV, horizon 3-4y from first-party FAQ (revenue-based repayment, 1.3-1.5x cap); a...
+
+d2-fund :: audit_flag APPEND :: | 2026-07-07 band research (Sifted launch article, third-party): D2's 'Hero' instrument is revenue-based financing - ~5%...
+
+gorilla-capital :: audit_flag APPEND :: | 2026-07-07 band research (firm-authored ArcticStartup article, 'By Gorilla Capital'): designs for sub-unicorn exits ('...
+
+impro-ventures :: asset_class :: 'Reserved' -> 'SMV'
+impro-ventures :: tier :: 'provenance' -> 'in_disguise'
+impro-ventures :: confidence :: 'low' -> 'low'
+impro-ventures :: exit_quote :: '' -> "We amplify the outcome by believing early, supporting with integrity, while providing with innovative growth strategies that save cashburn as well as preserve the ownership in the founders' hands."
+impro-ventures :: audit_flag :: 'needs_review: site returned HTTP 403 (fetch blocked) — allocator status, tech focus, and class all unverified this session; country from third-party Tracxn only; PARKED Reserved entity — never drop' -> "OWNER-DIRECTED SMV / in_disguise (Ethan in-disguise vouch, 2026-06-06, alongside Startup Ignition). Live page fetched 2026-07-07 via Exa (site 403s normal fetch; Playwright bridge unavailable): reads as emerging-markets (Africa/LATAM/SEA) pre-seed-to-Series A impact VC screening for 'category definer or global scalability' with team bios citing 'scaling startups to unicorn status' - NO post-unicorn / sub-unicorn / anti-power-law signal. The exit_quote shown is the firm's real M&A/ownership-preservation line and does NOT support SMV. Classification kept per owner directive; confidence=low; CONFLICT FLAGGED FOR OWNER REVIEW."
+impro-ventures :: liquidity_evidence_url :: '' -> 'https://impro.ventures/'
+impro-ventures :: liquidity_evidence_note :: '' -> 'firm site homepage, fetched via Exa 2026-07-07 (site 403s normal fetch)'
+
+siena-secondary-fund :: exit_quote :: 'Our fund seeks to have companies in our portfolio which have a 3-5 year time horizon till the final exit.' -> 'Exit potential within 3-5 years. We expect to see a clear path to the final liquidity event either as M&A or IPO.'
+siena-secondary-fund :: confidence :: 'med' -> 'high'
+siena-secondary-fund :: audit_flag :: 'secondary_fund_review: official homepage verifies VC secondary liquidity model; exact final-exit horizon comes from credible GP interview.' -> "secondary_fund_review: RE-SOURCED FIRST-PARTY 2026-07-07 - exact 3-5y final-exit horizon now verified on the firm's own /vision page (previously rested on a GP interview)."
+siena-secondary-fund :: liquidity_evidence_url :: 'https://meetsemper.substack.com/p/secondary-explorations-by-semper' -> 'https://siena.ee/vision'
+siena-secondary-fund :: liquidity_evidence_note :: 'credible interview' -> 'first-party (firm site /vision)'
+
+white-whale-secondaries-fund :: exit_quote :: 'The sector-agnostic fund will focus on late stage companies which are eyeing a public market listing in 18-36 months.' -> 'Navigate towards IPO-ready companies with clear exit timelines within 36 months.'
+white-whale-secondaries-fund :: audit_flag :: 'secondary_fund_review: official homepage verifies White Whale Secondaries Fund; exact late-stage startup IPO timing comes from credible Inc42 article/interview.' -> "secondary_fund_review: RE-SOURCED FIRST-PARTY 2026-07-07 - the <=36-month exit timeline is now verified on the firm's own /secondaries-funds page ('Exit Visibility' card). The 18-month lower bound of the 1.5-3y range remains sourced only to the Inc42 article."
+white-whale-secondaries-fund :: liquidity_evidence_url :: 'https://inc42.com/buzz/white-whale-gets-sebi-nod-for-inr-250-cr-secondaries-fund/' -> 'https://www.whitewhale.in/secondaries-funds'
+white-whale-secondaries-fund :: liquidity_evidence_note :: 'credible interview' -> 'first-party (firm site /secondaries-funds); 36mo upper bound firm-stated, 18mo lower bound from Inc42'
+
