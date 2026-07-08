@@ -101,6 +101,17 @@ footer b{color:var(--ink)}
 </style>
 </head>
 <body>
+<!-- Static form for Netlify's build-time form detection (the visible form is JS-rendered
+     after the quiz, which the Netlify parser can't see). Fields must match the runtime form. -->
+<form name="questionnaire-results" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
+  <input type="hidden" name="form-name" value="questionnaire-results">
+  <input type="email" name="email">
+  <input type="text" name="result_top">
+  <input type="text" name="result_second">
+  <input type="text" name="venture_fit">
+  <input type="text" name="scores">
+  <input name="bot-field">
+</form>
 <header class="mast"><div class="wrap">
   <div class="eyebrow">Post-Unicorn Finance · A Founder Tool</div>
   <h1>Should you pursue venture?</h1>
