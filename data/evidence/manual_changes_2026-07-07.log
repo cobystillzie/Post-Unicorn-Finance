@@ -29,3 +29,9 @@ white-whale-secondaries-fund :: audit_flag :: 'secondary_fund_review: official h
 white-whale-secondaries-fund :: liquidity_evidence_url :: 'https://inc42.com/buzz/white-whale-gets-sebi-nod-for-inr-250-cr-secondaries-fund/' -> 'https://www.whitewhale.in/secondaries-funds'
 white-whale-secondaries-fund :: liquidity_evidence_note :: 'credible interview' -> 'first-party (firm site /secondaries-funds); 36mo upper bound firm-stated, 18mo lower bound from Inc42'
 
+# manual_changes 2026-07-07 (addendum) - owner-directed orbit-ventures reclass
+
+orbit-ventures :: asset_class :: 'Reserved' -> 'SMV'
+orbit-ventures :: tier :: 'provenance' -> 'in_disguise'
+orbit-ventures :: confidence :: 'med' -> 'low'
+orbit-ventures :: audit_flag :: "PARKED Reserved entity — never drop; page evidence supports no watch class (not search/ETA, not sovereign/DFI); 'sustained, profitable high growth' hints non-blitzscale but there is no explicit anti-power-law message; /about returned 404; owner review required before moving a parked entity | owner-ruling 2026-07-03: KEEP Reserved (Excluded-Traditional proposal rejected)" -> "OWNER-DIRECTED SMV / in_disguise (2026-07-07, supersedes owner-ruling 2026-07-03 KEEP Reserved; Ethan-vouched batch 2026-06-06 alongside Impro Ventures). Own page (growth+exit oriented emerging/frontier-market accelerator-VC, 'sustained, profitable high growth') hints non-blitzscale but carries NO explicit sub-unicorn / anti-power-law signal, so the SMV class rests on the owner vouch, not page evidence; confidence=low; flagged for evidence follow-up (band research still pending from 2026-07-07 sweep)."
