@@ -1,0 +1,165 @@
+name: Transcribe Podcast Episode
+
+on:
+  workflow_dispatch:
+    inputs:
+      episode_id:
+        description: Captivate.fm episode ID
+        required: true
+        default: 8282bad9-79a6-4ad2-ab0d-2704a2c8ca5b
+
+permissions:
+  contents: write
+
+jobs:
+  transcribe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Fetch episode page and extract metadata + audio URL
+        env:
+          EPISODE_ID: ${{ inputs.episode_id }}
+        run: |
+          mkdir -p podcast_review work
+          python - <<'PY'
+          import json, os, re, sys, urllib.request, html
+
+          episode_id = os.environ["EPISODE_ID"]
+          url = f"https://player.captivate.fm/episode/{episode_id}/"
+          req = urllib.request.Request(url, headers={
+              "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0",
+              "Accept": "text/html,application/xhtml+xml",
+          })
+          page = urllib.request.urlopen(req, timeout=60).read().decode("utf-8", "replace")
+          with open("work/player_page.html", "w") as f:
+              f.write(page)
+
+          meta = {"episode_id": episode_id, "player_url": url}
+
+          # og:/twitter: meta tags
+          for m in re.finditer(r'<meta[^>]+(?:property|name)="([^"]+)"[^>]+content="([^"]*)"', page):
+              k, v = m.group(1), html.unescape(m.group(2))
+              if k.startswith(("og:", "twitter:", "description", "author")):
+                  meta.setdefault("meta_tags", {})[k] = v
+          t = re.search(r"<title>(.*?)</title>", page, re.S)
+          if t:
+              meta["page_title"] = html.unescape(t.group(1)).strip()
+
+          # audio URL candidates: direct mp3/m4a links, json-escaped links, og:audio
+          cands = []
+          for m in re.finditer(r'https:(?:\\/\\/|//)[^"\'\s\\]+?\.(?:mp3|m4a)(?:\?[^"\'\s\\]*)?', page):
+              cands.append(m.group(0).replace("\\/", "/"))
+          tags = meta.get("meta_tags", {})
+          for k in ("og:audio", "og:audio:secure_url", "twitter:player:stream"):
+              if tags.get(k):
+                  cands.append(tags[k])
+          # json fields like "media_url":"..."
+          for m in re.finditer(r'"(?:media_url|episode_url|audio_url|enclosure_url|url)"\s*:\s*"([^"]+)"', page):
+              u = m.group(1).replace("\\/", "/")
+              if re.search(r"\.(mp3|m4a)(\?|$)", u):
+                  cands.append(u)
+
+          seen, ordered = set(), []
+          for c in cands:
+              c = html.unescape(c)
+              if c not in seen:
+                  seen.add(c)
+                  ordered.append(c)
+          meta["audio_candidates"] = ordered
+          audio = next((c for c in ordered if "captivate" in c), ordered[0] if ordered else None)
+          meta["audio_url"] = audio
+
+          with open("work/episode_metadata.json", "w") as f:
+              json.dump(meta, f, indent=2)
+          print(json.dumps(meta, indent=2)[:8000])
+          if not audio:
+              print("NO AUDIO URL FOUND — saving page for inspection", file=sys.stderr)
+              os.makedirs("podcast_review", exist_ok=True)
+              with open("podcast_review/player_page_debug.html", "w") as f:
+                  f.write(page)
+              sys.exit(1)
+          PY
+
+      - name: Download audio
+        run: |
+          AUDIO_URL=$(python -c "import json;print(json.load(open('work/episode_metadata.json'))['audio_url'])")
+          echo "Downloading: $AUDIO_URL"
+          curl -fsSL --retry 4 --retry-delay 3 -A "Mozilla/5.0" -o work/episode_audio "$AUDIO_URL"
+          ls -la work/episode_audio
+          ffprobe -v error -show_entries format=duration,format_name -of default=noprint_wrappers=1 work/episode_audio || true
+
+      - name: Install faster-whisper
+        run: pip install --quiet faster-whisper
+
+      - name: Transcribe
+        run: |
+          python - <<'PY'
+          import json, math, os
+          from faster_whisper import WhisperModel
+
+          model = WhisperModel("small", device="cpu", compute_type="int8", cpu_threads=os.cpu_count() or 4)
+          segments, info = model.transcribe(
+              "work/episode_audio",
+              beam_size=2,
+              vad_filter=True,
+              vad_parameters={"min_silence_duration_ms": 500},
+          )
+
+          def ts(sec):
+              sec = max(0, sec)
+              h, rem = divmod(int(sec), 3600)
+              m, s = divmod(rem, 60)
+              return f"{h}:{m:02d}:{s:02d}" if h else f"{m:02d}:{s:02d}"
+
+          os.makedirs("podcast_review", exist_ok=True)
+          plain, stamped = [], []
+          for seg in segments:
+              text = seg.text.strip()
+              if not text:
+                  continue
+              plain.append(text)
+              stamped.append(f"[{ts(seg.start)}] {text}")
+              if len(stamped) % 50 == 0:
+                  print(f"... {ts(seg.end)} transcribed")
+
+          with open("podcast_review/transcript_plain.txt", "w") as f:
+              f.write("\n".join(plain) + "\n")
+          with open("podcast_review/transcript_timestamped.txt", "w") as f:
+              f.write("\n".join(stamped) + "\n")
+
+          meta = json.load(open("work/episode_metadata.json"))
+          meta["audio_duration_seconds"] = round(info.duration, 1)
+          meta["detected_language"] = info.language
+          meta["language_probability"] = round(info.language_probability, 3)
+          meta["whisper_model"] = "faster-whisper small int8"
+          with open("podcast_review/episode_metadata.json", "w") as f:
+              json.dump(meta, f, indent=2)
+
+          print(f"Duration: {info.duration/60:.1f} min | language={info.language}")
+          print(f"Segments: {len(stamped)}")
+          PY
+
+      - name: Commit results to branch
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add podcast_review/ || true
+          if git diff --cached --quiet; then
+            echo "Nothing to commit"; exit 0
+          fi
+          git commit -m "Add automated episode transcript and metadata"
+          BRANCH="${GITHUB_REF_NAME}"
+          for i in 1 2 3 4; do
+            git pull --rebase origin "$BRANCH" && git push origin "HEAD:$BRANCH" && exit 0
+            echo "push attempt $i failed; retrying"; sleep $((2**i))
+          done
+          exit 1
