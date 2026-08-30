@@ -1,6 +1,11 @@
 name: Transcribe Podcast Episode
 
 on:
+  push:
+    branches:
+      - claude/podcast-review-transcription-tk2x5s
+    paths:
+      - .github/workflows/transcribe-episode.yml
   workflow_dispatch:
     inputs:
       episode_id:
@@ -26,7 +31,7 @@ jobs:
 
       - name: Fetch episode page and extract metadata + audio URL
         env:
-          EPISODE_ID: ${{ inputs.episode_id }}
+          EPISODE_ID: ${{ inputs.episode_id || '8282bad9-79a6-4ad2-ab0d-2704a2c8ca5b' }}
         run: |
           mkdir -p podcast_review work
           python - <<'PY'
