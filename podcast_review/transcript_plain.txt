@@ -1,0 +1,1127 @@
+Hello, I'm your host, Lucy Chard. In this episode, we dive into the transformative role
+of artificial intelligence in the pharmaceutical industry, exploring advancements that are reshaping
+manufacturing, packaging and distribution. I'm joined by David Staunton of Cognizant,
+covering the use of AI in pharmaceutical manufacturing. From the rise of smart factories
+to the seamless integration of AI across specialized production processes, we discuss
+how technology is accelerating innovation and what the future holds for
+pharma in the next decade. David is the Life Science Manufacturing Leader of
+Transformation at Cognizant and drives business outcome transformation with
+their tier one clients. And innovated in the life science industry, David
+recognizes the transformative potential of AI, heralding it as a game changer in
+areas from drug discovery to operational efficiency and ESG. What advancements
+have we seen in AI on technology that have had the biggest impacts on the
+pharmaceutical industry today?
+Yeah, well, it's super exciting in the pharmaceutical industry at the minute
+because, you know, things that are happening now have, I suppose, never
+happened before. If you think about, say, the start of the 20th century, and
+we were about to change sort of like every law of physics, and we were about
+to create airplanes and cars and spacecraft and computers. And you know,
+so the thing to get into, sort of physics and engineering at the
+beginning of that century, whereas now the thing to get into is life
+science, because we're technically from a life science point of view able to
+do things that we've never been able to do in terms of editing genes
+and putting in viral vectors and targeting tumours specifically and
+curing diseases that we've never been able to cure before. And it's
+only ramping up. However, even more excitingly, we've now managed to
+get computerised platforms that have this huge computing power, and
+with this ability to compute that we have in the last five years,
+where we can simulate the molecules, not just make them and
+synthesise them in a lab. So, you know, in the year 2000, a very
+busy wet lab that would synthesise molecules as in make the
+molecules would be doing about 1500 molecules a year. And if we
+were to count to 1500, one number every second, it would take
+about 15 minutes. Whereas now with AI and computer simulations,
+algorithmic AI, we'll call it, we can now simulate about 50
+billion a year. And if we were to count 50 billion nonstop one
+number every second, it would take us about 1500 years to count
+to that number. So this is an enormous explosion in our ability
+to simulate the molecules. And what that does is it brings us
+beyond, you know, well, this molecule can target this tumour by
+ducking with this protein and stop it replicating and therefore
+it dies. They're great sort of sort of monoclonal antibody type
+solution for cancer. Whereas now we can simulate the
+molecule, but we can make tiny changes to it and see, well,
+does that make it duck better with the protein? Does that have
+a better half life in the human body? Is it more efficacious
+as a drug for humans? Right. And these very big platforms are
+exploding that. And what's happened then is that the
+pipeline of pharmaceutical firms has gone up and up and up.
+When I started my career, the major issue for pharmaceutical
+companies was worrying about what was going to come off
+patent. Whereas now, the problem is the pipeline is actually a
+little too big. Because the pipeline has grown by say an
+order of magnitude, and I'm not exaggerating there by about
+the time times 10. But to get those molecules from that, you
+know, simulated, efficacious, you know, beyond strong biology and
+mouse experiments, but you know, getting to a place as to where
+okay, we're very confident that in phase one clinical trials and
+phase two clinical trials, it's meeting the endpoints. And
+looks like we have a treatment that the patient should get to
+take it from, I suppose, end of phase two through phase three
+and then into manufacturing. The capacity to do that hasn't
+increased by an order of magnitude. So we have this very
+exciting pipeline, very exciting ability to identify new
+treatments for patients that will make people's lives much
+better and healthier and longer. And but we have a problem
+where we have to try to increase the capacity of
+the manufacturing and the new product introduction. And I
+suppose recently, a genetic AI in particular, has started to
+give us opportunities to radically transform the ability to
+introduce new products and to make more of the in demand
+medicine. So like the biggest impact it's had is on drug
+discovery and algorithmic AI and identifying these efficacious
+molecules that can be treat diseases and illnesses that
+we've never had before. And then the second thing is that
+we're now in the process of using a genetic AI to move the
+capacity of the new product introductions and the
+manufacturing of the in demand medicine up. And when I say a
+genetic AI, I mean, it's like an extension of Gen AI. So when
+you use Gen AI yourself, say chat GPT on your computer, it has
+quite a bit of agency. So you ask it a question, and it will
+give you an answer for multiple sources. And because it's
+been trained on sort of like the on the entire internet, so it
+gives you quite good answers. But what it's doing is it's using
+its own agency in the transformer architecture to try to give
+you a consolidated answer. And if you use a genetic AI, what
+you're effectively doing is creating mini or micro agents
+that are doing that what you see in Gen AI, combining it with
+traditional tech and traditional data processing and insights and
+pulling all that together in an orchestrated way for multiple
+agents, so that you can get quite a complex answer, and much more
+reliable answer than you would be able to do on your own personal
+computer, to be able to give you say, Well, this is the
+information you need right now in order to make these decisions.
+Once you get to that place, then if you can make decisions
+that are faster and better, and you can remove some of the
+heavy lift of the work, you can start to accelerate the new
+product introduction and you can start to accelerate the time
+it takes to make the medicine. So you've got algorithmic AI,
+which has exploded the pipeline. And now a genetic AI, which is
+really improved the decision making for pharmaceutical
+companies. And I suppose the algorithmic AI is more mature.
+A genetic AI is probably still only, you know, a year old. So
+what we're doing at work is proof of concepts and mineral
+Bible products and those types of things to make sure that
+it can be deployed into the factories at an industrial
+scale. That's really great overview there. Thank you,
+David. Also want to dig in a little bit more into the
+second topic is a genetic AI and in terms of how it's used on
+the manufacturing side of things, like you say, in when
+we're looking at factories and processes and things in that
+side of pharmaceutical drug development. So could you
+explain a little bit more about the concept of smart
+factories and how these work and what makes them truly
+smart in terms of the use of AI? Yeah, so, you know, when a
+large tier one pharma company builds a new factory, they're
+going to build a state of the art factory. And the
+difference between a state of the art factory and a smart
+factory is that the smart factory is driven towards the
+business outcomes. So a smart factory would accelerate the
+launch of a product or have extra capacity or an ability
+to switch over from one product to a few products or to be
+able to do things that drive the business really. That's
+what we talk about in terms of a smart factory. So in the
+pharmaceutical business, there is quite a big difference
+between a GMP good manufacturing practice process,
+which is regulated by the regulations. So the code of
+factor regulations in the FDA or the EU annex or
+Udral X, right? And then non GMP, which are, you know,
+systems that follow all the good practices but aren't
+regulated as heavily. So you would have business
+questions. But say, for example, if you're running a
+factory and you want to know, do I have everything
+for the production schedule for next week? Really simple
+question, but not actually that easy to answer, because
+you would have to have access to quite a lot of
+computer systems. So you have your enterprise resource
+planning, a very typical one of those would be SAP,
+right? You have your SAP system and that has all
+of the orders for all the raw materials that you
+would be ordering for next week. And it would
+have all of the equipment that is needed to do that.
+So and that sits in your SAP. So if you were an SAP
+expert, you could go in and you could look at, OK,
+have we got all the materials ordered? Yeah, we
+have them ordered. Have they arrived? Yeah, they've
+arrived. Has all the testing been done to
+make sure? Because when you get a material in a
+factory that makes medicine, you have to make
+sure that the material that's arrived is the
+material that you want. So you do a sample
+on it and bring it to your lab. You do the
+sample tests and get the results and then you
+release it. So, you know, it's all been ordered,
+all arrived and been sampled and the results
+are back and everything is good. And anything
+that needed to be done in any of that is all
+ready to go. And same on the equipment side.
+So are we good to have those machines that
+haven't been used for a couple of weeks since
+the last campaign? Have they all been
+cleaned? Are they have they go to
+hygienic status? Have they all been
+calibrated? And then additionally to that,
+you would have, you know, do we have all
+the people for the shift work? So some of
+the machines require very specific
+training. Do we have the right people on
+those shifts to run those machines? Is
+their training up to date? And you'd
+have all of these questions, as you could
+imagine. And when you think about it,
+that's a lot of computer systems that
+has to be accessed. You've got your
+enterprise resource planning system,
+your maintenance system, your HR system,
+and the list goes on and on. So if you
+want a simple answer to a question
+like, do we have everything ready for
+next week? You could imagine an AI
+system, an agentic AI system that would
+have an orchestration layer and would
+take that question and say, OK, well,
+I've got my micro-AI agent that's
+looking at the materials, all of the
+various elements that we discussed.
+And those micro-AI agents are
+pretty much always on looking at those
+things. And the orchestration layer is
+able to say, OK, for this time period,
+do we have this, this, this, this,
+this and this? And then pull it back
+and say to the site editor of the
+production director, yes, we have
+everything, or we have almost
+everything, except here's the three
+things that need to be done.
+And that pulls that together.
+So that makes a huge difference,
+because you could say, you could
+have a lot of very simple questions
+that require a huge amount of
+consolidation and a huge amount of
+possible actions and pull that
+into one place with that vital
+information in the moments that
+matter to drive that sort of
+execution excellence is really what
+you're talking about. So that gives
+us a massive advantage,
+because if there are some actions,
+the micro-AI agents can also raise
+some of those. So say, for example,
+you've got something that needs to
+happen as in the sample isn't
+right, or there's an investigation.
+If you were the quality director and
+you were asking that same question,
+they could say, well, would you like
+me to draft the nonconformance
+investigation and raise it in our
+quality system? Would you like me
+to email the person who has to
+approve that to make sure that
+they're approving it?
+So those heavy lift routine
+actions that need to happen as part
+of your processes can be taken over
+by the AI and suggested.
+So you can start to orchestrate
+between the people to pull together
+that expedited list and those
+actions. That's really powerful.
+So you can then just that routine
+work can become excellent.
+So if we were to take a GMP example,
+for example, so this is the
+regulated part, environmental
+monitoring is a reasonably easy
+example to understand.
+So the regulations require you
+that at the end of every year,
+you have to say, OK, here's all
+the molecules we made.
+Here's all the rooms that those
+molecules were in for the entire
+year while they were being made.
+And here's all the environmental
+monitoring. So you'd be looking
+for bacteria and viruses,
+survival particles.
+And here's all the test results
+and here's how they all passed.
+And you produce that sort of in
+for one particular molecule
+and you produce the annual report
+and that's a requirement by the
+regulations and also say, for
+example, one of the rooms had some
+particulates that you didn't want
+in there.
+And there'd be an investigation
+and a corrective action and a
+change control to do the corrective
+action and a follow up on that
+corrective action. So it'll be a
+life cycle to make sure that
+you've managed the little
+variation there or the outer spec.
+So there are people in the
+factory that are pulling together
+these reports, massive
+heavy lift. They can take one or
+two days even to write these types
+of reports.
+Whereas you can get an agentic AI
+system to write those reports
+for you. So the things that are
+traditional in the tech like
+graphs and tables, you would use
+traditional tech.
+But there is agency in those
+reports. There's, you know, they
+have to take a template.
+They have to have an introduction
+to say what it is you're doing.
+And they have to have a
+discussion of the results.
+You know, they have to pull in
+the right information.
+So you can get the agentic
+AI system to run that report
+in five minutes.
+And that would push it to review
+and approval with the metadata
+that describes which bit of it
+is AI generated for responsible
+AI, push it into the review
+and approval system.
+And then the human in the loop
+can review and approve that
+report.
+And then I suppose the final
+thing is instead of doing that
+once a year like you're
+required to by the regulations,
+what you could do is you could
+have that logic always
+on.
+So whenever there was a little
+nonconformance about the
+environmental conditions in a
+particular room, the
+microwave agent, same sort of
+logic that will be ready to
+write the report and to give the
+information to the report
+writing agentic AI, it
+will be saying, OK, look, here's
+a nonconformance.
+Are you aware of that?
+Would you like me to draft that
+NC? I've drafted the NC and I
+put it into your quality
+management system. I've also
+contacted John to say, John,
+look, there's a draft NC.
+And what you can do is you can
+run it always on,
+which means that the daily
+meetings, the daily routine
+work, the standard
+leaders work is being
+assisted and accelerated by
+the AI.
+So that means that you're used in
+the quality system as a
+competitive advantage now
+because you're ahead of it all.
+So the whole idea of reactive
+versus proactive and making
+sure we don't have repeating
+incidents.
+This is way easier now because
+you've used your agentic AI
+system for always on logic.
+And it can also then go a
+little further and say, OK,
+look, that's the third
+excursion we've had in that
+suite in this manufacturing
+suite this year.
+And actually, when you look at
+the security and access logs,
+the traffic going into that
+suite is slightly up.
+So we could make a leadership
+dashboard recommendation to
+reduce the amount of traffic
+going into that suite.
+And that all happens
+automatically so that you can
+then start to look at
+potential root causes and
+involve the management so that
+it stops early.
+So, you know, it really does
+allow you to get ahead of
+things. So things start to
+move much smoother and the
+reduction in variation that's
+sought after by every system,
+every company that wants to do
+things well, you want to reduce
+variation that starts
+to become a really achievable
+target with the gender AI.
+Yeah, that's really interesting.
+It's it enables so many things
+quality control, like say
+regulation. There's there's a
+lot of things that really it
+can be it can be like
+an accountability partner,
+organizer, so so
+versatile and like having
+Einstein at your desk.
+Thing is because it can also
+do things that you as a human
+can't do. It can look at,
+you know, 50,000 records
+and produce a pattern and
+see and say, look, have you
+seen this pattern?
+This is a potential problem
+here. So this
+sounds very efficient.
+And you know, it's going to
+say it sounds like it says
+lots of time and it's great
+for quality control and
+things like that and limiting
+limiting going around down
+the wrong pathways and bits
+pieces like that. So could
+you go into a little bit
+more detail maybe about how
+this is helping to accelerate
+the launch specifically of new
+pharmaceutical products and
+also improving the processes
+and ensuring just much
+higher quality, I imagine.
+Could you tell us a little bit
+more about that?
+So if we were to talk about
+accelerated launch first, you
+know, sort of like new product
+introduction and you know,
+accelerated launch applies to
+brand new factories that are
+being built for the new
+product and but also to
+factories that are making
+medicine already and they're
+just going to introduce this
+new product into it.
+So what happens in that process?
+You've got the development team,
+you know, so R and D, right?
+R is research and that's really
+early discovery that we talked
+about at the beginning and
+development is the D part
+research and development.
+And they look after
+so the clinical batches is
+probably the easiest way to look
+at it. They look after the
+engineering and everything
+that surrounds the clinical
+batches. So they're
+process development people and
+they are scaling it up for,
+you know, the phase three
+clinical trials and then
+also for the first
+commercial batches and
+they're a different team to
+manufacturing, right?
+So and they're quite agile
+and super expert and they're
+making sure that they
+understand everything that
+they can about the product.
+All of the things that make
+a huge difference to it.
+So oh, this is sensitive to
+oxygen or it's sensitive to
+light or it's sensitive to
+shear. And these are the
+things that we monitor to
+make sure that we're
+producing exactly what we
+want to produce.
+So you will be looking at
+that. You have to transfer
+that into a factory, which is
+already making medicine, let's
+say, or one that's designed
+to make medicine.
+And what's
+happening there is you're
+matching the capability of
+the factory. So you've got a
+bioreactor and it can do these
+20 things. It can add
+glucose. It can, you know,
+inoculate with the cells.
+So like add the actual
+growing cells. It can
+heat, it can cool, it can
+do all the things it can
+transfer out, transfer in.
+So it has all of these
+actions. So the existing
+or the designed bioreactor
+and all the things upstream
+and downstream of it have
+the capability.
+So you'll be looking at the
+new medicine that you want to
+introduce. You say, OK, well,
+what's the gap?
+How do I fit this process
+to this new factory that I'm
+putting it into?
+And you would then say, OK,
+well, actually about
+80 percent of that is the
+same.
+So these are 20 percent.
+These are new actions with new
+ranges or maybe even brand new
+actions where we have to
+modify the bioreactor.
+Now, when humans are doing that,
+a lot of it is quite manual.
+And that whole idea of we know
+that 80 percent of that is the
+same. That's nowhere near as
+easy as it sounds.
+So a lot of the time we do
+100 percent from scratch every
+single time.
+And we also, the manufacturing
+people and the development
+people don't necessarily work
+that close together.
+So they call, you know,
+instead of it being, say,
+glucose addition, they call it
+nutrient feed.
+So it has different names.
+And what happens then is that
+there's a huge amount of work
+to try to get this
+medicine put into the new
+facility.
+And if we can use
+a genetic AI to say, well,
+hang on a second, here's my new
+medicine. And here's the model
+that I have for the existing
+medicine and then start to
+match it across.
+And the AI can say, well,
+actually it looks like 85 percent
+of that is the same.
+So we can use these test
+scripts that we've executed in
+the past and pull them out
+and say, so here's your
+essentially your your pack to
+say, this is the capability of
+the existing factory.
+It's already proven and that
+proves this.
+So all we need is this 20 percent
+and then our 15 percent and
+allow the engineers to focus on
+that.
+There's also an ability to now
+similar to the algorithmic AI
+for the, you know, I'm now
+looking at molecules and
+how the proteins stock with
+each other, etc.
+You can also look at how the
+biochemistry or the chemistry in
+the bioreactor is happening.
+You can do that offline
+mathematically.
+So you can say, this is how it
+would perform.
+So rather than testing it in the
+physical equipment, you can do a
+huge amount of the testing
+offline mathematically with the
+AI models, right?
+And that allows you then to get
+to a place as to where your
+process fit is
+fast, efficient, accurate
+and shorter and
+more reliable.
+So now what you're doing is
+you're pulling time out and
+you're also making the time that
+it's going to take more
+reliable because the worst
+thing in the world is for you
+as the person who's in charge
+of the product to go to the board
+and say, we'll introduce this in
+nine months and it take two
+years.
+We want it faster and we want
+the time taken to do it more
+reliable and we don't want it
+to rely on the heroic effort of
+the engineers involved.
+We want this to be a routine
+thing so that we can pull these
+new products in.
+So the acceleration of all of
+that is now possible.
+And I say most tier one
+pharma companies are working on
+an introduction of sort of
+overall digital thread
+platforms and AI platforms in
+order to pull that together to
+try and accelerate it because if
+you can accelerate that, then
+you have taken a huge part of
+the roadblock away.
+Now what's needed is to increase
+the capacity of the factory.
+So once you have new product
+in so accelerated launch, then
+what you're looking to is can I
+make more of this in demand
+medicine.
+So again, that is looking at
+some of the yield figures, but
+also the decision making.
+If you have a factory with
+capacity, a lot of the
+capacity can be squeezed out with
+better scheduling, better
+decision making and
+having things ready.
+So similar to the example we
+talked about before, do I have
+everything for next week?
+You can take that to the next
+level and say, OK, here's my
+finite scheduling system.
+So now I'm making sure
+that I am scheduling everything
+or rescheduling when things
+change.
+And now we're able to use these
+agenda AI systems to pull
+together the vital information
+in the moments that matter to
+make all of those decisions
+quick and automated if
+necessary. So the capacity of
+the factory goes up.
+And nobody really has to be
+afraid of losing jobs
+because there is so much more
+medicine to make.
+If we had the same amount of
+medicine to make now, as
+in 10 years, people would lose
+their jobs left, right and
+center because we should be
+able to make all of this
+medicine with half the people.
+However, we have orders of
+magnitude more medicine to make.
+So I mean, it's very exciting
+because what we're going to be
+able to do is just get better
+at making medicine as opposed
+to what happened in the past
+and say in the other industrial
+revolutions or maybe in other
+industries, you know, having a
+load of people lose their job
+so that we can do it more
+automatically.
+We are going to do it more
+automatically and that's going
+to allow us to make more.
+Yeah, it just enables those
+experts to use really use the
+expertise and again, expand.
+It just gives more room for
+expansion in knowledge, in time
+and everything, which is really,
+really interesting and only
+going to be people that fill
+that space.
+Yeah, I actually believe that
+it's the work is going to
+become a little bit more
+personal because a lot of the
+heavy lift and the
+administration and stuff and the
+computer on your own work
+will start to dissolve away.
+And it's going to be the
+high performance teams are
+really about the loyalty between
+the people and the bonds between
+the people.
+And the things that AI is
+never going to be able to do is
+really drive that high
+performance coordination in the
+teams themselves.
+So I actually think that in
+the age of AI, I think
+teams are going to get closer
+together.
+So how does AI help to
+ensure a seamless connection in
+a very practical sense between
+manufacturing, packaging of new
+products and then the
+distribution process?
+Because all of these obviously
+play a huge part in getting
+medicines to people.
+Yeah, so I suppose if you're
+outside the industry, it's
+hard to appreciate how
+big the supply chain is.
+So there would be
+every medicine that's
+made has an active
+pharmaceutical ingredient.
+So it's made and it's
+called drug substance.
+It's usually made in a huge
+campus or in a big factory
+and often then frozen if it's
+a bio or stored in a powder,
+if it's sort of small
+molecule.
+And then it's typically shipped
+to a different country, maybe
+in a different continent, where
+it is processed into the drug
+product. So when I say that,
+it's either squished into a
+tablet or a solid
+dose, that type of thing, sort
+of very old school or else
+with the newer products in the
+biotech products, they're
+filled into vials or syringes
+or cartridges, which
+these can be very complex
+processes because a lot of
+the time the medicine is open
+to the atmosphere inside an
+isolator. So they're
+aseptic processes.
+So aseptic formulation
+fill finish, very, very
+specialized work.
+And then once the viola, viola
+syringe is closed with the
+stopper, it is often then
+shipped to another country,
+maybe another continent to be
+packaged where it has all the
+leaflet and the artwork and
+in the box and then serialized
+and put in crates.
+And actually the number one
+cause of product recall is
+the packaging, believe it or
+not. So it is very
+specialized and it's super
+high volume, right?
+So I can a drug substance
+facility. You might make a
+batch for 28 days.
+So it's slow.
+You could probably do the
+finite scheduling in PowerPoint
+in drug product.
+You're making quite a lot of
+skews, right? So but even a
+very, very dynamic formulation
+fill finish facility, you
+know, would be making five or
+six or seven products, right?
+There are some exceptions and
+you will be able to do the
+finite scheduling because all
+one continuous line most of the
+time in Excel.
+Whereas for a packaging
+facility, you might have
+thousands of stock keeping
+units, SKUs or skews, as
+people call them, you might have
+thousands of skews and you
+might be changing it left,
+right and center. And it's high
+volume when the leaflets are
+going by, you can't see them.
+It's completely different.
+So you need specialized
+software to schedule a
+facility like that.
+So there are different paces
+and they're at different levels
+of, I suppose, high stakes,
+you know, because if you lose
+a box, it's one box, right?
+But if you lose, say a batch
+of drug product, it could be
+a quarter of a million vials
+and it's already been produced
+into a substance.
+And the supply chain between
+them is really, really important
+if you're talking about getting
+the medicine to the patients.
+And you may have a contract
+manufacturer involved, by the way,
+you might have someone who would
+be, say, doing the liaafilization
+of the vials separately in
+Germany or something.
+And you might be doing it
+yourself and the contractor
+doing it and sending it to
+the packaging facility.
+It might be sent to a different
+packaging facility if it's E
+release or Japanese release.
+So you may have a network
+of GMP factories for drug
+substance or product and packaging.
+And you have raw material
+suppliers and some of those raw
+material suppliers are very
+sophisticated because they're
+providing things like the glucose
+that we talked about earlier, the
+media. They're also maybe even
+providing the ingredients for
+the buffer, which is a very
+important part of a lot of the
+processes as in it's kind of like
+salty water would be the best
+way of looking at it, but it
+it really does help with the
+chemical processes and the
+biochemical processes.
+So it's a very sophisticated
+supply chain and then the
+interaction between all of
+those digitally is one
+of the trickiest supply chains
+in any industry.
+So you could imagine that if
+you wanted to know, well, do I
+have everything in order to do
+the packaging, you might have
+to check the raw material
+suppliers, the drug substance
+suppliers, the product
+factories and the contract
+manufacturers and the artwork
+packages in places and pull it
+all together. So like the
+simple question that we talked
+about, do we have everything?
+When you get to a packaging
+facility, it might be wildly
+complex. And if you're
+sitting above a network of
+those factories, then this is a
+very difficult thing. You might
+end up in a situation where
+you have from, I suppose,
+placing of the order door to
+door could be a year to get
+the medicine out.
+Yeah, I was going to say that
+even sounds short, to be
+honest.
+I think it's comparably a lot
+of a lot of medicines.
+Absolutely. And there's an
+enormous amount of inventory
+tied up in that. You could
+imagine if you have two years
+worth of products or years
+worth of product and
+inventory in contract
+manufacturers at the same
+time, how much money is
+involved, but also how slow
+the system is. Like work in
+progress inventory slows down
+throughput. So if you can
+use a genetic AI to
+accelerate the decision
+making between the
+facilities to make sure that
+when you're doing the
+production schedule for the
+drug substance or product and
+packaging that you're
+coordinating between the
+facilities and that the
+people who have those
+decisions to make actually
+have access to that
+information. Like Eli Golder
+I talked about in his books
+in the 80s, you know,
+necessary but not sufficient.
+So well, you know, once we
+have the internet, we'll be
+able to know everything, but
+it didn't actually work out
+that way. So it turns out
+that to understand exactly
+what stock and what is
+being made and what
+investigations are ongoing
+and what demand is actually
+required for all of those
+factories all at the same
+time is a huge deal. So we
+have one client and they
+put an AI system in. But
+mainly what it was, it was
+meaningful contextualized
+data flowing up to the
+cloud so that they had this
+information. And the planners
+were able to see that in the
+drug substance facility, the
+yield on the batches, it was
+a campaign of five batches
+and the yield was up. Now
+when you needed four, so
+they were able to say no,
+no, don't make the fifth
+batch. And there's been AI
+platforms for helping with
+shipping and aircraft and
+you know, because the
+expression slow boat to
+China isn't there for no
+reason. If you put it on a
+boat, it takes ages. And
+sometimes you have to put it
+on a plane. And that's very
+expensive. So, you know, the
+ability to plan those
+supply chain routes and
+modify and change those
+things and make sure that
+you're using the best value
+supply chain AI has been
+helping with that for
+probably five or six years.
+And with the agenda AI
+orchestrating multiple agents
+in that space, it's just
+getting better and better.
+As we've said, there's so
+much room to grow in the
+future. What do you think
+will be the biggest change
+that you can see if you
+had to pick one, one change
+in this area? What do you
+think the biggest most
+impactful change will be
+within the next five to
+10 years in this field?
+Traditional medicine
+making. So, we have a big
+factory. It produces enough
+medicine for 50 million
+patients on the east coast
+of the United States. And
+it sends it to another
+factory that's similarly
+coping with that type of
+volume. However, with the
+advances in medicine, it
+means that I can take
+material from your body
+and I can modify it and
+put it back into your body.
+Personalized so that the
+medicine is just for you.
+So, there's a very cool
+technology called radio
+ligand therapy. And what
+that does is it takes
+peptides from your body,
+irradiates them and puts
+them back into you. And then
+those peptides go and
+attach themselves to your
+tumor and deliver the
+radiation directly to your
+tumor. So no side effects
+from the radiation. Amazing
+stuff. But it means now
+we're making batches
+for one, you know,
+batches for Lucy, not
+batches for 50 million
+people. A lot of the time
+these are combination
+medicines. So they use the
+big monoclonal antibody
+and then they'll use a
+personalized vaccine for
+the tumor. So it's two
+therapies. You still need
+the big product, but you
+also need the personalized
+product. But it doesn't
+really work. The economics
+of making medicine doesn't
+necessarily work very well
+in a huge factory for
+one person. So we would
+have some clients where
+they have more lab
+technicians than patients.
+Most personalized medicine
+companies are either
+charging an enormous amount
+of money or losing money,
+one or the other really.
+There isn't the economics
+of it is still not worked
+out. However, we have had
+inquiries now for a couple
+of years on the possibility
+of having deployable small
+scale factories. So rather
+than having one factory
+on the east coast of
+United States serving 50
+million patients, why not
+have 100 factories deployed
+in the grounds of the
+hospitals? So similarly, how
+sometimes they deploy data
+centers, right? They come in
+and they just deploy them
+in modular. You would
+deploy the factories and
+they would be, you know,
+effectively automated inside
+because these processes are
+simpler than some of the
+other processes in the big
+factories. So you would
+have a robot that would
+work in a circle and it
+would take the sample in
+and they would push it
+through the 12 pieces of
+equipment that are
+necessary. It will be
+fully connected and the
+teams that will be doing
+the process development, the
+teams that will be doing
+the reviews and approvals,
+the teams will be
+releasing those batches
+would be central and
+remote. And if you think
+about what we talked about
+in terms of agentic AI and
+the ability to automate
+the manufacturing process,
+it means that we are
+really close now, I think, to
+be able to having
+deployable factories so
+that you would go to your
+Johns Hopkins or you go
+to, you know, that
+hospital. And what they
+do is they take your blood,
+they put it into the
+start of this factory. It
+manufactures the personalized
+medicine, they take it back
+out. They book the appointment
+with you and with the surgeon
+and then it gets applied
+or else injected with the
+nurse. And then it's also
+combined with an existing
+monoclonal antibody or
+something like that. So that
+we're able to then really
+drive that personalized
+medicine agenda. So I think
+that is what will allow
+the world's population to
+start receiving some of the
+benefits from all this
+tech, the biotech and also
+agentic AI is the ability to
+make small deployable
+facilities. That means
+that a population centre has
+its own capability to produce
+personalized medicine. And I
+think agentic AI may just be
+the final piece that drives
+that improvement.
+That would be amazing to see
+that would help a lot of
+people. That would be
+fantastic. Thank you so much,
+David. No problem.
+Thank you so much again for
+David for joining me today.
+For more on this topic,
+please visit cphionline.com
+and also please sign up to the
+CPHI newsletter for more
+content straight to your inbox.
+Thank you to everyone who's
+listened for your time and
+we'll see you next episode.
+Thank you for listening to
+the CPHI podcast series
+for pharmaceutical news,
+webinars, events and more.
+Visit cphionline.com.
